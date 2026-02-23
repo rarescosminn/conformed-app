@@ -1,0 +1,40 @@
+{
+  "subdomeniu": "Dermatologie",
+  "categorii": [
+    {
+      "categorie": "Generale",
+      "numar_intrebari": 30,
+      "intrebari": [
+        "..."
+      ]
+    },
+    {
+      "categorie": "Șef secție",
+      "numar_intrebari": 40,
+      "intrebari": [
+        "..."
+      ]
+    },
+    {
+      "categorie": "Medici",
+      "numar_intrebari": 40,
+      "intrebari": [
+        "..."
+      ]
+    },
+    {
+      "categorie": "Asistenți",
+      "numar_intrebari": 40,
+      "intrebari": [
+        "..."
+      ]
+    },
+    {
+      "categorie": "Infirmieri",
+      "numar_intrebari": 20,
+      "intrebari": [
+        "..."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============== DESIGN TOKENS ============== */
+:root {
+    --brand: #192431;
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --text-muted: #6b7280;
+    --border: #e5e7eb; /* zinc-200 */
+    --border-hover: #d4d4d8; /* zinc-300 */
+    --radius: 12px;
+    --sidebar-g1: #123b66;
+    --sidebar-g2: #0e2b4a;
+    --sidebar-g3: #0b2038;
+}
+
+/* ============== LIGHT RESET ============== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: #111827;
+}
+
+h1, h2, h3 {
+    margin: 0 0 .5rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+}
+
+label, input, select, textarea { /* intenționat gol – nu stricăm cardurile/chip-urile */
+}
+
+/* ============== CARD GENERIC ============== */
+.card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    padding: 12px;
+}
+
+/* ============== LAYOUT ============== */
+.layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0,1fr);
+    gap: 16px;
+    align-items: start;
+    padding: 12px;
+}
+
+@media (max-width:1100px) {
+    .layout {
+        grid-template-columns: 60px minmax(0,1fr);
+    }
+}
+
+@media (max-width:720px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sb {
+        position: static;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.main {
+    min-width: 0;
+    display: grid;
+    gap: 16px;
+    align-content: start;
+    grid-auto-rows: min-content;
+}
+
+    .main > * {
+        min-height: 0;
+    }
+
+/* ============== KPI STRIP ============== */
+.kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 12px;
+}
+
+/* ============== SIDEBAR ============== */
+.sb {
+    position: sticky;
+    top: 12px;
+    height: calc(100dvh - 24px);
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    border-radius: var(--radius);
+    color: #fff;
+    background: linear-gradient(180deg,var(--sidebar-g1) 0%,var(--sidebar-g2) 55%,var(--sidebar-g3) 100%);
+    box-shadow: 0 10px 24px rgba(2,12,23,.18) inset;
+}
+
+.sb__brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+}
+
+.sb__logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    background: rgba(255,255,255,.12);
+}
+
+.sb__brandText {
+    line-height: 1.05;
+}
+
+    .sb__brandText strong {
+        display: block;
+    }
+
+.sb__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+    .sb__nav::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .sb__nav::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,.25);
+        border-radius: 8px;
+    }
+
+    .sb__nav:hover::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,.4);
+    }
+
+.sb__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: rgba(255,255,255,.92);
+    font-size: 14px;
+    transition: background .15s, color .15s, border-color .15s;
+}
+
+    .sb__link:hover {
+        background: rgba(255,255,255,.1);
+    }
+
+    .sb__link.is-active {
+        background: linear-gradient(90deg,rgba(255,255,255,.2),rgba(255,255,255,.12));
+        border: 1px solid rgba(255,255,255,.22);
+        box-shadow: inset 0 2px 8px rgba(0,0,0,.18);
+        color: #fff;
+    }
+
+.sb__icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    background: rgba(255,255,255,.1);
+}
+
+    .sb__icon.small {
+        width: 26px;
+        height: 26px;
+    }
+
+.sb__text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sb__footer {
+    margin-top: auto;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: .95;
+}
+
+.sb__footerText {
+    line-height: 1.1;
+}
+
+    .sb__footerText span {
+        font-size: 12px;
+        opacity: .8;
+    }
+
+@media (max-width:1100px) {
+    .sb {
+        width: 60px;
+        padding: 12px 8px;
+    }
+
+    .sb__brandText, .sb__text, .sb__footerText {
+        display: none;
+    }
+
+    .sb__brand {
+        justify-content: center;
+    }
+
+    .sb__icon {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* ============== HR FILTER — CHIPS + SEARCH (polished) ============== */
+.hr-filter {
+    --brand: var(--brand);
+}
+
+.hr-filter-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.hr-filter-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.hr-filter-count {
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.hr-filter-search {
+    position: relative;
+    flex: 1 1 240px;
+    min-width: 220px;
+}
+
+    .hr-filter-search input {
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 8px 12px 8px 28px;
+        background: #fff;
+    }
+
+    .hr-filter-search svg {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+        opacity: .5;
+        pointer-events: none;
+    }
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 9999px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    transition: background .15s, border-color .15s, box-shadow .15s, transform .05s;
+    text-align: left;
+}
+
+    .chip:hover {
+        border-color: var(--border-hover);
+        box-shadow: 0 2px 6px rgba(0,0,0,.06);
+    }
+
+    .chip:active {
+        transform: translateY(1px);
+    }
+
+    .chip[aria-checked="true"] {
+        border-color: var(--brand);
+        background: #f7f8fb; /* fallback */
+        box-shadow: inset 0 0 0 1px rgba(25,36,49,.30);
+    }
+
+@supports (background: color-mix(in srgb, red, blue)) {
+    .chip[aria-checked="true"] {
+        background: color-mix(in srgb, var(--brand) 6%, #fff);
+        box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--brand) 30%, transparent);
+    }
+}
+
+.chip-bullet {
+    width: 18px;
+    height: 18px;
+    border-radius: 9999px;
+    border: 1px solid var(--border-hover);
+    display: grid;
+    place-items: center;
+    font-size: 11px;
+    line-height: 1;
+    background: #fff;
+}
+
+/* când chip-ul e selectat: păstrăm CERCUL, doar afișăm ✓ în culoarea brand */
+.chip[aria-checked="true"] .chip-bullet {
+    border-color: var(--brand);
+    background: #fff; /* nu umplem cercul -> rămâne vizibil */
+    color: var(--brand); /* ✓ devine în culoarea brand */
+    font-weight: 700; /* (opțional) ✓ mai clar */
+}
+
+/* ============== ECHARTS FILL ============== */
+.echarts canvas, .echarts svg, div[class*="echarts"] canvas, div[class*="echarts"] svg {
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: auto !important;
+}
+/* Chips colorate pentru gărzi */
+.chip {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 9999px;
+    border: 1px solid #e5e7eb;
+    padding: .3rem .7rem;
+    font-size: .875rem;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.03);
+    transition: background .15s ease, box-shadow .15s ease;
+}
+
+.chip--neutral {
+    background: #ffffff;
+    border-color: #e5e7eb;
+    color: #374151;
+}
+
+.chip--none {
+    background: #f3f4f6;
+    border-color: #d1d5db;
+    color: #374151;
+}
+
+.chip--inhouse {
+    background: #dcfce7;
+    border-color: #86efac;
+    color: #166534;
+}
+
+.chip--oncall {
+    background: #fef3c7;
+    border-color: #fcd34d;
+    color: #92400e;
+}
+
+.chip--shared {
+    background: #dbeafe;
+    border-color: #93c5fd;
+    color: #1e3a8a;
+}
+
+/* Rând (card) pentru secție – fără tabel */
+.guard-row {
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6rem .8rem;
+    border: 1px solid #e5e7eb;
+    border-radius: .75rem;
+    background: #fff;
+}
+
+    .guard-row:hover {
+        background: #f9fafb;
+        box-shadow: 0 0 0 1px #e5e7eb inset;
+    }
+
+.guard-left {
+    min-width: 240px;
+    font-weight: 500;
+}
+
+.guard-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}

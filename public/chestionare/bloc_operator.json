@@ -1,0 +1,57 @@
+{
+  "section": "Bloc Operator",
+  "roles": [
+    "Generale",
+    "Șef secție",
+    "Medici",
+    "Asistenți",
+    "Infirmieri"
+  ],
+  "questions": [
+    {
+      "section": "Bloc Operator",
+      "role": "Generale",
+      "questionId": "BO-GEN-01",
+      "text": "Se respectă protocolul de igienă a mâinilor conform Ordinului MS nr. 1101/2016.",
+      "legalReference": "Ordin MS nr. 1101/2016, Anexa 1, cap. II, art. 2.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Bloc Operator",
+      "role": "Generale",
+      "questionId": "BO-GEN-02",
+      "text": "Personalul poartă echipament individual de protecție (halat steril, mască, mănuși, vizieră) conform cerințelor.",
+      "legalReference": "Regulament (UE) 2017/745; Ordin MS nr. 1226/2012, Anexa 2, cap. II, art. 4.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Bloc Operator",
+      "role": "Generale",
+      "questionId": "BO-GEN-03",
+      "text": "Sterilizarea instrumentarului chirurgical se realizează conform standardului și procedurilor în vigoare.",
+      "legalReference": "SR EN ISO 17665-1:2018; Ordin MS nr. 961/2016, cap. IV, art. 7.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Bloc Operator",
+      "role": "Generale",
+      "questionId": "BO-GEN-04",
+      "text": "Circuitul deșeurilor periculoase rezultate din intervenții este respectat.",
+      "legalReference": "HG 856/2002, Anexa 2, cap. II; Ordin MS nr. 1226/2012, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Bloc Operator",
+      "role": "Generale",
+      "questionId": "BO-GEN-05",
+      "text": "Aerul din sălile de operație este monitorizat și încadrat conform standardului.",
+      "legalReference": "SR EN ISO 14644-1:2016; Ordin MS nr. 961/2016, Anexa 3, art. 5.3",
+      "answerType": "yes_no",
+      "required": true
+    }
+  ]
+}

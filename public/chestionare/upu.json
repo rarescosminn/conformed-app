@@ -1,0 +1,1542 @@
+{
+  "section": "UPU",
+  "roles": [
+    "Generale",
+    "Șef secție",
+    "Medici",
+    "Asistenți",
+    "Infirmieri"
+  ],
+  "questions": [
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-001",
+      "text": "Triajul pacienților în UPU se face conform protocolului național și este documentat.",
+      "legalReference": "Ordin MS nr. 1091/2006, Anexa 1, pct. 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-002",
+      "text": "Identificarea pacientului în UPU se face corect (2 identificatori) înainte de orice procedură.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2, lit. a)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-003",
+      "text": "Igiena mâinilor este respectată la fiecare contact pacient–dispozitiv.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-004",
+      "text": "Timpul de așteptare al pacienților în UPU este monitorizat și raportat periodic.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-005",
+      "text": "Comunicarea la predarea–primirea pacienților folosește un format standard (ex. SBAR).",
+      "legalReference": "WHO 2007 – Communication during hand-overs",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-006",
+      "text": "Datele pacienților sunt protejate (confidențialitate, acces pe roluri).",
+      "legalReference": "Regulament (UE) 2016/679 – GDPR, art. 5 și art. 32",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-007",
+      "text": "Echipamentele critice din UPU sunt întreținute conform planului de mentenanță preventivă.",
+      "legalReference": "HG nr. 1028/2006, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-008",
+      "text": "Deșeurile medicale periculoase și nepericuloase sunt colectate și eliminate corect.",
+      "legalReference": "HG nr. 856/2002, Anexa 2, art. 5.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-009",
+      "text": "Existența unui plan de urgență pentru incendiu, cutremur sau pene de curent este verificată periodic.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-010",
+      "text": "Toți angajații UPU au instruiri periodice privind siguranța pacientului și situațiile de urgență.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-011",
+      "text": "Zonele UPU sunt curățate și dezinfectate zilnic conform fișelor de activitate.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-012",
+      "text": "Circuitul pacienților critici este separat de cel al pacienților non-critici.",
+      "legalReference": "Ordin MS nr. 1091/2006, Anexa 1, pct. 2.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-013",
+      "text": "Există proceduri pentru raportarea incidentelor și aproape-accidentelor în UPU.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. IV, art. 9",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-014",
+      "text": "Pacienții cu boli transmisibile sunt izolați conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-015",
+      "text": "Trasabilitatea materialelor și dispozitivelor utilizate în urgență este respectată.",
+      "legalReference": "Regulament (UE) 2017/745, art. 27 și art. 83",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-016",
+      "text": "Consimțământul informat este obținut și documentat înainte de proceduri.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-017",
+      "text": "Liniile de oxigen și gazele medicale sunt monitorizate permanent.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-018",
+      "text": "Accesul în UPU este controlat și monitorizat pentru siguranța pacienților.",
+      "legalReference": "Legea nr. 333/2003, art. 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-019",
+      "text": "Pacienții sunt monitorizați continuu până la transfer sau externare.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-020",
+      "text": "Rapoartele zilnice de activitate UPU sunt completate și transmise conducerii.",
+      "legalReference": "OSGG nr. 600/2018, Anexa 1, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-021",
+      "text": "Pacienții critici au acces prioritar la resurse și intervenții.",
+      "legalReference": "Ordin MS nr. 1091/2006, Anexa 1, pct. 2.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-022",
+      "text": "Fluxurile de pacienți respectă circuitele epidemiologice stabilite.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-023",
+      "text": "Substanțele chimice și dezinfectanții sunt depozitați cu fișe SDB disponibile.",
+      "legalReference": "Regulament (CE) 1907/2006, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-024",
+      "text": "Stingătoarele și căile de evacuare sunt funcționale și libere.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-025",
+      "text": "Pacienții sunt evaluați inițial conform unei scale standardizate (NEWS, GCS).",
+      "legalReference": "Ghid NICE 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-026",
+      "text": "Rezultatele critice de laborator sunt comunicate imediat medicului responsabil.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-027",
+      "text": "Medicamentele de urgență sunt stocate în locații accesibile și verificate zilnic.",
+      "legalReference": "HG nr. 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-028",
+      "text": "Lanțul frig pentru medicamente este monitorizat și documentat.",
+      "legalReference": "HG nr. 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-029",
+      "text": "Există proceduri pentru transferul pacienților către alte unități sau secții.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Generale",
+      "questionId": "UPU-GEN-030",
+      "text": "Feedback-ul pacienților și familiilor este colectat și analizat periodic.",
+      "legalReference": "ISO 9001:2015, cl. 9.1.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-001",
+      "text": "UPU are obiective anuale de calitate și siguranță monitorizate lunar.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-002",
+      "text": "Se organizează analiza de management la nivelul UPU, cu acțiuni și termene urmărite.",
+      "legalReference": "OSGG nr. 600/2018, Anexa 1, art. 6, lit. f)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-003",
+      "text": "Programul de audit intern UPU este planificat și derulat; neconformitățile au CAPA.",
+      "legalReference": "ISO 19011:2018, cl. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-004",
+      "text": "Registrul de riscuri UPU (aglomerare, infecții, medicație) este actualizat trimestrial.",
+      "legalReference": "ISO 31000:2018, cl. 6.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-005",
+      "text": "Există desemnări clare pe roluri (control infecții, farmacovigilență, radioprotecție – dacă e cazul).",
+      "legalReference": "Legea nr. 95/2006, Titlul XIV, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-006",
+      "text": "Planurile de urgență (cod roșu, dezastru, incendiu, evacuare) sunt verificate lunar.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-007",
+      "text": "Matricea de competențe UPU este actualizată periodic.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-008",
+      "text": "Personalul nou din UPU beneficiază de mentorat și perioadă de acomodare.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-009",
+      "text": "Instruiri periodice sunt efectuate pe triaj, IAAM, resuscitare, medicație cu risc crescut.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4, lit. c)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-010",
+      "text": "Turele sunt acoperite cu personal calificat, cu repartizare echilibrată.",
+      "legalReference": "Legea nr. 95/2006, art. 174",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-011",
+      "text": "Evaluările anuale includ componenta de siguranță pacient în urgențe.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-012",
+      "text": "UPU implementează supravegherea IAAM (raportări către SPIAAM).",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-013",
+      "text": "Respectarea precauțiilor standard și adiționale este monitorizată periodic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-014",
+      "text": "Circuitul lenjeriei curate/murdare este separat și semnalizat.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-015",
+      "text": "Suprafețele și echipamentele UPU sunt dezinfectate conform normelor.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-016",
+      "text": "Sterilizarea instrumentarului utilizat în UPU este validată periodic.",
+      "legalReference": "SR EN ISO 17665-1:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-017",
+      "text": "Toate echipamentele UPU au plan de mentenanță preventivă și fișe de intervenții.",
+      "legalReference": "HG nr. 1028/2006, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-018",
+      "text": "Echipamentele de măsurare/monitorizare sunt etalonate periodic.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 6.4.6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-019",
+      "text": "Defibrilatoarele și aparatele de resuscitare sunt testate lunar.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-020",
+      "text": "Există UPS funcțional pentru echipamente critice.",
+      "legalReference": "HG nr. 1028/2006, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-021",
+      "text": "Medicamentele LASA sunt separate și etichetate.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-022",
+      "text": "Lanțul frig pentru medicamente este monitorizat și documentat.",
+      "legalReference": "HG nr. 857/2011",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-023",
+      "text": "Stupefiantele/psihotropele sunt gestionate în registre securizate.",
+      "legalReference": "Legea nr. 339/2005, art. 30",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-024",
+      "text": "Materialele sterile UPU sunt verificate (ambalaj, dată expirare).",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-025",
+      "text": "Procedurile UPU sunt actualizate și disponibile la punctul de utilizare.",
+      "legalReference": "ISO 9001:2015, cl. 7.5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-026",
+      "text": "Trasabilitatea dispozitivelor critice este documentată pe pacient.",
+      "legalReference": "Regulament (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-027",
+      "text": "Rapoartele de incidente și adverse sunt analizate lunar.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-028",
+      "text": "Comunicările critice (rezultate, schimbări de tratament) sunt transmise la timp.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-029",
+      "text": "Segregarea deșeurilor UPU este respectată (culori, containere).",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-030",
+      "text": "Substanțele chimice și dezinfectanții sunt depozitați corect cu fișe SDB.",
+      "legalReference": "Regulament (CE) 1907/2006, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-031",
+      "text": "Stingătoarele sunt funcționale, căile de evacuare libere, personal UPU instruit PSI.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-032",
+      "text": "Apa și aerul din UPU sunt monitorizate periodic.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-033",
+      "text": "Reclamațiile pacienților/familiilor sunt analizate și duc la acțiuni corective.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. VI, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-034",
+      "text": "Timpul de așteptare la consult este monitorizat și analizat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-035",
+      "text": "Ratele de reîntoarcere în UPU la 72h sunt urmărite.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-036",
+      "text": "Feedback-ul personalului UPU este folosit pentru îmbunătățire.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-037",
+      "text": "Respectarea protocoalelor de izolare pentru pacienți cu boli contagioase este monitorizată.",
+      "legalReference": "ECDC Guidance 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-038",
+      "text": "Protocolul pentru resuscitare cardiopulmonară este implementat și verificat periodic.",
+      "legalReference": "ERC Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-039",
+      "text": "Protocolul pentru accidente colective (plan roșu) este actualizat anual.",
+      "legalReference": "DSU – Plan roșu de intervenție",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Șef secție",
+      "questionId": "UPU-SEF-040",
+      "text": "Exercițiile de simulare pentru situații de dezastre sunt efectuate anual.",
+      "legalReference": "Legea nr. 481/2004, art. 28",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-001",
+      "text": "Evaluarea inițială a pacientului în UPU (istoric, alergii, semne vitale) este documentată complet.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-002",
+      "text": "Consimțământul informat este obținut și arhivat pentru toate procedurile UPU.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-003",
+      "text": "Se utilizează scoruri de severitate (NEWS, GCS) la internare și pe parcurs.",
+      "legalReference": "Ghid NICE 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-004",
+      "text": "Planul de tratament al pacientului este documentat și actualizat după consult.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-005",
+      "text": "Profilaxia tromboembolică este evaluată și implementată conform ghidurilor.",
+      "legalReference": "Ghid MS 2016 – Tromboembolism venos",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-006",
+      "text": "Antibioterapia este justificată, documentată și reevaluată zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-007",
+      "text": "Pacienții critici sunt monitorizați continuu, cu documentarea parametrilor vitali.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-008",
+      "text": "Procedurile invazive sunt efectuate aseptic și documentate complet.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-009",
+      "text": "Deciziile de transfer/externare sunt documentate în foaia de observație UPU.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-010",
+      "text": "Evenimentele adverse sunt raportate imediat prin sistemul formal.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-011",
+      "text": "Inserția cateterelor respectă tehnica aseptică și protocolul de verificare.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-012",
+      "text": "Cateterele periferice sunt revizuite și îndepărtate la timp.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-013",
+      "text": "Transfuziile respectă indicația, compatibilitatea și monitorizarea reacțiilor.",
+      "legalReference": "Legea nr. 282/2005, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-014",
+      "text": "Defibrilatoarele și monitoarele sunt utilizate conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-015",
+      "text": "Procedurile de resuscitare cardiopulmonară urmează ghidurile internaționale.",
+      "legalReference": "ERC Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-016",
+      "text": "Documentația intervențiilor chirurgicale de urgență este completată corect.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-017",
+      "text": "Utilizarea ventilației non-invazive respectă indicațiile clinice.",
+      "legalReference": "Ghid SRATI 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-018",
+      "text": "Procedurile invazive (intubare, drenaj) sunt efectuate cu checklist pre-procedural.",
+      "legalReference": "WHO – Safe Surgery Checklist 2009",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-019",
+      "text": "Hemodializa de urgență respectă protocoalele de siguranță.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-020",
+      "text": "Pacienții politraumatizați beneficiază de evaluare FAST/CT conform protocolului.",
+      "legalReference": "ATLS Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-021",
+      "text": "Parametrii vitali sunt revizuiți și documentați periodic.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-022",
+      "text": "Rezultatele critice de laborator/imaging sunt comunicate prompt și documentat.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-023",
+      "text": "Predarea turelor se face cu format standard (SBAR).",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-024",
+      "text": "Comunicarea cu familia pacientului este documentată zilnic.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-025",
+      "text": "Evenimentele adverse majore sunt comunicate transparent (open disclosure).",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-026",
+      "text": "Pacienții critici sunt evaluați zilnic pentru deprescriere/optimizare terapii.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-027",
+      "text": "Informațiile transmise între specialități sunt documentate în foaia UPU.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-028",
+      "text": "Comunicarea în echipă este evaluată periodic prin audituri clinice.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-029",
+      "text": "Medicul UPU participă la revizuiri de mortalitate și morbiditate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-030",
+      "text": "Participă la audituri clinice (antibiotice, sepsis, traumă).",
+      "legalReference": "SR EN ISO 15189:2023, cl. 7.1.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-031",
+      "text": "Protocoalele UPU sunt actualizate pe baza ghidurilor internaționale.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-032",
+      "text": "Medicii urmează programe de educație medicală continuă (EMC).",
+      "legalReference": "Legea nr. 95/2006, art. 391",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-033",
+      "text": "Rezidenții și personalul nou sunt instruiți în protocoale UPU.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-034",
+      "text": "Gestionarea durerii în urgențe este documentată prin scoruri și reevaluări.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-035",
+      "text": "Restricțiile fizice/chimice se aplică doar la indicație medicală și sunt monitorizate.",
+      "legalReference": "Legea nr. 487/2002, art. 29",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-036",
+      "text": "Pacienții vulnerabili (copii, vârstnici, imunodeprimați) beneficiază de adaptări de tratament.",
+      "legalReference": "Legea nr. 46/2003, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-037",
+      "text": "Protocolul pentru sepsis este implementat în UPU.",
+      "legalReference": "Surviving Sepsis Campaign 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-038",
+      "text": "Protocolul pentru infarct miocardic acut (STEMI/NSTEMI) este aplicat.",
+      "legalReference": "ESC Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-039",
+      "text": "Protocolul pentru AVC acut este implementat (time-to-needle).",
+      "legalReference": "ESO Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Medici",
+      "questionId": "UPU-MED-040",
+      "text": "Existența și aplicarea protocolului de cod roșu sunt verificate periodic.",
+      "legalReference": "DSU – Plan roșu de intervenție",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-001",
+      "text": "Identifici pacientul cu 2 identificatori înainte de orice administrare/procedură.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-002",
+      "text": "Aplici regula „5+2 ale medicației” (pacient, medicament, doză, cale, timp, indicație, documentare).",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-003",
+      "text": "Verificarea independentă se face pentru medicamente cu risc crescut (insuline, anticoagulante, electroliți).",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-004",
+      "text": "Lanțul frig pentru medicamente este menținut și documentat.",
+      "legalReference": "HG nr. 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-005",
+      "text": "Medicamentele sunt etichetate corect (denumire, concentrație, oră, inițiale).",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-006",
+      "text": "Pregătirea pielii înainte de inserarea dispozitivelor invazive respectă protocolul.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-007",
+      "text": "Inserția și întreținerea cateterelor se face aseptic, cu pansamente sterile și evaluare zilnică.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-008",
+      "text": "Îngrijirea plăgilor se face cu tehnică sterilă și documentare evoluție.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-009",
+      "text": "Recoltarea probelor biologice se face corect, cu etichetare și trasabilitate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-010",
+      "text": "Utilizarea defibrilatoarelor și monitoarelor respectă procedurile interne.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-011",
+      "text": "Igiena mâinilor (5 momente) este aplicată consecvent.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-012",
+      "text": "Precauțiile standard și adiționale sunt respectate pentru fiecare pacient.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-013",
+      "text": "Deșeurile sunt segregate corect (biohazard, ascuțite, nepericuloase).",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-014",
+      "text": "Lenjeria curată și murdară este manipulată conform circuitelor stabilite.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-015",
+      "text": "Suprafețele și echipamentele sunt dezinfectate între pacienți conform listelor.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-016",
+      "text": "Semnele vitale sunt monitorizate și documentate la intervale regulate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-017",
+      "text": "Parametrii de monitorizare a pacienților critici sunt notați în fișa UPU.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-018",
+      "text": "Scalele clinice (durere, risc de cădere, Braden, GCS) sunt utilizate și documentate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-019",
+      "text": "Administrarea medicamentelor este documentată imediat în fișă.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-020",
+      "text": "Erorile de administrare sunt raportate imediat, fără vinovăție („just culture”).",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-021",
+      "text": "Integritatea ambalajelor și data expirării sunt verificate înainte de utilizare.",
+      "legalReference": "Regulament (UE) 2017/745, art. 83",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-022",
+      "text": "Materialele sterile sunt depozitate corect, ferite de contact cu podeaua.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-023",
+      "text": "Seringile și soluțiile preparate sunt etichetate corect.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-024",
+      "text": "Dispozitivele de unică folosință sunt eliminate imediat după utilizare.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-025",
+      "text": "Soluțiile perfuzabile sunt administrate doar după verificarea termenului de valabilitate.",
+      "legalReference": "HG nr. 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-026",
+      "text": "Familia pacientului este informată privind proceduri și riscuri.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-027",
+      "text": "Alergiile sunt verificate și marcate vizibil în fișă/salon.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-028",
+      "text": "Intimitatea și demnitatea pacientului sunt respectate în toate procedurile.",
+      "legalReference": "Legea nr. 46/2003, art. 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-029",
+      "text": "Informațiile despre tratament sunt explicate pacientului într-un limbaj accesibil.",
+      "legalReference": "Legea nr. 46/2003, art. 4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-030",
+      "text": "Pacienții cu dizabilități primesc suport suplimentar la proceduri.",
+      "legalReference": "Legea nr. 448/2006, art. 7",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-031",
+      "text": "Probele biologice critice sunt transportate rapid și în containere dedicate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-032",
+      "text": "Testele rapide (POC) sunt efectuate și validate conform procedurii.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.6.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-033",
+      "text": "Reacțiile adverse la medicație sau transfuzii sunt raportate imediat.",
+      "legalReference": "Legea nr. 95/2006, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-034",
+      "text": "Pacienții cu risc de cădere sunt identificați și monitorizați.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-035",
+      "text": "Pacienții policontaminați (accidente chimice/biologice) sunt izolați conform planului.",
+      "legalReference": "DSU – Plan alb",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-036",
+      "text": "Locația stingătoarelor și căilor de evacuare este cunoscută.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-037",
+      "text": "Prizele și cablurile sunt utilizate în siguranță, defectele fiind raportate.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-038",
+      "text": "Accesul la sursele de oxigen și gaz medical este păstrat liber.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-039",
+      "text": "Zonele umede/alunecoase sunt semnalizate imediat.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Asistenți",
+      "questionId": "UPU-ASI-040",
+      "text": "Substanțele periculoase sunt manipulate doar cu EIP adecvat.",
+      "legalReference": "Regulament (UE) 2016/425, Anexa II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-001",
+      "text": "Respecți regulile de igienă a mâinilor la intrarea/ieșirea din UPU și la contact pacient–dispozitiv.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-002",
+      "text": "Porți echipament individual de protecție adecvat și îl schimbi corect între pacienți/zona UPU.",
+      "legalReference": "Regulament (UE) 2016/425, Anexa II, pct. 1.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-003",
+      "text": "Deșeurile medicale sunt segregate corect în containere dedicate, fără supra-umplere.",
+      "legalReference": "HG nr. 856/2002, Anexa 2, art. 5.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-004",
+      "text": "Recipienții pentru obiecte tăietoare-înțepătoare sunt închiși și înlocuiți conform procedurii.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-005",
+      "text": "Lenjeria curată și murdară este separată și transportată în saci speciali.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-006",
+      "text": "Curățenia zilnică a spațiilor UPU este realizată conform graficului și fișelor de lucru.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-007",
+      "text": "Curățenia terminală după externare/deces/transfer se face conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-008",
+      "text": "Soluțiile de curățenie și dezinfectanții sunt preparați corect și etichetați.",
+      "legalReference": "Regulament (CE) 1907/2006 – REACH, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-009",
+      "text": "Cărucioarele de curățenie sunt curate, complet echipate și depozitate separat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-010",
+      "text": "Materialele alimentare nu se amestecă cu cele de curățenie; spațiile sunt separate.",
+      "legalReference": "HG nr. 857/2011, Anexa 2, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-011",
+      "text": "Scurgerile sau vărsările de fluide biologice sunt raportate și curățate imediat conform procedurii.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-012",
+      "text": "Manipulezi corect rufele și reziduurile pentru a evita stropiri/aerosoli.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-013",
+      "text": "Participi la instruiri privind utilizarea echipamentelor de curățenie și noile protocoale.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-014",
+      "text": "Semnalizezi imediat zonele umede/alunecoase pentru a preveni accidente.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-015",
+      "text": "Respecți circuitul alimentelor și apei potabile, asigurând igiena ustensilelor.",
+      "legalReference": "HG nr. 857/2011, Anexa 2, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-016",
+      "text": "Aplici tehnici corecte de ridicare și mobilizare a pacienților.",
+      "legalReference": "Legea nr. 319/2006, art. 13, lit. g)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-017",
+      "text": "Raportezi echipamente defecte, mobilier deteriorat sau probleme de iluminat.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-018",
+      "text": "Păstrezi ordinea și debarasarea corectă a materialelor în spațiile UPU.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-019",
+      "text": "Respecți confidențialitatea și nu divulgi informații despre pacienți sau situații clinice.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "UPU",
+      "role": "Infirmieri",
+      "questionId": "UPU-INF-020",
+      "text": "Completezi și semnezi fișele zilnice de activitate, predând corect informațiile la schimbul de tură.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    }
+  ]
+}

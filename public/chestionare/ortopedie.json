@@ -1,0 +1,1542 @@
+{
+  "section": "Ortopedie",
+  "roles": [
+    "Generale",
+    "Șef secție",
+    "Medici",
+    "Asistenți",
+    "Infirmieri"
+  ],
+  "questions": [
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-001",
+      "text": "Identificarea pacientului ortopedic se face corect (2 identificatori) înainte de orice procedură.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-002",
+      "text": "Consimțământul informat este obținut și arhivat pentru intervențiile ortopedice.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-003",
+      "text": "Igiena mâinilor este respectată înainte și după fiecare contact pacient–dispozitiv.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-004",
+      "text": "Evaluarea clinică și imagistică preoperatorie este documentată complet.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-005",
+      "text": "Checklist-ul chirurgical este utilizat la fiecare intervenție ortopedică.",
+      "legalReference": "WHO – Safe Surgery Checklist, 2009",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-006",
+      "text": "Trasabilitatea implanturilor și protezelor este asigurată și documentată.",
+      "legalReference": "Regulament (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-007",
+      "text": "Materialele sterile sunt utilizate conform procedurilor de verificare.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-008",
+      "text": "Echipamentele ortopedice (lamă, burghie, proteze) sunt întreținute și sterilizate conform planului.",
+      "legalReference": "SR EN ISO 17665-1:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-009",
+      "text": "Profilaxia antibiotică preoperatorie este administrată conform ghidurilor.",
+      "legalReference": "Ghid MS 2016 – Antibioprofilaxie chirurgicală",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-010",
+      "text": "Pacienții ortopedici sunt evaluați pentru risc tromboembolic.",
+      "legalReference": "Ghid MS 2016 – Tromboembolism venos",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-011",
+      "text": "Precauțiile standard și adiționale sunt respectate pentru toți pacienții.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-012",
+      "text": "Circuitul lenjeriei curate/murdare este respectat.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-013",
+      "text": "Infecțiile de plagă postoperatorie sunt monitorizate și raportate.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-014",
+      "text": "Timpul de așteptare pentru intervențiile ortopedice este monitorizat și raportat.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-015",
+      "text": "Pacienții imobilizați sunt evaluați periodic pentru prevenirea escarelor.",
+      "legalReference": "EPUAP Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-016",
+      "text": "Mobilizarea precoce este încurajată conform indicației medicale.",
+      "legalReference": "Ghid NICE 2016 – Ortopedie",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-017",
+      "text": "Reabilitarea postoperatorie este documentată și monitorizată.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-018",
+      "text": "Toți pacienții sunt monitorizați postoperator în sala de supraveghere/anestezie.",
+      "legalReference": "SRATI Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-019",
+      "text": "Protocolul pentru durerea postoperatorie este aplicat.",
+      "legalReference": "IASP Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-020",
+      "text": "Grefele osoase și țesuturile utilizate sunt trasabile și valide.",
+      "legalReference": "Regulament (UE) 2017/745, art. 83",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-021",
+      "text": "Accesul la oxigen și gaze medicale este verificat zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-022",
+      "text": "Deșeurile medicale ortopedice sunt segregate și eliminate corect.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-023",
+      "text": "Jurnalele de curățenie și dezinfecție sunt completate zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-024",
+      "text": "Comunicarea cu familia pacientului este documentată.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-025",
+      "text": "Datele pacientului ortopedic sunt protejate conform GDPR.",
+      "legalReference": "Regulament (UE) 2016/679, art. 32",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-026",
+      "text": "Există protocoale pentru fracturi majore și politraumă.",
+      "legalReference": "ATLS Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-027",
+      "text": "Exercițiile de evacuare includ și secția de ortopedie.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-028",
+      "text": "Pacienții cu dispozitive externe (fixatoare) au planuri de îngrijire documentate.",
+      "legalReference": "Regulament (UE) 2017/745",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-029",
+      "text": "Feedback-ul pacienților ortopedici este colectat și analizat periodic.",
+      "legalReference": "ISO 9001:2015, cl. 9.1.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Generale",
+      "questionId": "ORT-GEN-030",
+      "text": "Reclamațiile pacienților sunt analizate și transformate în acțiuni corective.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. VI, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-001",
+      "text": "Secția Ortopedie are obiective anuale de calitate și siguranță monitorizate.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-002",
+      "text": "Se organizează analiza de management la nivel de secție, cu plan de acțiuni și termene.",
+      "legalReference": "OSGG nr. 600/2018, Anexa 1, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-003",
+      "text": "Programul de audit intern este implementat și rezultatele sunt analizate.",
+      "legalReference": "ISO 19011:2018, cl. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-004",
+      "text": "Registrul de riscuri ortopedice (infecții, proteze, tromboze) este actualizat trimestrial.",
+      "legalReference": "ISO 31000:2018, cl. 6.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-005",
+      "text": "Existența desemnărilor pe roluri (control infecții, PSI, farmacovigilență) este verificată.",
+      "legalReference": "Legea nr. 95/2006, Titlul XIV, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-006",
+      "text": "Planurile de urgență (incendiu, cutremur, accidente majore) sunt verificate periodic.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-007",
+      "text": "Matricea de competențe este actualizată pentru tot personalul secției.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-008",
+      "text": "Personalul nou este introdus prin program de mentorat și integrare.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-009",
+      "text": "Instruirile periodice acoperă IAAM, utilizarea implanturilor, transfuzia și resuscitarea.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-010",
+      "text": "Repartizarea turelor asigură prezența continuă a personalului calificat.",
+      "legalReference": "Legea nr. 95/2006, art. 174",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-011",
+      "text": "Evaluările anuale includ siguranța pacientului și competențele clinice.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-012",
+      "text": "Infecțiile asociate îngrijirii medicale sunt monitorizate și raportate.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-013",
+      "text": "Respectarea precauțiilor standard și adiționale este auditată periodic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-014",
+      "text": "Circuitul lenjeriei curate/murdare este implementat corect.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-015",
+      "text": "Spațiile și suprafețele secției sunt dezinfectate conform planului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-016",
+      "text": "Sterilizarea instrumentarului ortopedic este validată cu indicatori biologici.",
+      "legalReference": "SR EN ISO 17665-1:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-017",
+      "text": "Echipamentele ortopedice au plan de mentenanță preventivă documentat.",
+      "legalReference": "HG nr. 1028/2006, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-018",
+      "text": "Instrumentarul rotativ (burghie, fierăstraie) este verificat înainte de utilizare.",
+      "legalReference": "HG nr. 1028/2006, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-019",
+      "text": "Echipamentele de monitorizare sunt etalonate periodic.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 6.4.6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-020",
+      "text": "Există UPS funcțional pentru echipamente critice.",
+      "legalReference": "HG nr. 1028/2006, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-021",
+      "text": "Medicamentele LASA utilizate în ortopedie sunt separate și etichetate.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-022",
+      "text": "Stocurile de implanturi și proteze sunt gestionate cu trasabilitate completă.",
+      "legalReference": "Regulament (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-023",
+      "text": "Stupefiantele/psihotropele utilizate sunt păstrate în registre securizate.",
+      "legalReference": "Legea nr. 339/2005, art. 30",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-024",
+      "text": "Materialele sterile sunt verificate și depozitate conform procedurilor.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-025",
+      "text": "Procedurile ortopedice sunt actualizate și accesibile personalului.",
+      "legalReference": "ISO 9001:2015, cl. 7.5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-026",
+      "text": "Trasabilitatea implanturilor este documentată pe fiecare pacient.",
+      "legalReference": "Regulament (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-027",
+      "text": "Rapoartele de incidente și aproape-accidente sunt analizate lunar.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-028",
+      "text": "Comunicarea rezultatelor critice către medicii responsabili este documentată.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-029",
+      "text": "Segregarea deșeurilor ortopedice (gips, proteze, materiale biologice) este respectată.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-030",
+      "text": "Substanțele chimice și dezinfectanții sunt depozitați cu fișe SDB.",
+      "legalReference": "Regulament (CE) 1907/2006, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-031",
+      "text": "Stingătoarele sunt funcționale, căile de evacuare libere și personalul instruit PSI.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-032",
+      "text": "Monitorizarea calității aerului și apei se face periodic.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-033",
+      "text": "Reclamațiile pacienților sunt analizate și corectate.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. VI, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-034",
+      "text": "Timpul de așteptare la consultații este monitorizat și analizat.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-035",
+      "text": "Reîntoarcerile pacienților în 30 zile postoperator sunt analizate.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-036",
+      "text": "Feedback-ul personalului secției este utilizat pentru îmbunătățire.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-037",
+      "text": "Protocoalele pentru fracturi majore și politraumă sunt implementate.",
+      "legalReference": "ATLS Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-038",
+      "text": "Protocolul pentru osteomielită este aplicat conform ghidurilor.",
+      "legalReference": "IDSA Guidelines 2015",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-039",
+      "text": "Protocolul pentru proteze de șold/genunchi este respectat.",
+      "legalReference": "NICE Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Șef secție",
+      "questionId": "ORT-SEF-040",
+      "text": "Exercițiile de simulare pentru dezastre includ și secția ortopedie.",
+      "legalReference": "Legea nr. 481/2004, art. 28",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-001",
+      "text": "Evaluarea pacientului ortopedic (istoric, alergii, status funcțional) este documentată complet.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-002",
+      "text": "Consimțământul informat pentru procedurile chirurgicale și nechirurgicale este obținut.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-003",
+      "text": "Pacienții cu fracturi sunt evaluați conform protocoalelor ATLS.",
+      "legalReference": "ATLS Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-004",
+      "text": "Planul de tratament ortopedic este documentat și revizuit zilnic.",
+      "legalReference": "ISO 9001:2015, cl. 8.5.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-005",
+      "text": "Profilaxia tromboembolică este evaluată și implementată.",
+      "legalReference": "Ghid MS 2016 – Tromboembolism venos",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-006",
+      "text": "Antibioterapia profilactică și terapeutică este justificată și documentată.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-007",
+      "text": "Procedurile dureroase sunt efectuate cu tehnici de reducere a durerii.",
+      "legalReference": "IASP Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-008",
+      "text": "Evaluarea preanestezică și riscul chirurgical sunt documentate.",
+      "legalReference": "SRATI Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-009",
+      "text": "Monitorizarea postoperatorie este efectuată și documentată.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-010",
+      "text": "Evenimentele adverse sunt raportate imediat în sistemul formal.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-011",
+      "text": "Checklist-ul chirurgical este completat pentru fiecare intervenție.",
+      "legalReference": "WHO – Safe Surgery Checklist, 2009",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-012",
+      "text": "Implanturile ortopedice sunt utilizate conform indicațiilor producătorului.",
+      "legalReference": "Regulament (UE) 2017/745, art. 83",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-013",
+      "text": "Protezele sunt trasabile de la achiziție până la pacient.",
+      "legalReference": "Regulament (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-014",
+      "text": "Documentarea intervențiilor chirurgicale este completă și semnată.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-015",
+      "text": "Procedurile de reducere fracturi respectă tehnica aseptică.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-016",
+      "text": "Hemostaza intraoperatorie este realizată conform protocolului.",
+      "legalReference": "SRATI Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-017",
+      "text": "Transfuziile se fac doar cu verificarea compatibilității și supraveghere atentă.",
+      "legalReference": "Legea nr. 282/2005, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-018",
+      "text": "Procedurile artroscopice respectă protocoalele standard.",
+      "legalReference": "NICE Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-019",
+      "text": "Manevrele ortopedice de urgență sunt efectuate și documentate imediat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-020",
+      "text": "Riscul de infecție este redus prin aplicarea corectă a profilaxiei.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-021",
+      "text": "Parametrii vitali și statusul funcțional postoperator sunt documentați.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-022",
+      "text": "Rezultatele critice de laborator sunt comunicate imediat.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-023",
+      "text": "Comunicarea în echipă se face prin SBAR.",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-024",
+      "text": "Familia pacientului este informată despre proceduri și evoluție.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-025",
+      "text": "Evenimentele adverse majore sunt comunicate transparent.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-026",
+      "text": "Informațiile clinice transmise între specialități sunt documentate.",
+      "legalReference": "Ordin MS nr. 961/2016, cap.  IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-027",
+      "text": "Predarea turelor între medici este documentată.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-028",
+      "text": "Comunicarea interdisciplinară este auditată periodic.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-029",
+      "text": "Medicul ortoped participă la revizuiri de mortalitate și morbiditate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-030",
+      "text": "Participă la audituri clinice (proteză, fracturi, infecții).",
+      "legalReference": "SR EN ISO 15189:2023, cl. 7.1.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-031",
+      "text": "Protocoalele ortopedice sunt actualizate pe baza ghidurilor internaționale.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-032",
+      "text": "Medicul ortoped urmează programe de educație medicală continuă.",
+      "legalReference": "Legea nr. 95/2006, art. 391",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-033",
+      "text": "Rezidenții și personalul sunt instruiți în protocoale ortopedice.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-034",
+      "text": "Protocolul pentru fracturi deschise este aplicat corect.",
+      "legalReference": "ATLS Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-035",
+      "text": "Protocolul pentru osteomielită este respectat.",
+      "legalReference": "IDSA Guidelines 2015",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-036",
+      "text": "Protocolul pentru politraumă cu afectare ortopedică este implementat.",
+      "legalReference": "ATLS Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-037",
+      "text": "Protocolul pentru necroza aseptică este aplicat.",
+      "legalReference": "NICE Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-038",
+      "text": "Protocolul pentru proteze șold/genunchi este implementat.",
+      "legalReference": "NICE Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-039",
+      "text": "Protocolul pentru traumatisme sportive este aplicat.",
+      "legalReference": "IOC Consensus Statement 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Medici",
+      "questionId": "ORT-MED-040",
+      "text": "Exercițiile de simulare pentru accidente colective includ și ortopedia.",
+      "legalReference": "Legea nr. 481/2004, art. 28",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-001",
+      "text": "Identifici pacientul cu 2 identificatori înainte de orice administrare/procedură.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-002",
+      "text": "Aplici regula „5+2 ale medicației” (pacient, medicament, doză, cale, timp, indicație, documentare).",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-003",
+      "text": "Dozele de anticoagulante și analgezice sunt verificate de doi asistenți.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-004",
+      "text": "Lanțul frig pentru soluții injectabile este monitorizat și documentat.",
+      "legalReference": "HG nr. 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-005",
+      "text": "Alergiile pacientului sunt verificate și marcate vizibil în fișă.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-006",
+      "text": "Pregătirea pielii pentru intervenții ortopedice se face conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-007",
+      "text": "Îngrijirea plăgilor și pansamentelor se face cu tehnică sterilă.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-008",
+      "text": "Dispozitivele externe (fixatoare, proteze temporare) sunt igienizate conform instrucțiunilor.",
+      "legalReference": "Regulament (UE) 2017/745",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-009",
+      "text": "Recoltarea probelor biologice se face corect și etichetat.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-010",
+      "text": "Monitorizarea drenajelor postoperatorii este documentată zilnic.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-011",
+      "text": "Igiena mâinilor (5 momente) este aplicată consecvent.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-012",
+      "text": "Precauțiile standard și adiționale sunt respectate pentru fiecare pacient.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-013",
+      "text": "Deșeurile ortopedice (gips, pansamente) sunt colectate corect.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-014",
+      "text": "Lenjeria este manipulată conform circuitelor curate/murdare.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-015",
+      "text": "Suprafețele și echipamentele sunt dezinfectate zilnic conform fișelor.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-016",
+      "text": "Semnele vitale sunt monitorizate și documentate periodic.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-017",
+      "text": "Pacienții imobilizați sunt evaluați pentru risc de escare și cădere.",
+      "legalReference": "EPUAP Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-018",
+      "text": "Administrarea medicației este documentată imediat.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-019",
+      "text": "Erorile de administrare sunt raportate imediat, fără vinovăție.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-020",
+      "text": "Predarea turei se face cu format standard (SBAR).",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-021",
+      "text": "Integritatea ambalajelor sterile este verificată înainte de utilizare.",
+      "legalReference": "Regulament (UE) 2017/745, art. 83",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-022",
+      "text": "Materialele sterile sunt depozitate corect, fără contact cu podeaua.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-023",
+      "text": "Seringile și soluțiile preparate sunt etichetate corect.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-024",
+      "text": "Dispozitivele de unică folosință sunt eliminate imediat după utilizare.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-025",
+      "text": "Stocurile de implanturi și consumabile sunt monitorizate.",
+      "legalReference": "Regulament (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-026",
+      "text": "Pacienții și familiile sunt informați despre îngrijirea gipsului și protezelor.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-027",
+      "text": "Se asigură suport pacienților cu mobilitate redusă.",
+      "legalReference": "Legea nr. 448/2006, art. 7",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-028",
+      "text": "Intimitatea și demnitatea pacientului sunt respectate permanent.",
+      "legalReference": "Legea nr. 46/2003, art. 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-029",
+      "text": "Riscul de cădere este identificat și semnalizat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-030",
+      "text": "Educația privind exercițiile de recuperare este sprijinită de personal.",
+      "legalReference": "NICE Guidelines 2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-031",
+      "text": "Probele biologice critice sunt transportate rapid și în containere adecvate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-032",
+      "text": "Reacțiile adverse la medicamente sau transfuzii sunt raportate imediat.",
+      "legalReference": "Legea nr. 95/2006, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-033",
+      "text": "Pacienții cu fixatoare externe sunt monitorizați pentru infecții locale.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-034",
+      "text": "Escarele sunt documentate și tratate conform protocolului.",
+      "legalReference": "EPUAP Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-035",
+      "text": "Protocolul pentru fracturi deschise este respectat și documentat.",
+      "legalReference": "ATLS Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-036",
+      "text": "Cunoști locația stingătoarelor și căilor de evacuare.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-037",
+      "text": "Prizele și cablurile sunt utilizate corect, defectele fiind raportate.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-038",
+      "text": "Accesul la oxigen și gaze medicale este liber și funcțional.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-039",
+      "text": "Zonele umede/alunecoase sunt semnalizate imediat.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Asistenți",
+      "questionId": "ORT-ASI-040",
+      "text": "Substanțele periculoase sunt manipulate doar cu EIP adecvat.",
+      "legalReference": "Regulament (UE) 2016/425, Anexa II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-001",
+      "text": "Respecți regulile de igienă a mâinilor la intrarea/ieșirea din salon și la contact pacient–dispozitiv.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-002",
+      "text": "Porți echipament individual de protecție și îl schimbi corect între pacienți.",
+      "legalReference": "Regulament (UE) 2016/425, Anexa II, pct. 1.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-003",
+      "text": "Deșeurile ortopedice (gips, pansamente, tăieturi) sunt colectate corect în containere dedicate.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-004",
+      "text": "Recipienții pentru obiecte înțepătoare/tăietoare sunt închiși și înlocuiți la timp.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-005",
+      "text": "Lenjeria curată și cea murdară sunt transportate separat, în saci speciali.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-006",
+      "text": "Curățenia zilnică a saloanelor și sălilor de pansamente se face conform fișelor de lucru.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-007",
+      "text": "Curățenia terminală după externarea pacientului se efectuează conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-008",
+      "text": "Soluțiile de curățenie și dezinfectanții sunt preparați corect și etichetați.",
+      "legalReference": "Regulament (CE) 1907/2006 – REACH, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-009",
+      "text": "Cărucioarele de curățenie sunt echipate complet și depozitate separat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-010",
+      "text": "Instrumentele și materialele folosite sunt transportate în condiții de siguranță.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-011",
+      "text": "Scurgerile de fluide biologice sunt raportate și curățate imediat conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-012",
+      "text": "Manipulezi corect rufele și materialele murdare pentru a evita stropirea/aerosolii.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-013",
+      "text": "Participi la instruiri periodice privind curățenia și noile protocoale.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-014",
+      "text": "Semnalizezi imediat zonele umede/alunecoase pentru prevenirea accidentelor.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-015",
+      "text": "Spațiile secției sunt menținute curate și ordonate permanent.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-016",
+      "text": "Aplici tehnici corecte de ridicare și manipulare a pacienților ortopedici.",
+      "legalReference": "Legea nr. 319/2006, art. 13, lit. g)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-017",
+      "text": "Raportezi imediat echipamente defecte sau mobilier deteriorat.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-018",
+      "text": "Păstrezi ordinea și curățenia în spațiile comune ale secției.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-019",
+      "text": "Respecți confidențialitatea și nu divulgi informații despre pacienți.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Ortopedie",
+      "role": "Infirmieri",
+      "questionId": "ORT-INF-020",
+      "text": "Completezi și semnezi fișele zilnice de activitate, predând informațiile corect la schimbul de tură.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    }
+  ]
+}

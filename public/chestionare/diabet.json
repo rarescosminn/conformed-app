@@ -1,0 +1,1542 @@
+{
+  "section": "Diabet, nutriție și boli metabolice",
+  "roles": [
+    "Generale",
+    "Șef secție",
+    "Medici",
+    "Asistenți",
+    "Infirmieri"
+  ],
+  "questions": [
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-001",
+      "text": "Identificarea pacientului se face cu 2 identificatori înainte de orice procedură.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-002",
+      "text": "Consimțământul informat este obținut și arhivat pentru proceduri și tratamente.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-003",
+      "text": "Igiena mâinilor este respectată la fiecare contact pacient–dispozitiv.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-004",
+      "text": "Evaluarea pacientului diabetic include anamneză completă și status nutrițional.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-005",
+      "text": "Dosarul medical include istoricul tratamentului antidiabetic și complicațiile.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-006",
+      "text": "Monitorizarea glicemiei este realizată și documentată conform protocolului.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-007",
+      "text": "Pacienții cu tratament insulinic beneficiază de plan personalizat.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-008",
+      "text": "Riscul de hipoglicemie este evaluat zilnic și comunicat pacientului.",
+      "legalReference": "EASD Guidelines 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-009",
+      "text": "Pacienții obezi sunt evaluați prin IMC și circumferința abdominală.",
+      "legalReference": "OMS – Obesity Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-010",
+      "text": "Nutriția pacientului este adaptată conform recomandărilor dietetice.",
+      "legalReference": "Ghid ESPEN 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-011",
+      "text": "Pacienții cu dislipidemii au scheme terapeutice documentate.",
+      "legalReference": "ESC Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-012",
+      "text": "Tratamentul antihipertensiv este monitorizat la pacienții cu sindrom metabolic.",
+      "legalReference": "ESC Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-013",
+      "text": "Toți pacienții sunt evaluați pentru riscul cardiovascular global.",
+      "legalReference": "SCORE2, ESC 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-014",
+      "text": "Medicația orală este administrată conform indicației medicului și documentată.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-015",
+      "text": "Protocolul pentru urgențe hipoglicemice este implementat.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-016",
+      "text": "Protocolul pentru cetoacidoză diabetică este aplicat.",
+      "legalReference": "EASD Guidelines 2022",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-017",
+      "text": "Pacienții cu diabet sunt educați privind automonitorizarea glicemiei.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-018",
+      "text": "Consultațiile de nutriție sunt documentate în dosarul pacientului.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-019",
+      "text": "Planurile de dietă sunt individualizate și validate de medic/nutriționist.",
+      "legalReference": "ESPEN Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-020",
+      "text": "Activitatea fizică recomandată este documentată și monitorizată.",
+      "legalReference": "OMS – Physical Activity Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-021",
+      "text": "Pacienții sunt educați privind recunoașterea semnelor de hiperglicemie.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-022",
+      "text": "Toți pacienții sunt evaluați anual pentru complicații cronice diabetice.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-023",
+      "text": "Protocolul pentru picior diabetic este implementat și monitorizat.",
+      "legalReference": "IWGDF Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-024",
+      "text": "Accesul la consult oftalmologic pentru retinopatie este asigurat anual.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-025",
+      "text": "Deșeurile periculoase (ace, seringi) sunt eliminate în containere dedicate.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-026",
+      "text": "Rezultatele critice de laborator (glicemie, HbA1c, lipide) sunt comunicate imediat.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-027",
+      "text": "Jurnalele de curățenie și dezinfecție sunt completate zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-028",
+      "text": "Pacienții cu boli metabolice rare sunt incluși în registrul național.",
+      "legalReference": "Ordin MS nr. 377/2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-029",
+      "text": "Feedback-ul pacienților privind serviciile de nutriție este colectat și analizat.",
+      "legalReference": "ISO 9001:2015, cl. 9.1.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Generale",
+      "questionId": "DIA-GEN-030",
+      "text": "Reclamațiile pacienților sunt investigate și rezolvate conform procedurilor.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. VI, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-001",
+      "text": "Secția are obiective anuale privind controlul diabetului și managementul nutrițional.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-002",
+      "text": "Analizele de management se organizează periodic, cu planuri de acțiune.",
+      "legalReference": "OSGG nr. 600/2018, Anexa 1, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-003",
+      "text": "Programul de audit intern este planificat și derulat, cu acțiuni corective.",
+      "legalReference": "ISO 19011:2018, cl. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-004",
+      "text": "Registrul de riscuri (hipoglicemie, cetoacidoză, complicații metabolice) este actualizat.",
+      "legalReference": "ISO 31000:2018, cl. 6.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-005",
+      "text": "Existența desemnărilor (control infecții, farmacovigilență, educație diabetică) este documentată.",
+      "legalReference": "Legea nr. 95/2006, Titlul XIV, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-006",
+      "text": "Planurile de urgență (hipoglicemie severă, incendiu, evacuare) sunt verificate anual.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-007",
+      "text": "Matricea de competențe include diabetologi, nutriționiști și asistenți instruiți.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-008",
+      "text": "Personalul nou beneficiază de mentorat și program de integrare.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-009",
+      "text": "Instruirile periodice includ IAAM, urgențe diabetice și nutriție clinică.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-010",
+      "text": "Asigurarea turelor respectă normativul de personal calificat.",
+      "legalReference": "Legea nr. 95/2006, art. 174",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-011",
+      "text": "Evaluările anuale includ competențele clinice și educaționale.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-012",
+      "text": "Monitorizarea IAAM este realizată și raportată la nivel de secție.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-013",
+      "text": "Precauțiile standard sunt implementate pentru toate procedurile invazive.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-014",
+      "text": "Circuitul lenjeriei curate/murdare este implementat și respectat.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-015",
+      "text": "Suprafețele și echipamentele sunt curățate și dezinfectate zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-016",
+      "text": "Materialele sterile sunt depozitate și utilizate conform normelor.",
+      "legalReference": "SR EN ISO 17665-1:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-017",
+      "text": "Echipamentele pentru monitorizare glicemie și HbA1c au plan de mentenanță.",
+      "legalReference": "HG nr. 1028/2006, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-018",
+      "text": "Glucometrele sunt etalonate și controlate periodic.",
+      "legalReference": "SR EN ISO 15197:2015",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-019",
+      "text": "Laboratoarele colaboratoare sunt acreditate conform ISO 15189.",
+      "legalReference": "SR EN ISO 15189:2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-020",
+      "text": "Există stocuri suficiente de insulină și dispozitive de administrare.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-021",
+      "text": "Medicamentele LASA sunt separate și etichetate.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-022",
+      "text": "Stocurile de insulină sunt monitorizate și păstrate cu lanțul frig.",
+      "legalReference": "HG nr. 857/2011",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-023",
+      "text": "Suplimentele nutriționale sunt utilizate doar cu indicație medicală.",
+      "legalReference": "ESPEN Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-024",
+      "text": "Evidența psihotropelor este ținută în registre securizate.",
+      "legalReference": "Legea nr. 339/2005, art. 30",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-025",
+      "text": "Protocoalele terapeutice sunt actualizate și disponibile la locul utilizării.",
+      "legalReference": "ISO 9001:2015, cl. 7.5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-026",
+      "text": "Trasabilitatea insulinei și dispozitivelor este documentată.",
+      "legalReference": "Regulament (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-027",
+      "text": "Raportările de incidente sunt analizate lunar.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-028",
+      "text": "Rezultatele critice sunt comunicate imediat medicului responsabil.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-029",
+      "text": "Deșeurile periculoase (ace, seringi) sunt eliminate corect.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-030",
+      "text": "Substanțele chimice și dezinfectanții sunt depozitați conform REACH.",
+      "legalReference": "Regulament (CE) 1907/2006, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-031",
+      "text": "Stingătoarele și căile de evacuare sunt verificate periodic.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-032",
+      "text": "Apa potabilă și aerul din secție sunt monitorizate periodic.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-033",
+      "text": "Reclamațiile pacienților sunt analizate și corectate.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. VI",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-034",
+      "text": "Timpul de așteptare pentru consultații este monitorizat și redus.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-035",
+      "text": "Ratele de reinternare pentru urgențe diabetice sunt urmărite.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-036",
+      "text": "Feedback-ul personalului este colectat și analizat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-037",
+      "text": "Protocolul pentru hipoglicemie severă este implementat și verificat.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-038",
+      "text": "Protocolul pentru cetoacidoză diabetică este aplicat.",
+      "legalReference": "EASD Guidelines 2022",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-039",
+      "text": "Protocolul pentru picior diabetic este monitorizat.",
+      "legalReference": "IWGDF Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Șef secție",
+      "questionId": "DIA-SEF-040",
+      "text": "Exercițiile de simulare pentru urgențe metabolice sunt efectuate anual.",
+      "legalReference": "Legea nr. 481/2004, art. 28",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-001",
+      "text": "Evaluarea inițială a pacientului diabetic include anamneză, status metabolic și complicații.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-002",
+      "text": "Consimțământul informat este obținut și arhivat pentru tratamente și proceduri.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-003",
+      "text": "Pacienții sunt evaluați pentru riscul de hipoglicemie și educați corespunzător.",
+      "legalReference": "EASD Guidelines 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-004",
+      "text": "Planul terapeutic individualizat este documentat și revizuit periodic.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-005",
+      "text": "Prescripțiile includ obiectivele de HbA1c adaptate pacientului.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-006",
+      "text": "Profilaxia cardiovasculară este inclusă în planul terapeutic.",
+      "legalReference": "ESC Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-007",
+      "text": "Terapia nutrițională medicală este recomandată și documentată.",
+      "legalReference": "ESPEN Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-008",
+      "text": "Tratamentul farmacologic este adaptat la comorbidități și riscuri.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-009",
+      "text": "Pacienții obezi primesc recomandări privind controlul greutății.",
+      "legalReference": "OMS – Obesity Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-010",
+      "text": "Urgențele metabolice sunt recunoscute și tratate conform protocoalelor.",
+      "legalReference": "EASD Guidelines 2022",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-011",
+      "text": "Glicemia este monitorizată conform schemei terapeutice.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-012",
+      "text": "Hemoglobina glicozilată (HbA1c) este evaluată la 3–6 luni.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-013",
+      "text": "Profilul lipidic este verificat periodic la pacienții diabetici.",
+      "legalReference": "ESC Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-014",
+      "text": "Funcția renală este evaluată anual prin eGFR și albuminurie.",
+      "legalReference": "KDIGO Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-015",
+      "text": "Examenul oftalmologic anual este recomandat pacienților diabetici.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-016",
+      "text": "Screeningul pentru picior diabetic este realizat cel puțin anual.",
+      "legalReference": "IWGDF Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-017",
+      "text": "Statusul nutrițional este evaluat periodic.",
+      "legalReference": "ESPEN Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-018",
+      "text": "Riscul de osteoporoză și fracturi la pacienții cu boli metabolice este evaluat.",
+      "legalReference": "IOF Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-019",
+      "text": "Monitorizarea tensiunii arteriale se face la fiecare vizită.",
+      "legalReference": "ESC Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-020",
+      "text": "Rezultatele critice de laborator sunt comunicate imediat pacientului și documentate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-021",
+      "text": "Administrarea insulinei se face conform prescripției și este documentată.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-022",
+      "text": "Pacienții cu pompe de insulină sunt monitorizați pentru eficiența terapiei.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-023",
+      "text": "Cetoacidoza diabetică este tratată conform protocolului standard.",
+      "legalReference": "EASD Guidelines 2022",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-024",
+      "text": "Hipoglicemia severă este tratată imediat și raportată.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-025",
+      "text": "Tratamentul dislipidemiilor este integrat în managementul diabetului.",
+      "legalReference": "ESC Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-026",
+      "text": "Terapia antihipertensivă este prescrisă conform ghidurilor.",
+      "legalReference": "ESC Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-027",
+      "text": "Pacienții cu sindrom metabolic primesc tratament combinat.",
+      "legalReference": "ESC Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-028",
+      "text": "Pacienții cu obezitate severă sunt evaluați pentru chirurgie bariatrică.",
+      "legalReference": "ASMBS Guidelines 2022",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-029",
+      "text": "Osteoporoza este diagnosticată și tratată conform ghidurilor.",
+      "legalReference": "IOF Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-030",
+      "text": "Suplimentele nutriționale sunt prescrise doar când există indicație clinică.",
+      "legalReference": "ESPEN Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-031",
+      "text": "Pacienții sunt educați privind automonitorizarea glicemiei.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-032",
+      "text": "Păstrarea jurnalului de auto-monitorizare este verificată periodic.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-033",
+      "text": "Comunicarea cu familia pacientului include planul nutrițional și terapeutic.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-034",
+      "text": "Erorile de tratament sunt raportate și analizate.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-035",
+      "text": "Pacienții sunt implicați în deciziile terapeutice.",
+      "legalReference": "Legea nr. 46/2003, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-036",
+      "text": "Consilierea psihologică este recomandată pacienților cu aderență redusă.",
+      "legalReference": "EASD Guidelines 2022",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-037",
+      "text": "Educația continuă este oferită pentru prevenirea complicațiilor cronice.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-038",
+      "text": "Planurile de externare includ recomandări clare pentru autoîngrijire.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-039",
+      "text": "Reîntoarcerile pentru complicații acute sunt analizate clinic.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Medici",
+      "questionId": "DIA-MED-040",
+      "text": "Participarea la programe educaționale naționale pentru diabet este încurajată.",
+      "legalReference": "Ordin MS nr. 377/2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-001",
+      "text": "Identifici pacientul cu 2 identificatori înainte de administrarea medicației.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-002",
+      "text": "Aplici regula „5+2 ale medicației” la toate administrările.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-003",
+      "text": "Dozele de insulină sunt verificate de doi asistenți înainte de administrare.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-004",
+      "text": "Administrarea insulinei se face în zonele recomandate și se rotește locul injectării.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-005",
+      "text": "Soluțiile injectabile sunt păstrate conform lanțului frig.",
+      "legalReference": "HG nr. 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-006",
+      "text": "Monitorizarea glicemiei capilare se face conform schemei terapeutice.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-007",
+      "text": "Rezultatele glicemiei sunt notate în fișa pacientului și jurnalul de monitorizare.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-008",
+      "text": "Administrarea tratamentului oral antidiabetic se documentează imediat.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-009",
+      "text": "Recoltarea probelor biologice se face corect și etichetat.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-010",
+      "text": "Pacienții sunt evaluați pentru semne de hipoglicemie la fiecare tură.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-011",
+      "text": "Igiena mâinilor (5 momente) este respectată consecvent.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-012",
+      "text": "Deșeurile periculoase (ace, seringi) sunt colectate în containere dedicate.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-013",
+      "text": "Suprafețele din sălile de tratament sunt dezinfectate zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-014",
+      "text": "Dispozitivele reutilizabile sunt curățate și sterilizate conform protocolului.",
+      "legalReference": "SR EN ISO 17665-1:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-015",
+      "text": "Materialele sterile sunt depozitate corect, ferite de contact cu podeaua.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-016",
+      "text": "Educi pacienții privind automonitorizarea glicemiei.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-017",
+      "text": "Informezi pacienții despre recunoașterea semnelor de hipoglicemie.",
+      "legalReference": "EASD Guidelines 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-018",
+      "text": "Educi pacienții despre regimul alimentar recomandat.",
+      "legalReference": "ESPEN Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-019",
+      "text": "Alergiile și intoleranțele alimentare sunt documentate și comunicate.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-020",
+      "text": "Susții pacienții în completarea jurnalului de automonitorizare.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-021",
+      "text": "Administrarea medicației este documentată imediat în fișa pacientului.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-022",
+      "text": "Erorile de administrare sunt raportate imediat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-023",
+      "text": "Predarea turei se face prin format standard SBAR.",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-024",
+      "text": "Comunicarea cu familia pacientului include planul de monitorizare.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-025",
+      "text": "Rezultatele critice de laborator sunt raportate imediat medicului.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-026",
+      "text": "Pacienții sunt încurajați să respecte programul de mese.",
+      "legalReference": "ESPEN Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-027",
+      "text": "Monitorizezi pacienții cu risc de malnutriție.",
+      "legalReference": "ESPEN Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-028",
+      "text": "Asiguri aportul corect de lichide conform prescripției medicale.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-029",
+      "text": "Pacienții cu obezitate primesc recomandări de igienă alimentară.",
+      "legalReference": "OMS – Obesity Guidelines 2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-030",
+      "text": "Colaborezi cu medicul și nutriționistul pentru planurile dietetice.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-031",
+      "text": "Pacienții cu pompa de insulină sunt monitorizați zilnic pentru funcționalitate.",
+      "legalReference": "Ghid ADA 2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-032",
+      "text": "Reacțiile adverse la insulină sunt raportate și documentate.",
+      "legalReference": "Legea nr. 95/2006, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-033",
+      "text": "Pacienții cu complicații acute (hipo/hiperglicemie) sunt tratați conform protocolului.",
+      "legalReference": "EASD Guidelines 2022",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-034",
+      "text": "Pacienții cu picior diabetic sunt evaluați și îngrijiți conform ghidurilor.",
+      "legalReference": "IWGDF Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-035",
+      "text": "Pacienții cu dislipidemie și hipertensiune sunt monitorizați conform schemelor.",
+      "legalReference": "ESC Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-036",
+      "text": "Cunoști locația stingătoarelor și a căilor de evacuare.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-037",
+      "text": "Prizele și cablurile sunt utilizate în siguranță, defectele fiind raportate.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-038",
+      "text": "Zonele umede/alunecoase sunt semnalizate imediat.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-039",
+      "text": "Substanțele periculoase sunt manipulate doar cu EIP adecvat.",
+      "legalReference": "Regulament (UE) 2016/425, Anexa II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Asistenți",
+      "questionId": "DIA-ASI-040",
+      "text": "Participi la exercițiile de evacuare și siguranță ale secției.",
+      "legalReference": "Legea nr. 481/2004, art. 28",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-001",
+      "text": "Respecți regulile de igienă a mâinilor la contactul cu pacientul sau materialele folosite.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-002",
+      "text": "Porți echipament individual de protecție și îl schimbi corect între pacienți.",
+      "legalReference": "Regulament (UE) 2016/425, Anexa II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-003",
+      "text": "Deșeurile periculoase (ace, seringi, lancete) sunt colectate corect.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-004",
+      "text": "Recipienții pentru obiecte înțepătoare sunt închiși și înlocuiți la timp.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-005",
+      "text": "Lenjeria curată și murdară este transportată separat, conform circuitelor.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-006",
+      "text": "Curățenia zilnică a saloanelor este realizată conform fișelor de lucru.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-007",
+      "text": "Curățenia terminală după externarea pacientului este efectuată corect.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-008",
+      "text": "Soluțiile de curățenie sunt preparate corect și etichetate.",
+      "legalReference": "Regulament (CE) 1907/2006 – REACH, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-009",
+      "text": "Cărucioarele de curățenie sunt echipate complet și depozitate separat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-010",
+      "text": "Resturile alimentare sunt colectate separat și eliminate corespunzător.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-011",
+      "text": "Scurgerile de fluide biologice sunt raportate și curățate imediat.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-012",
+      "text": "Manipulezi corect rufele pentru a evita stropirea sau producerea de aerosoli.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-013",
+      "text": "Participi la instruiri privind curățenia și igiena alimentară.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-014",
+      "text": "Semnalizezi imediat zonele umede/alunecoase pentru prevenirea accidentelor.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-015",
+      "text": "Spațiile de depozitare sunt păstrate curate și ordonate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-016",
+      "text": "Ajuți pacienții cu mobilitate redusă în deplasare.",
+      "legalReference": "Legea nr. 448/2006, art. 7",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-017",
+      "text": "Raportezi imediat echipamentele defecte sau mobilierul deteriorat.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-018",
+      "text": "Asiguri distribuirea apei și alimentelor pacienților conform prescripțiilor.",
+      "legalReference": "ESPEN Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-019",
+      "text": "Respecți confidențialitatea și nu divulgi informații despre pacienți.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Diabet, nutriție și boli metabolice",
+      "role": "Infirmieri",
+      "questionId": "DIA-INF-020",
+      "text": "Completezi și semnezi fișele zilnice de activitate, predând corect informațiile la schimbul de tură.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    }
+  ]
+}

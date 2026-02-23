@@ -1,0 +1,1362 @@
+{
+  "section": "Boli infecțioase",
+  "roles": [
+    "Generale",
+    "Șef secție",
+    "Medici",
+    "Asistenți",
+    "Infirmieri"
+  ],
+  "questions": [
+    {
+      "section": "Boli infecțioase",
+      "role": "Generale",
+      "questionId": "BI-GEN-01",
+      "text": "Igiena mâinilor este respectată la fiecare contact pacient–dispozitiv și la intrarea/ieșirea din salon.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Generale",
+      "questionId": "BI-GEN-02",
+      "text": "Identificarea pacientului se face corect, cu 2 identificatori, înainte de administrarea tratamentului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Generale",
+      "questionId": "BI-GEN-03",
+      "text": "Protocolul de izolare (contact, droplet, aeriană) este aplicat corect în funcție de diagnostic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Generale",
+      "questionId": "BI-GEN-04",
+      "text": "Procedura de raportare a cazurilor confirmate/suspecte către DSP este aplicată la timp.",
+      "legalReference": "Legea nr. 95/2006, art. 653; OMS nr. 919/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Generale",
+      "questionId": "BI-GEN-05",
+      "text": "Informațiile pacienților sunt protejate (confidențialitate, acces pe roluri, arhivare).",
+      "legalReference": "GDPR, art. 32",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Generale",
+      "questionId": "BI-GEN-06",
+      "text": "Personalul are instruiri periodice privind prevenția IAAM și utilizarea EIP.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Generale",
+      "questionId": "BI-GEN-07",
+      "text": "Trasabilitatea probelor biologice (prelevare, transport, analiză) este completă.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Generale",
+      "questionId": "BI-GEN-08",
+      "text": "Zonele clinice respectă curățenia și dezinfecția zilnică conform fișelor de lucru.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Generale",
+      "questionId": "BI-GEN-09",
+      "text": "Deșeurile rezultate din îngrijirea pacienților infecțioși sunt segregate corect și eliminate conform circuitelor.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Generale",
+      "questionId": "BI-GEN-10",
+      "text": "Comunicarea în echipă și predarea pacienților infectați folosește o metodă standard (SBAR).",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-01",
+      "text": "Secția are obiective anuale pentru controlul bolilor transmisibile, cu indicatori monitorizați lunar.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-02",
+      "text": "Analiza de management include date despre IAAM și bolile transmisibile tratate.",
+      "legalReference": "OSGG nr. 600/2018, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-03",
+      "text": "Audituri interne se desfășoară conform planului; neconformitățile au CAPA.",
+      "legalReference": "ISO 19011:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-04",
+      "text": "Registrul de riscuri epidemiologice (focare, rezistență bacteriană) este actualizat trimestrial.",
+      "legalReference": "ISO 31000:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-05",
+      "text": "Există desemnări pentru responsabil epidemiologie, control infecții și farmacovigilență.",
+      "legalReference": "Legea nr. 95/2006, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-06",
+      "text": "Planurile de urgență (epidemii, cod roșu, evacuare) sunt testate periodic.",
+      "legalReference": "Legea nr. 307/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-07",
+      "text": "Matricea de competențe include formare pentru izolare și tratamente specifice.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-08",
+      "text": "Personalul nou primește mentorat în protocoale de izolare și prevenție.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-09",
+      "text": "Instruiri periodice acoperă precauții standard, IAAM și utilizarea EIP.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-10",
+      "text": "Repartizarea turelor asigură suficient personal instruit pentru izolări.",
+      "legalReference": "Legea nr. 95/2006, art. 174",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-11",
+      "text": "Evaluările anuale includ competențe privind controlul infecțiilor și focarelor.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-12",
+      "text": "Supravegherea IAAM și a bolilor transmisibile este raportată la SPIAAM/DSP.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-13",
+      "text": "Precauțiile standard/adiționale sunt monitorizate prin observații directe.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-14",
+      "text": "Spațiile de izolare sunt utilizate corect; fluxurile sunt respectate.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-15",
+      "text": "Pacienții cu MDR/XDR sunt gestionați conform ghidurilor ECDC.",
+      "legalReference": "ECDC Guidance 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-16",
+      "text": "Se efectuează anchete epidemiologice pentru cazurile confirmate.",
+      "legalReference": "OMS nr. 919/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-17",
+      "text": "Camerele de izolare au presiune negativă sau soluții alternative validate.",
+      "legalReference": "CDC Guidelines 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-18",
+      "text": "Ventilația/filtrarea sunt monitorizate periodic.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-19",
+      "text": "EIP (măști, viziere, combinezoane) este disponibil și suficient.",
+      "legalReference": "Reg. (UE) 2016/425",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-20",
+      "text": "Stocurile de dezinfectanți/consumabile critice sunt menținute la nivel de siguranță.",
+      "legalReference": "HG nr. 857/2011",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-21",
+      "text": "Antibioticele se utilizează conform politicilor de stewardship.",
+      "legalReference": "OMS – Global Action Plan 2015",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-22",
+      "text": "Antiviralele/imunoglobulinele au trasabilitate completă.",
+      "legalReference": "Reg. (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-23",
+      "text": "Vaccinurile folosite în focare sunt păstrate în lanțul frig documentat.",
+      "legalReference": "HG nr. 857/2011",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-24",
+      "text": "Materialele sterile sunt verificate și rotația stocurilor respectată (FEFO).",
+      "legalReference": "Ordin MS nr. 961/2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-25",
+      "text": "Procedurile pentru gestionarea bolilor transmisibile sunt actualizate și disponibile.",
+      "legalReference": "ISO 9001:2015, cl. 7.5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-26",
+      "text": "Trasabilitatea probelor biologice este completă (prelevare, transport, laborator).",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-27",
+      "text": "Raportarea evenimentelor adverse și IAAM este analizată lunar.",
+      "legalReference": "Ordin MS nr. 961/2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-28",
+      "text": "Comunicările critice (rezultate test, caz confirmat) sunt transmise/documentate prompt.",
+      "legalReference": "SR EN ISO 15189:2023",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-29",
+      "text": "Deșeurile periculoase sunt colectate/eliminate conform legislației.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-30",
+      "text": "Substanțele chimice (dezinfectanți) au fișe SDB și depozitare corectă.",
+      "legalReference": "REACH, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-31",
+      "text": "PSI: stingătoare, căi evacuare și instruirea personalului sunt verificate.",
+      "legalReference": "Legea nr. 307/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-32",
+      "text": "Monitorizarea apei/aerului pentru agenți patogeni este efectuată.",
+      "legalReference": "Ordin MS nr. 961/2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-33",
+      "text": "Reclamațiile pacienților sunt analizate și generează acțiuni de îmbunătățire.",
+      "legalReference": "Ordin MS nr. 1226/2012",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-34",
+      "text": "Timpul de așteptare pentru internare este monitorizat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-35",
+      "text": "Indicatorii clinici (mortalitate, reinternare, complicații) sunt urmăriți.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-36",
+      "text": "Feedback-ul pacienților/personalului este utilizat pentru îmbunătățire.",
+      "legalReference": "ISO 9001:2015, cl. 10.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-37",
+      "text": "Protocolul de vaccinare a personalului medical este implementat.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-38",
+      "text": "Protocolul pentru tuberculoză este aplicat (screening, tratament, raportare).",
+      "legalReference": "OMS nr. 919/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-39",
+      "text": "Protocolul pentru HIV/SIDA este respectat (confidențialitate, tratament, raportare).",
+      "legalReference": "Legea nr. 584/2002",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Șef secție",
+      "questionId": "BI-SEF-40",
+      "text": "Raportările epidemiologice către DSP și INSP sunt complete și la timp.",
+      "legalReference": "OMS nr. 919/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-01",
+      "text": "Diagnosticul pacientului se bazează pe criterii clinice și de laborator, conform ghidurilor.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-02",
+      "text": "Consimțământul informat pentru investigații/tratamente este obținut și arhivat.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-03",
+      "text": "Indicația de izolare este documentată și comunicată personalului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-04",
+      "text": "Prescrierea antibioticelor respectă politicile de stewardship.",
+      "legalReference": "OMS – Global Action Plan 2015",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-05",
+      "text": "Terapia antivirală este indicată conform criteriilor clinice/epidemiologice.",
+      "legalReference": "ECDC Guidance 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-06",
+      "text": "Ajustarea tratamentului la pacienții cu comorbidități este documentată.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-07",
+      "text": "Protocolul pentru prevenirea infecțiilor nosocomiale este respectat.",
+      "legalReference": "Ordin MS nr. 961/2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-08",
+      "text": "Planul de tratament include terapia suportivă (fluide, oxigen, nutriție).",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-09",
+      "text": "Reacțiile adverse la tratament sunt recunoscute și documentate.",
+      "legalReference": "Legea nr. 95/2006, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-10",
+      "text": "Cazurile suspecte sunt raportate prompt către DSP.",
+      "legalReference": "OMS nr. 919/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-11",
+      "text": "Foaia de observație include zilnic statusul, tratamentele și evoluția.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-12",
+      "text": "Rezultatele critice sunt documentate și comunicate la timp.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-13",
+      "text": "Prescrierea este clară/lizibilă sau electronică, fără abrevieri ambigue.",
+      "legalReference": "OMS – INN",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-14",
+      "text": "Trasabilitatea probelor biologice este completă (prelevare, transport, rezultat).",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-15",
+      "text": "Raportările epidemiologice sunt completate și transmise conform legislației.",
+      "legalReference": "OMS nr. 919/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-16",
+      "text": "Igiena mâinilor și EIP sunt respectate la fiecare contact cu pacientul contagios.",
+      "legalReference": "Ordin MS nr. 1101/2016; Reg. (UE) 2016/425",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-17",
+      "text": "Precauțiile de izolare sunt aplicate conform diagnosticului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-18",
+      "text": "Cateterele și dispozitivele invazive sunt monitorizate și îndepărtate la timp.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-19",
+      "text": "Vaccinarea pacientului este verificată și documentată.",
+      "legalReference": "ECDC Guidance 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-20",
+      "text": "Evenimentele adverse grave (șoc septic, alergii severe) sunt gestionate conform protocolului.",
+      "legalReference": "Surviving Sepsis Campaign 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-21",
+      "text": "Protocolul TB este respectat.",
+      "legalReference": "OMS nr. 919/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-22",
+      "text": "Protocolul HIV/SIDA este aplicat (testare, tratament, raportare).",
+      "legalReference": "Legea nr. 584/2002",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-23",
+      "text": "Protocolul pentru hepatite virale este aplicat conform ghidurilor.",
+      "legalReference": "EASL Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-24",
+      "text": "Protocolul pentru meningite bacteriene/virale este implementat și documentat.",
+      "legalReference": "WHO Guidelines 2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-25",
+      "text": "Protocolul pentru gripă sezonieră/pandemie este aplicat conform recomandărilor MS.",
+      "legalReference": "OMS nr. 1513/2020",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-26",
+      "text": "Riscurile/beneficiile tratamentului sunt explicate pacientului/familiei.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-27",
+      "text": "Evenimentele adverse sunt comunicate pacientului/familiei (open disclosure).",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-28",
+      "text": "Predarea cazurilor între medici folosește SBAR.",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-29",
+      "text": "Comunicarea cu MF și alte specialități este documentată.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-30",
+      "text": "Deciziile multidisciplinare pentru pacienții critici sunt documentate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-31",
+      "text": "Participi la audituri clinice privind utilizarea antibioticelor/antivirale.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-32",
+      "text": "Participi la revizuiri de mortalitate/morbiditate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-33",
+      "text": "Propui actualizări ale protocoalelor bazate pe ghiduri noi.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-34",
+      "text": "Urmezi EMC pe teme de boli infecțioase.",
+      "legalReference": "Legea nr. 95/2006, art. 391",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-35",
+      "text": "Instruiești rezidenți/colegi în protocoale de izolare și tratament.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-36",
+      "text": "Protocolul pentru focare de epidemie este implementat (izolare, raportare, anchetă).",
+      "legalReference": "OMS nr. 919/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-37",
+      "text": "Protocolul pentru profilaxia post-expunere (HIV, HBV, rabie) este aplicat.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-38",
+      "text": "Pacienții vulnerabili (geriatrie, pediatrie, imunosupresie) au planuri adaptate.",
+      "legalReference": "Legea nr. 46/2003, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-39",
+      "text": "Terapia paliativă la pacienții cu boli infecțioase incurabile este documentată.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Medici",
+      "questionId": "BI-MED-40",
+      "text": "Participi la studii clinice și la rapoarte de farmacovigilență.",
+      "legalReference": "Legea nr. 206/2004, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-01",
+      "text": "Identifici pacientul cu 2 identificatori înainte de administrarea tratamentului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-02",
+      "text": "Aplici regula „5+2 ale medicației”.",
+      "legalReference": "Ordin MS nr. 1226/2012",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-03",
+      "text": "Verificarea independentă se face pentru medicamente cu risc crescut.",
+      "legalReference": "Ordin MS nr. 1226/2012",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-04",
+      "text": "Lanțul frig pentru vaccinuri și soluții este menținut și documentat.",
+      "legalReference": "HG nr. 857/2011",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-05",
+      "text": "Respecți protocoalele de izolare la intrare/ieșire din saloanele contagioșilor.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-06",
+      "text": "Folosești tehnică aseptică la manipularea cateterelor/dispozitivelor invazive.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-07",
+      "text": "Recoltarea probelor biologice se face corect și etichetat.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-08",
+      "text": "Probele critice sunt transportate rapid în containere dedicate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-09",
+      "text": "Soluțiile perfuzabile sunt preparate și administrate aseptic.",
+      "legalReference": "Ordin MS nr. 961/2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-10",
+      "text": "Reacțiile adverse la medicație sunt observate și raportate imediat.",
+      "legalReference": "Legea nr. 95/2006, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-11",
+      "text": "Igiena mâinilor (5 momente) este respectată constant.",
+      "legalReference": "Ordin MS nr. 1101/2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-12",
+      "text": "Precauțiile standard/adiționale sunt aplicate conform diagnosticului.",
+      "legalReference": "Ordin MS nr. 961/2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-13",
+      "text": "EIP este purtat corect la îngrijirea pacienților contagioși.",
+      "legalReference": "Reg. (UE) 2016/425",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-14",
+      "text": "Lenjeria murdară este separată și transportată corect.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-15",
+      "text": "Deșeurile periculoase sunt segregate corect (biohazard, ascuțite).",
+      "legalReference": "HG nr. 856/2002",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-16",
+      "text": "Semnele vitale sunt monitorizate/documentate la intervale stabilite.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-17",
+      "text": "Simptomele clinice sunt documentate zilnic.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-18",
+      "text": "Administrarea medicației este documentată imediat.",
+      "legalReference": "Ordin MS nr. 1226/2012",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-19",
+      "text": "Expunerea accidentală la fluide biologice este raportată imediat.",
+      "legalReference": "Ordin MS nr. 961/2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-20",
+      "text": "Predarea turei include starea pacienților izolați și tratamentele administrate.",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-21",
+      "text": "Verifici integritatea și expirarea materialelor sterile.",
+      "legalReference": "Reg. (UE) 2017/745, art. 83",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-22",
+      "text": "Soluțiile preparate sunt etichetate corect (nume, concentrație, oră, inițiale).",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-23",
+      "text": "Materialele pentru pacienți infecțioși sunt păstrate separat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-24",
+      "text": "Containerele pentru deșeuri periculoase sunt disponibile la punctul de utilizare.",
+      "legalReference": "HG nr. 856/2002",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-25",
+      "text": "Educi pacientul/familia despre reguli de izolare/prevenire.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-26",
+      "text": "Verifici și marchezi alergiile în fișa medicală.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-27",
+      "text": "Asiguri intimitatea și demnitatea pacientului în toate procedurile.",
+      "legalReference": "Legea nr. 46/2003, art. 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-28",
+      "text": "Protocolul pentru manipularea probelor TB/HIV este respectat.",
+      "legalReference": "OMS nr. 919/2006; Legea nr. 584/2002",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-29",
+      "text": "Protocolul pentru vaccinare la focar este aplicat (raportare, trasabilitate, lanț frig).",
+      "legalReference": "HG nr. 857/2011",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-30",
+      "text": "Reacțiile adverse tardive la tratamente sunt observate și raportate.",
+      "legalReference": "Legea nr. 95/2006, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-31",
+      "text": "Pacienții vulnerabili au plan de îngrijire adaptat.",
+      "legalReference": "Legea nr. 46/2003, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-32",
+      "text": "Protocolul pentru profilaxia post-expunere este aplicat conform ghidurilor.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-33",
+      "text": "Cunoști locația stingătoarelor și căilor de evacuare.",
+      "legalReference": "Legea nr. 307/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-34",
+      "text": "Nu aglomerezi căile de acces; echipamentele sunt depozitate corect.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-35",
+      "text": "Prizele și cablurile sunt folosite în siguranță; defectele sunt raportate.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-36",
+      "text": "Curățenia saloanelor de izolare este monitorizată și semnată zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-37",
+      "text": "Participi la instruiri periodice privind controlul bolilor infecțioase.",
+      "legalReference": "Ordin MS nr. 1226/2012",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-38",
+      "text": "Raportezi proactiv riscurile legate de pacienți/echipamente.",
+      "legalReference": "ISO 31000:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-39",
+      "text": "Colaborezi cu medicii și infirmierii pentru aplicarea protocoalelor de izolare.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Asistenți",
+      "questionId": "BI-ASIS-40",
+      "text": "Participi la proiecte de îmbunătățire și audituri interne.",
+      "legalReference": "ISO 9001:2015, cl. 10.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-01",
+      "text": "Respecți igiena mâinilor la intrarea/ieșirea din salon și înainte/după contactul cu pacientul.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-02",
+      "text": "Porți EIP (mănuși, halat, mască) conform nivelului de izolare.",
+      "legalReference": "Reg. (UE) 2016/425",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-03",
+      "text": "Deșeurile infecțioase sunt colectate separat și eliminate în containere marcate.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-04",
+      "text": "Recipienții pentru obiecte tăietoare-înțepătoare sunt schimbați la timp și nu sunt supra-umpluți.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-05",
+      "text": "Lenjeria murdară este manipulată separat și transportată în saci dedicați.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-06",
+      "text": "Curățenia zilnică a saloanelor de izolare este efectuată conform fișelor de lucru.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-07",
+      "text": "Curățenia terminală după externare/transfer este efectuată conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-08",
+      "text": "Soluțiile de curățenie și dezinfectanții sunt preparați corect și etichetați.",
+      "legalReference": "REACH, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-09",
+      "text": "Cărucioarele de curățenie sunt curate și complet echipate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-10",
+      "text": "Spațiile pentru alimente nu se amestecă cu spațiile pentru curățenie/materiale.",
+      "legalReference": "HG nr. 857/2011",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-11",
+      "text": "Raportezi imediat scurgerile sau vărsările de fluide biologice și aplici procedura de decontaminare.",
+      "legalReference": "Ordin MS nr. 961/2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-12",
+      "text": "Manipulezi corect rufele pentru a preveni aerosoli sau stropiri.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-13",
+      "text": "Participi la instruiri privind curățenia și prevenirea transmiterii.",
+      "legalReference": "Ordin MS nr. 1226/2012",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-14",
+      "text": "Semnalizezi zonele umede/alunecoase pentru a preveni accidente.",
+      "legalReference": "Legea nr. 319/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-15",
+      "text": "Respecți circuitul alimentelor/apei potabile conform normelor igienico-sanitare.",
+      "legalReference": "HG nr. 857/2011",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-16",
+      "text": "Aplici tehnici corecte de mobilizare a pacienților izolați.",
+      "legalReference": "Legea nr. 319/2006, art. 13, lit. g)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-17",
+      "text": "Raportezi echipamente defecte sau mobilier deteriorat.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-18",
+      "text": "Păstrezi ordinea și debarasarea corectă a materialelor din saloane/holuri.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-19",
+      "text": "Respecți confidențialitatea și nu divulgi informații despre pacienți.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Boli infecțioase",
+      "role": "Infirmieri",
+      "questionId": "BI-INF-20",
+      "text": "Completezi și semnezi fișele zilnice de activitate și le predai la schimbul de tură.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    }
+  ]
+}

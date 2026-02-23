@@ -1,0 +1,1542 @@
+{
+  "section": "Pediatrie",
+  "roles": [
+    "Generale",
+    "Șef secție",
+    "Medici",
+    "Asistenți",
+    "Infirmieri"
+  ],
+  "questions": [
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-001",
+      "text": "Identificarea pacientului pediatric se face corect (2 identificatori) înainte de orice procedură.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-002",
+      "text": "Igiena mâinilor este respectată la fiecare contact pacient–dispozitiv.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-003",
+      "text": "Copiii sunt internați conform criteriilor de vârstă și patologie.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-004",
+      "text": "Consimțământul informat este obținut de la părinți/tutori și documentat.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-005",
+      "text": "Vizitele părinților sunt reglementate prin program și respectă dreptul copilului la familie.",
+      "legalReference": "Legea nr. 272/2004, art. 14",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-006",
+      "text": "Vaccinările sunt verificate și completate în foaia de observație.",
+      "legalReference": "Ordin MS nr. 377/2017, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-007",
+      "text": "Timpul de așteptare pentru consultații este monitorizat și analizat.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-008",
+      "text": "Zonele de spitalizare pediatrică respectă circuitele epidemiologice stabilite.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-009",
+      "text": "Suprafețele și echipamentele sunt curățate și dezinfectate zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-010",
+      "text": "Deșeurile medicale sunt colectate și eliminate corect.",
+      "legalReference": "HG nr. 856/2002, Anexa 2, art. 5.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-011",
+      "text": "Jucăriile și materialele de divertisment sunt curățate și dezinfectate periodic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-012",
+      "text": "Personalul pediatric are instruiri periodice privind siguranța copilului.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-013",
+      "text": "Monitorizarea parametrilor vitali la copii este documentată în fișa pacientului.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-014",
+      "text": "Medicamentele pediatrice sunt dozate conform greutății și vârstei copilului.",
+      "legalReference": "WHO 2019 – Pediatric dosing",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-015",
+      "text": "Lanțul frig pentru vaccinuri și medicamente pediatrice este respectat.",
+      "legalReference": "HG nr. 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-016",
+      "text": "Alergiile copilului sunt verificate și marcate vizibil în fișă.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-017",
+      "text": "Procedurile dureroase sunt efectuate cu tehnici de reducere a stresului și dureri minime.",
+      "legalReference": "Ghid EAP 2018 – Pain management",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-018",
+      "text": "Copiii cu boli transmisibile sunt izolați conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-019",
+      "text": "Circuitul lenjeriei curate/murdare este separat și semnalizat.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-020",
+      "text": "Alimentația pacienților pediatrici respectă recomandările dietetice specifice.",
+      "legalReference": "Ordin MS nr. 318/2012, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-021",
+      "text": "Personalul respectă confidențialitatea informațiilor medicale ale copiilor.",
+      "legalReference": "Regulament (UE) 2016/679, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-022",
+      "text": "Există protocoale pentru resuscitarea pediatrică (PALS).",
+      "legalReference": "ERC Guidelines 2021 – Pediatric ALS",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-023",
+      "text": "Oxigenoterapia la copii este administrată conform ghidurilor.",
+      "legalReference": "Ghid SRATI 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-024",
+      "text": "Rezultatele critice sunt comunicate imediat medicului responsabil.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-025",
+      "text": "Feedback-ul părinților este colectat și analizat periodic.",
+      "legalReference": "ISO 9001:2015, cl. 9.1.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-026",
+      "text": "Copiii cu dizabilități primesc îngrijiri adaptate.",
+      "legalReference": "Legea nr. 448/2006, art. 7",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-027",
+      "text": "Procedurile invazive se efectuează doar cu acord parental/documentat.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-028",
+      "text": "Exercițiile de evacuare și siguranță includ și secția de pediatrie.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-029",
+      "text": "Jurnalele de curățenie și dezinfecție sunt completate zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Generale",
+      "questionId": "PED-GEN-030",
+      "text": "Evaluările de dezvoltare ale copilului sunt documentate și transmise medicului curant.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-001",
+      "text": "Secția Pediatrie are obiective anuale de calitate și siguranță monitorizate.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-002",
+      "text": "Se organizează analiza de management cu acțiuni și termene urmărite.",
+      "legalReference": "OSGG nr. 600/2018, Anexa 1, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-003",
+      "text": "Programul de audit intern este planificat și derulat; neconformitățile au CAPA.",
+      "legalReference": "ISO 19011:2018, cl. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-004",
+      "text": "Registrul de riscuri pediatrie (infecții, medicație, accidente) este actualizat trimestrial.",
+      "legalReference": "ISO 31000:2018, cl. 6.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-005",
+      "text": "Există desemnări clare pe roluri (control infecții, farmacovigilență, radioprotecție).",
+      "legalReference": "Legea nr. 95/2006, Titlul XIV, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-006",
+      "text": "Planurile de urgență (incendiu, cutremur, evacuare copii) sunt verificate periodic.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-007",
+      "text": "Matricea de competențe este actualizată periodic pentru personalul pediatric.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-008",
+      "text": "Personalul nou beneficiază de mentorat și program de integrare.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-009",
+      "text": "Instruiri periodice sunt efectuate pe vaccinare, IAAM, resuscitare pediatrică.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-010",
+      "text": "Turele sunt acoperite cu personal calificat, conform normativului.",
+      "legalReference": "Legea nr. 95/2006, art. 174",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-011",
+      "text": "Evaluările anuale includ competențele pediatrice.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-012",
+      "text": "Secția implementează supravegherea IAAM și raportările aferente.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-013",
+      "text": "Respectarea precauțiilor standard și adiționale este monitorizată.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-014",
+      "text": "Circuitul lenjeriei curate/murdare este separat și semnalizat.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-015",
+      "text": "Suprafețele și echipamentele sunt dezinfectate conform procedurilor.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-016",
+      "text": "Sterilizarea instrumentarului pediatric este validată cu indicatori biologici.",
+      "legalReference": "SR EN ISO 17665-1:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-017",
+      "text": "Toate echipamentele pediatrice au plan de mentenanță preventivă.",
+      "legalReference": "HG nr. 1028/2006, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-018",
+      "text": "Echipamentele de măsurare pediatrică sunt etalonate periodic.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 6.4.6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-019",
+      "text": "Ventilatoarele și incubatoarele pediatrice au back-up disponibil.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-020",
+      "text": "Există UPS funcțional pentru echipamente critice.",
+      "legalReference": "HG nr. 1028/2006, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-021",
+      "text": "Medicamentele pediatrice LASA sunt separate și etichetate.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-022",
+      "text": "Lanțul frig pentru vaccinuri și soluții pediatrice este monitorizat.",
+      "legalReference": "HG nr. 857/2011",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-023",
+      "text": "Stupefiantele/psihotropele sunt gestionate în registre securizate.",
+      "legalReference": "Legea nr. 339/2005, art. 30",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-024",
+      "text": "Materialele sterile sunt verificate înainte de utilizare.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-025",
+      "text": "Procedurile pediatrice sunt actualizate și disponibile la locul utilizării.",
+      "legalReference": "ISO 9001:2015, cl. 7.5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-026",
+      "text": "Trasabilitatea dispozitivelor și vaccinurilor este documentată.",
+      "legalReference": "Regulament (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-027",
+      "text": "Rapoartele de incidente și adverse sunt analizate lunar.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-028",
+      "text": "Comunicările critice (rezultate, schimbări de tratament) sunt transmise la timp.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-029",
+      "text": "Segregarea deșeurilor pediatrice este respectată (culori, containere).",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-030",
+      "text": "Substanțele chimice și dezinfectanții sunt depozitați corect.",
+      "legalReference": "Regulament (CE) 1907/2006, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-031",
+      "text": "Stingătoarele sunt funcționale, căile de evacuare libere, personal instruit PSI.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-032",
+      "text": "Calitatea apei și aerului din secția pediatrie este monitorizată periodic.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-033",
+      "text": "Reclamațiile părinților sunt analizate și duc la acțiuni corective.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. VI, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-034",
+      "text": "Timpul de așteptare pentru consult este monitorizat și analizat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-035",
+      "text": "Ratele de reîntoarcere în secția pediatrie la 72h sunt urmărite.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-036",
+      "text": "Feedback-ul personalului este utilizat pentru îmbunătățire.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-037",
+      "text": "Protocoalele pentru resuscitare pediatrică (PALS) sunt implementate și verificate.",
+      "legalReference": "ERC Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-038",
+      "text": "Protocolul pentru convulsii febrile este aplicat.",
+      "legalReference": "Ghid MS Pediatrie 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-039",
+      "text": "Protocolul pentru boli contagioase la copii este monitorizat.",
+      "legalReference": "ECDC Guidance 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Șef secție",
+      "questionId": "PED-SEF-040",
+      "text": "Exercițiile de simulare pentru dezastre includ și secția pediatrie.",
+      "legalReference": "Legea nr. 481/2004, art. 28",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-001",
+      "text": "Evaluarea inițială a copilului (istoric, alergii, vaccinări, status nutrițional) este documentată.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-002",
+      "text": "Consimțământul informat este obținut de la părinte/tutore și arhivat.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-003",
+      "text": "Se utilizează scoruri pediatrice standard (PEWS, GCS) la internare și monitorizare.",
+      "legalReference": "NICE Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-004",
+      "text": "Planul de tratament pediatric este documentat și actualizat zilnic.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-005",
+      "text": "Antibioterapia pediatrică este justificată și revizuită zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-006",
+      "text": "Profilaxia tromboembolică la adolescenți este evaluată conform ghidurilor.",
+      "legalReference": "Ghid MS 2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-007",
+      "text": "Procedurile dureroase sunt efectuate cu tehnici de reducere a stresului.",
+      "legalReference": "Ghid EAP 2018 – Pain management",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-008",
+      "text": "Resuscitarea pediatrică se realizează conform protocolului PALS.",
+      "legalReference": "ERC Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-009",
+      "text": "Nutriția enterală/parenterală este prescrisă și monitorizată corect.",
+      "legalReference": "ESPEN Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-010",
+      "text": "Pacienții pediatrici sunt evaluați zilnic pentru deprescriere/optimizare tratament.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-011",
+      "text": "Inserția cateterelor la copii respectă tehnica aseptică și protocolul.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-012",
+      "text": "Cateterele periferice sunt revizuite zilnic și îndepărtate la timp.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-013",
+      "text": "Transfuziile pediatrice respectă indicația și monitorizarea reacțiilor.",
+      "legalReference": "Legea nr. 282/2005, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-014",
+      "text": "Procedurile de intubare pediatrică sunt documentate complet.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-015",
+      "text": "Ventilația mecanică pediatrică respectă protocoalele clinice.",
+      "legalReference": "SRATI Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-016",
+      "text": "Puncțiile lombare sunt efectuate conform protocolului și cu acord parental.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-017",
+      "text": "Procedurile invazive (traheostomie, drenaj) au checklist pre-procedural.",
+      "legalReference": "WHO – Safe Surgery Checklist",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-018",
+      "text": "Hemodializa pediatrică respectă protocoalele de siguranță.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-019",
+      "text": "Manevrele de imobilizare se fac doar la indicație și se documentează.",
+      "legalReference": "Legea nr. 487/2002, art. 29",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-020",
+      "text": "Intervențiile chirurgicale de urgență pediatrică sunt documentate complet.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-021",
+      "text": "Parametrii vitali sunt monitorizați și documentați la intervale corespunzătoare vârstei.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-022",
+      "text": "Rezultatele critice de laborator sunt comunicate imediat.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-023",
+      "text": "Predarea turei se face cu format standard (SBAR).",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-024",
+      "text": "Comunicarea with părinții este documentată zilnic.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-025",
+      "text": "Evenimentele adverse majore sunt comunicate transparent.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-026",
+      "text": "Informațiile clinice transmise între specialități sunt documentate.",
+      "legalReference": "Ordin MS nr. 961/2016, cap.  IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-027",
+      "text": "Copiii critici sunt monitorizați continuu, cu documentare parametri.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-028",
+      "text": "Comunicarea interdisciplinară este evaluată periodic.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-029",
+      "text": "Medicul pediatru participă la revizuiri de mortalitate și morbiditate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-030",
+      "text": "Participă la audituri clinice pediatrice (antibiotice, sepsis, vaccinuri).",
+      "legalReference": "SR EN ISO 15189:2023, cl. 7.1.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-031",
+      "text": "Protocoalele pediatrice sunt actualizate pe baza ghidurilor internaționale.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-032",
+      "text": "Medicul pediatru urmează programe de educație medicală continuă.",
+      "legalReference": "Legea nr. 95/2006, art. 391",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-033",
+      "text": "Instruiește rezidenții și asistenții în protocoale pediatrice.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-034",
+      "text": "Gestionarea durerii este documentată prin scoruri pediatrice.",
+      "legalReference": "Ghid EAP 2018 – Pain management",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-035",
+      "text": "Copiii cu boli cronice primesc planuri individualizate de tratament.",
+      "legalReference": "Legea nr. 272/2004, art. 49",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-036",
+      "text": "Protocolul pentru convulsii febrile este implementat.",
+      "legalReference": "Ghid MS Pediatrie 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-037",
+      "text": "Protocolul pentru sepsis pediatric este aplicat.",
+      "legalReference": "Surviving Sepsis Campaign 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-038",
+      "text": "Protocolul pentru bronșiolită acută este implementat.",
+      "legalReference": "NICE Guidelines 2015",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-039",
+      "text": "Protocolul pentru meningită acută este respectat.",
+      "legalReference": "WHO Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Medici",
+      "questionId": "PED-MED-040",
+      "text": "Protocolul pentru vaccinări întârziate este aplicat.",
+      "legalReference": "Ordin MS nr. 377/2017, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-001",
+      "text": "Identifici copilul cu 2 identificatori înainte de orice administrare/procedură.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-002",
+      "text": "Aplici regula „5+2 ale medicației” (pacient, medicament, doză, cale, timp, indicație, documentare).",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-003",
+      "text": "Verificarea independentă se face pentru medicamente cu risc crescut (insuline, antibiotice IV, anticonvulsivante).",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-004",
+      "text": "Dozele de medicamente pediatrice se calculează și verifică pe baza greutății.",
+      "legalReference": "WHO Pediatric Dosing Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-005",
+      "text": "Lanțul frig pentru vaccinuri și soluții este menținut și documentat.",
+      "legalReference": "HG nr. 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-006",
+      "text": "Pregătirea pielii copilului înainte de inserția dispozitivelor invazive respectă protocolul.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-007",
+      "text": "Inserția și întreținerea cateterelor se face aseptic, cu pansamente sterile și evaluare zilnică.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-008",
+      "text": "Îngrijirea plăgilor pediatrice se face cu tehnică sterilă și documentare evoluție.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-009",
+      "text": "Recoltarea probelor biologice se face corect, cu etichetare și trasabilitate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-010",
+      "text": "Monitorizarea dispozitivelor (ventilație, perfuzoare) se face conform procedurii.",
+      "legalReference": "Regulament (UE) 2017/745",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-011",
+      "text": "Igiena mâinilor (5 momente) este aplicată consecvent.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-012",
+      "text": "Precauțiile standard și adiționale sunt respectate la toți copiii.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-013",
+      "text": "Deșeurile sunt segregate corect (biohazard, ascuțite, nepericuloase).",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-014",
+      "text": "Lenjeria este manipulată conform circuitelor curate/murdare.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-015",
+      "text": "Suprafețele și echipamentele sunt dezinfectate între pacienți conform listelor.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-016",
+      "text": "Semnele vitale ale copiilor sunt monitorizate și documentate conform vârstei.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-017",
+      "text": "Scalele clinice pediatrice (durere FLACC, scor Braden Q, PEWS) sunt utilizate zilnic.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-018",
+      "text": "Administrarea medicamentelor este documentată imediat în fișă.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-019",
+      "text": "Erorile de administrare sunt raportate imediat, fără vinovăție („just culture”).",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-020",
+      "text": "Predarea turei folosește format standard (SBAR) și include planul de îngrijire.",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-021",
+      "text": "Integritatea ambalajelor și data expirării sunt verificate înainte de utilizare.",
+      "legalReference": "Regulament (UE) 2017/745, art. 83",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-022",
+      "text": "Materialele sterile sunt depozitate corect, ferite de contact cu podeaua.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-023",
+      "text": "Seringile și soluțiile preparate sunt etichetate corect (nume, concentrație, oră, inițiale).",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-024",
+      "text": "Dispozitivele de unică folosință sunt eliminate imediat după utilizare.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-025",
+      "text": "Jucăriile și materialele utilizate de copii sunt curățate zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-026",
+      "text": "Părinții sunt informați privind proceduri, riscuri și semne de alarmă.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-027",
+      "text": "Alergiile copilului sunt verificate și marcate vizibil în fișă.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-028",
+      "text": "Intimitatea și demnitatea copilului sunt respectate în toate procedurile.",
+      "legalReference": "Legea nr. 46/2003, art. 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-029",
+      "text": "Informațiile medicale sunt explicate părinților într-un limbaj accesibil.",
+      "legalReference": "Legea nr. 46/2003, art. 4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-030",
+      "text": "Copiii anxioși sunt sprijiniți prin tehnici de distragere/consiliere.",
+      "legalReference": "Ghid EAP 2018 – Child anxiety",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-031",
+      "text": "Probele biologice critice sunt transportate rapid în containere dedicate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-032",
+      "text": "Testele rapide pediatrice (streptococ, gripă, POC) sunt validate conform procedurii.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.6.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-033",
+      "text": "Reacțiile adverse la medicație sau transfuzii sunt raportate imediat.",
+      "legalReference": "Legea nr. 95/2006, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-034",
+      "text": "Copiii cu risc de cădere sunt identificați și supravegheați.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-035",
+      "text": "Copiii policontaminați (chimic/biologic) sunt izolați conform planului.",
+      "legalReference": "DSU – Plan alb",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-036",
+      "text": "Locația stingătoarelor și căilor de evacuare este cunoscută de personal.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-037",
+      "text": "Prizele și cablurile sunt utilizate în siguranță, defectele fiind raportate.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-038",
+      "text": "Accesul la sursele de oxigen și gaz medical este liber și funcțional.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-039",
+      "text": "Zonele umede/alunecoase sunt semnalizate imediat.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Asistenți",
+      "questionId": "PED-ASI-040",
+      "text": "Substanțele periculoase sunt manipulate doar cu EIP adecvat.",
+      "legalReference": "Regulament (UE) 2016/425, Anexa II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-001",
+      "text": "Respecți regulile de igienă a mâinilor la intrarea/ieșirea din salon și la contact copil–dispozitiv.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-002",
+      "text": "Porți echipament individual de protecție adecvat și îl schimbi corect între pacienți.",
+      "legalReference": "Regulament (UE) 2016/425, Anexa II, pct. 1.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-003",
+      "text": "Deșeurile sunt colectate și segregate corect în containere dedicate.",
+      "legalReference": "HG nr. 856/2002, Anexa 2, art. 5.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-004",
+      "text": "Recipienții pentru obiecte înțepătoare sunt închiși și înlocuiți la timp.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-005",
+      "text": "Lenjeria curată și murdară este separată și transportată în saci speciali.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-006",
+      "text": "Curățenia zilnică a saloanelor pediatrice este realizată conform fișelor de lucru.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-007",
+      "text": "Curățenia terminală după externare/deces se face conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-008",
+      "text": "Soluțiile de curățenie și dezinfectanții sunt preparați și etichetați corect.",
+      "legalReference": "Regulament (CE) 1907/2006 – REACH, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-009",
+      "text": "Cărucioarele de curățenie sunt echipate complet și depozitate separat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-010",
+      "text": "Jucăriile utilizate de copii sunt curățate și dezinfectate periodic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-011",
+      "text": "Scurgerile sau vărsările de fluide biologice sunt raportate și curățate imediat.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-012",
+      "text": "Manipulezi corect rufele pentru a evita stropiri/aerosoli.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-013",
+      "text": "Participi la instruiri privind utilizarea echipamentelor de curățenie și protocoale noi.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-014",
+      "text": "Semnalizezi imediat zonele umede/alunecoase pentru a preveni accidente.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-015",
+      "text": "Respecți circuitul alimentelor și apei potabile, menținând igiena ustensilelor.",
+      "legalReference": "HG nr. 857/2011, Anexa 2, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-016",
+      "text": "Aplici tehnici corecte de ridicare și mobilizare a copiilor.",
+      "legalReference": "Legea nr. 319/2006, art. 13, lit. g)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-017",
+      "text": "Raportezi echipamente defecte, mobilier deteriorat sau probleme de iluminat.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-018",
+      "text": "Păstrezi ordinea și debarasarea corectă a materialelor din secție.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-019",
+      "text": "Respecți confidențialitatea și nu divulgi informații despre copii sau familiile lor.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Pediatrie",
+      "role": "Infirmieri",
+      "questionId": "PED-INF-020",
+      "text": "Completezi și semnezi fișele zilnice de activitate, predând corect informațiile la schimbul de tură.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    }
+  ]
+}

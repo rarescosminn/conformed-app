@@ -1,0 +1,1542 @@
+{
+  "section": "Neonatologie",
+  "roles": [
+    "Generale",
+    "Șef secție",
+    "Medici",
+    "Asistenți",
+    "Infirmieri"
+  ],
+  "questions": [
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-001",
+      "text": "Identificarea nou-născutului se face corect (brățară, 2 identificatori) imediat după naștere.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-002",
+      "text": "Igiena mâinilor este respectată la fiecare contact nou-născut–dispozitiv.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-003",
+      "text": "Nou-născuții sunt plasați în incubatoare sau pătuțuri conforme normelor.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-004",
+      "text": "Consimțământul parental este obținut pentru procedurile invazive.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-005",
+      "text": "Alăptarea precoce este încurajată și documentată în fișa copilului.",
+      "legalReference": "OMS/UNICEF – BFHI, 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-006",
+      "text": "Vaccinările neonatale (BCG, HBV) sunt administrate conform programului.",
+      "legalReference": "Ordin MS nr. 377/2017, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-007",
+      "text": "Screeningul metabolic neonatal este efectuat și documentat.",
+      "legalReference": "Ordin MS nr. 910/2017, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-008",
+      "text": "Nou-născuții cu risc sunt monitorizați continuu (saturație O₂, puls, TA).",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-009",
+      "text": "Suprafețele și incubatoarele sunt curățate și dezinfectate zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-010",
+      "text": "Deșeurile medicale sunt colectate și eliminate corect.",
+      "legalReference": "HG nr. 856/2002, Anexa 2, art. 5.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-011",
+      "text": "Circuitul lenjeriei curate/murdare este respectat.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-012",
+      "text": "Personalul are instruiri periodice privind siguranța nou-născutului.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-013",
+      "text": "Hrănirea cu lapte praf se face doar la indicația medicului și cu instrumente sterile.",
+      "legalReference": "OMS – Codul internațional, 1981",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-014",
+      "text": "Alergiile sau intoleranțele sunt notate vizibil în fișa nou-născutului.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-015",
+      "text": "Ventilația și oxigenoterapia neonatală respectă ghidurile.",
+      "legalReference": "SRATI Guidelines 2018 – Neonatal care",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-016",
+      "text": "Resuscitarea neonatală urmează protocolul NRP/NLS.",
+      "legalReference": "ERC Guidelines 2021 – NLS",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-017",
+      "text": "Contactul piele-la-piele este promovat și documentat.",
+      "legalReference": "OMS, Early Essential Newborn Care, 2014",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-018",
+      "text": "Nou-născuții prematuri au protocoale speciale de monitorizare și hrănire.",
+      "legalReference": "ESPGHAN Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-019",
+      "text": "Accesul parental în secția de neonatologie este reglementat și monitorizat.",
+      "legalReference": "Legea nr. 272/2004, art. 14",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-020",
+      "text": "Rezultatele critice de laborator sunt comunicate imediat medicului neonatolog.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-021",
+      "text": "Vaccinurile și imunoglobulinele sunt păstrate cu lanțul frig monitorizat.",
+      "legalReference": "HG nr. 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-022",
+      "text": "Echipamentele critice (incubatoare, lămpi fototerapie) au plan de mentenanță.",
+      "legalReference": "HG nr. 1028/2006, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-023",
+      "text": "Probele biologice sunt recoltate și etichetate corect.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-024",
+      "text": "Există protocoale pentru infecții neonatale și sepsis.",
+      "legalReference": "Surviving Sepsis Campaign 2021 – Neonatal",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-025",
+      "text": "Accesul vizitatorilor respectă regulile epidemiologice.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-026",
+      "text": "Supravegherea infecțiilor asociate îngrijirii este documentată.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-027",
+      "text": "Nivelul de zgomot și lumină este menținut în limite acceptabile.",
+      "legalReference": "WHO Neonatal Unit Standards, 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-028",
+      "text": "Datele medicale ale nou-născutului sunt protejate conform GDPR.",
+      "legalReference": "Regulament (UE) 2016/679, art. 32",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-029",
+      "text": "Exercițiile de evacuare includ și secția de neonatologie.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Generale",
+      "questionId": "NEO-GEN-030",
+      "text": "Feedback-ul părinților este colectat și analizat periodic.",
+      "legalReference": "ISO 9001:2015, cl. 9.1.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-001",
+      "text": "Secția Neonatologie are obiective anuale de calitate și siguranță monitorizate.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-002",
+      "text": "Se organizează analiza de management la nivel de secție, cu acțiuni și termene urmărite.",
+      "legalReference": "OSGG nr. 600/2018, Anexa 1, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-003",
+      "text": "Programul de audit intern este planificat și implementat; neconformitățile au CAPA.",
+      "legalReference": "ISO 19011:2018, cl. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-004",
+      "text": "Registrul de riscuri (prematuritate, sepsis, hipoglicemie) este actualizat trimestrial.",
+      "legalReference": "ISO 31000:2018, cl. 6.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-005",
+      "text": "Există desemnări clare pentru roluri (control infecții, farmacovigilență, lactație).",
+      "legalReference": "Legea nr. 95/2006, Titlul XIV, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-006",
+      "text": "Planurile de urgență (incendiu, cutremur, evacuare incubatoare) sunt verificate lunar.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-007",
+      "text": "Matricea de competențe a personalului neonatologie este actualizată periodic.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-008",
+      "text": "Personalul nou beneficiază de mentorat și program de integrare.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-009",
+      "text": "Instruirile periodice acoperă resuscitarea neonatală, IAAM și alăptarea.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-010",
+      "text": "Turele sunt acoperite cu personal calificat conform normativului.",
+      "legalReference": "Legea nr. 95/2006, art. 174",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-011",
+      "text": "Evaluările anuale includ competențe neonatale și siguranță pacient.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-012",
+      "text": "Secția implementează supravegherea IAAM la nou-născuți și raportările aferente.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-013",
+      "text": "Respectarea precauțiilor standard și adiționale este monitorizată zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-014",
+      "text": "Circuitul lenjeriei curate/murdare este separat și semnalizat.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-015",
+      "text": "Suprafețele și incubatoarele sunt dezinfectate conform fișelor de activitate.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-016",
+      "text": "Sterilizarea instrumentarului neonatal este validată cu indicatori biologici.",
+      "legalReference": "SR EN ISO 17665-1:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-017",
+      "text": "Toate echipamentele neonatale au plan de mentenanță preventivă.",
+      "legalReference": "HG nr. 1028/2006, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-018",
+      "text": "Incubatoarele și lămpile de fototerapie sunt testate periodic.",
+      "legalReference": "HG nr. 1028/2006, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-019",
+      "text": "Echipamentele de monitorizare sunt etalonate conform standardelor.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 6.4.6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-020",
+      "text": "Există UPS funcțional pentru echipamente critice (incubatoare, pompe infuzie).",
+      "legalReference": "HG nr. 1028/2006, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-021",
+      "text": "Medicamentele neonatale LASA sunt separate și etichetate.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-022",
+      "text": "Lanțul frig pentru vaccinuri și imunoglobuline este monitorizat.",
+      "legalReference": "HG nr. 857/2011",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-023",
+      "text": "Stupefiantele/psihotropele utilizate în terapie neonatală sunt gestionate în registre securizate.",
+      "legalReference": "Legea nr. 339/2005, art. 30",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-024",
+      "text": "Materialele sterile sunt verificate și depozitate conform normelor.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-025",
+      "text": "Procedurile neonatale sunt actualizate și disponibile la locul utilizării.",
+      "legalReference": "ISO 9001:2015, cl. 7.5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-026",
+      "text": "Trasabilitatea loturilor de lapte praf, vaccinuri și consumabile este documentată.",
+      "legalReference": "Regulament (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-027",
+      "text": "Rapoartele de incidente și adverse sunt analizate lunar.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-028",
+      "text": "Comunicările critice (rezultate, schimbări de tratament) sunt transmise la timp.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-029",
+      "text": "Segregarea deșeurilor neonatale este respectată (culori, containere).",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-030",
+      "text": "Substanțele chimice și dezinfectanții sunt depozitați corect cu fișe SDB.",
+      "legalReference": "Regulament (CE) 1907/2006, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-031",
+      "text": "Stingătoarele sunt funcționale, căile de evacuare libere, personal instruit PSI.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-032",
+      "text": "Apa și aerul din secție sunt monitorizate periodic (particule, bacteriologie).",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-033",
+      "text": "Reclamațiile părinților sunt analizate și duc la acțiuni corective.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. VI, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-034",
+      "text": "Timpul de acces al părinților la nou-născuți este monitorizat.",
+      "legalReference": "Legea nr. 272/2004, art. 14",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-035",
+      "text": "Ratele de reinternare neonatală sunt urmărite și analizate.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-036",
+      "text": "Feedback-ul personalului este folosit pentru îmbunătățire.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-037",
+      "text": "Protocolul pentru resuscitare neonatală este implementat și verificat anual.",
+      "legalReference": "ERC Guidelines 2021 – NLS",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-038",
+      "text": "Protocolul pentru prematuritate extremă este aplicat.",
+      "legalReference": "ESPGHAN Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-039",
+      "text": "Protocolul pentru icter neonatal și fototerapie este implementat.",
+      "legalReference": "AAP Guidelines 2014",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Șef secție",
+      "questionId": "NEO-SEF-040",
+      "text": "Exercițiile de simulare pentru dezastre includ și secția neonatologie.",
+      "legalReference": "Legea nr. 481/2004, art. 28",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-001",
+      "text": "Evaluarea inițială a nou-născutului (Apgar, greutate, semne vitale) este documentată complet.",
+      "legalReference": "OMS – Newborn Health Standards, 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-002",
+      "text": "Consimțământul parental este obținut și arhivat pentru procedurile invazive.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-003",
+      "text": "Se utilizează scoruri specifice (Silverman, Downes) pentru evaluarea respirației.",
+      "legalReference": "SRATI Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-004",
+      "text": "Planul de tratament neonatal este documentat și actualizat zilnic.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-005",
+      "text": "Antibioterapia neonatală este justificată și reevaluată zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-006",
+      "text": "Nutriția parenterală și enterală neonatală este prescrisă și monitorizată conform ghidurilor.",
+      "legalReference": "ESPGHAN Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-007",
+      "text": "Procedurile dureroase sunt efectuate cu tehnici de reducere a stresului și durerii.",
+      "legalReference": "EAP Guidelines 2018 – Pain in neonates",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-008",
+      "text": "Resuscitarea neonatală se face conform protocolului NLS.",
+      "legalReference": "ERC Guidelines 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-009",
+      "text": "Prematurii au scheme de îngrijire documentate separat.",
+      "legalReference": "WHO – Preterm care standards, 2015",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-010",
+      "text": "Pacienții neonatali sunt evaluați zilnic pentru deprescriere/optimizare terapii.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-011",
+      "text": "Inserția cateterelor ombilicale respectă tehnica aseptică și protocolul.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-012",
+      "text": "Cateterele periferice sunt revizuite zilnic și îndepărtate la timp.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-013",
+      "text": "Ventilația mecanică neonatală respectă protocoalele clinice.",
+      "legalReference": "SRATI Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-014",
+      "text": "Procedurile de intubare neonatală sunt documentate complet.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-015",
+      "text": "Transfuziile neonatale respectă indicația și monitorizarea reacțiilor.",
+      "legalReference": "Legea nr. 282/2005, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-016",
+      "text": "Puncțiile lombare la nou-născuți respectă protocolul și consimțământul parental.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-017",
+      "text": "Fototerapia pentru icter este aplicată conform ghidurilor.",
+      "legalReference": "AAP Guidelines 2014",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-018",
+      "text": "Procedurile invazive (drenaj, toracenteză) se efectuează cu checklist pre-procedural.",
+      "legalReference": "WHO – Safe Surgery Checklist",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-019",
+      "text": "Surfactantul este administrat conform protocolului și dozei recomandate.",
+      "legalReference": "ESPGHAN Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-020",
+      "text": "Manevrele de imobilizare se fac doar la indicație și se documentează.",
+      "legalReference": "Legea nr. 487/2002, art. 29",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-021",
+      "text": "Parametrii vitali (SpO₂, TA, puls, temperatură) sunt documentați periodic.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-022",
+      "text": "Rezultatele critice de laborator sunt comunicate imediat neonatologului responsabil.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-023",
+      "text": "Predarea turelor se face cu format standard (SBAR).",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-024",
+      "text": "Comunicarea cu părinții este documentată zilnic.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-025",
+      "text": "Evenimentele adverse majore sunt comunicate transparent.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-026",
+      "text": "Informațiile transmise între echipe (neonatolog–ATI–chirurgie) sunt documentate.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-027",
+      "text": "Pacienții critici sunt monitorizați continuu, cu documentare completă.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-028",
+      "text": "Comunicarea interdisciplinară este evaluată periodic prin audituri clinice.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-029",
+      "text": "Neonatologii participă la revizuiri de mortalitate și morbiditate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-030",
+      "text": "Participă la audituri clinice (sepsis neonatal, antibiotice, ventilație).",
+      "legalReference": "SR EN ISO 15189:2023, cl. 7.1.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-031",
+      "text": "Protocoalele neonatale sunt actualizate pe baza ghidurilor internaționale.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-032",
+      "text": "Neonatologii urmează programe de educație medicală continuă.",
+      "legalReference": "Legea nr. 95/2006, art. 391",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-033",
+      "text": "Instruiesc rezidenții și asistenții în protocoale neonatale.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-034",
+      "text": "Hipoglicemia neonatală este monitorizată și tratată conform protocolului.",
+      "legalReference": "ESPGHAN Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-035",
+      "text": "Convulsiile neonatale sunt gestionate conform ghidurilor.",
+      "legalReference": "ILAE Guidelines 2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-036",
+      "text": "Protocolul pentru sepsis neonatal este implementat.",
+      "legalReference": "Surviving Sepsis Campaign 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-037",
+      "text": "Protocolul pentru prematuritate extremă este aplicat.",
+      "legalReference": "WHO – Preterm care standards, 2015",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-038",
+      "text": "Protocolul pentru hemoragii intracraniene este respectat.",
+      "legalReference": "AAP Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-039",
+      "text": "Protocolul pentru enterocolită necrozantă este implementat.",
+      "legalReference": "ESPGHAN Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Medici",
+      "questionId": "NEO-MED-040",
+      "text": "Existența și aplicarea protocolului pentru sindromul de detresă respiratorie sunt verificate.",
+      "legalReference": "SRATI Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-001",
+      "text": "Verifici identitatea nou-născutului prin brățară și 2 identificatori înainte de orice procedură.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-002",
+      "text": "Aplici regula „5+2 ale medicației” la administrarea medicamentelor neonatale.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-003",
+      "text": "Dozele se calculează și verifică în funcție de greutatea și vârsta gestațională a nou-născutului.",
+      "legalReference": "WHO Neonatal Dosing Guidelines 2019",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-004",
+      "text": "Medicamentele cu risc crescut sunt dublu verificate de doi asistenți.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-005",
+      "text": "Lanțul frig pentru vaccinuri și soluții este monitorizat și documentat zilnic.",
+      "legalReference": "HG nr. 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-006",
+      "text": "Pregătirea pielii înainte de inserarea cateterelor se face aseptic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-007",
+      "text": "Cateterele ombilicale sunt întreținute conform protocolului.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-008",
+      "text": "Îngrijirea plăgilor neonatale se face cu tehnică sterilă și documentare.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-009",
+      "text": "Recoltarea probelor biologice neonatale respectă etichetarea și trasabilitatea.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-010",
+      "text": "Ventilatoarele și incubatoarele sunt verificate și igienizate conform instrucțiunilor.",
+      "legalReference": "Regulament (UE) 2017/745",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-011",
+      "text": "Igiena mâinilor (5 momente) este aplicată consecvent la contactul cu nou-născuții.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-012",
+      "text": "Precauțiile standard și adiționale sunt respectate pentru fiecare pacient.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-013",
+      "text": "Deșeurile neonatale sunt colectate corect în containere dedicate.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-014",
+      "text": "Lenjeria este manipulată conform circuitelor curate/murdare.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-015",
+      "text": "Incubatoarele și suprafețele sunt dezinfectate după fiecare pacient.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-016",
+      "text": "Parametrii vitali ai nou-născutului sunt monitorizați la intervale stabilite și documentați.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-017",
+      "text": "Scorurile clinice (Apgar, Silverman, Downes) sunt utilizate și notate corect.",
+      "legalReference": "SRATI Guidelines 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-018",
+      "text": "Administrarea medicamentelor este documentată imediat în fișa copilului.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-019",
+      "text": "Erorile de administrare sunt raportate imediat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-020",
+      "text": "Predarea turei se face cu format standard (SBAR).",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-021",
+      "text": "Verifici integritatea ambalajelor și data expirării înainte de utilizare.",
+      "legalReference": "Regulament (UE) 2017/745, art. 83",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-022",
+      "text": "Materialele sterile sunt depozitate conform normelor, fără contact cu podeaua.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-023",
+      "text": "Soluțiile preparate sunt etichetate corect (denumire, concentrație, oră, inițiale).",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-024",
+      "text": "Dispozitivele de unică folosință sunt eliminate imediat după utilizare.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-025",
+      "text": "Materialele pentru hrănirea artificială sunt sterilizate înainte de utilizare.",
+      "legalReference": "Codul OMS pentru substituenți de lapte matern, 1981",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-026",
+      "text": "Părinții sunt informați privind alăptarea și igiena nou-născutului.",
+      "legalReference": "OMS/UNICEF BFHI",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-027",
+      "text": "Alergiile și intoleranțele sunt comunicate și marcate vizibil.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-028",
+      "text": "Intimitatea și demnitatea copilului sunt respectate în toate procedurile.",
+      "legalReference": "Legea nr. 46/2003, art. 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-029",
+      "text": "Părinții sunt instruiți despre semnele de alarmă la externare.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-030",
+      "text": "Sprijini contactul piele-la-piele și rooming-in.",
+      "legalReference": "OMS – Early Essential Newborn Care, 2014",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-031",
+      "text": "Probele biologice critice sunt transportate rapid în containere adecvate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-032",
+      "text": "Testele rapide neonatale sunt validate conform procedurii.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.6.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-033",
+      "text": "Reacțiile adverse la medicamente sau transfuzii sunt raportate imediat.",
+      "legalReference": "Legea nr. 95/2006, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-034",
+      "text": "Nou-născuții cu risc de hipoglicemie sunt monitorizați periodic.",
+      "legalReference": "ESPGHAN Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-035",
+      "text": "Prematurii sunt monitorizați suplimentar conform protocolului.",
+      "legalReference": "WHO – Preterm care standards, 2015",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-036",
+      "text": "Cunoști locația stingătoarelor și căilor de evacuare.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-037",
+      "text": "Prizele și cablurile sunt utilizate corect, defectele fiind raportate.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-038",
+      "text": "Accesul la oxigen și aer comprimat este păstrat liber.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-039",
+      "text": "Zonele umede/alunecoase sunt semnalizate imediat.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Asistenți",
+      "questionId": "NEO-ASI-040",
+      "text": "Substanțele periculoase sunt manipulate doar cu EIP adecvat.",
+      "legalReference": "Regulament (UE) 2016/425, Anexa II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-001",
+      "text": "Respecți regulile de igienă a mâinilor la intrarea/ieșirea din salon și la contact cu nou-născutul.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-002",
+      "text": "Porți echipament individual de protecție și îl schimbi corect între pacienți.",
+      "legalReference": "Regulament (UE) 2016/425, Anexa II, pct. 1.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-003",
+      "text": "Deșeurile neonatale sunt colectate și segregate corect, conform codurilor de culoare.",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-004",
+      "text": "Recipienții pentru obiecte tăietoare/înțepătoare sunt închiși și înlocuiți la timp.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-005",
+      "text": "Lenjeria curată și cea murdară sunt transportate separat, în saci dedicați.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-006",
+      "text": "Curățenia zilnică a incubatoarelor și spațiilor se face conform fișelor de lucru.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-007",
+      "text": "Curățenia terminală după externarea sau transferul nou-născutului se efectuează conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-008",
+      "text": "Soluțiile de curățenie și dezinfectanții sunt preparați corect și etichetați.",
+      "legalReference": "Regulament (CE) 1907/2006 – REACH, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-009",
+      "text": "Cărucioarele de curățenie sunt echipate complet și depozitate separat de spațiile curate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-010",
+      "text": "Jucăriile și materialele utilizate sunt curățate și dezinfectate zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-011",
+      "text": "Scurgerile de fluide biologice sunt raportate și curățate imediat conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-012",
+      "text": "Manipulezi corect rufele pentru a preveni stropirea sau producerea de aerosoli.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-013",
+      "text": "Participi la instruiri periodice privind curățenia și noile protocoale.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-014",
+      "text": "Semnalizezi imediat zonele umede/alunecoase pentru prevenirea accidentelor.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-015",
+      "text": "Spațiile de depozitare sunt păstrate curate și ordonate, fără amestec între produse.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-016",
+      "text": "Aplici tehnici corecte de ridicare și manipulare a incubatoarelor și pătuțurilor.",
+      "legalReference": "Legea nr. 319/2006, art. 13, lit. g)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-017",
+      "text": "Raportezi imediat echipamente defecte sau mobilier deteriorat.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-018",
+      "text": "Păstrezi ordinea și curățenia permanentă în saloane și spațiile comune.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-019",
+      "text": "Respecți confidențialitatea și nu divulgi informații despre nou-născuți sau părinți.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Neonatologie",
+      "role": "Infirmieri",
+      "questionId": "NEO-INF-020",
+      "text": "Completezi și semnezi fișele zilnice de activitate, predând informațiile corect la schimbul de tură.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    }
+  ]
+}

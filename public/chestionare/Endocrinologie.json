@@ -1,0 +1,1098 @@
+{
+  "subdomeniu": "Endocrinologie",
+  "categorii": [
+    {
+      "categorie": "Generale",
+      "numar_intrebari": 30,
+      "intrebari": [
+        {
+          "text": "Care sunt principalele cauze ale comei hipoglicemice și cum se recunoaște rapid în UPU?",
+          "legislatie": [
+            "Ordin MS 443/2019",
+            "Legea 95/2006 Titlul IV"
+          ]
+        },
+        {
+          "text": "Semne clinice cardinale ale cetoacidozei diabetice (DKA) vs. sindromul hiperosmolar non-cetotic (HHS) la prezentare.",
+          "legislatie": [
+            "Ordin MS 443/2019",
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Algoritm inițial: diferențiere hipoglicemie severă vs. hiperglicemie severă în camera de gardă.",
+          "legislatie": [
+            "Ordin MS 443/2019",
+            "Legea 46/2003"
+          ]
+        },
+        {
+          "text": "Analize „stat” recomandate la tulburări acute glicemice (glicemie, gazometrie, cetone, electroliți).",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Stabilizare inițială în hipoglicemie severă (ABCDE, glucoză i.v., monitorizare).",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Ce perfuzii și concentrații de glucoză sunt de primă intenție și cum documentezi administrarea?",
+          "legislatie": [
+            "Legea 46/2003",
+            "Regulamentul (UE) 2016/679 (GDPR)"
+          ]
+        },
+        {
+          "text": "Protocolul de administrare a insulinei în cetoacidoza diabetică (criterii de inițiere, titrare, oprire, potasiu).",
+          "legislatie": [
+            "Ordin MS 443/2019",
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Corecția tulburărilor hidro-electrolitice în DKA/HHS (Na, K, fluide, osmolalitate).",
+          "legislatie": [
+            "Legea 95/2006",
+            "GDPR 2016/679"
+          ]
+        },
+        {
+          "text": "DKA vs. HHS: criterii clinico-biologice de diferențiere și impact pe fluxul UPU.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Când este necesară consultarea urgentă a diabetologului în UPU și ce documente însoțesc pacientul?",
+          "legislatie": [
+            "Ordin MS 1091/2006",
+            "GDPR 2016/679"
+          ]
+        },
+        {
+          "text": "Criza tireotoxică: semne clinice de alarmă (febră, tahicardie severă, alterarea stării).",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Tratamentul inițial în thyroid storm (beta-blocant, antitiroidian, iod, corticoid) și documentarea consimțământului.",
+          "legislatie": [
+            "Legea 46/2003",
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Mixedem sever: cauze frecvente (necomplianță, iatrogen) și context de risc.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Mixedem comatos: semne vitale/neurologice care impun activare imediată de resuscitare.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Conduită terapeutică de urgență în mixedemul comatos (tiroxină i.v., corticoid, suport vital).",
+          "legislatie": [
+            "Ordin MS 443/2019",
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Hipocalcemie acută: manifestări (tetanie, laringospasm) și tratament inițial.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Investigații de urgență pentru hipocalcemie severă (ECG QT, Ca, Mg, PTH dacă posibil).",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Hipercalcemie acută: cauze frecvente (neoplazii, hiperparatiroidism primar) identificate în UPU.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Hipercalcemie severă: manifestări (confuzie, aritmii) ce impun management de urgență.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Tratamentul de urgență al hipercalcemiei (hidratare, diureză, calcitonină, bifosfonați).",
+          "legislatie": [
+            "GDPR 2016/679"
+          ]
+        },
+        {
+          "text": "Insuficiența suprarenaliană acută (criză Addisoniană): recunoaștere (hipotensiune, hiponatremie).",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Pași de tratament în criza Addisoniană (hidrocortizon i.v., fluide izotone, corecții electrolitice).",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Sindrom Cushing iatrogen în context acut: semne de alarmă și riscuri infecțioase.",
+          "legislatie": [
+            "Legea 46/2003"
+          ]
+        },
+        {
+          "text": "Feocromocitom cu criză hipertensivă: abordarea inițială și secvența alfa/beta-blocadă.",
+          "legislatie": [
+            "Ordin MS 443/2019",
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Diferențe de conduită între criza hipertensivă endocrină vs. non-endocrină în UPU.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Set minim de analize „rapid” în suspiciuni endocrine acute (TSH, FT4, cortisol, glicemie, electroliți).",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Insuficiență hipofizară acută: semne (apoplexie hipofizară) și testele rapide.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Stabilizare și tratament inițial în apoplexia hipofizară (steroid i.v., consult neurochirurgie).",
+          "legislatie": [
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Monitorizare în primele ore a pacientului endocrinologic critic (scoruri, ritm, diureză).",
+          "legislatie": [
+            "GDPR 2016/679"
+          ]
+        },
+        {
+          "text": "Criterii pentru transfer imediat la ATI din UPU în urgențe endocrine.",
+          "legislatie": [
+            "Ordin MS 1091/2006",
+            "Ordin MS 443/2019"
+          ]
+        }
+      ]
+    },
+    {
+      "categorie": "Șef secție",
+      "numar_intrebari": 40,
+      "intrebari": [
+        {
+          "text": "Obligațiile șefului de secție în organizarea activității de gardă și colaborarea cu UPU pentru urgențele endocrine.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 870/2004"
+          ]
+        },
+        {
+          "text": "Asigurarea continuității activității medicale în lipsa temporară a personalului cheie (diabetolog, ATI).",
+          "legislatie": [
+            "Codul Muncii",
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Responsabilitatea în avizarea protocoalelor de urgență pentru comă hipoglicemică.",
+          "legislatie": [
+            "Ordin MS 1500/2009"
+          ]
+        },
+        {
+          "text": "Planul de instruire pentru personal privind urgențele endocrine critice.",
+          "legislatie": [
+            "Legea 319/2006",
+            "Ordin MS 1224/2010"
+          ]
+        },
+        {
+          "text": "Situații când trebuie informată conducerea spitalului privind incidente majore în secție.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Proceduri pentru raportarea unui deces subit în secție cu suspiciune endocrină.",
+          "legislatie": [
+            "Legea 104/2003",
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Coordonarea relației cu laboratorul pentru analize urgente (TSH, cortizol).",
+          "legislatie": [
+            "Ordin MS 914/2006"
+          ]
+        },
+        {
+          "text": "Autorizarea și gestiunea medicației de urgență (insulină, hidrocortizon) în stocurile secției.",
+          "legislatie": [
+            "OMS 962/2009"
+          ]
+        },
+        {
+          "text": "Verificarea și documentarea respectării normelor GDPR privind datele pacienților.",
+          "legislatie": [
+            "GDPR 2016/679",
+            "Legea 190/2018"
+          ]
+        },
+        {
+          "text": "Colaborarea cu DSP pentru raportarea cazurilor endocrine acute rare (Addison, tireotoxicoză).",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 1224/2010"
+          ]
+        },
+        {
+          "text": "Investigarea incidentelor critice legate de administrarea insulinei.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 1011/2000"
+          ]
+        },
+        {
+          "text": "Organizarea programului de supraveghere epidemiologică în secție.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 916/2006"
+          ]
+        },
+        {
+          "text": "Instruirea periodică a personalului despre recunoașterea crizei tireotoxice.",
+          "legislatie": [
+            "Legea 319/2006"
+          ]
+        },
+        {
+          "text": "Raportarea cazurilor de hipoglicemie severă la nivel de spital și MS.",
+          "legislatie": [
+            "Ordin MS 1224/2010",
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Implementarea recomandărilor din auditul clinic intern.",
+          "legislatie": [
+            "OSGG 600/2018"
+          ]
+        },
+        {
+          "text": "Organizarea circuitului pacientului endocrin critic către ATI.",
+          "legislatie": [
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Actualizarea protocoalelor de tratament pentru DKA și HHS.",
+          "legislatie": [
+            "Ordin MS 1500/2009"
+          ]
+        },
+        {
+          "text": "Analiza evenimentelor adverse severe (hipoglicemie iatrogenă).",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Gestionarea deficitului de medicamente vitale (hidrocortizon, levotiroxină).",
+          "legislatie": [
+            "OMS 962/2009"
+          ]
+        },
+        {
+          "text": "Dotarea cu echipamente de monitorizare pentru pacienții endocrinologici critici.",
+          "legislatie": [
+            "Ordin MS 870/2004"
+          ]
+        },
+        {
+          "text": "Relația cu comitetul de etică pentru cazuri complexe (restricții de tratament).",
+          "legislatie": [
+            "Legea 46/2003"
+          ]
+        },
+        {
+          "text": "Aplicarea legislației privind siguranța muncii (accidente profesionale).",
+          "legislatie": [
+            "Legea 319/2006"
+          ]
+        },
+        {
+          "text": "Raportarea indicatorilor de performanță medicală pentru secție.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Verificarea respectării normativelor PSI în secție.",
+          "legislatie": [
+            "Legea 307/2006"
+          ]
+        },
+        {
+          "text": "Instruirea privind igiena mâinilor și prevenția infecțiilor nosocomiale.",
+          "legislatie": [
+            "Ordin MS 916/2006"
+          ]
+        },
+        {
+          "text": "Colaborarea cu CNAS pentru raportările de cazuri endocrine critice.",
+          "legislatie": [
+            "Contractul-cadru CNAS"
+          ]
+        },
+        {
+          "text": "Gestionarea conflictelor între personalul medical și pacient/familie.",
+          "legislatie": [
+            "Legea 46/2003",
+            "Codul deontologic"
+          ]
+        },
+        {
+          "text": "Raportarea reacțiilor adverse medicamentoase endocrine.",
+          "legislatie": [
+            "OMS 962/2009",
+            "ANMDMR"
+          ]
+        },
+        {
+          "text": "Verificarea protocoalelor de administrare a perfuziilor cu glucoză și insulină.",
+          "legislatie": [
+            "Ordin MS 1500/2009"
+          ]
+        },
+        {
+          "text": "Supervizarea rezidenților care tratează urgențe endocrine.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin privind rezidențiatul"
+          ]
+        },
+        {
+          "text": "Analiza lunară a cazurilor grave și comunicarea către conducerea spitalului.",
+          "legislatie": [
+            "OSGG 600/2018"
+          ]
+        },
+        {
+          "text": "Planificarea concediilor fără a afecta linia de gardă endocrine.",
+          "legislatie": [
+            "Codul Muncii"
+          ]
+        },
+        {
+          "text": "Respectarea regulilor GDPR în accesul la dosarele medicale.",
+          "legislatie": [
+            "GDPR 2016/679"
+          ]
+        },
+        {
+          "text": "Conducerea acțiunilor în caz de incident major (incendiu, cutremur) în secție.",
+          "legislatie": [
+            "Legea 307/2006",
+            "Legea 481/2004"
+          ]
+        },
+        {
+          "text": "Gestionarea deșeurilor rezultate din secția Endocrinologie.",
+          "legislatie": [
+            "HG 856/2002",
+            "OUG 92/2021"
+          ]
+        },
+        {
+          "text": "Lipsa de personal: activarea resurselor suplimentare.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Supravegherea respectării normelor de igienă la pacienți cu imunitate scăzută.",
+          "legislatie": [
+            "Ordin MS 916/2006"
+          ]
+        },
+        {
+          "text": "Trasabilitatea medicației de urgență (insulină, hidrocortizon).",
+          "legislatie": [
+            "OMS 962/2009"
+          ]
+        },
+        {
+          "text": "Asigurarea colaborării interdisciplinare (ATI, cardiologie) pentru cazuri endocrine acute.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Documentarea instruirii continue a personalului și responsabilități de conformitate.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Codul Muncii"
+          ]
+        }
+      ]
+    },
+    {
+      "categorie": "Medici",
+      "numar_intrebari": 40,
+      "intrebari": [
+        {
+          "text": "Pașii de diagnostic rapid ai comei hipoglicemice la pacientul din UPU.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Diferențierea cetoacidozei diabetice de sindromul hiperosmolar non-cetotic (criterii clinico-biologice).",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Algoritmul de tratament în cetoacidoza diabetică în primele 6 ore.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 1500/2009"
+          ]
+        },
+        {
+          "text": "Monitorizarea potasiului la pacientul cu insulinoterapie în UPU.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Criterii de internare imediată la ATI pentru comă hiperglicemică.",
+          "legislatie": [
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Gestionarea mixedemului comatos până la transferul la ATI.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Diferențe de conduită între criza tireotoxică și febra de altă cauză.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Administrarea glucocorticoizilor în criza Addisoniană: doză standard inițială.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Analize rapide necesare în UPU pentru pacientul endocrinologic critic.",
+          "legislatie": [
+            "Ordin MS 870/2004"
+          ]
+        },
+        {
+          "text": "Documentarea/raportarea cazurilor endocrine acute către DSP.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 1224/2010"
+          ]
+        },
+        {
+          "text": "Tratamentul hipocalcemiei acute severe și riscurile comunicate pacientului/familiei.",
+          "legislatie": [
+            "Legea 46/2003"
+          ]
+        },
+        {
+          "text": "Contraindicații relative ale administrării de insulină în urgență.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Recunoașterea apoplexiei hipofizare și pașii de stabilizare până la neurochirurgie.",
+          "legislatie": [
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Criterii pentru diagnosticarea insuficienței suprarenaliene acute în UPU.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Managementul hipercalcemiei acute cu afectare neurologică.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Abordarea pacientului cu suspiciune de feocromocitom în criză hipertensivă.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Rolul medicului UPU în inițierea terapiei cu iod (cadrul de urgență).",
+          "legislatie": [
+            "Ordin MS 1500/2009"
+          ]
+        },
+        {
+          "text": "Monitorizarea glicemiei capilare: intervale recomandate în urgențe.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Documente obligatorii la transferul pacientului către altă unitate.",
+          "legislatie": [
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Aplicarea consimțământului informat în urgențele endocrine critice.",
+          "legislatie": [
+            "Legea 46/2003"
+          ]
+        },
+        {
+          "text": "Raportarea reacțiilor adverse la tratamentul endocrinologic.",
+          "legislatie": [
+            "OMS 962/2009"
+          ]
+        },
+        {
+          "text": "Identificarea și tratamentul hipoglicemiei la pacientul inconștient.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Instruirea echipei UPU privind protocoalele pentru comă hipoglicemică.",
+          "legislatie": [
+            "Ordin MS 1500/2009"
+          ]
+        },
+        {
+          "text": "Gestionarea refuzului de tratament pentru o urgență endocrină.",
+          "legislatie": [
+            "Legea 46/2003"
+          ]
+        },
+        {
+          "text": "Investigații imagistice rapide utile în suspiciunea de apoplexie hipofizară.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Transmiterea datelor la transfer: conform GDPR.",
+          "legislatie": [
+            "GDPR 2016/679",
+            "Legea 190/2018"
+          ]
+        },
+        {
+          "text": "Semne clinice ale insuficienței suprarenaliene acute și analize de confirmare.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Tratamentul hipoglicemiei induse de insulină la pacientul internat.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Protocol de tratament în hiponatremia acută simptomatică.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Raportarea către șeful de secție a urgențelor endocrine critice.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Instruirea asistenților privind administrarea perfuziilor cu glucoză.",
+          "legislatie": [
+            "Ordin MS 1224/2010"
+          ]
+        },
+        {
+          "text": "Respectarea normelor SSM în manevre cu risc (perfuzii, intubație).",
+          "legislatie": [
+            "Legea 319/2006"
+          ]
+        },
+        {
+          "text": "Aplicarea protocoalelor de resuscitare la pacientul endocrinologic în stop cardio-respirator.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Proceduri în suspiciunea de intoxicație cu medicamente endocrine.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Continuitatea tratamentului endocrinologic la pacientul critic transferat.",
+          "legislatie": [
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Raportare/investigare incident major legat de insulinoterapie.",
+          "legislatie": [
+            "OSGG 600/2018"
+          ]
+        },
+        {
+          "text": "Principii etice în decizia de limitare a unor tratamente la pacienții critici.",
+          "legislatie": [
+            "Legea 46/2003",
+            "Cod deontologic"
+          ]
+        },
+        {
+          "text": "Trasabilitatea tratamentelor de urgență administrate.",
+          "legislatie": [
+            "GDPR 2016/679"
+          ]
+        },
+        {
+          "text": "Raportarea cazurilor rare (criză Addisoniană, apoplexie hipofizară) la MS/DSP.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Responsabilitatea în participarea la EMC pe teme de endocrinologie de urgență.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Codul Muncii"
+          ]
+        }
+      ]
+    },
+    {
+      "categorie": "Asistenți",
+      "numar_intrebari": 40,
+      "intrebari": [
+        {
+          "text": "Recunoașterea primelor semne ale hipoglicemiei severe la pacientul din UPU.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Pașii pentru pregătirea perfuziei cu glucoză la pacientul inconștient.",
+          "legislatie": [
+            "Ordin MS 1500/2009"
+          ]
+        },
+        {
+          "text": "Administrarea în siguranță a insulinei i.v. în urgențe și verificările obligatorii.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Rolul în monitorizarea potasiului la pacientul cu tratament insulinic.",
+          "legislatie": [
+            "Ordin MS 870/2004"
+          ]
+        },
+        {
+          "text": "Măsuri la apariția semnelor de criză tireotoxică.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Administrarea hidrocortizonului în urgență și notarea în foaia de observație.",
+          "legislatie": [
+            "GDPR 2016/679"
+          ]
+        },
+        {
+          "text": "Investigații paraclinice asigurate urgent (analize sânge, EKG) la suspiciuni endocrine.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Pregătirea pacientului pentru transfer la ATI în mixedem comatos.",
+          "legislatie": [
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Verificarea stocului de insulină și soluții glucozate.",
+          "legislatie": [
+            "OMS 962/2009"
+          ]
+        },
+        {
+          "text": "Recunoașterea hipocalcemiei severe (tetanie, convulsii) și acțiuni inițiate.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Administrarea calciului i.v. și prevenirea complicațiilor.",
+          "legislatie": [
+            "Ordin MS 1500/2009"
+          ]
+        },
+        {
+          "text": "Pregătirea recoltării analizelor de urgență (cortizol, TSH).",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Documentarea corectă a medicației administrate.",
+          "legislatie": [
+            "GDPR 2016/679"
+          ]
+        },
+        {
+          "text": "Verificarea funcționării glucometrelor și monitoarelor TA.",
+          "legislatie": [
+            "Legea 319/2006"
+          ]
+        },
+        {
+          "text": "Îngrijirea pacientului cu insuficiență suprarenală acută.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Administrarea perfuziei de fluide în criza Addisoniană și parametrii monitorizați.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Acțiuni în hipoglicemie severă nocturnă în UPU.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Respectarea circuitului medicamentelor de urgență.",
+          "legislatie": [
+            "OMS 962/2009"
+          ]
+        },
+        {
+          "text": "Pregătirea pentru transport (oxigen, perfuzii, documente).",
+          "legislatie": [
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Supravegherea după administrarea insulinei i.v.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Igienă și protecție personală la pacienții critici endocrini.",
+          "legislatie": [
+            "Legea 319/2006"
+          ]
+        },
+        {
+          "text": "Verificarea identității pacientului înainte de tratament.",
+          "legislatie": [
+            "Legea 46/2003"
+          ]
+        },
+        {
+          "text": "Prevenirea erorilor de medicație la urgențele endocrine.",
+          "legislatie": [
+            "OSGG 600/2018"
+          ]
+        },
+        {
+          "text": "Aplicarea regulilor GDPR pentru confidențialitatea datelor pacientului.",
+          "legislatie": [
+            "GDPR 2016/679"
+          ]
+        },
+        {
+          "text": "Pregătirea medicației într-o criză tireotoxică.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Asigurarea continuității perfuziilor în timpul transportului.",
+          "legislatie": [
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Verificarea semnelor vitale la fiecare 15 minute.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Raportarea imediată către medic a aritmiilor severe.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Educația pacientului și familiei privind urgențele endocrine.",
+          "legislatie": [
+            "Legea 46/2003"
+          ]
+        },
+        {
+          "text": "Documentarea intervențiilor de urgență în FOCG UPU.",
+          "legislatie": [
+            "GDPR 2016/679"
+          ]
+        },
+        {
+          "text": "Administrarea corectă a oxigenoterapiei la pacientul critic endocrinologic.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Compatibilitatea soluțiilor perfuzabile înainte de administrare.",
+          "legislatie": [
+            "Ordin MS 1500/2009"
+          ]
+        },
+        {
+          "text": "Pregătirea pacientului pentru intubație de urgență.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Aplicarea regulilor PSI în manevre cu echipamente electrice (monitoare, injectomate).",
+          "legislatie": [
+            "Legea 307/2006"
+          ]
+        },
+        {
+          "text": "Gestionarea pacientului agitat cu hipoglicemie severă.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Verificarea trasabilității fiolelor de hidrocortizon.",
+          "legislatie": [
+            "OMS 962/2009"
+          ]
+        },
+        {
+          "text": "Protecția pacientului în caz de convulsii hipocalcemice.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Rolul în echipa multidisciplinară pentru pacientul endocrin critic.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Raportarea lipsei de medicamente sau consumabile către șeful de secție.",
+          "legislatie": [
+            "Ordin MS 870/2004"
+          ]
+        },
+        {
+          "text": "Participarea la instruiri periodice pe tema urgențelor endocrine.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Codul Muncii"
+          ]
+        }
+      ]
+    },
+    {
+      "categorie": "Infirmieri",
+      "numar_intrebari": 20,
+      "intrebari": [
+        {
+          "text": "Rolul infirmierului în supravegherea pacienților endocrini aflați în UPU.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Aplicarea regulilor de igienă personală și protecția pacienților critici endocrini.",
+          "legislatie": [
+            "Legea 319/2006",
+            "Ordin MS 916/2006"
+          ]
+        },
+        {
+          "text": "Curățarea și dezinfectarea spațiilor pentru pacienți cu urgențe endocrine.",
+          "legislatie": [
+            "Ordin MS 916/2006"
+          ]
+        },
+        {
+          "text": "Identificarea modificărilor vizibile (paloare, transpirații) sugestive pentru hipoglicemie.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Măsuri când pacientul devine brusc confuz sau agitat.",
+          "legislatie": [
+            "Ordin MS 443/2019"
+          ]
+        },
+        {
+          "text": "Transportul pacientului critic endocrinologic în interiorul spitalului.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Reguli de securitate la deplasarea pacientului cu perfuzii și oxigenoterapie.",
+          "legislatie": [
+            "Legea 319/2006"
+          ]
+        },
+        {
+          "text": "Colectarea deșeurilor rezultate din îngrijirea pacienților endocrini.",
+          "legislatie": [
+            "HG 856/2002",
+            "OUG 92/2021"
+          ]
+        },
+        {
+          "text": "Sprijinul acordat asistentelor și medicilor în manevrele de urgență.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Aplicarea normelor PSI în activitatea zilnică a infirmierilor.",
+          "legislatie": [
+            "Legea 307/2006"
+          ]
+        },
+        {
+          "text": "Protecția pacienților cu risc crescut de infecții.",
+          "legislatie": [
+            "Ordin MS 916/2006"
+          ]
+        },
+        {
+          "text": "Raportarea imediată a unei situații de urgență către asistent sau medic.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Asigurarea lenjeriei curate și igienei pacientului critic endocrinologic.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Protecția personală (EIP) în îngrijirea pacienților.",
+          "legislatie": [
+            "Legea 319/2006"
+          ]
+        },
+        {
+          "text": "Păstrarea confidențialității datelor pacientului endocrinologic.",
+          "legislatie": [
+            "GDPR 2016/679"
+          ]
+        },
+        {
+          "text": "Curățarea și pregătirea patului pentru un pacient nou admis în UPU.",
+          "legislatie": [
+            "Ordin MS 916/2006"
+          ]
+        },
+        {
+          "text": "Prevenirea căderilor pacientului prin măsuri de siguranță.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Transportul în siguranță al pacientului către altă secție.",
+          "legislatie": [
+            "Ordin MS 1091/2006"
+          ]
+        },
+        {
+          "text": "Recunoașterea semnelor de hipoglicemie (transpirații, tremor) și alertarea personalului.",
+          "legislatie": [
+            "Legea 95/2006"
+          ]
+        },
+        {
+          "text": "Participarea la instruiri de igienă și siguranță.",
+          "legislatie": [
+            "Legea 95/2006",
+            "Codul Muncii"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3354 @@
+[
+  {
+    "cod": "01 01 01",
+    "denumire": "deş euri de la excavarea minereurilor metalifere"
+  },
+  {
+    "cod": "01 01 02",
+    "denumire": "deşeuri de la excavarea minereurilor ne -metalifere 01 03 deşeuri de la procesarea fizica şi chimica a minereurilor metalifere"
+  },
+  {
+    "cod": "01 03 04*",
+    "denumire": "reziduuri acide generate de la procesarea minereurilor cu sulfuri"
+  },
+  {
+    "cod": "01 03 05*",
+    "denumire": "alte reziduuri cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "01 03 06",
+    "denumire": "reziduuri, altele decât cele specificate la 01 03 04 şi 01 03"
+  },
+  {
+    "cod": "01 03 07*",
+    "denumire": "alte deşeuri cu conţinut de substanţe periculoase de la procesarea fizica şi chimica a minereurilor metalifere"
+  },
+  {
+    "cod": "01 03 08",
+    "denumire": "deşeuri sub forma de praf şi pulberi, altele decât cele specificate la 01 03"
+  },
+  {
+    "cod": "01 03 09",
+    "denumire": "namoluri roşii de la producerea aluminei, altele decât cele specificate la 01 03 0"
+  },
+  {
+    "cod": "01 03 99",
+    "denumire": "alte deşeuri nespecificate 01 04 deşeuri de la procesarea fizica şi chimica a minereurilor nemetalifere"
+  },
+  {
+    "cod": "01 04 07*",
+    "denumire": "deşeuri cu conţinut de substanţe periculoase de la procesarea fizica şi chimica a minereurilor nemetalifere"
+  },
+  {
+    "cod": "01 04 08",
+    "denumire": "deşeuri de pietriş şi sparturi de piatra, altele decât cele specificate la 01 04"
+  },
+  {
+    "cod": "01 04 09",
+    "denumire": "deşeuri de nisip şi argila"
+  },
+  {
+    "cod": "01 04 10",
+    "denumire": "deşeuri sub forma de praf\" şi pulberi, altele decât cele specificate la 01 04"
+  },
+  {
+    "cod": "01 04 11",
+    "denumire": "deşeuri de la procesarea le siei şi rocilor care conţin saruri, altele decât cele specificate la 01 04"
+  },
+  {
+    "cod": "01 04 12",
+    "denumire": "reziduuri şi alte deşeuri de la spalarea şi purificarea minereurilor, altele decât cele specificate la 01 04 07 şi 01 04"
+  },
+  {
+    "cod": "01 04 13",
+    "denumire": "deşeuri de la taierea şi slefuire a pietrei, altele decât cele specificate la 01 04"
+  },
+  {
+    "cod": "01 04 99",
+    "denumire": "alte deşeuri nespecificate 01 05 noroaie de foraj şi alte deşeuri de la forare"
+  },
+  {
+    "cod": "01 05 04",
+    "denumire": "deşeuri şi noroaie de foraj pe baza de apa dulce"
+  },
+  {
+    "cod": "01 05 05*",
+    "denumire": "deşeuri şi noroaie de foraj cu conţinut d e uleiuri"
+  },
+  {
+    "cod": "01 05 06*",
+    "denumire": "noroaie de foraj şi alte deşeuri de forare cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "01 05 07",
+    "denumire": "noroaie de foraj şi deşeuri cu conţinut de baritina, altele decât cele specificate la 01 05 05 şi"
+  },
+  {
+    "cod": "01 05 08",
+    "denumire": "noroaie de foraj şi deşeuri cu conţinut de cloruri, altele decât cele specificate la 01 05 05 şi"
+  },
+  {
+    "cod": "01 05 99",
+    "denumire": "alte deşeuri nespecificate 02 DEŞEURI DIN AGRICULTURA, HORTICULTURA, ACVACULTURA, SILVICULTURA, VANATOARE ŞI PESCUIT, DE LA PREPARAREA ŞI P ROCESAREA ALIMENTELOR 02 01 deşeuri din agricultura, horticultura, acvacultura, silvicultura, vanatoare şi pescuit"
+  },
+  {
+    "cod": "02 01 01",
+    "denumire": "namoluri de la spalare şi curatare"
+  },
+  {
+    "cod": "02 01 02",
+    "denumire": "deşeuri de tesuturi animale"
+  },
+  {
+    "cod": "02 01 03",
+    "denumire": "deşeuri de tesuturi vegetale"
+  },
+  {
+    "cod": "02 01 04",
+    "denumire": "deş euri de materiale plastice (cu excepţia ambalajelor)"
+  },
+  {
+    "cod": "02 01 06",
+    "denumire": "dejectii animaliere (materii fecale, urina, inclusiv resturi de paie) colectate separat şi tratate în afară incintei"
+  },
+  {
+    "cod": "02 01 07",
+    "denumire": "deşeuri din exploatarea forestieră"
+  },
+  {
+    "cod": "02 01 08*",
+    "denumire": "deşeuri agr ochimice cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "02 01 09",
+    "denumire": "deşeuri agrochimice, altele decât cele specificate la 02 01"
+  },
+  {
+    "cod": "02 01 10",
+    "denumire": "deşeuri metalice"
+  },
+  {
+    "cod": "02 01 99",
+    "denumire": "alte deşeuri nespecificate 02 02 deşeuri de la prepararea şi procesarea carnii, pestelui şi altor alimente de origine animala"
+  },
+  {
+    "cod": "02 02 01",
+    "denumire": "namoluri de la spalare şi curatare"
+  },
+  {
+    "cod": "02 02 02",
+    "denumire": "deşeuri de tesuturi animale"
+  },
+  {
+    "cod": "02 02 03",
+    "denumire": "materii care nu se preteaza consumului sau procesarii"
+  },
+  {
+    "cod": "02 02 04",
+    "denumire": "namoluri de la epurarea efluentilor proprii"
+  },
+  {
+    "cod": "02 02 99",
+    "denumire": "alte deşeuri nespecificate 02 03 deşeuri de la prepararea şi procesarea fructelor, legumelor,cerealelor, uleiurilor comestibile, pulberei de cacao, cafelei, ceaiului şi tutunului; producerea conservelor; prepararea şi fermentarea drojdiei şi extract ului de drojdie şi melasei"
+  },
+  {
+    "cod": "02 03 01",
+    "denumire": "namoluri de la spalare, curatare, decojire, centrifugare şi separare"
+  },
+  {
+    "cod": "02 03 02",
+    "denumire": "deşeuri de agenţi de conservare"
+  },
+  {
+    "cod": "02 03 03",
+    "denumire": "deşeuri de la extractia cu solventi"
+  },
+  {
+    "cod": "02 03 04",
+    "denumire": "materii care nu se preteaza consumului sau procesari i"
+  },
+  {
+    "cod": "02 03 05",
+    "denumire": "namoluri de la epurarea efluentilor proprii"
+  },
+  {
+    "cod": "02 03 99",
+    "denumire": "alte deşeuri nespecificate 02 04 deşeuri de la procesarea zahărului"
+  },
+  {
+    "cod": "02 04 01",
+    "denumire": "namoluri de la curatarea şi spalarea sfeclei de zahăr"
+  },
+  {
+    "cod": "02 04 02",
+    "denumire": "deşeuri de carbonat de calciu"
+  },
+  {
+    "cod": "02 04 03",
+    "denumire": "nam oluri de la epurarea efluentilor proprii"
+  },
+  {
+    "cod": "02 04 99",
+    "denumire": "alte deşeuri nespecificate 02 05 deşeuri din industria produselor lactate"
+  },
+  {
+    "cod": "02 05 01",
+    "denumire": "materii care nu se preteaza consumului sau procesarii"
+  },
+  {
+    "cod": "02 05 02",
+    "denumire": "namoluri de la epurarea efluentilor proprii"
+  },
+  {
+    "cod": "02 05 99",
+    "denumire": "alte deşeuri nespecificate 02 06 deşeuri din industria produselor de panificatie şi cofetarie"
+  },
+  {
+    "cod": "02 06 01",
+    "denumire": "materii care nu se preteaza consumului sau procesarii"
+  },
+  {
+    "cod": "02 06 02",
+    "denumire": "deşeuri de agenţi de conservare"
+  },
+  {
+    "cod": "02 06 03",
+    "denumire": "namoluri de la epurarea efluentilor proprii"
+  },
+  {
+    "cod": "02 06 99",
+    "denumire": "alte deşeuri nespecificate 02 07 deşeuri de la producerea băuturilor alcoolice şi nealcoolice (exceptând cafeaua, ceaiul şi cacaua)"
+  },
+  {
+    "cod": "02 07 01",
+    "denumire": "deşeuri de la spalarea, curatarea şi prelucrarea mecanică a materiei prime"
+  },
+  {
+    "cod": "02 07 02",
+    "denumire": "deşeuri de la distilarea băuturilor alcoolice"
+  },
+  {
+    "cod": "02 07 03",
+    "denumire": "deşeuri de la tratamente chimice"
+  },
+  {
+    "cod": "02 07 04",
+    "denumire": "materii care nu se preteaza consumului sau procesarii 02 O7 05 namoluri de la epurarea efluentilor în incinta"
+  },
+  {
+    "cod": "02 07 99",
+    "denumire": "alte deşeuri nespecificate 03 DEŞEURI DE LA PRELUCRAREA LEMNULUI ŞI PRODUCEREA PLACILOR ŞI MOBILEI, PASTEI DE HÂRTIE, HÂRTIEI ŞI CARTONULUI 03 01 deşeuri de la procesarea lemnului şi producerea placilor şi mobilei"
+  },
+  {
+    "cod": "03 01 01",
+    "denumire": "deşeuri de scoarta şi de pluta"
+  },
+  {
+    "cod": "03 01 04*",
+    "denumire": "rumegu s, talas, aschii, resturi de scandura şi furnir cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "03 01 05",
+    "denumire": "rumegus, talas, aschii, resturi de scandura şi furnir, altele decât cele specificate la 03 01"
+  },
+  {
+    "cod": "03 01 99",
+    "denumire": "alte deşeuri nespecificate 03 02 deşeu ri de la conservarea lemnului"
+  },
+  {
+    "cod": "03 02 01*",
+    "denumire": "agenţi de conservare organici nehalogenati pentru lemn"
+  },
+  {
+    "cod": "03 02 02*",
+    "denumire": "agenţi de conservare organoclorurati pentru lemn"
+  },
+  {
+    "cod": "03 02 03*",
+    "denumire": "agenţi de conservare organometalici pentru lemn"
+  },
+  {
+    "cod": "03 02 04*",
+    "denumire": "agenţi de conservare anorganici pentru lemn"
+  },
+  {
+    "cod": "03 02 05*",
+    "denumire": "alţi agenţi de conservare pentru lemn, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "03 02 99",
+    "denumire": "alţi agenţi de conservare pentru lemn, nespecificati 03 03 deşeuri de la producerea şi procesarea pastei de hârtie, hârtie i şi cartonului"
+  },
+  {
+    "cod": "03 03 01",
+    "denumire": "deşeuri de lemn şi de scoarta"
+  },
+  {
+    "cod": "03 03 02",
+    "denumire": "namoluri de lesie verde (de la recuperarea soluţiilor de fierbere)"
+  },
+  {
+    "cod": "03 03 05",
+    "denumire": "namoluri de la eliminarea cernelii din procesul de reciclare a hârtiei"
+  },
+  {
+    "cod": "03 03 07",
+    "denumire": "deşeuri mecanice de la fierber ea hârtiei şi cartonului reciclate"
+  },
+  {
+    "cod": "03 03 08",
+    "denumire": "deşeuri de la sortarea hârtiei şi cartonului destinate reciclarii"
+  },
+  {
+    "cod": "03 03 09",
+    "denumire": "deşeuri de namol de caustificare"
+  },
+  {
+    "cod": "03 03 10",
+    "denumire": "fibre, namoluri de la separarea mecanică, cu conţinut de fibre, material de umplutura, creta re"
+  },
+  {
+    "cod": "03 03 11",
+    "denumire": "namoluri de la epurarea efluentilor proprii, altele decât cele specificate la 03 03"
+  },
+  {
+    "cod": "03 03 99",
+    "denumire": "alte deşeuri nespecificate 04 DEŞEURI DIN INDUSTRIILE PIELARIEI, BLANARIEI ŞI TEXTILA 04 01 deşeuri din industriile pielariei şi blanariei"
+  },
+  {
+    "cod": "04 01 01",
+    "denumire": "deşeuri de la seruire"
+  },
+  {
+    "cod": "04 01 02",
+    "denumire": "deşeuri de la cenusarire"
+  },
+  {
+    "cod": "04 01 03*",
+    "denumire": "deşeuri de la degresare cu conţinut de solventi fără faza lichidă"
+  },
+  {
+    "cod": "04 01 04",
+    "denumire": "flota de tabacire cu conţinut de crom"
+  },
+  {
+    "cod": "04 01 05",
+    "denumire": "flota de tabacire fără conţinut de crom"
+  },
+  {
+    "cod": "04 01 06",
+    "denumire": "namoluri, în special de la epurarea efluentilor în incinta cu conţinut de crom"
+  },
+  {
+    "cod": "04 01 07",
+    "denumire": "namoluri, în special de la epurarea efluentilor în incinta fără conţinut de crom"
+  },
+  {
+    "cod": "04 01 08",
+    "denumire": "deşeuri de piele tabacita (razaturi, stutuituri, taieturi, p raf de lustruit) cu conţinut de crom"
+  },
+  {
+    "cod": "04 01 09",
+    "denumire": "deşeuri de la apretare şi finisare"
+  },
+  {
+    "cod": "04 01 99",
+    "denumire": "alte deşeuri nespecificate 04 02 deşeuri din industria textila"
+  },
+  {
+    "cod": "04 02 09",
+    "denumire": "deşeuri de la materialele compozite (textile impregnate, elastomeri, plasto meri)"
+  },
+  {
+    "cod": "04 02 10",
+    "denumire": "materii organice din produse naturale (grasime, ceara)"
+  },
+  {
+    "cod": "04 02 14*",
+    "denumire": "deşeuri de la finisare cu conţinut de solventi organici"
+  },
+  {
+    "cod": "04 02 15",
+    "denumire": "deşeuri de la finisare cu alt conţinut decât cel specificat la 04 02"
+  },
+  {
+    "cod": "04 02 16*",
+    "denumire": "coloranti şi pigmenti cu c onţinut de substanţe periculoase"
+  },
+  {
+    "cod": "04 02 17",
+    "denumire": "coloranti şi pigmenti, alţii decât cei specificati la 04 02"
+  },
+  {
+    "cod": "04 02 19*",
+    "denumire": "namoluri de la epurarea efluentilor în incinta cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "04 02 20",
+    "denumire": "namoluri de la epurarea efluentilor în incint a, altele decât cele specificate la 04 02"
+  },
+  {
+    "cod": "04 02 21",
+    "denumire": "deşeuri de fibre textile neprocesate"
+  },
+  {
+    "cod": "04 02 22",
+    "denumire": "deşeuri de fibre textile procesate"
+  },
+  {
+    "cod": "04 02 99",
+    "denumire": "alte deşeuri nespecificate 05 DEŞEURI DE LA RAFINAREA PETROLULUI, PURIFICAREA GAZELOR NATURALE ŞI TRATAREA PIROLITICA A CARBUNILOR 05 01 deşeuri de la rafinarea petrolului"
+  },
+  {
+    "cod": "05 01 02*",
+    "denumire": "slamuri de la desalinizare"
+  },
+  {
+    "cod": "05 01 03*",
+    "denumire": "slamuri din rezervoare"
+  },
+  {
+    "cod": "05 01 04*",
+    "denumire": "namoluri acide alchilice"
+  },
+  {
+    "cod": "05 01 05*",
+    "denumire": "reziduuri uleioase"
+  },
+  {
+    "cod": "05 01 06*",
+    "denumire": "namoluri uleioase de la operaţiile de întreţinere a instalaţiilor şi echipamentelor"
+  },
+  {
+    "cod": "05 01 07*",
+    "denumire": "gudroane acide"
+  },
+  {
+    "cod": "05 01 08*",
+    "denumire": "alte gudroane"
+  },
+  {
+    "cod": "05 01 09*",
+    "denumire": "namoluri de la epurarea efluentilor în incinta cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "05 01 10",
+    "denumire": "namoluri de la epurarea efluentilo r în incinta, altele decât cele specificate la, 05 01"
+  },
+  {
+    "cod": "05 01 11*",
+    "denumire": "deşeuri de la spalarea combustibililor cu baze"
+  },
+  {
+    "cod": "05 01 12*",
+    "denumire": "acizi cu conţinut de uleiuri"
+  },
+  {
+    "cod": "05 01 13",
+    "denumire": "namoluri de la cazanul apei de alimentare"
+  },
+  {
+    "cod": "05 01 14",
+    "denumire": "deşeuri de la coloanele de răcire"
+  },
+  {
+    "cod": "05 01 15*",
+    "denumire": "argile de filtrare epuizate"
+  },
+  {
+    "cod": "05 01 16",
+    "denumire": "deşeuri cu conţinut de sulf de la desulfurarea petrolului"
+  },
+  {
+    "cod": "05 01 17",
+    "denumire": "bitum"
+  },
+  {
+    "cod": "05 01 99",
+    "denumire": "alte deşeuri nespecificate 05 06 deşeuri de la tratarea pirolitica a carbunilor"
+  },
+  {
+    "cod": "05 06 01*",
+    "denumire": "gudroane acide"
+  },
+  {
+    "cod": "05 06 03*",
+    "denumire": "alte gudroane"
+  },
+  {
+    "cod": "05 06 04",
+    "denumire": "deşeuri de la coloanele de răcire"
+  },
+  {
+    "cod": "05 06 99",
+    "denumire": "alte deşeuri nespecificate 05 07 deşeuri de la purificarea şi transportul gazelor naturale"
+  },
+  {
+    "cod": "05 07 01*",
+    "denumire": "deşeuri cu conţinut de mercur"
+  },
+  {
+    "cod": "05 07 02",
+    "denumire": "deşeuri cu conţinut de sulf"
+  },
+  {
+    "cod": "05 07 99",
+    "denumire": "alte deşeuri nespecificate 06 DEŞEURI DIN PROCESE CHIMICE ANORGANICE 06 01 deşeuri de la producerea, prepararea, furnizarea şi utilizarea acizilor"
+  },
+  {
+    "cod": "06 01 01*",
+    "denumire": "acid sulfuric şi acid sulfuros"
+  },
+  {
+    "cod": "06 01 02*",
+    "denumire": "acic clorhidric"
+  },
+  {
+    "cod": "06 01 03*",
+    "denumire": "acid fluorhidric"
+  },
+  {
+    "cod": "06 01 04*",
+    "denumire": "acid fosforic şi acid fosforos"
+  },
+  {
+    "cod": "06 01 05*",
+    "denumire": "acid azotic şi acid azotos"
+  },
+  {
+    "cod": "06 01 06*",
+    "denumire": "alţi acizi"
+  },
+  {
+    "cod": "06 01 99",
+    "denumire": "alte deşeuri nespecificate 06 02 deşeuri de la PPFU bazelor"
+  },
+  {
+    "cod": "06 02 01*",
+    "denumire": "hidroxid de calciu"
+  },
+  {
+    "cod": "06 02 03*",
+    "denumire": "hidroxid de amoniu"
+  },
+  {
+    "cod": "06 02 04*",
+    "denumire": "hidroxid de sodiu ş i potasiu"
+  },
+  {
+    "cod": "06 02 05*",
+    "denumire": "alte baze"
+  },
+  {
+    "cod": "06 02 99",
+    "denumire": "alte deşeuri nespecificate 06 03 deşeuri de la PPFU sarurilor şi a soluţiilor lor şi a oxizilor metalici"
+  },
+  {
+    "cod": "06 03 11*",
+    "denumire": "saruri solide şi soluţii cu conţinut de cianuri"
+  },
+  {
+    "cod": "06 03 13*",
+    "denumire": "saruri solide şi soluţii cu conţinut de metale grele"
+  },
+  {
+    "cod": "06 03 14",
+    "denumire": "saruri solide şi soluţii, altele decât cele specificate la 06 03 11 şi 06 03"
+  },
+  {
+    "cod": "06 03 15*",
+    "denumire": "oxizi metalici cu conţinut de metale grele"
+  },
+  {
+    "cod": "06 03 16",
+    "denumire": "oxizi metalici, alţii decât cei specificati la 06 03"
+  },
+  {
+    "cod": "06 03 99",
+    "denumire": "alte deşeur i nespecificate 06 04 deşeuri cu conţinut de metale, altele decât cele specificate la 06"
+  },
+  {
+    "cod": "06 04 03*",
+    "denumire": "deşeuri cu conţinut de arsen"
+  },
+  {
+    "cod": "06 04 04*",
+    "denumire": "deşeuri cu conţinut de mercur"
+  },
+  {
+    "cod": "06 04 05*",
+    "denumire": "deşeuri cu conţinut de alte metale grele"
+  },
+  {
+    "cod": "06 04 99",
+    "denumire": "alte deşeuri nespecificate 06 05 namoluri de la epurarea efluentilor proprii"
+  },
+  {
+    "cod": "06 05 02*",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "06 05 03",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, altele decât cele specificate la 06 05 02 06 06 deşeuri de la PPFU produselor chimice cu sulf, proceselor chimice de sulfurare şi desulfurare"
+  },
+  {
+    "cod": "06 06 02*",
+    "denumire": "deşeuri cu conţinut de sulfuri periculoase"
+  },
+  {
+    "cod": "06 06 03",
+    "denumire": "deşeuri cu conţinut de sulfuri, altele decât cele specificate la 06 06"
+  },
+  {
+    "cod": "06 06 99",
+    "denumire": "alte deşeuri nespecificate 06 07 deşeuri de la PPFU halogenilor şi a proceselor chimice cu halogeni"
+  },
+  {
+    "cod": "06 07 01*",
+    "denumire": "deşeuri cu conţinut de azbest de la electroliza"
+  },
+  {
+    "cod": "06 07 02*",
+    "denumire": "cărbune activ de la producerea clorului"
+  },
+  {
+    "cod": "06 07 03*",
+    "denumire": "namol de sulfat de bariu cu conţinut de mercur"
+  },
+  {
+    "cod": "06 07 04*",
+    "denumire": "soluţii şi acizi, de exemplu acid de contact"
+  },
+  {
+    "cod": "06 07 99",
+    "denumire": "alte deşeuri nespecificate 06 08 deşeuri de la PPFU siliconului şi a derivatilor din silicon"
+  },
+  {
+    "cod": "06 08 02*",
+    "denumire": "deşeuri cu conţinut de siliconi periculosi"
+  },
+  {
+    "cod": "06 08 99",
+    "denumire": "alte de şeuri nespecificate 06 09 deşeuri de la PPFU produselor, chimice cu fosfor şi de la procesele chimice cu fosfor"
+  },
+  {
+    "cod": "06 09 02",
+    "denumire": "zgura fosforoasa"
+  },
+  {
+    "cod": "06 09 03*",
+    "denumire": "deşeuri pe baza de calciu care conţin sau sunt contaminate cu substanţe periculoase"
+  },
+  {
+    "cod": "06 09 04",
+    "denumire": "deşeuri pe baza de calciu, altele decât cele specificate la 06 09"
+  },
+  {
+    "cod": "06 09 99",
+    "denumire": "alte deşeuri nespecificate 06 10 deşeuri de la PPFU produselor chimice cu azot, procesele chimice cu azot şi obţinerea ingrasamintelor"
+  },
+  {
+    "cod": "06 10 02*",
+    "denumire": "deşeuri cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "06 10 99",
+    "denumire": "alte deşeuri nespecificate 06 11 deşeuri de la producerea pigmentilor anorganici şi a opacizantilor"
+  },
+  {
+    "cod": "06 11 01",
+    "denumire": "deşeuri pe baza de calciu de la producerea bioxidului de titan"
+  },
+  {
+    "cod": "06 11 99",
+    "denumire": "alte de şeuri nespecificate 06 13 deşeuri de la procese chimice anorganice fără alta specificaţie"
+  },
+  {
+    "cod": "06 13 01*",
+    "denumire": "produşi anorganici de protecţie a instalaţiei, agenţi de conservare a lemnului şi alte biocide."
+  },
+  {
+    "cod": "06 13 02*",
+    "denumire": "cărbune activ epuizat (cu excepţia 06 07 02)"
+  },
+  {
+    "cod": "06 13 03",
+    "denumire": "negru de fum"
+  },
+  {
+    "cod": "06 13 04*",
+    "denumire": "deşeuri de la procesele cu azbest"
+  },
+  {
+    "cod": "06 13 05*",
+    "denumire": "funingine"
+  },
+  {
+    "cod": "06 13 99",
+    "denumire": "alte deşeuri nespecificate 07 DEŞEURI DIN PROCESE CHIMICE ORGANICE 07 01 deşeuri de la producerea, prepararea, furnizarea şi utilizarea (PPFU) produsilor chimici organici de baza"
+  },
+  {
+    "cod": "07 01 01*",
+    "denumire": "soluţii apoase de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 01 03*",
+    "denumire": "solventi organici halogenati, lichide de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 01 04*",
+    "denumire": "alţi solventi organici, lichide de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 01 07*",
+    "denumire": "reziduuri halogenate din blazul coloanelor de distilare şi reactie"
+  },
+  {
+    "cod": "07 01 08*",
+    "denumire": "alte reziduuri din blazul coloanelor de distilare şi reactie"
+  },
+  {
+    "cod": "07 01 09*",
+    "denumire": "turte de filtrare halogenate şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 01 10*",
+    "denumire": "alte turte de filtrare şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 01 11*",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "07 01 12",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, altele decât cele specificate la 07 01"
+  },
+  {
+    "cod": "07 01 99",
+    "denumire": "alte deş euri nespecificate 07 02 deşeuri de la PPFU materialelor plastice, cauciucului sintetic şi fibrelor artificiale"
+  },
+  {
+    "cod": "07 02 01*",
+    "denumire": "lichide apoase de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 02 03*",
+    "denumire": "solventi organici halogenati, lichide de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 02 04*",
+    "denumire": "al ţi solventi organici, soluţii de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 02 07*",
+    "denumire": "reziduuri halogenate din blazul coloanelor de reactie"
+  },
+  {
+    "cod": "07 02 08*",
+    "denumire": "alte reziduuri din blazul coloanelor de reactie"
+  },
+  {
+    "cod": "07 02 09*",
+    "denumire": "turte de filtrare halogenate şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 02 10*",
+    "denumire": "alte turte de filtrare şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 02 11*",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "07 02 12",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, altele decât cele specificate la 07 02"
+  },
+  {
+    "cod": "07 02 13",
+    "denumire": "deşeuri de materiale plastice"
+  },
+  {
+    "cod": "07 02 14*",
+    "denumire": "deşeuri de aditivi cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "07 02 15",
+    "denumire": "deşeuri de aditivi, altele decât cele specificate la 07 02"
+  },
+  {
+    "cod": "07 02 16*",
+    "denumire": "deşeuri cu conţinut de siliconi periculosi"
+  },
+  {
+    "cod": "07 02 17",
+    "denumire": "deşeuri cu conţinut de si liconi altele decât cele menţionate la 07 02 16*"
+  },
+  {
+    "cod": "07 02 99",
+    "denumire": "alte deşeuri nespecificate 07 03 deşeuri de la PPFU vopselelor şi pigmentilor organici (cu excepţia 06 11)"
+  },
+  {
+    "cod": "07 03 01*",
+    "denumire": "lichide apoase de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 03 03*",
+    "denumire": "solventi organici halogenati, lichide de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 03 04*",
+    "denumire": "alţi solventi organici, lichide de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 03 07*",
+    "denumire": "reziduuri halogenate din blazul coloanelor de reactie"
+  },
+  {
+    "cod": "07 03 08*",
+    "denumire": "alte reziduuri din blazul coloanelor de reactie"
+  },
+  {
+    "cod": "07 03 09*",
+    "denumire": "turte de filtrare halogenate şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 03 10*",
+    "denumire": "alte turte de filtrare şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 03 11*",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "07 03 12",
+    "denumire": "namoluri de la epurarea efluentilor în in cinta, altele decât cele specificate la 07 03"
+  },
+  {
+    "cod": "07 03 99",
+    "denumire": "alte deşeuri nespecificate 07 04 deşeuri de la PPFU produselor de protecţie a instalaţiilor (cu excepţia 02 01 08 şi 02 01 09), agenţilor de conservare a lemnului (cu excepţia 03 02 ) şi altor biocide"
+  },
+  {
+    "cod": "07 04 01*",
+    "denumire": "lichide apoase de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 04 03*",
+    "denumire": "solventi organici halogenati, lichide de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 04 04*",
+    "denumire": "alţi solventi organici, lichide de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 04 07*",
+    "denumire": "reziduuri halogenate din blazul coloanelor de reactie"
+  },
+  {
+    "cod": "07 04 08*",
+    "denumire": "alte reziduuri din blazul coloanelor de reactie"
+  },
+  {
+    "cod": "07 04 09*",
+    "denumire": "turte de filtrare halogenate şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 04 10*",
+    "denumire": "alte turte de filtrare şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 04 11*",
+    "denumire": "namoluri de la tratarea efluentilor în incinta, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "07 04 12",
+    "denumire": "namoluri de la tratarea efluentilor în incinta, altele decât cele specificate la"
+  },
+  {
+    "cod": "07 04 13*",
+    "denumire": "deşeuri solide cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "07 04 99",
+    "denumire": "alte deşeuri nespecificate 07 05 deşeuri de la PPFU produselor farmaceutice"
+  },
+  {
+    "cod": "07 05 01*",
+    "denumire": "lichide apoase de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 05 03*",
+    "denumire": "solventi organici halogenati, lichide de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 05 04*",
+    "denumire": "alţi solventi organici, lichide de spalare şi soluţii muma 07 05 0 7* reziduuri halogenate din blazul coloanelor de reactie"
+  },
+  {
+    "cod": "07 05 08*",
+    "denumire": "alte reziduuri din blazul coloanelor de reactie"
+  },
+  {
+    "cod": "07 05 09*",
+    "denumire": "turte de filtrare halogenate şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 05 10*",
+    "denumire": "alte turte de filtrare şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 05 11*",
+    "denumire": "namoluri de l a epurarea efluentilor în incinta, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "07 05 12",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, altele decât cele specificate la 07 05"
+  },
+  {
+    "cod": "07 05 13*",
+    "denumire": "deşeuri solide cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "07 05 14",
+    "denumire": "deşeuri solide, altele decât cele specificate la 07 05"
+  },
+  {
+    "cod": "07 05 99",
+    "denumire": "alte deşeuri nespecificate 07 06 deşeuri de la PPFU grasimilor, unsorilor, sapunurilor, detergentilor, dezinfectantilor şi produselor cosmetice"
+  },
+  {
+    "cod": "07 06 01*",
+    "denumire": "lichide a poase de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 06 03*",
+    "denumire": "solventi organici halogenati, lichide de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 06 04*",
+    "denumire": "alţi solventi organici, lichide de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 06 07*",
+    "denumire": "reziduuri halogenate din blazul coloanelor de reactie"
+  },
+  {
+    "cod": "07 06 08*",
+    "denumire": "alte reziduuri din blazul coloanelor de reactie"
+  },
+  {
+    "cod": "07 06 09*",
+    "denumire": "turte de filtrare halogenate şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 06 10*",
+    "denumire": "alte turte de filtrare şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 06 11*",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "07 06 12",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, altele decât cele specificate la 07 06"
+  },
+  {
+    "cod": "07 06 99",
+    "denumire": "alte deşeuri nespecificate 07 07 deşeuri de la PPFU produselor chimice innobilate şi a produselor chimice nespecificate în lista"
+  },
+  {
+    "cod": "07 07 01*",
+    "denumire": "lichide apoase de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 07 03*",
+    "denumire": "solventi organici halogenati, lichide de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 07 04*",
+    "denumire": "alţi solventi organici, lichide de spalare şi soluţii muma"
+  },
+  {
+    "cod": "07 07 07*",
+    "denumire": "reziduuri halogenate din blazul coloanelor de reac tie"
+  },
+  {
+    "cod": "07 07 08*",
+    "denumire": "alte reziduuri din blazul coloanelor de reactie"
+  },
+  {
+    "cod": "07 07 09*",
+    "denumire": "turte de filtrare halogenate şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 07 10*",
+    "denumire": "alte turte de filtrare şi absorbanti epuizati"
+  },
+  {
+    "cod": "07 07 11*",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, cu conţinut de s ubstanţe periculoase"
+  },
+  {
+    "cod": "07 07 12",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, altele decât cele specificate la 07 07"
+  },
+  {
+    "cod": "07 07 99",
+    "denumire": "alte deşeuri nespecificate 08 DEŞEURI DE LA PRODUCEREA, PREPARAREA, FURNIZAREA ŞI UTILIZAREA (PPFU) STRATURILOR DE ACOPERIRE (VOPSELE, LACURI ŞI EMAILURI VITROASE), A ADEZIVILOR, CLEIURILOR ŞI CERNELURILOR TIPOGRAFICE 08 01 deşeuri de la PPFU vopselelor şi lacurilor şi îndepărtarea acestora"
+  },
+  {
+    "cod": "08 01 11*",
+    "denumire": "deşeuri de vopsele şi lacuri cu conţinut de solventi organici sau alte substanţe periculoase"
+  },
+  {
+    "cod": "08 01 12",
+    "denumire": "deşeuri de vopsele şi lacuri, altele decât cele specificate la 08 01"
+  },
+  {
+    "cod": "08 01 13*",
+    "denumire": "namoluri de la vopsele şi lacuri cu conţinut de solventi organici sau alte substanţe pericu loase"
+  },
+  {
+    "cod": "08 01 14",
+    "denumire": "namoluri de la vopsele şi lacuri, altele decât cele specificate la 08 01"
+  },
+  {
+    "cod": "08 01 15*",
+    "denumire": "namoluri apoase cu conţinut de vopsele şi lacuri şi solventi organici sau alte substanţe periculoase"
+  },
+  {
+    "cod": "08 01 16",
+    "denumire": "namoluri apoase cu conţinut de vopsele şi lacuri, altele decât cele specificate la 08 01"
+  },
+  {
+    "cod": "08 01 17*",
+    "denumire": "deşeuri de la îndepărtarea vopselelor şi lacurilor cu conţinut de solventi organici sau alte substanţe periculoase"
+  },
+  {
+    "cod": "08 01 18",
+    "denumire": "deşeuri de la îndepărtarea \"vopselelor şi lacurilor, altele decât cele specificate la 08 01"
+  },
+  {
+    "cod": "08 01 19*",
+    "denumire": "suspensii apoase cu conţinut de vopsele şi lacuri şi solvent organici sau alte substanţe periculoase"
+  },
+  {
+    "cod": "08 01 20",
+    "denumire": "suspensii apoase cu conţinut de vopsele şi lacuri, altele decât cele specificate la 08 01"
+  },
+  {
+    "cod": "08 01 21*",
+    "denumire": "deşeuri de la îndepărtarea vopselelor şi lacurilor"
+  },
+  {
+    "cod": "08 01 99",
+    "denumire": "alte deşeuri nespecificate 08 02 deşeuri de la PPFU altor materiale de acoperire (inclusiv material ceramice)"
+  },
+  {
+    "cod": "08 02 01",
+    "denumire": "deşeuri de pulberi de acoperire"
+  },
+  {
+    "cod": "08 02 02",
+    "denumire": "namoluri apoase cu conţinut de materiale ceramice"
+  },
+  {
+    "cod": "08 02 03",
+    "denumire": "suspensii apoase cu conţinut de materiale ceramice"
+  },
+  {
+    "cod": "08 02 99",
+    "denumire": "alte deşeuri nespecificate 08 03 deşeuri de la PPFU cernelurilor tipografice"
+  },
+  {
+    "cod": "08 03 07",
+    "denumire": "namoluri apoase cu conţinut de cern eluri"
+  },
+  {
+    "cod": "08 03 08",
+    "denumire": "deşeuri lichide apoase cu conţinut de cerneluri"
+  },
+  {
+    "cod": "08 03 12*",
+    "denumire": "deşeuri de cerneluri cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "08 03 13",
+    "denumire": "deşeuri de cerneluri, altele decât cele specificate la 08 03"
+  },
+  {
+    "cod": "08 03 14*",
+    "denumire": "namoluri de cerneluri cu conţinut de sub stanţe periculoase"
+  },
+  {
+    "cod": "08 03 15",
+    "denumire": "namoluri de cerneluri, altele decât cele specificate la 08 03"
+  },
+  {
+    "cod": "08 03 16*",
+    "denumire": "deşeuri de soluţii de gravare"
+  },
+  {
+    "cod": "08 03 17*",
+    "denumire": "deşeuri de tonere de imprimante cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "08 03 18",
+    "denumire": "deşeuri de tonere de imprimante, altele decât cele specificate la 08 03"
+  },
+  {
+    "cod": "08 03 19*",
+    "denumire": "ulei de dispersie"
+  },
+  {
+    "cod": "08 03 99",
+    "denumire": "alte deşeuri nespecificate 08 04 deşeuri de la PPFU adezivilor şi cleiurilor (inclusive produsele impermeabile)"
+  },
+  {
+    "cod": "08 04 09*",
+    "denumire": "deşeuri de adezivi şi cleiuri cu c onţinut de solventi organici sau alte substanţe periculoase"
+  },
+  {
+    "cod": "08 04 10",
+    "denumire": "deşeuri de adezivi şi cleiuri, altele decât cele specificate la 08 04"
+  },
+  {
+    "cod": "08 04 11*",
+    "denumire": "namoluri de adezivi şi cleiuri cu conţinut de solventi organici sau alte substanţe periculoa se"
+  },
+  {
+    "cod": "08 04 12",
+    "denumire": "namoluri de adezivi şi cleiuri, altele decât cele specificate la 08 04"
+  },
+  {
+    "cod": "08 04 13*",
+    "denumire": "namoluri apoase cu conţinut de adezivi şi cleiuri şi solventi organici sau alte substanţe periculoase"
+  },
+  {
+    "cod": "08 04 14",
+    "denumire": "namoluri apoase cu conţinut de adezivi şi cle iuri, altele decât cele specificate la 08 04"
+  },
+  {
+    "cod": "08 04 15*",
+    "denumire": "deşeuri lichide apoase cu conţinut de adezivi şi cleiuri şi solventi organici sau alte substanţe periculoase"
+  },
+  {
+    "cod": "08 04 16",
+    "denumire": "deşeuri lichide apoase cu conţinut de adezivi şi cleiuri, altele decât cele specificate la 08 04"
+  },
+  {
+    "cod": "08 04 17*",
+    "denumire": "ulei de colofoniu"
+  },
+  {
+    "cod": "08 04 99",
+    "denumire": "alte deşeuri nespecificate 08 05 alte deşeuri nespecificate în"
+  },
+  {
+    "cod": "08 05 01*",
+    "denumire": "deşeuri de izocianati 09 DEŞEURI DIN INDUSTRIA FOTOGRAFICA 09 01 deşeuri din industria fotogra fica"
+  },
+  {
+    "cod": "09 01 01*",
+    "denumire": "developanti pe baza de apa şi soluţii de activare"
+  },
+  {
+    "cod": "09 01 02*",
+    "denumire": "soluţii de developare pe baza de apa pentru plăcile offset"
+  },
+  {
+    "cod": "09 01 03*",
+    "denumire": "soluţii de developare pe baza de solventi"
+  },
+  {
+    "cod": "09 01 04*",
+    "denumire": "soluţii de fixare"
+  },
+  {
+    "cod": "09 01 05*",
+    "denumire": "soluţii de albire şi soluţii de albire fixatoare"
+  },
+  {
+    "cod": "09 01 06*",
+    "denumire": "deşeuri cu conţinut de argint de la tratarea în incinta a deşeurilor fotografice"
+  },
+  {
+    "cod": "09 01 07",
+    "denumire": "film sau hârtie fotografica cu conţinut de argint sau compuşi de argint"
+  },
+  {
+    "cod": "09 01 08",
+    "denumire": "film sau hârtie fotografica fără conţinut de argint sau compuşi de argint"
+  },
+  {
+    "cod": "09 01 10",
+    "denumire": "camere de unica folosinta fără baterii"
+  },
+  {
+    "cod": "09 01 11*",
+    "denumire": "camera de unica folosinta cu baterii incluse la 16 06 01, 16 06 02 sau 16 06"
+  },
+  {
+    "cod": "09 01 12",
+    "denumire": "camere de unica folosinta cu baterii, altele decât cele specific ate la 09 01"
+  },
+  {
+    "cod": "09 01 13*",
+    "denumire": "deşeuri apoase lichide de la recuperarea în incinta a argintului, altele decât cele specificate la 09 01"
+  },
+  {
+    "cod": "09 01 99",
+    "denumire": "alte deşeuri nespecificate 10 DEŞEURI DIN PROCESELE TERMICE 10 01 deşeuri de la centralele termice şi de la alte instalaţii de combustie (cu excepţia 19)"
+  },
+  {
+    "cod": "10 01 01",
+    "denumire": "cenusa de vatra, zgura şi praf de cazan (cu excepţia prafului de cazan specificat la 10 01 04)"
+  },
+  {
+    "cod": "10 01 02",
+    "denumire": "cenusa zburătoare de la arderea carbunelui"
+  },
+  {
+    "cod": "10 01 03",
+    "denumire": "cenus a zburătoare de la arderea turbei şi lemnului netratat"
+  },
+  {
+    "cod": "10 01 04*",
+    "denumire": "cenusa zburătoare de la arderea uleiului şi praf de cazan"
+  },
+  {
+    "cod": "10 01 05",
+    "denumire": "deşeuri solide, pe baza de calciu, de la desulfurarea gazelor de ardere"
+  },
+  {
+    "cod": "10 01 07",
+    "denumire": "namoluri pe baza de calciu, de la desulfu rarea gazelor de ardere"
+  },
+  {
+    "cod": "10 01 09*",
+    "denumire": "acid sulfuric"
+  },
+  {
+    "cod": "10 01 13*",
+    "denumire": "cenusi zburătoare de la hidrocarburile emulsionate folosite drept combustibil"
+  },
+  {
+    "cod": "10 01 14*",
+    "denumire": "cenusa de vatra, zgura şi praf de cazan de la co -incinerarea deşeurilor cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 01 15",
+    "denumire": "cenusa de vatra, zgura şi praf de cazan de la co -incinerarea altor deşeuri decât cele specificate la 10 01"
+  },
+  {
+    "cod": "10 01 16*",
+    "denumire": "cenusa zburătoare de la co -incinerare cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 01 17",
+    "denumire": "cenusa zburătoare de la co -incinerare, alta decât cea specificată la 10 01"
+  },
+  {
+    "cod": "10 01 18*",
+    "denumire": "deşeuri de la spalarea gazelor cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 01 19",
+    "denumire": "deşeuri de la spalarea gazelor, altele decât cele specificate la 10 01 05, 10 01 07 şi 10 01"
+  },
+  {
+    "cod": "10 01 20*",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 01 21",
+    "denumire": "namoluri de la epurarea efluentilor în incinta, altele decât cele specificate la 10 01"
+  },
+  {
+    "cod": "10 01 22*",
+    "denumire": "namoluri apoase de la spalarea cazanului de ardere cu conţi nut de substanţe periculoase"
+  },
+  {
+    "cod": "10 01 23",
+    "denumire": "namoluri apoase de la spalarea cazanului de ardere, altele decât cele specificate la 10 01"
+  },
+  {
+    "cod": "10 01 24",
+    "denumire": "nisipuri de la paturile fluidizate"
+  },
+  {
+    "cod": "10 01 25",
+    "denumire": "deşeuri de la depozitarea combustibilului şi de la pregătirea car bunelui de ardere pentru instalaţiile termice"
+  },
+  {
+    "cod": "10 01 26",
+    "denumire": "deşeuri de la epurarea apelor de răcire"
+  },
+  {
+    "cod": "10 01 99",
+    "denumire": "alte deşeuri nespecificate 10 02 deşeuri din industria siderurgica"
+  },
+  {
+    "cod": "10 02 01",
+    "denumire": "deşeuri de la procesarea zgurii"
+  },
+  {
+    "cod": "10 02 02",
+    "denumire": "zgura neprocesata"
+  },
+  {
+    "cod": "10 02 07*",
+    "denumire": "deşeuri solide de la epurarea gazelor cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 02 08",
+    "denumire": "deşeuri solide de la epurarea gazelor, altele decât cele specificate la 10 02"
+  },
+  {
+    "cod": "10 02 10",
+    "denumire": "cruste de tunder"
+  },
+  {
+    "cod": "10 02 11*",
+    "denumire": "deşeuri de la epurar ea apelor de răcire cu conţinut de uleiuri"
+  },
+  {
+    "cod": "10 02 12",
+    "denumire": "deşeuri de la epurarea apelor de răcire, altele decât cele specificate la 10 02"
+  },
+  {
+    "cod": "10 02 13*",
+    "denumire": "namoluri şi turte de filtrare de Ia epurarea gazelor cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 02 14",
+    "denumire": "namoluri şi turte de filtrare, altele decât cele specificate la 10 02"
+  },
+  {
+    "cod": "10 02 15",
+    "denumire": "alte namoluri şi turte de filtrare"
+  },
+  {
+    "cod": "10 02 99",
+    "denumire": "alte deşeuri nespecificate 10 03 deşeuri din metalurgia termica a aluminiului"
+  },
+  {
+    "cod": "10 03 02",
+    "denumire": "resturi de anozi"
+  },
+  {
+    "cod": "10 03 04*",
+    "denumire": "zguri de la top irea primara"
+  },
+  {
+    "cod": "10 03 05",
+    "denumire": "deşeuri de alumina"
+  },
+  {
+    "cod": "10 03 08*",
+    "denumire": "zguri saline de la topirea secundară"
+  },
+  {
+    "cod": "10 03 09*",
+    "denumire": "scorii negre de la topirea secundară"
+  },
+  {
+    "cod": "10 03 15*",
+    "denumire": "cruste care sunt inflamabile sau emit în, contact cu apa, gaze inflamabile în cantităţi periculoase"
+  },
+  {
+    "cod": "10 03 16",
+    "denumire": "cruste, altele decât cele specificate la 10 03"
+  },
+  {
+    "cod": "10 03 17*",
+    "denumire": "deşeuri cu conţinut de gudroane de la producerea anozilor"
+  },
+  {
+    "cod": "10 03 18",
+    "denumire": "deşeuri cu conţinut de carbon de la producerea anozilor, altele decât cele specificate la 10 03"
+  },
+  {
+    "cod": "10 03 19*",
+    "denumire": "praf din gazele de ardere cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 03 20",
+    "denumire": "praf din gazele de ardere, altul decât cel specificat la 10 03"
+  },
+  {
+    "cod": "10 03 21*",
+    "denumire": "alte particule şi praf (inclusiv praf de la morile cu bile) cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 03 22",
+    "denumire": "alte particule şi praf (inclusiv praf de la morile cu bile), altele decât cele specificate la 10 03"
+  },
+  {
+    "cod": "10 03 23*",
+    "denumire": "deşeuri solide de la epurarea gazelor cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 03 24",
+    "denumire": "deşeuri solide de la epurarea gazelor, altele decât cele specificate la 10 03"
+  },
+  {
+    "cod": "10 03 25*",
+    "denumire": "namoluri şi turte de filtrare de la epurarea gazelor cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 03 26",
+    "denumire": "namoluri şi turte de filtrare de la epurarea gazelor, altele decât cele specificate la 10 03"
+  },
+  {
+    "cod": "10 03 27*",
+    "denumire": "deşeuri de la epurarea apelor de răcire cu conţinut de ulei"
+  },
+  {
+    "cod": "10 03 28",
+    "denumire": "deşeuri de la epurarea apelor de răcire, altele decât cele specificate la 10 03"
+  },
+  {
+    "cod": "10 03 29*",
+    "denumire": "deşeuri de la epurarea zgurilor saline şi scoriile negre cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 03 30",
+    "denumire": "deşeuri de la epurarea zgurilor saline şi scoriile negre, altele decât cele specificate la 10 03"
+  },
+  {
+    "cod": "10 03 99",
+    "denumire": "alte deşeuri nespecificate 10 04 deşeuri din metalurgia termica a plumbului"
+  },
+  {
+    "cod": "10 04 01*",
+    "denumire": "zguri de la topirea primara şi secundară"
+  },
+  {
+    "cod": "10 04 02*",
+    "denumire": "scorii şi cruste de la topirea primara şi secundară"
+  },
+  {
+    "cod": "10 04 03*",
+    "denumire": "arseniat de calciu"
+  },
+  {
+    "cod": "10 04 04*",
+    "denumire": "praf din gazul de ardere"
+  },
+  {
+    "cod": "10 04 05*",
+    "denumire": "alte particule şi praf"
+  },
+  {
+    "cod": "10 04 06*",
+    "denumire": "deşeuri solide de la epurarea gazelor"
+  },
+  {
+    "cod": "10 04 07*",
+    "denumire": "namolur i şi turte de filtrare de la epurarea gazelor"
+  },
+  {
+    "cod": "10 04 09*",
+    "denumire": "deşeuri de la epurarea apelor de răcire cu conţinut de ulei"
+  },
+  {
+    "cod": "10 04 10",
+    "denumire": "deşeuri de la epurarea apelor de răcire, altele decât cele specificate la 10 04"
+  },
+  {
+    "cod": "10 04 99",
+    "denumire": "alte deşeuri nespecificate 10 05 deşeuri din metalurgia termica a zincului"
+  },
+  {
+    "cod": "10 05 01",
+    "denumire": "zguri de la topirea primara şi secundară"
+  },
+  {
+    "cod": "10 05 03*",
+    "denumire": "praf din gazul de ardere"
+  },
+  {
+    "cod": "10 05 04",
+    "denumire": "alte particule şi praf"
+  },
+  {
+    "cod": "10 05 05*",
+    "denumire": "deşeuri solide de la epurarea gazelor"
+  },
+  {
+    "cod": "10 05 06*",
+    "denumire": "namoluri şi turte de filtrare de la epurarea gazelor"
+  },
+  {
+    "cod": "10 05 08*",
+    "denumire": "deşeuri de la epurarea apelor de răcire cu conţinut de ulei"
+  },
+  {
+    "cod": "10 05 09",
+    "denumire": "deşeuri de la epurarea apelor de răcire, altele decât cele specificate la 10 05"
+  },
+  {
+    "cod": "10 05 10*",
+    "denumire": "scorii şi cruste care sunt inflamabile sau emit, în contactul cu apa, gaze inflamabile în cantităţi periculoase"
+  },
+  {
+    "cod": "10 05 11",
+    "denumire": "scorii şi cruste, altele decât cele specificate la 10 05"
+  },
+  {
+    "cod": "10 05 99",
+    "denumire": "alte deşeuri nespecificate 10 06 deşeuri din metalurgia termica a cuprului"
+  },
+  {
+    "cod": "10 06 01",
+    "denumire": "zguri de la topirea pr imara şi secundară"
+  },
+  {
+    "cod": "10 06 02",
+    "denumire": "scorii şi cruste de la topirea primara şi secundară"
+  },
+  {
+    "cod": "10 06 03*",
+    "denumire": "praf din gazul de ardere"
+  },
+  {
+    "cod": "10 06 04",
+    "denumire": "alte particule şi praf"
+  },
+  {
+    "cod": "10 06 06*",
+    "denumire": "deşeuri solide de la epurarea gazelor"
+  },
+  {
+    "cod": "10 06 07*",
+    "denumire": "namoluri şi turte de filtrare de la epurarea gaze lor"
+  },
+  {
+    "cod": "10 06 09*",
+    "denumire": "deşeuri de la epurarea apelor de răcire cu conţinut de ulei"
+  },
+  {
+    "cod": "10 06 10",
+    "denumire": "deşeuri de la epurarea apelor de răcire, altele decât cele specificate la 10 06"
+  },
+  {
+    "cod": "10 06 99",
+    "denumire": "alte deşeuri nespecificate 10 07 deşeuri din metalurgia termica a argintului, aurului şi platinei"
+  },
+  {
+    "cod": "10 07 01",
+    "denumire": "zguri de la topirea primara şi secundară"
+  },
+  {
+    "cod": "10 07 02",
+    "denumire": "scorii şi cruste de la topirea primara şi secundară"
+  },
+  {
+    "cod": "10 07 03",
+    "denumire": "deşeuri solide de la epurarea gazelor"
+  },
+  {
+    "cod": "10 07 04",
+    "denumire": "alte particule şi praf"
+  },
+  {
+    "cod": "10 07 05",
+    "denumire": "namoluri şi turte de filtrare de la epurarea gazelor"
+  },
+  {
+    "cod": "10 07 07*",
+    "denumire": "deşeuri de la epurarea apelor de răcire cu conţinut de ulei"
+  },
+  {
+    "cod": "10 07 08",
+    "denumire": "deşeuri de la epurarea apelor de răcire, altele decât cele specificate la 10 07"
+  },
+  {
+    "cod": "10 07 99",
+    "denumire": "alte deşeuri nespecificate 10 08 deşeuri din metalurgia termica a altor neferoase"
+  },
+  {
+    "cod": "10 08 04",
+    "denumire": "particule şi praf"
+  },
+  {
+    "cod": "10 08 08*",
+    "denumire": "zgura salina de la topirea primara şi secundară"
+  },
+  {
+    "cod": "10 08 09",
+    "denumire": "alte zguri"
+  },
+  {
+    "cod": "10 08 10*",
+    "denumire": "scorii şi cruste care sunt inflamabile sau care emit, în contact cu apa, gaze in flamabile în cantităţi periculoase"
+  },
+  {
+    "cod": "10 08 11",
+    "denumire": "scorii şi cruste, altele decât cele specificate la 10 08"
+  },
+  {
+    "cod": "10 08 12*",
+    "denumire": "deşeuri cu conţinut de gudron de la producerea anozilor"
+  },
+  {
+    "cod": "10 08 13",
+    "denumire": "deşeuri cu conţinut de carbon de la producerea anozilor, altele decât cele specificate la 10 08"
+  },
+  {
+    "cod": "10 08 14",
+    "denumire": "resturi de anozi"
+  },
+  {
+    "cod": "10 08 15*",
+    "denumire": "praf din gazul de ardere cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 08 16",
+    "denumire": "praf din gazul de ardere, altul decât cel specificat la 10 08"
+  },
+  {
+    "cod": "10 08 17*",
+    "denumire": "namoluri şi turte de filtrare de la epurarea gaz elor de ardere cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 08 18",
+    "denumire": "namoluri şi turte de filtrare de la epurarea gazelor de ardere, altele decât cele menţionate la"
+  },
+  {
+    "cod": "10 08 19*",
+    "denumire": "deşeuri de la epurarea apelor de răcire cu conţinut de ulei"
+  },
+  {
+    "cod": "10 08 20",
+    "denumire": "deşeuri de la epurarea apelor de răcire, altele decât cele menţionate la 10 08"
+  },
+  {
+    "cod": "10 08 99",
+    "denumire": "alte deşeuri nespecificate 10 09 deşeuri de la turnarea pieselor feroase"
+  },
+  {
+    "cod": "10 09 03",
+    "denumire": "zgura de topitorie"
+  },
+  {
+    "cod": "10 09 05*",
+    "denumire": "miezuri şi forme de turnare care nu au fost încă folos ite la turnare cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 09 06",
+    "denumire": "miezuri şi forme de turnare care nu au fost încă folosite la turnare, altele decât cele specificate la 10 09"
+  },
+  {
+    "cod": "10 09 07*",
+    "denumire": "miezuri şi forme de turnare care au fost folosite la turnare cu conţinu t de substanţe periculoase"
+  },
+  {
+    "cod": "10 09 08",
+    "denumire": "miezuri şi forme de turnare care au fost folosite la turnare, altele decât cele specificate la 10 09"
+  },
+  {
+    "cod": "10 09 09*",
+    "denumire": "praf din gazul de ardere cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 09 10",
+    "denumire": "praf din gazul de ardere, altul d ecât cel specificat la 10 09"
+  },
+  {
+    "cod": "10 09 11*",
+    "denumire": "alte particule care conţin substanţe periculoase"
+  },
+  {
+    "cod": "10 09 12",
+    "denumire": "alte particule decât cele specificate la 10 09"
+  },
+  {
+    "cod": "10 09 13*",
+    "denumire": "deşeuri de lianti cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 09 14",
+    "denumire": "deşeuri de lianti, altele decât cele specificate la 10 09"
+  },
+  {
+    "cod": "10 09 15*",
+    "denumire": "deşeuri de agenţi pentru detectarea fisurilor, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 09 16",
+    "denumire": "deşeuri de agenţi pentru detectarea fisurilor, altele decât cele specificate la 10 09"
+  },
+  {
+    "cod": "10 09 99",
+    "denumire": "alte deş euri nespecificate 10 10 deşeuri de la turnarea pieselor neferoase"
+  },
+  {
+    "cod": "10 10 03",
+    "denumire": "zgura de topitorie"
+  },
+  {
+    "cod": "10 10 05*",
+    "denumire": "miezuri şi forme de turnare care nu au fost încă folosite la turnare cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 10 06",
+    "denumire": "miezuri şi forme de turnare care nu au fost încă folosite la turnare, altele decât cele specificate la 10 10"
+  },
+  {
+    "cod": "10 10 07*",
+    "denumire": "miezuri şi forme de turnare care au fost folosite la turnare cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 10 08",
+    "denumire": "miezuri şi forme de turnare care au fost folo site la turnare, altele decât cele specificate la 10 10"
+  },
+  {
+    "cod": "10 10 09*",
+    "denumire": "praf din gazul de ardere cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 10 10",
+    "denumire": "praf din gazul de ardere, altul decât cel specificat la 10 10"
+  },
+  {
+    "cod": "10 10 11*",
+    "denumire": "alte particule cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 10 12",
+    "denumire": "alte particule, decât cele specificate la 10 10"
+  },
+  {
+    "cod": "10 10 13*",
+    "denumire": "deşeuri de lianti cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 10 14",
+    "denumire": "deşeuri de lianti, altele decât cele specificate la 10 10"
+  },
+  {
+    "cod": "10 10 15*",
+    "denumire": "deşeuri de agenţi pentru detectarea f isurilor, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 10 16",
+    "denumire": "deşeuri de agenţi pentru detectarea fisurilor, altele decât cele specificate la 10 10"
+  },
+  {
+    "cod": "10 10 99",
+    "denumire": "alte deşeuri nespecificate 10 11 deşeuri de la producerea sticlei şi a produselor din sticla"
+  },
+  {
+    "cod": "10 11 03",
+    "denumire": "deşeuri din fibre de sticla"
+  },
+  {
+    "cod": "10 11 05",
+    "denumire": "particule şi praf"
+  },
+  {
+    "cod": "10 11 09*",
+    "denumire": "deşeuri de la prepararea amestecurilor, anterior procesarii termice, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 11 10",
+    "denumire": "deşeuri de la prepararea amestecurilor, anterior procesarii term ice, altele decât cele specificate la 10 11"
+  },
+  {
+    "cod": "10 11 11*",
+    "denumire": "deşeuri de sticla sub forma de particule fine şi pudra de sticla cu conţinut de metale grele (de ex: de la tuburile catodice)"
+  },
+  {
+    "cod": "10 11 12",
+    "denumire": "deşeuri de sticla, altele decât cele specificate la 10 11"
+  },
+  {
+    "cod": "10 11 13*",
+    "denumire": "namoluri de la slefuirea şi polizarea sticlei cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 11 14",
+    "denumire": "namoluri de la slefuirea şi polizarea sticlei, altele decât cele specificate la 10 11"
+  },
+  {
+    "cod": "10 11 15*",
+    "denumire": "deşeuri solide de la epurare a gazelor de ardere cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 11 16",
+    "denumire": "deşeuri solide de la epurarea gazelor de ardere, altele decât cele specificate la 10 11"
+  },
+  {
+    "cod": "10 11 17*",
+    "denumire": "namoluri şi turte de filtrare de la epurarea gazelor de ardere cu conţinut d e substanţe periculoase"
+  },
+  {
+    "cod": "10 11 18",
+    "denumire": "namoluri şi turte de filtrare de la epurarea gazelor de ardere, altele decât cele specificate la"
+  },
+  {
+    "cod": "10 11 19*",
+    "denumire": "deşeuri solide de la epurarea efluentilor proprii cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 11 20",
+    "denumire": "deşeuri s olide de la epurarea efluentilor proprii, altele decît cele specificate la 10 11"
+  },
+  {
+    "cod": "10 11 99",
+    "denumire": "alte deşeuri nespecificate 10 12 deşeuri de la fabricarea materialelor ceramice, caramizilor,tiglelor şi materialelor de construcţie"
+  },
+  {
+    "cod": "10 12 01",
+    "denumire": "deşeuri de la prepararea amestecurilor anterior procesarii termice"
+  },
+  {
+    "cod": "10 12 03",
+    "denumire": "particule şi praf"
+  },
+  {
+    "cod": "10 12 05",
+    "denumire": "namoluri şi turte de filtrare de la epurarea gazelor"
+  },
+  {
+    "cod": "10 12 06",
+    "denumire": "forme şi mulaje uzate"
+  },
+  {
+    "cod": "10 12 08",
+    "denumire": "deşeuri ceramice, de caramizi, tigle sau materiale de constructive (du pă procesarea termica)"
+  },
+  {
+    "cod": "10 12 09*",
+    "denumire": "deşeuri solide de la epurarea gazelor cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 12 10",
+    "denumire": "deşeuri solide de la epurarea gazelor, altele decât cele specificate la 10 12"
+  },
+  {
+    "cod": "10 12 11*",
+    "denumire": "deşeuri de la smaltuire cu conţinut de metale grele"
+  },
+  {
+    "cod": "10 12 12",
+    "denumire": "deşeuri de la smaltuire, altele decât cele specificate la 10 12"
+  },
+  {
+    "cod": "10 12 13",
+    "denumire": "namoluri de la epurarea efluentilor proprii"
+  },
+  {
+    "cod": "10 12 99",
+    "denumire": "alte deşeuri nespecificate 10 13 deşeuri de la fabricarea cimentului, varului şi gipsului, a articolelor şi produselor derivate din ele"
+  },
+  {
+    "cod": "10 13 01",
+    "denumire": "deşeuri de la prepararea amestecului, anterior procesarii termice"
+  },
+  {
+    "cod": "10 13 04",
+    "denumire": "deşeuri de la calcinarea şi hidratarea varului"
+  },
+  {
+    "cod": "10 13 06",
+    "denumire": "particule şi praf (cu excepţia 10 13 12 şi 10 13 13)"
+  },
+  {
+    "cod": "10 13 07",
+    "denumire": "namoluri şi turte de filtrare de la epurarea gazelor"
+  },
+  {
+    "cod": "10 13 09*",
+    "denumire": "deşeuri de la fabricarea azbesto -cimenturilor, cu conţinut de azbest"
+  },
+  {
+    "cod": "10 13 10",
+    "denumire": "deşeuri de la producerea azbesto -cimenturilor, altele decât cele specificate la 10 13"
+  },
+  {
+    "cod": "10 13 11",
+    "denumire": "deşeuri de materiale compozite pe baza de ciment, altele decât cele specificate la 10 13 09 şi 10 13"
+  },
+  {
+    "cod": "10 13 12*",
+    "denumire": "deşeuri solide de la epurarea gazelor cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "10 13 13",
+    "denumire": "deşeuri solide de la epurarea gazelor, altele decât cel e specificate la 10 13"
+  },
+  {
+    "cod": "10 13 14",
+    "denumire": "deşeuri de beton şi namoluri cu beton"
+  },
+  {
+    "cod": "10 13 99",
+    "denumire": "alte deşeuri nespecificate 10 14 deşeuri de la crematorii"
+  },
+  {
+    "cod": "10 14 01*",
+    "denumire": "deşeuri de la spalarea gazelor cu conţinut de mercur 11 DEŞEURI DE LA TRATA REA CHIMICA A SUPRAFEŢELOR ŞI ACOPERIREA METALELOR ŞI ALTOR MATERIALE; HIDROMETALURGIE NEFEROASA 11 01 deşeuri de la tratarea chimica de suprafata şi acoperirea metalelor şi altor materiale (de ex: procese galvanice, de zincare, de decapa re, de gravare, de fosfatare, de degresare alcalina, de fabricare a anozilor)"
+  },
+  {
+    "cod": "11 01 05*",
+    "denumire": "acizi de decapare"
+  },
+  {
+    "cod": "11 01 06*",
+    "denumire": "acizi fără alta specificaţie"
+  },
+  {
+    "cod": "11 01 07*",
+    "denumire": "baze de decapare"
+  },
+  {
+    "cod": "11 01 08*",
+    "denumire": "namoluri cu conţinut de fosfati"
+  },
+  {
+    "cod": "11 01 09*",
+    "denumire": "namoluri şi turte de filtrare cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "11 01 10",
+    "denumire": "namoluri şi turte de filtrare, altele decât cele specificate la 11 01"
+  },
+  {
+    "cod": "11 01 11*",
+    "denumire": "lichide apoase de clatire cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "11 01 12",
+    "denumire": "lichide apoase de clatire, altele decât cele specificate la 11 01"
+  },
+  {
+    "cod": "11 01 13*",
+    "denumire": "deşeuri de degresare cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "11 01 14",
+    "denumire": "deşeuri de degresare, altele decât cele specificate la 11 01"
+  },
+  {
+    "cod": "11 01 15*",
+    "denumire": "eluati şi namoluri de la sistemele de membrane sau de schimbatori de ioni care conţin substanţe periculoase"
+  },
+  {
+    "cod": "11 01 16*",
+    "denumire": "rasini schimbatoare de ioni saturate sau epuizate"
+  },
+  {
+    "cod": "11 01 98*",
+    "denumire": "alte deşeuri conţinând substanţe periculoase"
+  },
+  {
+    "cod": "11 01 99",
+    "denumire": "alte deşeuri nespecificate 11 02 deşeuri din procesele de hidrometalurgie neferoasa"
+  },
+  {
+    "cod": "11 02 02*",
+    "denumire": "namoluri de la hidrometalurgia zincului (inclusiv jarosit, goethit)"
+  },
+  {
+    "cod": "11 02 03",
+    "denumire": "deşeuri de la producerea anozilor pentru procesele de electroliza în soluţie"
+  },
+  {
+    "cod": "11 02 05*",
+    "denumire": "deşeuri de la procesele de hidrometalurgie a cuprului, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "11 02 06",
+    "denumire": "deşeuri de la procesele de hidrometalurgie a cuprului, altele decât cele specificate la 11 02"
+  },
+  {
+    "cod": "11 02 07*",
+    "denumire": "alte deşeuri cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "11 02 99",
+    "denumire": "alte deşeuri nespecificate 11 03 namoluri şi solide de la procesele de calire"
+  },
+  {
+    "cod": "11 03 01*",
+    "denumire": "deşeuri cu conţinut de cianuri"
+  },
+  {
+    "cod": "11 03 02*",
+    "denumire": "alte deşeuri 11 05 deşeuri de la procesele de galvanizare la cald"
+  },
+  {
+    "cod": "11 05 01",
+    "denumire": "zinc dur"
+  },
+  {
+    "cod": "11 05 02",
+    "denumire": "cenusa de zinc"
+  },
+  {
+    "cod": "11 05 03*",
+    "denumire": "deşeuri solide de la epurarea gazelor"
+  },
+  {
+    "cod": "11 05 04*",
+    "denumire": "baie uzata"
+  },
+  {
+    "cod": "11 05 99",
+    "denumire": "alte deşeuri nespecificate 12 DEŞEURI DE LA MODELAREA, TRATAREA MECANICĂ ŞI FIZICA A SUPRAFEŢELOR METALELOR ŞI A MATERIALELOR PLASTICE 12 01 deşeuri de la modelarea şi tratamentul fizic şi mecanic al suprafeţe lor metalelor şi materialelor plastice"
+  },
+  {
+    "cod": "12 01 01",
+    "denumire": "pilitura şi span feros"
+  },
+  {
+    "cod": "12 01 02",
+    "denumire": "praf şi suspensii de metale feroase"
+  },
+  {
+    "cod": "12 01 03",
+    "denumire": "pilitura şi span neferos"
+  },
+  {
+    "cod": "12 01 04",
+    "denumire": "praf şi particule de metale neferoase"
+  },
+  {
+    "cod": "12 01 05",
+    "denumire": "pilitura şi span de materiale plastice"
+  },
+  {
+    "cod": "12 01 06*",
+    "denumire": "uleiuri minerale de ungere uzate cu conţinut de halogeni (cu excepţia emulsiilor şi soluţiilor)"
+  },
+  {
+    "cod": "12 01 07*",
+    "denumire": "uleiuri minerale de ungere uzate fără halogeni (cu excepţia emulsiilor şi soluţiilor)"
+  },
+  {
+    "cod": "12 01 08*",
+    "denumire": "emulsii şi soluţii de ungere uzate cu conţinut de halogeni"
+  },
+  {
+    "cod": "12 01 09*",
+    "denumire": "emulsii şi soluţii de ungere uzate fără halogeni"
+  },
+  {
+    "cod": "12 01 10*",
+    "denumire": "uleiuri sintetice de ungere uzate"
+  },
+  {
+    "cod": "12 01 12*",
+    "denumire": "ceruri şi grăsimi uzate"
+  },
+  {
+    "cod": "12 01 13",
+    "denumire": "deşeuri de la sudura"
+  },
+  {
+    "cod": "12 01 14*",
+    "denumire": "namoluri de la maşini -unelte cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "12 01 15",
+    "denumire": "namoluri de la maşini -unelte, altele decât cele specificate la 12 01"
+  },
+  {
+    "cod": "12 01 16*",
+    "denumire": "deşeuri de materiale de sablare cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "12 01 17",
+    "denumire": "deşeuri de materiale de sablare, altele decât cele specificate la 12 01"
+  },
+  {
+    "cod": "12 01 18*",
+    "denumire": "namoluri metalice (de la maruntire, honuire, lepuire) cu conţinut de ulei"
+  },
+  {
+    "cod": "12 01 19*",
+    "denumire": "uleiuri de ungere uşor biodegradabile"
+  },
+  {
+    "cod": "12 01 20*",
+    "denumire": "piese de polizare uzate maruntite şi materiale de polizare maruntite cu conţinut de subst anţe periculoase"
+  },
+  {
+    "cod": "12 01 21",
+    "denumire": "piese vizate de polizare maruntite şi materiale de polizare maruntite, altele decât cele specificate la 12 01"
+  },
+  {
+    "cod": "12 01 99",
+    "denumire": "alte deşeuri nespecificate 12 03 deşeuri de la procesele de degresare cu apa sau abur (cu excepţia 11)"
+  },
+  {
+    "cod": "12 03 01*",
+    "denumire": "lichide apoase de spalare"
+  },
+  {
+    "cod": "12 03 02*",
+    "denumire": "deşeuri de la degresarea cu abur 13 DEŞEURI ULEIOASE ŞI DEŞEURI DE COMBUSTIBILI LICHIZI (cu excepţia uleiurilor comestibile şi a celor din capitolele 05, 12 şi 19) 13 01 deşeuri de uleiuri hidraulice"
+  },
+  {
+    "cod": "13 01 01*",
+    "denumire": "uleiuri hidraulice cu conţinut de PCB*1)"
+  },
+  {
+    "cod": "13 01 04*",
+    "denumire": "emulsii clorurate"
+  },
+  {
+    "cod": "13 01 05*",
+    "denumire": "emulsii neclorurate"
+  },
+  {
+    "cod": "13 01 09*",
+    "denumire": "uleiuri hidraulice minerale clorinate"
+  },
+  {
+    "cod": "13 01 10*",
+    "denumire": "uleiuri minerale hidraulice neclorinate"
+  },
+  {
+    "cod": "13 01 11*",
+    "denumire": "uleiuri hidraulice s intetice"
+  },
+  {
+    "cod": "13 01 12*",
+    "denumire": "uleiuri hidraulice uşor biodegradabile"
+  },
+  {
+    "cod": "13 01 13*",
+    "denumire": "alte uleiuri hidraulice ----------- *1) Pentru scopul acestei liste de deşeuri PCB se va defini conform H G173/2000. 13 02 uleiuri uzate de motor, de transmisie şi de ungere"
+  },
+  {
+    "cod": "13 02 04*",
+    "denumire": "uleiuri minerale clorurate de motor, de transmisie şi de ungere"
+  },
+  {
+    "cod": "13 02 05*",
+    "denumire": "uleiuri minerale neclorurate de motor, de transmisie şi de ungere"
+  },
+  {
+    "cod": "13 02 06*",
+    "denumire": "uleiuri sintetice de motor, de transmisie şi de ungere"
+  },
+  {
+    "cod": "13 02 07*",
+    "denumire": "uleiuri de motor, de transmisie şi de ungere uşor biodegradabile"
+  },
+  {
+    "cod": "13 02 08*",
+    "denumire": "alte uleiuri de motor, de transmisie şi de ungere 13 03 deşeuri de uleiuri izolante şi de transmitere a caldurii"
+  },
+  {
+    "cod": "13 03 01*",
+    "denumire": "uleiuri izolante şi de transmitere a caldurii cu conţinut de PCB"
+  },
+  {
+    "cod": "13 03 06*",
+    "denumire": "uleiuri minerale clorinate izolante şi de transmitere a caldurii, altele decât cele specificate la"
+  },
+  {
+    "cod": "13 03 07*",
+    "denumire": "uleiuri minerale neclorinate izolante şi de transmitere a caldurii"
+  },
+  {
+    "cod": "13 03 08*",
+    "denumire": "uleiuri sintetice izolante şi de transmitere a caldurii"
+  },
+  {
+    "cod": "13 03 09*",
+    "denumire": "uleiuri izolante şi de transmitere a caldurii uşor biodegradabile"
+  },
+  {
+    "cod": "13 03 10*",
+    "denumire": "alte uleiuri izolante şi de transmitere a caldurii 13 04 uleiuri de santina"
+  },
+  {
+    "cod": "13 04 01*",
+    "denumire": "uleiuri de santina din navigaţia pe apele interioare"
+  },
+  {
+    "cod": "13 04 02*",
+    "denumire": "uleiuri de santina di n colectoarele de debarcader"
+  },
+  {
+    "cod": "13 04 03*",
+    "denumire": "uleiuri de santina din alte tipuri de navigaţie 13 05 deşeuri de la separarea ulei/apa"
+  },
+  {
+    "cod": "13 05 01*",
+    "denumire": "solide din paturile de nisip şi separatoarele ulei/apa"
+  },
+  {
+    "cod": "13 05 02*",
+    "denumire": "namoluri de la separatoarele ulei/apa"
+  },
+  {
+    "cod": "13 05 03*",
+    "denumire": "na moluri de interceptie"
+  },
+  {
+    "cod": "13 05 06*",
+    "denumire": "ulei de la separatoarele ulei/apa"
+  },
+  {
+    "cod": "13 05 07*",
+    "denumire": "ape uleioase de la separatoarele ulei/apa"
+  },
+  {
+    "cod": "13 05 08*",
+    "denumire": "amestecuri de deşeuri de la paturile de nisip şi separatoarele ulei/apa 13 07 deşeuri de combustibili lichizi"
+  },
+  {
+    "cod": "13 07 01*",
+    "denumire": "ul ei combustibil şi combustibil diesel"
+  },
+  {
+    "cod": "13 07 02*",
+    "denumire": "benzina"
+  },
+  {
+    "cod": "13 07 03*",
+    "denumire": "alţi combustibili (inclusiv amestecuri) 13 08 alte deşeuri uleioase nespecificate"
+  },
+  {
+    "cod": "13 08 01*",
+    "denumire": "namoluri şi emulsii de la desalinizare"
+  },
+  {
+    "cod": "13 08 02*",
+    "denumire": "alte emulsii"
+  },
+  {
+    "cod": "13 08 99*",
+    "denumire": "alte deşeuri nespecificate 14 DEŞEURI DE SOLVENTI ORGANICI, AGENŢI DE RĂCIRE ŞI AGENŢI DE PROPULSARE (cu excepţia 07 şi OS) 14 06 deşeuri de solventi organici, agenţi de răcire şi agenţi de propulsare pentru formarea spumei şi a aerosolilor"
+  },
+  {
+    "cod": "14 06 01*",
+    "denumire": "clorofluorocarburi, HCFC, HFC"
+  },
+  {
+    "cod": "14 06 02*",
+    "denumire": "alţi solventi halogenati şi amestecuri de solventi"
+  },
+  {
+    "cod": "14 06 03*",
+    "denumire": "alţi solventi şi amestecuri de solventi"
+  },
+  {
+    "cod": "14 06 04*",
+    "denumire": "namoluri sau deşeuri solide cu conţinut de solventi halogenati"
+  },
+  {
+    "cod": "14 06 05*",
+    "denumire": "namolur i sau deşeuri solide cu conţinut de alţi solventi 15 DEŞEURI DE AMBALAJE; MATERIALE ABSORBANTE, MATERIALE DE LUSTRUIRE,FILTRANTE ŞI ÎMBRĂCĂMINTE DE PROTECŢIE, NESPECIFICATE ÎN ALTA PARTE 15 01 ambalaje (inclusiv deşeurile de ambalaje municipale colectate separat)"
+  },
+  {
+    "cod": "15 01 01",
+    "denumire": "ambalaje de hârtie şi carton"
+  },
+  {
+    "cod": "15 01 02",
+    "denumire": "ambalaje de materiale plastice"
+  },
+  {
+    "cod": "15 01 03",
+    "denumire": "ambalaje de lemn"
+  },
+  {
+    "cod": "15 01 04",
+    "denumire": "ambalaje metalice"
+  },
+  {
+    "cod": "15 01 05",
+    "denumire": "ambalaje de materiale compozite"
+  },
+  {
+    "cod": "15 01 06",
+    "denumire": "ambalaje amestecate"
+  },
+  {
+    "cod": "15 01 07",
+    "denumire": "ambalaje de sticla"
+  },
+  {
+    "cod": "15 01 09",
+    "denumire": "ambalaje din materiale textile"
+  },
+  {
+    "cod": "15 01 10*",
+    "denumire": "ambalaje care conţin reziduuri sau sunt contaminate cu substanţe periculoase"
+  },
+  {
+    "cod": "15 01 11*",
+    "denumire": "ambalaje metalice care conţin o matrita poroasa formată din materiale periculoase (de ex. azbest ), inclusiv containare goale pentru stocarea sub presiune 15 02 absorbanti, materiale filtrante, materiale de lustruire şi echipamente de protecţie"
+  },
+  {
+    "cod": "15 02 02*",
+    "denumire": "absorbanti, materiale filtrante (inclusiv filtre de ulei fără alta specificaţie), material e de lustruire, îmbrăcăminte de protecţie contaminata cu substanţe periculoase"
+  },
+  {
+    "cod": "15 02 03",
+    "denumire": "absorbanti, materiale filtrante, materiale de lustruire şi îmbrăcăminte de protecţie, altele decât cele specificate la 15 02 02 16 DEŞEURI NESPECIFICATE ÎN ALTA PARTE 16 01 vehicule scoase din uz de la diverse mijloace de transport (inclusiv vehicule pentru transport în afară drumurilor) şi deşeuri de la dezmembrarea vehiculelor casate şi întreţinerea vehiculelor (cu excepţia 13, 14, 16 06 şi 16 08)"
+  },
+  {
+    "cod": "16 01 03",
+    "denumire": "anvelope scoase din uz"
+  },
+  {
+    "cod": "16 01 04*",
+    "denumire": "vehicule scoase din uz"
+  },
+  {
+    "cod": "16 01 06",
+    "denumire": "vehicule scoase din uz, care nu conţin lichide sau alte componente periculoase"
+  },
+  {
+    "cod": "16 01 07*",
+    "denumire": "filtre de ulei"
+  },
+  {
+    "cod": "16 01 08*",
+    "denumire": "componente cu conţinut de mercur"
+  },
+  {
+    "cod": "16 01 09*",
+    "denumire": "componente cu conţinut de PCB"
+  },
+  {
+    "cod": "16 01 10*",
+    "denumire": "componente explozive (de ex. perne de protecţie (air bags))"
+  },
+  {
+    "cod": "16 01 11*",
+    "denumire": "placute de frana cu conţinut de azbest"
+  },
+  {
+    "cod": "16 01 12",
+    "denumire": "placute de frana, altele decât cele specificate la 16 01"
+  },
+  {
+    "cod": "16 01 13*",
+    "denumire": "lichid e de frana"
+  },
+  {
+    "cod": "16 01 14*",
+    "denumire": "fluide antigel cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "16 01 15",
+    "denumire": "fluide antigel, altele decât cele specificate la 16 01"
+  },
+  {
+    "cod": "16 01 16",
+    "denumire": "rezervoare pentru gaz lichefiat"
+  },
+  {
+    "cod": "16 01 17",
+    "denumire": "metale feroase"
+  },
+  {
+    "cod": "16 01 18",
+    "denumire": "metale neferoase"
+  },
+  {
+    "cod": "16 01 19",
+    "denumire": "materiale plastice"
+  },
+  {
+    "cod": "16 01 20",
+    "denumire": "sticla"
+  },
+  {
+    "cod": "16 01 21*",
+    "denumire": "componente periculoase, altele decât cele specificate de la 16 01 07 la 16 01 11 şi 16 01 13 şi 16 01"
+  },
+  {
+    "cod": "16 01 22",
+    "denumire": "componente fără alta specificaţie"
+  },
+  {
+    "cod": "16 01 99",
+    "denumire": "alte deşeuri nespecificate 16 02 deşeuri de la echipamente electrice şi electronice"
+  },
+  {
+    "cod": "16 02 09*",
+    "denumire": "transformatori şi condensatori conţinând PCB"
+  },
+  {
+    "cod": "16 02 10*",
+    "denumire": "echipamente casate cu conţinut de PCB sau contaminate cu PCB, altele decât cele specificate la 16 02"
+  },
+  {
+    "cod": "16 02 11*",
+    "denumire": "echipamente casa te cu conţinut de clorofluorcarburi, HCFC, HFC"
+  },
+  {
+    "cod": "16 02 12*",
+    "denumire": "echipamente casate cu conţinut de azbest liber"
+  },
+  {
+    "cod": "16 02 13*",
+    "denumire": "echipamente casate cu conţinut de componente periculoase*2) altele decât cele specificate de la 16 02 09 la 16 02"
+  },
+  {
+    "cod": "16 02 14",
+    "denumire": "echip amente casate, altele decât cele specificate de la 16 02 09 la 16 02"
+  },
+  {
+    "cod": "16 02 15*",
+    "denumire": "componente periculoase demontate din echipamente casate"
+  },
+  {
+    "cod": "16 02 16",
+    "denumire": "componente demontate din echipamente casate, altele decât cele specificate la 16 02 15 --------- ---- *2) Componentele periculoase de la echipamentele electrice şi electronice pot include acumulatorii şi bateriile menţionate la 16 06 şi marcate ca periculoase; comutatori cu mercur, sticle de la tuburile catodice şi alte tipuri de sticle activate. 16 03 grupe nespecificate şi produse neobisnuite"
+  },
+  {
+    "cod": "16 03 03*",
+    "denumire": "deşeuri anorganice cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "16 03 04",
+    "denumire": "deşeuri anorganice, altele decât cele specificate la 16 03"
+  },
+  {
+    "cod": "16 03 05*",
+    "denumire": "deşeuri organice cu conţinut de substanţe pe riculoase"
+  },
+  {
+    "cod": "16 03 06",
+    "denumire": "deşeuri organice, altele decât cele specificate la 16 03 05 16 04 deşeuri de explozivi"
+  },
+  {
+    "cod": "16 04 01*",
+    "denumire": "deşeuri de munitie"
+  },
+  {
+    "cod": "16 04 02*",
+    "denumire": "deşeuri de artificii"
+  },
+  {
+    "cod": "16 04 03*",
+    "denumire": "alte deşeuri de explozivi 16 05 containere pentru gaze sub presiune şi chimicale expirate"
+  },
+  {
+    "cod": "16 05 04*",
+    "denumire": "butelii de gaze sub presiune (inclusiv haloni) cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "16 05 05",
+    "denumire": "butelii de gaze sub presiune cu conţinut de alte substanţe decât cele specificate la 16 05"
+  },
+  {
+    "cod": "16 05 06*",
+    "denumire": "substanţe chimi ce de laborator constând din sau conţinând substanţe periculoase inclusiv amestecurile de substanţe chimice de laborator"
+  },
+  {
+    "cod": "16 05 07",
+    "denumire": "sau 16 05 08 16 06 baterii şi acumulatori"
+  },
+  {
+    "cod": "16 05 07*",
+    "denumire": "substanţe chimice anorganice de laborator expirate constând din sau conţinând substanţe periculoase"
+  },
+  {
+    "cod": "16 05 08*",
+    "denumire": "substanţe chimice organice de laborator expirate, constând din sau conţinând substanţe periculoase"
+  },
+  {
+    "cod": "16 05 09",
+    "denumire": "substanţe chimice expirate, altele decât cele menţionate la 16 05 06,"
+  },
+  {
+    "cod": "16 06 01*",
+    "denumire": "baterii cu plumb"
+  },
+  {
+    "cod": "16 06 02*",
+    "denumire": "baterii cu Ni -Cd"
+  },
+  {
+    "cod": "16 06 03*",
+    "denumire": "baterii cu conţinut de mercur"
+  },
+  {
+    "cod": "16 06 04",
+    "denumire": "baterii alcaline (cu excepţia 16 06 03)"
+  },
+  {
+    "cod": "16 06 05",
+    "denumire": "alte baterii şi acumulatori"
+  },
+  {
+    "cod": "16 06 06*",
+    "denumire": "electroliti colectati separat din baterii şi acumula tori 16 07 deşeuri de la curatarea cisternelor de transport şi de stocare (cu excepţia 05 şi 13)"
+  },
+  {
+    "cod": "16 07 08*",
+    "denumire": "deşeuri cu conţinut de ţiţei"
+  },
+  {
+    "cod": "16 07 09*",
+    "denumire": "deşeuri conţinând alte substanţe periculoase"
+  },
+  {
+    "cod": "16 07 99",
+    "denumire": "alte deşeuri nespecificate 16 08 catalizatori uzati"
+  },
+  {
+    "cod": "16 08 01",
+    "denumire": "catalizatori uzati cu conţinut de aur, argint, reniu, rodiu, paladiu, iridiu sau platina (cu excepţia 16 08 07)"
+  },
+  {
+    "cod": "16 08 02*",
+    "denumire": "catalizatori uzati cu conţinut de metale tranzitionale periculoase*3) sau compuşi ai metalelor tranzitionale periculoase"
+  },
+  {
+    "cod": "16 08 03",
+    "denumire": "catalizatori uzati cu conţinut de metale tranzitionale sau compuşi ai metalelor tranzitionale, fără alte specificaţii"
+  },
+  {
+    "cod": "16 08 04",
+    "denumire": "catalizatori uzati de la cracare catalitica (cu excepţia 16 08 07)"
+  },
+  {
+    "cod": "16 08 05*",
+    "denumire": "catalizatori uzati cu conţinut de acid fosforic"
+  },
+  {
+    "cod": "16 08 06*",
+    "denumire": "lichide uzate folosite drept catalizatori"
+  },
+  {
+    "cod": "16 08 07*",
+    "denumire": "catalizatori uzati contaminati cu substanţe periculoase ------------- *3) Pentru aceasta poziţie materialele tra nzitionale sunt: scandiu,vanadiu, mangan, cobalt, cupru, ytriu, niobiu, hafniu, wolfram, titan, crom, fier, nichel, zinc, zirconiu, molibden şi tantal. Aceste metale şi compusii lor sunt periculosi dacă sunt clasificati ca atare substanţe periculoase. Acea sta clasificare a substanţelor periculoase poate determina în ce măsura aceste metale tranzitionale şi care dintre compusii lor reprezintă substanţe periculoase. 16 09 substanţe oxidante"
+  },
+  {
+    "cod": "16 09 01*",
+    "denumire": "permanganati, de ex. permanganat de potasiu 16 09 0 2* cromati, de ex. cromat de potasiu, bicromat de potasiu sau sodiu"
+  },
+  {
+    "cod": "16 09 03*",
+    "denumire": "peroxizi, de ex. apa oxigenata"
+  },
+  {
+    "cod": "16 09 04*",
+    "denumire": "substanţe oxidante, fără alte specificaţii 16 10 deşeuri lichide apoase destinate tratarii în afară unităţii"
+  },
+  {
+    "cod": "16 10 01*",
+    "denumire": "deşeuri lichi de apoase cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "16 10 02",
+    "denumire": "deşeuri lichide apoase, altele decât cele menţionate la 16 10"
+  },
+  {
+    "cod": "16 10 03*",
+    "denumire": "concentrate apoase cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "16 10 04",
+    "denumire": "concentrate apoase, altele decât cele specificate la 16 10 03 16 11 deşeuri de captusire şi refractare"
+  },
+  {
+    "cod": "16 11 01*",
+    "denumire": "materiale de captusire şi refractare pe baza de carbon din procesele metalurgice, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "16 11 02",
+    "denumire": "materiale de captusire şi refractare pe baza de carbon din procesele metalurgice, altele decât cele specificate la 16 11"
+  },
+  {
+    "cod": "16 11 03*",
+    "denumire": "alte materiale de captusire şi refractare din procesele metalurgice, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "16 11 04",
+    "denumire": "materiale de captusire şi refractare din procesele metalurgice, altele decât cele menţionate la 16 11"
+  },
+  {
+    "cod": "16 11 05*",
+    "denumire": "materiale de captusire şi refractare din procesele ne -metalurgice, cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "16 11 06",
+    "denumire": "materiale de captusi re şi refractare din procesele ne -metalurgice, altele decât cele specificate la 16 11 05 17 DEŞEURI DIN CONSTRUCŢII ŞI DEMOLĂRI (INCLUSIV PĂMÂNT EXCAVAT DIN AMPLASAMENTE CONTAMINATE) 17 01 beton, caramizi, tigle şi materiale cer amice"
+  },
+  {
+    "cod": "17 01 01",
+    "denumire": "beton"
+  },
+  {
+    "cod": "17 01 02",
+    "denumire": "caramizi"
+  },
+  {
+    "cod": "17 01 03",
+    "denumire": "tigle şi materiale ceramice"
+  },
+  {
+    "cod": "17 01 06*",
+    "denumire": "amestecuri sau fractii separate de beton, caramizi, tigle sau materiale ceramice cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "17 01 07",
+    "denumire": "amestecuri de beton, caramizi, tigle ş i materiale ceramice, altele decât cele specificate la 17 01 06 17 02 lemn, sticla şi materiale plastice"
+  },
+  {
+    "cod": "17 02 01",
+    "denumire": "lemn"
+  },
+  {
+    "cod": "17 02 02",
+    "denumire": "sticla"
+  },
+  {
+    "cod": "17 02 03",
+    "denumire": "materiale plastice"
+  },
+  {
+    "cod": "17 02 04*",
+    "denumire": "sticla, materiale plastice sau lemn cu conţinut de sau contaminat e cu substanţe periculoase 17 03 amestecuri bituminoase, gudron de huila şi produse gudronate"
+  },
+  {
+    "cod": "17 03 01*",
+    "denumire": "asfalturi cu conţinut de gudron de huila"
+  },
+  {
+    "cod": "17 03 02",
+    "denumire": "asfalturi, altele decât cele specificate la 17 03"
+  },
+  {
+    "cod": "17 03 03*",
+    "denumire": "gudron de huila şi produse gudronate 17 04 metale (inclusiv aliajele lor)"
+  },
+  {
+    "cod": "17 04 01",
+    "denumire": "cupru, bronz, alama"
+  },
+  {
+    "cod": "17 04 02",
+    "denumire": "aluminiu"
+  },
+  {
+    "cod": "17 04 03",
+    "denumire": "plumb"
+  },
+  {
+    "cod": "17 04 04",
+    "denumire": "zinc"
+  },
+  {
+    "cod": "17 04 05",
+    "denumire": "fier şi oţel"
+  },
+  {
+    "cod": "17 04 06",
+    "denumire": "staniu"
+  },
+  {
+    "cod": "17 04 07",
+    "denumire": "amestecuri metalice"
+  },
+  {
+    "cod": "17 04 09*",
+    "denumire": "deşeuri metalice contaminate cu substanţe periculoase"
+  },
+  {
+    "cod": "17 04 10*",
+    "denumire": "cabluri cu conţinut de ulei, gudron sau alte substanţe periculoase"
+  },
+  {
+    "cod": "17 04 11",
+    "denumire": "cabluri, altele decât cele specificate la 17 04 10 17 05 pământ (inclusiv excavat din amplasamente contaminate), pietre şi de şeuri de la dragare"
+  },
+  {
+    "cod": "17 05 03*",
+    "denumire": "pământ şi pietre cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "17 05 04",
+    "denumire": "pământ şi pietre, altele decât cele specificate la 17 05"
+  },
+  {
+    "cod": "17 05 05*",
+    "denumire": "deşeuri de la dragare cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "17 05 06",
+    "denumire": "deşeuri de la dragare, altele decât cele specificate la 17 05"
+  },
+  {
+    "cod": "17 05 07*",
+    "denumire": "resturi de balast cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "17 05 08",
+    "denumire": "resturi de balast, altele decât cele specificate la 17 05 07 17 06 materiale izolante şi materiale de construcţie cu conţinut de azbes t"
+  },
+  {
+    "cod": "17 06 01*",
+    "denumire": "materiale izolante cu conţinut de azbest"
+  },
+  {
+    "cod": "17 06 03*",
+    "denumire": "alte materiale izolante constând din sau cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "17 06 04",
+    "denumire": "materiale izolante, altele decât cele specificate la 17 06 01 şi 17 06"
+  },
+  {
+    "cod": "17 06 05*",
+    "denumire": "materiale de construcţie cu conţinut de azbest 17 08 materiale de construcţie pe baza de gips"
+  },
+  {
+    "cod": "17 08 01*",
+    "denumire": "materiale de construcţie pe baza de gips contaminate cu substanţe periculoase"
+  },
+  {
+    "cod": "17 08 02",
+    "denumire": "materiale de construcţie pe baza de gips,altele d ecât cele specificate la 17 08 01 17 09 alte deşeuri de la construcţii şi demolări"
+  },
+  {
+    "cod": "17 09 01*",
+    "denumire": "deşeuri de la construcţii şi demolări cu conţinut de mercur"
+  },
+  {
+    "cod": "17 09 02",
+    "denumire": "şi 17 09 03 18 DEŞEURI REZULTATE DIN ACTIVITĂŢILE UNITĂŢILOR SANITARE ŞI DIN ACTIVITĂŢI VETERINARE ŞI/SAU CERCETĂRI CONEXE (cu excepţia deşeurilor de la prepararea hranei în bucatarii sau restaurante, care nu au legatura directa cu activitatea sanitară) 18 01 deşeuri rezultate din activităţile de prevenire, diagnostic şi tratament desfăşurate în unităţile sanita re"
+  },
+  {
+    "cod": "17 09 02*",
+    "denumire": "deşeuri de la construcţii şi demolări cu conţinut de PCB (de ex: cleiuri cu co nţinut de PCB, duşumele pe baza de rasini cu conţinut de PCB, elemente cu cleiuri de glazura cu PCB, condensatori cu conţinut de PCB)"
+  },
+  {
+    "cod": "17 09 03*",
+    "denumire": "alte deşeuri de la construcţii şi demolări (inclusiv amestecuri de deşeuri) cu conţinut de substanţe periculo ase"
+  },
+  {
+    "cod": "17 09 04",
+    "denumire": "amestecuri de deşeuri de la construcţii şi demolări, altele decât cele specificate la 17 09 01,"
+  },
+  {
+    "cod": "18 01 01",
+    "denumire": "obiecte ascutite (cu excepţia 18 01 03)"
+  },
+  {
+    "cod": "18 01 02",
+    "denumire": "fragmente şi organe umane, inclusiv recipienţi de sânge şi sânge conservat (cu excepţia 18 01 03)"
+  },
+  {
+    "cod": "18 01 03*",
+    "denumire": "deşeuri a căror colectare şi eliminare fac obiectul unor măsuri speciale privind prevenirea infectiilor"
+  },
+  {
+    "cod": "18 01 04",
+    "denumire": "deşeuri a căror colectare şi eliminare nu fac obiectul unor măsuri speciale privind prevenirea infectiilor (de ex: îmbrăcăminte, aparate gipsate, lenjerie, îmbrăcăminte disponibilă, scutece)"
+  },
+  {
+    "cod": "18 01 06*",
+    "denumire": "chimicale co nstând din sau conţinând substanţe periculoase"
+  },
+  {
+    "cod": "18 01 07",
+    "denumire": "chimicale, altele decât cele specificate la 18 01"
+  },
+  {
+    "cod": "18 01 08*",
+    "denumire": "medicamente citotoxice şi citostatice"
+  },
+  {
+    "cod": "18 01 09",
+    "denumire": "medicamente, altele decât cele specificate la 18 01"
+  },
+  {
+    "cod": "18 01 10*",
+    "denumire": "deşeuri de amalgam de la tratamentele stomatologice 18 02 deşeuri din unităţile veterinare de cercetare, diagnostic, tratament şi prevenire a bolilor"
+  },
+  {
+    "cod": "18 02 01",
+    "denumire": "obiecte ascutite (cu excepţia 18 02 02)"
+  },
+  {
+    "cod": "18 02 02*",
+    "denumire": "deşeuri a căror colectare şi eliminare fac obie ctul unor măsuri speciale pentru prevenirea infectiilor"
+  },
+  {
+    "cod": "18 02 03",
+    "denumire": "deşeuri a căror colectare şi eliminare nu fac obiectul unor măsuri speciale pentru prevenirea infectiilor"
+  },
+  {
+    "cod": "18 02 05*",
+    "denumire": "chimicale constând din sau conţinând substanţe periculoase"
+  },
+  {
+    "cod": "18 02 06",
+    "denumire": "ch imicale, altele decât cele specificate la 18 02"
+  },
+  {
+    "cod": "18 02 07*",
+    "denumire": "medicamente citotoxice şi citostatice"
+  },
+  {
+    "cod": "18 02 08",
+    "denumire": "medicamente, altele decât cele specificate la 18 02 07 19 DEŞEURI DE LA INSTALAŢII DE TRATARE A REZIDUURILOR, DE LA STAŢIILE DE EPURARE A APELOR UZATE ŞI DE LA TRATAREA APELOR PENTRU ALIMENTARE CU APA ŞI UZ INDUSTRIAL 19 01 deşeuri de la incinerarea sau piroliza deşeurilor"
+  },
+  {
+    "cod": "19 01 02",
+    "denumire": "materiale feroase din cenusile de ardere"
+  },
+  {
+    "cod": "19 01 05*",
+    "denumire": "turte de filtrare de la epurarea gazelor"
+  },
+  {
+    "cod": "19 01 06*",
+    "denumire": "d eşeuri lichide apoase de la epurarea gazelor şi alte deşeuri lichide apoase"
+  },
+  {
+    "cod": "19 01 07*",
+    "denumire": "deşeuri solide de la epurarea gazelor"
+  },
+  {
+    "cod": "19 01 10*",
+    "denumire": "cărbune activ epuizat de la epurarea gazelor de ardere"
+  },
+  {
+    "cod": "19 01 11*",
+    "denumire": "cenusi de ardere şi zguri cu conţinut de substa nţe periculoase"
+  },
+  {
+    "cod": "19 01 12",
+    "denumire": "cenusi de ardere şi zguri, altele decât cele menţionate la 19 01"
+  },
+  {
+    "cod": "19 01 13*",
+    "denumire": "cenusi zburătoare cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 01 14",
+    "denumire": "cenusi zburătoare, altele decât cele menţionate la 19 01"
+  },
+  {
+    "cod": "19 01 15*",
+    "denumire": "praf de cazan cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 01 16",
+    "denumire": "praf de cazan, altul decât cel menţionat la 19 01"
+  },
+  {
+    "cod": "19 01 17*",
+    "denumire": "deşeuri de piroliza cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 01 18",
+    "denumire": "deşeuri de piroliza, altele decât cele menţionate la 19 01"
+  },
+  {
+    "cod": "19 01 19",
+    "denumire": "nisipuri de la paturile fluidizate"
+  },
+  {
+    "cod": "19 01 99",
+    "denumire": "alte deşeuri nespecificate 19 02 deşeuri de la tratarea fizico -chimica a deşeurilor (inclusiv decromare, decianurare, neutralizare)"
+  },
+  {
+    "cod": "19 02 03",
+    "denumire": "deşeuri preamestecate conţinând numai deşeuri nepericuloase"
+  },
+  {
+    "cod": "19 02 04*",
+    "denumire": "deşeuri preamestecate conţinând cel puţin un deseu periculos"
+  },
+  {
+    "cod": "19 02 05*",
+    "denumire": "namoluri de la tratarea fizico -chimica cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 02 06",
+    "denumire": "namoluri de la tratarea fizico -chimica, altele decât cele specificate la 19 02"
+  },
+  {
+    "cod": "19 02 07*",
+    "denumire": "ulei şi concentrate de la separare"
+  },
+  {
+    "cod": "19 02 08*",
+    "denumire": "deşeuri lichide combustibile cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 02 09*",
+    "denumire": "deşeuri solide combustibile cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 02 10",
+    "denumire": "deşeuri combustibile, altele decât cele specifica te la 19 02 08 şi 19 02"
+  },
+  {
+    "cod": "19 02 11*",
+    "denumire": "alte deşeuri cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 02 99",
+    "denumire": "alte deşeuri nespecificate 19 03 deşeuri stabilizate/solidificate*4)"
+  },
+  {
+    "cod": "19 03 04*",
+    "denumire": "deşeuri încadrate ca periculoase, parţial*5) stabilizate"
+  },
+  {
+    "cod": "19 03 05",
+    "denumire": "deşeuri stabilizate, altele decât cele specificate la 19 03"
+  },
+  {
+    "cod": "19 03 06*",
+    "denumire": "deşeuri încadrate ca periculoase, solidificate"
+  },
+  {
+    "cod": "19 03 07",
+    "denumire": "deşeuri solidificate, altele decât cele specificate la 19 03 06 ----------------- *4) Procesele de stabilizare modifica periculozi tatea componentelor deseului şi astfel transforma un deseu periculos într -unul nepericulos. Procesele de solidificare schimba numai starea fizica a deseului (de exemplu, din lichid în solid) prin utilizarea de aditivi, fără a schimba proprietăţile ch imice ale deseului. *5) Un deseu este considerat parţial stabilizat dacă după procesul de stabilizare, componentii periculosi care nu au fost transformati complet în unii nepericulosi pot fi eliberaţi în mediu pe termen scurt, mediu şi lung. 19 04 deşeuri vitrificate şi deşeuri de la vitrificare"
+  },
+  {
+    "cod": "19 04 01",
+    "denumire": "deşeuri vitrificate"
+  },
+  {
+    "cod": "19 04 02*",
+    "denumire": "cenusa zburătoare sau alte deşeuri de la epurarea gazelor de ardere"
+  },
+  {
+    "cod": "19 04 03*",
+    "denumire": "faza solida nevitrificata"
+  },
+  {
+    "cod": "19 04 04",
+    "denumire": "deşeuri lichide apoase de la vitrificarea d eşeurilor 19 05 deşeuri de la tratarea aeroba a deşeurilor solide"
+  },
+  {
+    "cod": "19 05 01",
+    "denumire": "fracţiunea necompostata din deşeurile municipale şi asimilabile"
+  },
+  {
+    "cod": "19 05 02",
+    "denumire": "fracţiunea necompostata din deşeurile animaliere şi vegetale"
+  },
+  {
+    "cod": "19 05 03",
+    "denumire": "compost fără specificarea prov enientei"
+  },
+  {
+    "cod": "19 05 99",
+    "denumire": "alte deşeuri nespecificate 19 06 deşeuri de la tratarea anaeroba a deşeurilor"
+  },
+  {
+    "cod": "19 06 03",
+    "denumire": "faza lichidă de la tratarea anaeroba a deşeurilor municipale"
+  },
+  {
+    "cod": "19 06 04",
+    "denumire": "faza fermentată de la tratarea anaeroba a deşeurilor municipale"
+  },
+  {
+    "cod": "19 06 05",
+    "denumire": "faza lichidă de la tratarea anaeroba a deşeurilor animale şi vegetale"
+  },
+  {
+    "cod": "19 06 06",
+    "denumire": "faza fermentată de la tratarea anaeroba a deşeurilor animale şi vegetale"
+  },
+  {
+    "cod": "19 06 99",
+    "denumire": "alte deşeuri nespecificate 19 07 levigate din halde"
+  },
+  {
+    "cod": "19 07 02*",
+    "denumire": "levigate din depozite de deşeuri cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 07 03",
+    "denumire": "levigate din depozite de deşeuri, altele decât cele specificate la 19 07 02 19 08 deşeuri nespecificate de la staţiile de epurare a apelor reziduale"
+  },
+  {
+    "cod": "19 08 01",
+    "denumire": "deşeuri reţinute pe site"
+  },
+  {
+    "cod": "19 08 02",
+    "denumire": "deşeuri de la deznisipatoare"
+  },
+  {
+    "cod": "19 08 05",
+    "denumire": "namoluri de la epurarea apelor uzate orăşeneşti"
+  },
+  {
+    "cod": "19 08 06*",
+    "denumire": "rasini schimbatoare de ioni saturate sau epuizate"
+  },
+  {
+    "cod": "19 08 07*",
+    "denumire": "soluţii sau namoluri de la regenerarea rasinilor schimbatoare de ioni"
+  },
+  {
+    "cod": "19 08 08*",
+    "denumire": "deşeuri ale sistemelor cu membrana cu conţinut de metale grele"
+  },
+  {
+    "cod": "19 08 09",
+    "denumire": "amestecuri de grăsimi şi uleiuri de la separarea amestecurilor apa/ulei din sectorul uleiurilor şi grasimilor comestibile"
+  },
+  {
+    "cod": "19 08 10*",
+    "denumire": "amestecuri de grăsimi şi uleiuri de la s epararea amestecurilor apa/ulei din alte sectoare decât cel specificat la 19 08"
+  },
+  {
+    "cod": "19 08 11*",
+    "denumire": "namoluri cu conţinut de substanţe periculoase de la epurarea biologica a apelor reziduale industriale"
+  },
+  {
+    "cod": "19 08 12",
+    "denumire": "namoluri de la epurarea biologica a apelor rezidu ale industriale, altele decât cele specificate la 19 08"
+  },
+  {
+    "cod": "19 08 13*",
+    "denumire": "namoluri cu conţinut de substanţe periculoase provenite din alte procedee de epurare a apelor reziduale industriale"
+  },
+  {
+    "cod": "19 08 14",
+    "denumire": "namoluri provenite din alte procedee de epurare a apelor re ziduale industriale decât cele specificate la 19 08"
+  },
+  {
+    "cod": "19 08 99",
+    "denumire": "alte deşeuri nespecificate 19 09 deşeuri de la potabilizarea apei pentru consum sau obţinerea apei pentru uz industrial"
+  },
+  {
+    "cod": "19 09 01",
+    "denumire": "deşeuri solide de la filtrarea primara şi separ area cu site"
+  },
+  {
+    "cod": "19 09 02",
+    "denumire": "namoluri de la limpezirea apei"
+  },
+  {
+    "cod": "19 09 03",
+    "denumire": "namoluri de la decarbonatare"
+  },
+  {
+    "cod": "19 09 04",
+    "denumire": "cărbune activ epuizat"
+  },
+  {
+    "cod": "19 09 05",
+    "denumire": "rasini schimbatoare de ioni saturate sau epuizate"
+  },
+  {
+    "cod": "19 09 06",
+    "denumire": "soluţii şi namoluri de la regenerarea schimbatorilor de ioni"
+  },
+  {
+    "cod": "19 09 99",
+    "denumire": "alte deşeuri nespecificate 19 10 deşeuri de la maruntirea deşeurilor cu conţinut de metale"
+  },
+  {
+    "cod": "19 10 01",
+    "denumire": "deşeuri de fier şi oţel"
+  },
+  {
+    "cod": "19 10 02",
+    "denumire": "deşeuri neferoase"
+  },
+  {
+    "cod": "19 10 03*",
+    "denumire": "fractii de span uşor şi praf conţinând substanţe periculoase"
+  },
+  {
+    "cod": "19 10 04",
+    "denumire": "fractii de span uşor şi praf, altele decât cele specificate la 19 10"
+  },
+  {
+    "cod": "19 10 05*",
+    "denumire": "alte fractii cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 10 06",
+    "denumire": "alte fractii decât cele specificate la 19 10 05 19 11 deşeuri de la regenerarea uleiurilor"
+  },
+  {
+    "cod": "19 11 01*",
+    "denumire": "argile de filtrare epuizate"
+  },
+  {
+    "cod": "19 11 02*",
+    "denumire": "gudroane acide"
+  },
+  {
+    "cod": "19 11 03*",
+    "denumire": "deşeuri lichide apoase"
+  },
+  {
+    "cod": "19 11 04*",
+    "denumire": "deşeuri de la spalarea combustibililor cu baze"
+  },
+  {
+    "cod": "19 11 05*",
+    "denumire": "namoluri de la epurarea efluentilor proprii cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 11 06",
+    "denumire": "namoluri de la epurareaefluentilor proprii,altele decât cele specificate la 19 11"
+  },
+  {
+    "cod": "19 11 07*",
+    "denumire": "deşeuri de la spalarea gazelor de ardere"
+  },
+  {
+    "cod": "19 11 99",
+    "denumire": "alte deşeuri nespecificate 19 12 deşeuri de la tratarea mecanică a deşeurilor (de ex. sortare, maruntire, compactare, granulare) nespecificate în alta poziţie a catalogului"
+  },
+  {
+    "cod": "19 12 01",
+    "denumire": "hârtie şi carton"
+  },
+  {
+    "cod": "19 12 02",
+    "denumire": "metale feroase"
+  },
+  {
+    "cod": "19 12 03",
+    "denumire": "metale neferoase"
+  },
+  {
+    "cod": "19 12 04",
+    "denumire": "materiale plastice şi de cauciuc"
+  },
+  {
+    "cod": "19 12 05",
+    "denumire": "sticla"
+  },
+  {
+    "cod": "19 12 06*",
+    "denumire": "lemn cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 12 07",
+    "denumire": "lemn, altul decât cel specificat la 19 12"
+  },
+  {
+    "cod": "19 12 08",
+    "denumire": "materiale textile"
+  },
+  {
+    "cod": "19 12 09",
+    "denumire": "minerale (de ex: nisip, pietre)"
+  },
+  {
+    "cod": "19 12 10",
+    "denumire": "deşeuri combustibile (rebuturi de derivati de combustibili)"
+  },
+  {
+    "cod": "19 12 11*",
+    "denumire": "alte deşeuri (inclusiv ameste curi de materiale) de la tratarea mecanică a deşeurilor cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 12 12",
+    "denumire": "alte deşeuri (inclusiv amestecuri de materiale) de la tratarea mecanică a deşeurilor, altele decât cele specificate la 19 12 11 19 13 deşeuri de l a lucrări de remediere a solului şi apelor subterane"
+  },
+  {
+    "cod": "19 13 01*",
+    "denumire": "deşeuri solide de la remedierea solului cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 13 02",
+    "denumire": "deşeuri solide de la remedierea solului, altele decât cele specificate la 19 13"
+  },
+  {
+    "cod": "19 13 03*",
+    "denumire": "namoluri de la remedierea solului cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 13 04",
+    "denumire": "namoluri de la remedierea solului, altele decât cele specificate la 19 13"
+  },
+  {
+    "cod": "19 13 05*",
+    "denumire": "namoluri de la remedierea apelor subterane cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 13 06",
+    "denumire": "namoluri de la remedierea apelor subterane, altele decât cele specificate la 19 13"
+  },
+  {
+    "cod": "19 13 07*",
+    "denumire": "deşeuri lichide apoase şi concentrate apoase de la remedierea apelor subterane cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "19 13 08",
+    "denumire": "deşeuri lichide apoase şi concentrate apoase de la remedierea apelor subterane, altele decât cele specificate la 19 13 07 20 DEŞEURI MUNICIPALE ŞI ASIMILABILE DIN COMERŢ, INDUSTRIE, INSTITUŢII, INCLUSIV FRACŢIUNI COLECTATE SEPARAT 20 01 frac ţiuni colectate separat (cu excepţia 15 01)"
+  },
+  {
+    "cod": "20 01 01",
+    "denumire": "hârtie şi carton"
+  },
+  {
+    "cod": "20 01 02",
+    "denumire": "sticla"
+  },
+  {
+    "cod": "20 01 08",
+    "denumire": "deşeuri biodegradabile de la bucatarii şi cantine"
+  },
+  {
+    "cod": "20 01 10",
+    "denumire": "îmbrăcăminte"
+  },
+  {
+    "cod": "20 01 11",
+    "denumire": "textile"
+  },
+  {
+    "cod": "20 01 13*",
+    "denumire": "solventi"
+  },
+  {
+    "cod": "20 01 14*",
+    "denumire": "acizi"
+  },
+  {
+    "cod": "20 01 15*",
+    "denumire": "baze"
+  },
+  {
+    "cod": "20 01 17*",
+    "denumire": "substan ţe chimice fotografice"
+  },
+  {
+    "cod": "20 01 19*",
+    "denumire": "pesticide"
+  },
+  {
+    "cod": "20 01 21*",
+    "denumire": "tuburi fluorescente şi alte deşeuri cu conţinut de mercur"
+  },
+  {
+    "cod": "20 01 23*",
+    "denumire": "echipamente abandonate cu conţinut de CFC (clorofluorocarburi)"
+  },
+  {
+    "cod": "20 01 25",
+    "denumire": "uleiuri şi grăsimi comestibile"
+  },
+  {
+    "cod": "20 01 26*",
+    "denumire": "uleiuri şi grăsimi, altele decât cele specificate la 20 01"
+  },
+  {
+    "cod": "20 01 27*",
+    "denumire": "vopsele, cerneluri, adezivi şi rasini conţinând substanţe periculoase"
+  },
+  {
+    "cod": "20 01 28",
+    "denumire": "vopsele, cerneluri, adezivi şi rasini, altele decât cele specificate la 20 01"
+  },
+  {
+    "cod": "20 01 29*",
+    "denumire": "detergenti cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "20 01 30",
+    "denumire": "detergenti, alţii decât cei specificati la 20 01"
+  },
+  {
+    "cod": "20 01 31*",
+    "denumire": "medicamente citotoxice şi citostatice"
+  },
+  {
+    "cod": "20 01 32",
+    "denumire": "medicamente, altele decât cele menţionate la 20 01"
+  },
+  {
+    "cod": "20 01 33*",
+    "denumire": "baterii şi acumulatori incluşi în 16 0 6 01, 16 06 02 sau 16 06 03 şi baterii şi acumulatori nesortati conţinând aceste baterii"
+  },
+  {
+    "cod": "20 01 34",
+    "denumire": "baterii şi acumulatori, altele decât cele specificate la 20 01"
+  },
+  {
+    "cod": "20 01 35*",
+    "denumire": "echipamente electrice şi electronice casate, altele decât cele specificate la 20 01 21 şi 20 01 23 cu conţinut de componenţi periculosi*6)"
+  },
+  {
+    "cod": "20 01 36",
+    "denumire": "echipamente electrice şi electronice casate, altele decât cele specificate la 20 01 21, 20 01 23 şi 20 01"
+  },
+  {
+    "cod": "20 01 37*",
+    "denumire": "lemn cu conţinut de substanţe periculoase"
+  },
+  {
+    "cod": "20 01 38",
+    "denumire": "lemn, altul de cât cel specificat la 20 01"
+  },
+  {
+    "cod": "20 01 39",
+    "denumire": "materiale plastice"
+  },
+  {
+    "cod": "20 01 40",
+    "denumire": "metale"
+  },
+  {
+    "cod": "20 01 41",
+    "denumire": "deşeuri de la curatatul coşurilor"
+  },
+  {
+    "cod": "20 01 99",
+    "denumire": "alte fractii, nespecificate 20 02 deşeuri din grădini şi parcuri (incluzând deşeuri din cimitire)"
+  },
+  {
+    "cod": "20 02 01",
+    "denumire": "deşeuri biod egradabile"
+  },
+  {
+    "cod": "20 02 02",
+    "denumire": "pământ şi pietre"
+  },
+  {
+    "cod": "20 02 03",
+    "denumire": "alte deşeuri nebiodegradabile 20 03 alte deşeuri municipale"
+  },
+  {
+    "cod": "20 03 01",
+    "denumire": "deşeuri municipale amestecate"
+  },
+  {
+    "cod": "20 03 02",
+    "denumire": "deşeuri din pieţe"
+  },
+  {
+    "cod": "20 03 03",
+    "denumire": "deşeuri stradale"
+  },
+  {
+    "cod": "20 03 04",
+    "denumire": "namoluri din fosele septice"
+  },
+  {
+    "cod": "20 03 06",
+    "denumire": "deşeuri de la curatarea canalizarii"
+  },
+  {
+    "cod": "20 03 07",
+    "denumire": "deşeuri voluminoase"
+  },
+  {
+    "cod": "20 03 99",
+    "denumire": "deşeuri municipale, fără alta specificaţie ----------- *6) Componentele periculoase de la echipamentele electrice şi electronice pot include acumulatorii şi bateriile menţionate la 16 06 şi notate ca periculoase; comutatoare cu mercur; sticla de la tuburile catodice sau alta sticla activata. *ST*"
+  }
+]

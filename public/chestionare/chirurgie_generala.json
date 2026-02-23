@@ -1,0 +1,1362 @@
+{
+  "section": "Chirurgie generală",
+  "roles": [
+    "Generale",
+    "Șef secție",
+    "Medici",
+    "Asistenți",
+    "Infirmieri"
+  ],
+  "questions": [
+    {
+      "section": "Chirurgie generală",
+      "role": "Generale",
+      "questionId": "CHIR-GEN-01",
+      "text": "Igiena mâinilor este respectată la fiecare contact pacient–procedură.",
+      "legalReference": "Ordin MS nr. 1101/2016, Anexa 1, cap. II, art. 2.3–2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Generale",
+      "questionId": "CHIR-GEN-02",
+      "text": "Identificarea corectă a pacientului (2 identificatori) este aplicată înainte de orice intervenție sau administrare.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2, lit. a)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Generale",
+      "questionId": "CHIR-GEN-03",
+      "text": "WHO Surgical Safety Checklist (briefing/time-out/debriefing) este utilizat la toate intervențiile.",
+      "legalReference": "WHO 2009, Safe Surgery Guidelines",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Generale",
+      "questionId": "CHIR-GEN-04",
+      "text": "Profilaxia antibiotică perioperatorie este indicată, temporizată și documentată corect.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8, lit. e)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Generale",
+      "questionId": "CHIR-GEN-05",
+      "text": "Măsurile de prevenire a infecțiilor de plagă sunt aplicate (pregătire tegument, păr, control glicemic).",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8; CDC SSI Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Generale",
+      "questionId": "CHIR-GEN-06",
+      "text": "Numărătoarea instrumentarului/materialelor se efectuează și se documentează pre și post-intervenție.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Generale",
+      "questionId": "CHIR-GEN-07",
+      "text": "Sterilizarea și integritatea pachetelor sterile sunt verificate; trasabilitatea loturilor este asigurată.",
+      "legalReference": "SR EN ISO 17665-1:2018; Ordin MS nr. 961/2016, cap. IV, art. 7.2, lit. c)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Generale",
+      "questionId": "CHIR-GEN-08",
+      "text": "Dispozitivele implantabile au trasabilitate completă (UDI, lot/serie) la nivel de pacient.",
+      "legalReference": "Regulament (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Generale",
+      "questionId": "CHIR-GEN-09",
+      "text": "Rezultatele critice și schimbările majore de tratament sunt comunicate și înregistrate prompt.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Generale",
+      "questionId": "CHIR-GEN-10",
+      "text": "Deșeurile din intervenții (periculoase/înțepătoare) sunt segregate și evacuate conform circuitelor.",
+      "legalReference": "HG nr. 856/2002, Anexa 2, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-01",
+      "text": "Secția are obiective anuale de calitate/siguranță cu KPI monitorizați lunar.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-02",
+      "text": "Se desfășoară analiza de management la nivel de secție, cu acțiuni și termene urmărite.",
+      "legalReference": "OSGG 600/2018, Anexa 1, art. 6, lit. f)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-03",
+      "text": "Programul de audit intern pe secție este planificat și derulat; neconformitățile au CAPA.",
+      "legalReference": "ISO 19011:2018, cl. 5.2; ISO 9001:2015, cl. 10.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-04",
+      "text": "Registrul de riscuri (clinice/operaționale) pentru chirurgie este actualizat trimestrial.",
+      "legalReference": "ISO 31000:2018, cl. 6.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-05",
+      "text": "Sunt desemnate responsabilități (control infecții, farmacovigilență, radioprotecție – dacă e cazul).",
+      "legalReference": "Legea 95/2006, Titlul XIV, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-06",
+      "text": "Planuri de urgență (incendiu, pene curent, dezastre, hemoragie masivă) sunt verificate și instruite.",
+      "legalReference": "Legea 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-07",
+      "text": "Matricea de competențe (proceduri specifice chirurgiei generale) este actualizată.",
+      "legalReference": "Ordin MS 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-08",
+      "text": "Personalul nou are program de mentorat/acomodare documentat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-09",
+      "text": "Instruiri periodice: igiena mâinilor, precauții, IAAM, siguranța dispozitivelor/implanturilor.",
+      "legalReference": "Ordin MS 961/2016, cap. IV–V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-10",
+      "text": "Acoperirea pe ture cu personal calificat este asigurată; sarcinile sunt echilibrate.",
+      "legalReference": "Legea 95/2006, art. 174",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-11",
+      "text": "Evaluările anuale includ componenta de siguranță a pacientului chirurgical.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-12",
+      "text": "Supravegherea IAAM (plăgi, CLABSI, CAUTI) este implementată cu raportare la SPIAAM.",
+      "legalReference": "Ordin MS 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-13",
+      "text": "Respectarea precauțiilor standard/adiționale este monitorizată (observații, checklist).",
+      "legalReference": "Ordin MS 961/2016, cap. IV, art. 7",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-14",
+      "text": "Pregătirea preoperatorie a tegumentelor urmează protocolul; îndepărtarea părului este adecvată.",
+      "legalReference": "Ordin MS 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-15",
+      "text": "Profilaxia antibiotică perioperatorie este indicată, temporizată și revizuită.",
+      "legalReference": "Ordin MS 961/2016, cap. IV, art. 8, lit. e)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-16",
+      "text": "Circuitul lenjeriei curate/murdare este separat și semnalizat.",
+      "legalReference": "Ordin MS 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-17",
+      "text": "Sterilizarea instrumentarului este validată; indicatorii biologici/chimici sunt documentați.",
+      "legalReference": "SR EN ISO 17665-1:2018; Ordin MS 961/2016, cap. IV, art. 7.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-18",
+      "text": "Echipamentele critice au plan de mentenanță preventivă și fișe de intervenții.",
+      "legalReference": "HG 1028/2006, Anexa 1, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-19",
+      "text": "Echipamentele de măsurare/monitorizare sunt verificate/etalonate la termen.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 6.4.6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-20",
+      "text": "Dispozitivele medicale au declarații de conformitate/UDI.",
+      "legalReference": "Reg. (UE) 2017/745, art. 27 & art. 10(9)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-21",
+      "text": "Există back-up pentru echipamente critice (UPS, instrumentar de rezervă).",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-22",
+      "text": "Medicamentele LASA sunt separate/etichetate; există listă actualizată.",
+      "legalReference": "Ordin MS 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-23",
+      "text": "Lanțul frig este monitorizat (registru temperaturi, alarme, acțiuni).",
+      "legalReference": "HG 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-24",
+      "text": "Stupefiantele/psihotropele sunt ținute sub cheie, evidențiate în registre.",
+      "legalReference": "Legea 339/2005, art. 30",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-25",
+      "text": "Materialele sterile: integritate ambalaj, expirare, rotație stocuri (FEFO) sunt verificate.",
+      "legalReference": "Ordin MS 961/2016, cap. IV, art. 7.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-26",
+      "text": "Procedurile/Instrucțiunile de lucru sunt actualizate și disponibile la punctul de utilizare.",
+      "legalReference": "ISO 9001:2015, cl. 7.5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-27",
+      "text": "Trasabilitatea implanturilor și a consumabilelor critice este asigurată la nivel de pacient.",
+      "legalReference": "Reg. (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-28",
+      "text": "Raportările de incidente/adverse (inclusiv near miss) sunt analizate lunar și au CAPA.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-29",
+      "text": "Comunicările critice (rezultate critice, schimbări tratament) sunt documentate și transmise la timp.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-30",
+      "text": "Segregarea deșeurilor (periculoase/nepericuloase, ascuțite) este corect aplicată.",
+      "legalReference": "HG 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-31",
+      "text": "Dezinfectanții/substanțele chimice au fișe SDB și sunt depozitați corect.",
+      "legalReference": "REACH, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-32",
+      "text": "PSI: stingătoare verificate, căi evacuare libere, semnalizare și instruire.",
+      "legalReference": "Legea 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-33",
+      "text": "Monitorizări de mediu (apă/aer) la puncte critice sunt efectuate conform cerințelor.",
+      "legalReference": "Ordin MS 961/2016, Anexa 3, art. 5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-34",
+      "text": "Reclamațiile pacienților sunt înregistrate, analizate și generează acțiuni.",
+      "legalReference": "Ordin MS 1226/2012, cap. VI, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-35",
+      "text": "Timpul de așteptare preoperator este monitorizat; există ținte/plan de reducere.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-36",
+      "text": "Indicatorii clinici (infecții de plagă, reintervenții, readmisii, decese) sunt urmăriți și discutați.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-37",
+      "text": "Feedback-ul personalului este colectat și utilizat pentru îmbunătățire.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-38",
+      "text": "WHO Surgical Safety Checklist este implementat și auditat periodic.",
+      "legalReference": "WHO 2009, Safe Surgery Guidelines",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-39",
+      "text": "Numărătoarea instrumentarului/materialelor este standardizată și auditată.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Șef secție",
+      "questionId": "CHIR-SEF-40",
+      "text": "Protocolul de prevenire a infecțiilor de plagă (SSI bundle) este aplicat și monitorizat.",
+      "legalReference": "CDC SSI Guidelines 2017; Ordin MS 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-01",
+      "text": "Evaluarea preoperatorie a pacientului (istoric, alergii, riscuri) este documentată complet.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-02",
+      "text": "Consimțământul informat chirurgical este obținut și arhivat înainte de intervenție.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-03",
+      "text": "WHO Surgical Safety Checklist este utilizat (briefing, time-out, debriefing).",
+      "legalReference": "WHO 2009",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-04",
+      "text": "Indicația operatorie este justificată clinic și documentată.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-05",
+      "text": "Profilaxia tromboembolică (VTE) este evaluată și aplicată conform ghidurilor.",
+      "legalReference": "Ghid MS 2016 – Tromboembolism venos",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-06",
+      "text": "Profilaxia antibiotică este justificată, temporizată și monitorizată.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8, lit. e)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-07",
+      "text": "Măsurile pentru prevenirea infecțiilor de plagă (SSI bundle) sunt respectate.",
+      "legalReference": "CDC SSI Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-08",
+      "text": "Numărătoarea instrumentarului și materialelor este confirmată împreună cu asistentul.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-09",
+      "text": "Implanturile și consumabilele critice au trasabilitate completă la pacient.",
+      "legalReference": "Reg. (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-10",
+      "text": "Pacientul este evaluat postoperator (status clinic, durere, complicații) și documentat.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-11",
+      "text": "Nota operatorie include detalii despre procedură, implanturi și complicații.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-12",
+      "text": "Rezultatele critice (lab, imagistică) sunt comunicate prompt și documentate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-13",
+      "text": "Prescrierea postoperatorie este clară, lizibilă și semnată.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-14",
+      "text": "Transfuziile sunt indicate, compatibilitatea verificată și reacțiile monitorizate.",
+      "legalReference": "Legea nr. 282/2005, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-15",
+      "text": "Dispozitivele implantabile sunt înregistrate în fișa pacientului și în registrul special.",
+      "legalReference": "Reg. (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-16",
+      "text": "Igiena mâinilor este respectată înainte și după fiecare contact cu pacientul.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-17",
+      "text": "Precauțiile standard/adiționale sunt aplicate conform indicației epidemiologice.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-18",
+      "text": "Evenimentele adverse/infecțiile asociate îngrijirii sunt raportate prompt.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-19",
+      "text": "Indicația și durata cateterelor venoase și urinare sunt revizuite zilnic.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-20",
+      "text": "Pentru plăgile chirurgicale, pansamentele și schimbările sunt documentate.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-21",
+      "text": "Tehnica chirurgicală respectă protocoalele unității și ghidurile profesionale.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-22",
+      "text": "Hemostaza intraoperatorie este asigurată și documentată.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-23",
+      "text": "În caz de conversie laparoscopică–deschisă, motivul este documentat.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-24",
+      "text": "Reintervențiile sunt justificate și raportate ca indicator de calitate.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-25",
+      "text": "Protocolul de prevenire a hipoxiei și hipotermiei intraoperatorii este respectat.",
+      "legalReference": "Ghid SRATI 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-26",
+      "text": "Comunicarea intraoperatorie cu echipa respectă principiile „team time-out”.",
+      "legalReference": "WHO 2009",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-27",
+      "text": "Predarea pacientului către ATI/Salon se face cu structură SBAR și documentație completă.",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-28",
+      "text": "Comunicarea cu pacientul/familia privind riscurile și evoluția este documentată.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-29",
+      "text": "Evenimentele adverse majore sunt comunicate transparent pacientului/familiei.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-30",
+      "text": "Participi la audituri clinice pe profilaxia antibiotică, SSI și transfuzie.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 7.1.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-31",
+      "text": "Participi la revizuiri M&M (mortalitate și morbiditate).",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-32",
+      "text": "Propui actualizări ale protocoalelor chirurgicale bazate pe evidențe.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-33",
+      "text": "Educația medicală continuă (EMC) este urmată pe teme chirurgicale.",
+      "legalReference": "Legea nr. 95/2006, art. 391",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-34",
+      "text": "Instruiești rezidenții în tehnici chirurgicale și protocoale.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-35",
+      "text": "Gestionarea durerii postoperatorii este documentată și reevaluată.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. IV, art. 9",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-36",
+      "text": "Restricțiile fizice/chimice se aplică doar la indicație medicală și sunt monitorizate.",
+      "legalReference": "Legea nr. 487/2002, art. 29",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-37",
+      "text": "Protocolul pentru hemoragie masivă este aplicat și monitorizat.",
+      "legalReference": "Ghid SRATI 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-38",
+      "text": "Pacienții vulnerabili (geriatrie, comorbidități) au planuri adaptate de tratament.",
+      "legalReference": "Legea nr. 46/2003, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-39",
+      "text": "Protocolul de sepsis intra/post-operator este implementat.",
+      "legalReference": "Surviving Sepsis Campaign 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Medici",
+      "questionId": "CHIR-MED-40",
+      "text": "Participi la proiecte de îmbunătățire clinică sau la studii clinice, conform regulilor etice.",
+      "legalReference": "ISO 9001:2015, cl. 10.3; Legea nr. 206/2004, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-01",
+      "text": "Identifici pacientul cu 2 identificatori înainte de orice administrare/procedură.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-02",
+      "text": "Aplici regula „5+2 ale medicației”.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-03",
+      "text": "Verificarea independentă pentru medicamente cu risc crescut este efectuată.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-04",
+      "text": "Lanțul frig pentru soluții și medicamente este monitorizat și înregistrat.",
+      "legalReference": "HG nr. 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-05",
+      "text": "Pregătirea pielii pre-procedural se face conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-06",
+      "text": "Inserția și îngrijirea cateterelor se realizează aseptic și sunt evaluate zilnic.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-07",
+      "text": "Îngrijirea plăgilor chirurgicale este realizată cu tehnică sterilă și documentată.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-08",
+      "text": "Recoltarea probelor biologice se face corect, cu etichetare și trasabilitate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-09",
+      "text": "Instrumentarul chirurgical steril este verificat (integritate, indicatori) înainte de utilizare.",
+      "legalReference": "SR EN ISO 17665-1:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-10",
+      "text": "Numărătoarea instrumentarului/materialelor se face împreună cu medicul și se documentează.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-11",
+      "text": "Igiena mâinilor (5 momente) este aplicată în mod constant.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-12",
+      "text": "Precauțiile standard și adiționale sunt aplicate conform instrucțiunilor epidemiologice.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-13",
+      "text": "Deșeurile chirurgicale sunt segregate corect (biohazard, ascuțite).",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-14",
+      "text": "Lenjeria murdară este manipulată și transportată conform circuitului stabilit.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-15",
+      "text": "Sala de tratamente/intervenții este dezinfectată între pacienți conform listei de verificare.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-16",
+      "text": "Semnele vitale sunt monitorizate la intervale prescrise și documentate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-17",
+      "text": "Scala durerii este aplicată postoperator și rezultatele sunt consemnate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-18",
+      "text": "Administrarea medicamentelor este documentată imediat în foaia de observație.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-19",
+      "text": "Erorile sau incidentele de administrare sunt raportate imediat.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-20",
+      "text": "Predarea turei se face structurat (SBAR) și include planul de îngrijire.",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-21",
+      "text": "Verifici integritatea ambalajelor și data expirării materialelor.",
+      "legalReference": "Regulament (UE) 2017/745, art. 83",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-22",
+      "text": "Materialele sterile sunt păstrate corect, fără contact cu podeaua/ferestrele.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-23",
+      "text": "Soluțiile preparate (seringi, perfuzii) sunt etichetate corect.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-24",
+      "text": "Informezi pacientul și familia cu privire la îngrijirile postoperatorii și semnele de alarmă.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-25",
+      "text": "Verifici alergiile și le marchezi vizibil în fișa/salonul pacientului.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-26",
+      "text": "Asiguri intimitatea și demnitatea pacientului în toate procedurile.",
+      "legalReference": "Legea nr. 46/2003, art. 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-27",
+      "text": "Recoltarea și transportul probelor intra/postoperatorii sunt făcute corect și rapid.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-28",
+      "text": "Testele rapide/POC (glucometre, hemoculturi) sunt efectuate cu verificări de calitate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.6.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-29",
+      "text": "Reacțiile adverse la transfuzii/medicație sunt observate și raportate imediat.",
+      "legalReference": "Legea nr. 282/2005, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-30",
+      "text": "Poziționarea pacienților pe masa operatorie și în postoperator respectă protocoalele.",
+      "legalReference": "Ghid SRATI 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-31",
+      "text": "Cunoști locația stingătoarelor și căilor de evacuare.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-32",
+      "text": "Nu aglomerezi căile de acces; echipamentele sunt depozitate corect.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-33",
+      "text": "Prizele și cablurile sunt utilizate în siguranță, defectele fiind raportate.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-34",
+      "text": "Suprafața sălii de operație și echipamentele sunt igienizate după fiecare caz.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-35",
+      "text": "Participi la instruiri periodice pe teme chirurgicale.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-36",
+      "text": "Raportezi proactiv riscurile observate în sala de operație.",
+      "legalReference": "ISO 31000:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-37",
+      "text": "Colaborezi cu medicii și infirmierii pentru îngrijirea pacientului chirurgical.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-38",
+      "text": "Utilizezi canalele autorizate pentru transmiterea datelor medicale.",
+      "legalReference": "GDPR, art. 32",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-39",
+      "text": "Verifici zilnic funcționalitatea echipamentelor de îngrijire (pompe perfuzie, aspiratoare).",
+      "legalReference": "HG nr. 1028/2006",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Asistenți",
+      "questionId": "CHIR-ASIS-40",
+      "text": "Participi la proiecte de îmbunătățire (PDSA, audituri interne).",
+      "legalReference": "ISO 9001:2015, cl. 10.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-01",
+      "text": "Respecți igiena mâinilor la intrarea/ieșirea din salon și înainte/după contactul cu pacientul.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-02",
+      "text": "Porți EIP adecvat și îl schimbi corect între pacienți/zona operatorie.",
+      "legalReference": "Regulament (UE) 2016/425, Anexa II, pct. 1.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-03",
+      "text": "Deșeurile chirurgicale (periculoase, înțepătoare, nepericuloase) sunt segregate corect în containere dedicate.",
+      "legalReference": "HG nr. 856/2002, Anexa 2, art. 5.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-04",
+      "text": "Recipienții pentru obiecte tăietoare-înțepătoare sunt închiși și înlocuiți conform procedurii.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-05",
+      "text": "Lenjeria curată și murdară este separată și transportată în saci speciali.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-06",
+      "text": "Curățenia zilnică a saloanelor și sălilor de tratament este realizată conform graficului și fișelor de lucru.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-07",
+      "text": "Curățenia terminală după externare/transfer este efectuată conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-08",
+      "text": "Soluțiile de curățenie și dezinfectanții sunt preparați corect și etichetați.",
+      "legalReference": "Regulament (CE) 1907/2006 – REACH, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-09",
+      "text": "Cărucioarele de curățenie sunt curate, complet echipate și depozitate în spații dedicate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-10",
+      "text": "Materialele alimentare nu se amestecă cu cele de curățenie; spațiile sunt separate și semnalizate.",
+      "legalReference": "HG nr. 857/2011, Anexa 2, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-11",
+      "text": "Scurgerile sau vărsările de fluide biologice sunt raportate imediat și curățate conform procedurii.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-12",
+      "text": "Manipulezi corect rufele/reziduurile pentru a evita stropiri/aerosoli.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-13",
+      "text": "Participi la instruiri privind echipamentele de curățenie și noile protocoale.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-14",
+      "text": "Semnalizezi imediat zonele umede/alunecoase pentru a preveni accidente.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-15",
+      "text": "Respecți circuitul alimentelor/apei potabile conform normelor de igienă.",
+      "legalReference": "HG nr. 857/2011, Anexa 2, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-16",
+      "text": "Aplici tehnici corecte de ridicare/mobilizare a pacienților postoperatori.",
+      "legalReference": "Legea nr. 319/2006, art. 13, lit. g)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-17",
+      "text": "Raportezi echipamente defecte, mobilier deteriorat sau probleme de iluminat.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-18",
+      "text": "Păstrezi ordinea și debarasarea corectă a materialelor în saloane/holuri.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-19",
+      "text": "Respecți confidențialitatea și nu divulgi informații despre pacienți sau intervenții.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "Chirurgie generală",
+      "role": "Infirmieri",
+      "questionId": "CHIR-INF-20",
+      "text": "Completezi și semnezi fișele zilnice de activitate, predând corect informațiile la schimbul de tură.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    }
+  ]
+}

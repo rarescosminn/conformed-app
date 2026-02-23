@@ -1,0 +1,177 @@
+/* --- Wizard (modal) --- */
+.modalBackdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, .35);
+    display: grid;
+    place-items: center;
+    z-index: 50;
+}
+
+.modalCard {
+    width: 100%;
+    max-width: 680px;
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    overflow: hidden;
+}
+
+.modalHead {
+    padding: 14px 18px;
+    border-bottom: 1px solid #eef2f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalTitle {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.modalClose {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modalBody {
+    padding: 18px;
+    display: grid;
+    gap: 14px;
+}
+
+.modalFoot {
+    padding: 14px 18px;
+    border-top: 1px solid #eef2f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stepper {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.step {
+    display: grid;
+    gap: 10px;
+    background: #fff;
+    padding: 6px;
+}
+
+.choiceList {
+    display: grid;
+    gap: 8px;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+    .choice:hover {
+        background: #f8fafc;
+    }
+
+    .choice input {
+        accent-color: #2563eb;
+    }
+
+.inline {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+}
+
+    .inline label {
+        font-size: 13px;
+        color: #475569;
+        margin-bottom: 4px;
+        display: block;
+    }
+
+    .inline select, .inline input[type="month"] {
+        width: 100%;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 8px 10px;
+        background: #fff;
+    }
+
+.row {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+}
+
+    .row > div label {
+        font-size: 13px;
+        color: #475569;
+        margin-bottom: 4px;
+        display: block;
+    }
+
+    .row input[type="radio"] {
+        accent-color: #2563eb;
+    }
+
+.chkList {
+    display: grid;
+    gap: 8px;
+}
+
+.chkItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+    .chkItem input {
+        accent-color: #2563eb;
+    }
+
+.btn {
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    color: #334155;
+    border-radius: 12px;
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background: #f8fafc;
+    }
+
+.btnPrimary {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+}
+
+    .btnPrimary:hover {
+        background: #1e4fd7;
+    }
+
+.btnGhost {
+    background: transparent;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+}
+
+    .btnGhost:hover {
+        color: #334155;
+    }

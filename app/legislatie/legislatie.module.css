@@ -1,0 +1,114 @@
+﻿.page {
+    padding: 1rem;
+}
+
+@media (min-width:768px) {
+    .page {
+        padding: 1.5rem;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.back {
+    padding: .375rem .75rem;
+    border: 1px solid #CBD5E1;
+    border-radius: .75rem;
+}
+
+.h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    gap: .75rem;
+}
+
+@media (min-width:768px) {
+    .grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+@media (min-width:1280px) {
+    .grid {
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+}
+
+.card {
+    display: block;
+    background: #fff;
+    border: 1px solid rgba(15,23,42,.12);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(2,6,23,.04);
+    cursor: pointer;
+}
+
+    .card:hover {
+        box-shadow: 0 8px 18px rgba(2,6,23,.06);
+    }
+
+.title {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.25;
+}
+
+.desc {
+    color: #475569;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.open {
+    margin-top: .5rem;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+    .open:hover {
+        text-decoration: underline;
+    }
+
+.meta {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: .5rem;
+}
+
+.small {
+    font-size: 12px;
+    color: #64748B;
+}
+
+.status {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 999px;
+}
+
+.st-in {
+    background: #DCFCE7;
+    color: #166534;
+}
+
+.st-mo {
+    background: #FEF3C7;
+    color: #92400E;
+}
+
+.st-ab {
+    background: #FEE2E2;
+    color: #991B1B;
+}

@@ -1,0 +1,1362 @@
+{
+  "section": "ATI",
+  "roles": [
+    "Generale",
+    "Șef secție",
+    "Medici",
+    "Asistenți",
+    "Infirmieri"
+  ],
+  "questions": [
+    {
+      "section": "ATI",
+      "role": "Generale",
+      "questionId": "ATI-GEN-01",
+      "text": "Igiena mâinilor este respectată la fiecare contact pacient–dispozitiv.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Generale",
+      "questionId": "ATI-GEN-02",
+      "text": "Identificarea pacientului ATI (2 identificatori) este realizată înainte de orice procedură/administrare.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2, lit. a)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Generale",
+      "questionId": "ATI-GEN-03",
+      "text": "Ventilatoarele și dispozitivele critice sunt întreținute și curățate conform procedurilor.",
+      "legalReference": "Regulament (UE) 2017/745; Ordin MS nr. 961/2016, cap. III, art. 6.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Generale",
+      "questionId": "ATI-GEN-04",
+      "text": "Există procedură de raportare a incidentelor și almost-miss aplicată în ATI.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. IV, art. 9",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Generale",
+      "questionId": "ATI-GEN-05",
+      "text": "Informațiile pacienților ATI sunt protejate (confidențialitate, acces pe roluri, arhivare).",
+      "legalReference": "Regulament (UE) 2016/679 – GDPR, art. 5 și art. 32",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Generale",
+      "questionId": "ATI-GEN-06",
+      "text": "Toți angajații ATI au instruiri inițiale și periodice (inclusiv prevenția infecțiilor asociate ventilației).",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4, lit. c)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Generale",
+      "questionId": "ATI-GEN-07",
+      "text": "Trasabilitatea materialelor și dispozitivelor invazive este respectată (lot, serie, expirare).",
+      "legalReference": "Regulament (UE) 2017/745, art. 27 și art. 83",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Generale",
+      "questionId": "ATI-GEN-08",
+      "text": "Zonele ATI respectă curățenia și dezinfecția zilnică, conform fișelor de activitate.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Generale",
+      "questionId": "ATI-GEN-09",
+      "text": "Deșeurile medicale (periculoase/nepericuloase) sunt segregate corect și semnalizate.",
+      "legalReference": "HG nr. 856/2002, Anexa 2, cap. II, art. 5.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Generale",
+      "questionId": "ATI-GEN-10",
+      "text": "Predarea-primirea pacienților ATI folosește o metodă standard (ex. SBAR).",
+      "legalReference": "WHO 2007, Communication during patient hand-overs",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-01",
+      "text": "Secția ATI are obiective anuale de calitate și siguranță cu indicatori monitorizați lunar.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-02",
+      "text": "Se organizează analiza de management la nivel de secție cu acțiuni și termene urmărite.",
+      "legalReference": "OSGG nr. 600/2018, Anexa 1, art. 6, lit. f)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-03",
+      "text": "Programul de audit intern ATI este planificat și derulat; neconformitățile au CAPA.",
+      "legalReference": "ISO 19011:2018, cl. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-04",
+      "text": "Registrul de riscuri ATI (ventilatoare, infecții, medicație) este actualizat trimestrial.",
+      "legalReference": "ISO 31000:2018, cl. 6.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-05",
+      "text": "Există desemnări clare pe roluri (control infecții, farmacovigilență, radioprotecție – dacă e cazul).",
+      "legalReference": "Legea nr. 95/2006, Titlul XIV, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-06",
+      "text": "Planurile de urgență (pene curent, incendiu, cod roșu, evacuare ATI) sunt verificate lunar.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-07",
+      "text": "Matricea de competențe ATI este actualizată periodic.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-08",
+      "text": "Personalul nou ATI are mentorat și perioadă de acomodare documentată.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-09",
+      "text": "Instruiri periodice: igiena mâinilor, IAAM, ventilatoare, medicație cu risc crescut.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4, lit. c)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-10",
+      "text": "Turele sunt acoperite cu personal calificat, cu repartizare echilibrată.",
+      "legalReference": "Legea nr. 95/2006, art. 174",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-11",
+      "text": "Evaluările anuale includ componenta de siguranță pacient critic.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-12",
+      "text": "Secția ATI implementează supravegherea IAAM (focare, raportări către SPIAAM).",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-13",
+      "text": "Respectarea precauțiilor standard și adiționale este monitorizată (observații, checklist).",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-14",
+      "text": "Circuitul lenjeriei curate/murdare este separat și semnalizat.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-15",
+      "text": "Managementul cateterelor venoase centrale respectă protocoale.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-16",
+      "text": "Ventilatoarele și pompele ATI sunt dezinfectate conform normelor.",
+      "legalReference": "Regulament (UE) 2017/745; Ordin MS nr. 961/2016",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-17",
+      "text": "Sterilizarea instrumentarului ATI este validată cu indicatori biologici și chimici.",
+      "legalReference": "SR EN ISO 17665-1:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-18",
+      "text": "Toate echipamentele ATI au plan de mentenanță preventivă și fișe de intervenții.",
+      "legalReference": "HG nr. 1028/2006, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-19",
+      "text": "Echipamentele de măsurare/monitorizare sunt etalonate periodic.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 6.4.6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-20",
+      "text": "Ventilatoarele au back-up disponibil (minim 1/unitate ATI).",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-21",
+      "text": "Există UPS funcțional pentru echipamente critice ATI.",
+      "legalReference": "HG nr. 1028/2006, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-22",
+      "text": "Medicamentele LASA sunt separate/etichetate; există listă actualizată.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-23",
+      "text": "Lanțul frig este monitorizat (registru temperaturi, alarme).",
+      "legalReference": "HG nr. 857/2011",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-24",
+      "text": "Stupefiantele/psihotropele sunt gestionate în registre securizate.",
+      "legalReference": "Legea nr. 339/2005, art. 30",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-25",
+      "text": "Materialele sterile ATI sunt verificate (ambalaj, expirare).",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 7.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-26",
+      "text": "Procedurile ATI sunt actualizate și disponibile la punctul de utilizare.",
+      "legalReference": "ISO 9001:2015, cl. 7.5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-27",
+      "text": "Trasabilitatea dispozitivelor invazive este documentată pe pacient.",
+      "legalReference": "Regulament (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-28",
+      "text": "Rapoartele de incidente/adverse sunt analizate lunar.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-29",
+      "text": "Comunicările critice sunt transmise la timp și documentate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-30",
+      "text": "Segregarea deșeurilor ATI este respectată (culori, containere).",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-31",
+      "text": "Substanțele chimice și dezinfectanții au fișe SDB; depozitare corectă.",
+      "legalReference": "Regulament (CE) 1907/2006, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-32",
+      "text": "PSI: stingătoare funcționale, căi evacuare libere, personal instruit.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-33",
+      "text": "Apa și aerul sunt monitorizate periodic (Legionella, particule).",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-34",
+      "text": "Reclamațiile pacienților/familiilor sunt analizate și duc la acțiuni corective.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. VI, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-35",
+      "text": "Timpul de așteptare pentru transfer/externare este monitorizat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-36",
+      "text": "Ratele de decese, reintubări, transferuri neplanificate sunt urmărite.",
+      "legalReference": "ISO 9001:2015, cl. 9.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-37",
+      "text": "Feedback-ul personalului ATI este integrat în planul de îmbunătățire.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-38",
+      "text": "Igiena mâinilor este auditată zilnic pe ture.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-39",
+      "text": "Respectarea protocoalelor de izolare pentru MDR este monitorizată.",
+      "legalReference": "ECDC Guidance 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Șef secție",
+      "questionId": "ATI-SEF-40",
+      "text": "Protocolul pentru prevenirea VAP este implementat și verificat.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-01",
+      "text": "Evaluarea inițială a pacientului ATI (istoric, alergii, scoruri critice) este documentată complet.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-02",
+      "text": "Consimțământul informat este obținut și arhivat pentru toate procedurile ATI.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-03",
+      "text": "Se utilizează scoruri de severitate (APACHE II, SOFA) la internare și pe parcurs.",
+      "legalReference": "Ghid SRATI 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-04",
+      "text": "Planul de tratament zilnic este documentat și actualizat după vizita de gardă.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-05",
+      "text": "Profilaxia tromboembolică (VTE) este evaluată și implementată conform ghidurilor.",
+      "legalReference": "Ghid MS 2016 – Tromboembolism venos",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-06",
+      "text": "Profilaxia antibiotică este justificată, documentată și revizuită zilnic.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-07",
+      "text": "Protocolul pentru prevenirea VAP este aplicat la pacienții ventilați.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-08",
+      "text": "Sedarea și analgezia sunt evaluate zilnic prin scoruri validate (RASS, BPS).",
+      "legalReference": "Ghid SRATI 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-09",
+      "text": "Nutriția enterală/parenterală este prescrisă și monitorizată conform ghidurilor.",
+      "legalReference": "ESPEN Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-10",
+      "text": "Pacienții ATI sunt evaluați zilnic pentru deprescriere/optimizare terapii.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-11",
+      "text": "Inserția cateterelor venoase centrale respectă tehnica aseptică și protocolul de verificare.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-12",
+      "text": "Cateterele periferice sunt revizuite zilnic și îndepărtate la timp.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-13",
+      "text": "Dispozitivele implantabile și consumabilele critice au trasabilitate completă (lot/serie).",
+      "legalReference": "Regulament (UE) 2017/745, art. 27",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-14",
+      "text": "Pentru transfuzii se respectă indicația, compatibilitatea și monitorizarea reacțiilor.",
+      "legalReference": "Legea nr. 282/2005, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-15",
+      "text": "Ventilatoarele mecanice sunt setate conform protocoalelor pentru ARDS/insuficiență respiratorie.",
+      "legalReference": "Ghid SRATI 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-16",
+      "text": "Decizia de intubare/extubare este documentată și realizată conform protocolului.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-17",
+      "text": "Hemodializa/CRRT la ATI respectă indicațiile și protocoalele de siguranță.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-18",
+      "text": "Procedurile invazive (traheostomie, drenaj, puncții) sunt efectuate cu documentare completă.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-19",
+      "text": "Parametrii vitali și scorurile clinice sunt revizuite și documentate periodic.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-20",
+      "text": "Rezultatele critice de laborator/imaging sunt comunicate prompt și documentat.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.8.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-21",
+      "text": "Handover între ture folosește format standard (SBAR) și include planul zilnic.",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-22",
+      "text": "Evenimentele adverse și IAAM sunt raportate imediat prin sistemul formal.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-23",
+      "text": "Comunicarea cu familia pacientului critic este documentată zilnic.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-24",
+      "text": "Evenimentele adverse majore sunt comunicate transparent (open disclosure).",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-25",
+      "text": "Participi la revizuiri M&M ATI.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-26",
+      "text": "Participi la audituri clinice ATI (antibiotice, VAP, sepsis).",
+      "legalReference": "SR EN ISO 15189:2023, cl. 7.1.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-27",
+      "text": "Actualizezi protocoalele ATI pe baza ghidurilor internaționale și alertelor.",
+      "legalReference": "Legea nr. 95/2006, art. 653",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-28",
+      "text": "Urmezi programe de educație medicală continuă (EMC) specifice ATI.",
+      "legalReference": "Legea nr. 95/2006, art. 391",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-29",
+      "text": "Instruiești rezidenți și asistenți în protocoale ATI (ventilație, sepsis, IAAM).",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-30",
+      "text": "Gestionarea durerii la pacient critic este documentată prin scoruri și reevaluări.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. IV, art. 9",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-31",
+      "text": "Restricțiile fizice sau chimice se aplică doar la indicație medicală și sunt monitorizate.",
+      "legalReference": "Legea nr. 487/2002, art. 29",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-32",
+      "text": "Pacienții vulnerabili (geriatrie, imunodeprimați) primesc adaptări de tratament.",
+      "legalReference": "Legea nr. 46/2003, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-33",
+      "text": "Se aplică profilaxia ulcerului de stres și a infecțiilor asociate dispozitivelor.",
+      "legalReference": "Ghid ATI – Sepsis 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-34",
+      "text": "Protocolul pentru sepsis este implementat (time-to-antibiotic, lactat, hemoculturi).",
+      "legalReference": "Surviving Sepsis Campaign 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-35",
+      "text": "Protocolul pentru șoc septic și insuficiență multiplă de organe este documentat.",
+      "legalReference": "Surviving Sepsis Campaign 2021",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-36",
+      "text": "Datele pacienților ATI sunt introduse și accesate doar în sistemul electronic autorizat.",
+      "legalReference": "GDPR, art. 32",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-37",
+      "text": "Semnătura electronică este utilizată pentru documentele medicale ATI.",
+      "legalReference": "Legea nr. 95/2006, art. 653^1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-38",
+      "text": "Nu se utilizează canale personale pentru transmiterea datelor.",
+      "legalReference": "GDPR, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-39",
+      "text": "Politicile de parole și blocare automată a stațiilor ATI sunt respectate.",
+      "legalReference": "ISO/IEC 27001:2022",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Medici",
+      "questionId": "ATI-MED-40",
+      "text": "Participi la proiecte de îmbunătățire ATI (PDSA) sau la studii clinice conform protocolului.",
+      "legalReference": "ISO 9001:2015, cl. 10.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-01",
+      "text": "Identifici pacientul ATI cu 2 identificatori înainte de orice administrare/procedură.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. III, art. 4.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-02",
+      "text": "Aplici regula „5+2 ale medicației” (pacient, medicament, doză, cale, timp, indicație, documentare).",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-03",
+      "text": "Verificarea independentă pentru medicamente cu risc crescut este efectuată.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-04",
+      "text": "Lanțul frig pentru medicamente și soluții ATI este menținut și documentat.",
+      "legalReference": "HG nr. 857/2011, Anexa 1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-05",
+      "text": "Pregătirea pielii înainte de inserarea dispozitivelor invazive se face conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-06",
+      "text": "Inserția și întreținerea cateterelor se fac aseptic, cu pansamente sterile și evaluare zilnică.",
+      "legalReference": "CDC Guidelines 2017",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-07",
+      "text": "Îngrijirea plăgilor chirurgicale se face cu tehnică sterilă și documentare evoluție.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-08",
+      "text": "Recoltarea probelor biologice este efectuată corect, cu etichetare și trasabilitate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-09",
+      "text": "Ventilatoarele mecanice sunt conectate/deconectate conform instrucțiunilor și protocoalelor.",
+      "legalReference": "Regulament (UE) 2017/745",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-10",
+      "text": "Pompele de perfuzie sunt utilizate conform protocolului și verificate zilnic.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-11",
+      "text": "Igiena mâinilor (5 momente) este aplicată consecvent în ATI.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-12",
+      "text": "Precauțiile standard și adiționale sunt respectate pentru fiecare pacient ATI.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-13",
+      "text": "Deșeurile ATI sunt segregate corect (biohazard, ascuțite, nepericuloase).",
+      "legalReference": "HG nr. 856/2002, Anexa 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-14",
+      "text": "Lenjeria ATI este manipulată și transportată conform circuitelor.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-15",
+      "text": "Suprafețele și echipamentele ATI sunt dezinfectate între pacienți conform listelor de verificare.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-16",
+      "text": "Semnele vitale sunt monitorizate la intervalele stabilite și documentate.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-17",
+      "text": "Parametrii ventilației mecanice sunt verificați și înregistrați regulat.",
+      "legalReference": "Ghid SRATI 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-18",
+      "text": "Scalele clinice (durere, risc de cădere, Braden, RASS) sunt utilizate zilnic.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-19",
+      "text": "Administrarea medicamentelor este documentată imediat în fișa ATI.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. III, art. 6",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-20",
+      "text": "Erorile de administrare sunt raportate imediat, fără vinovăție.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-21",
+      "text": "Predarea turei folosește format standard (SBAR) și include planul de îngrijire.",
+      "legalReference": "WHO 2007",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-22",
+      "text": "Verifici integritatea ambalajelor, data expirării și condițiile de stocare.",
+      "legalReference": "Regulament (UE) 2017/745, art. 83",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-23",
+      "text": "Materialele sterile ATI sunt depozitate corect, fără contact cu podeaua.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-24",
+      "text": "Seringile și soluțiile preparate sunt etichetate corect (denumire, concentrație, oră, inițiale).",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-25",
+      "text": "Familia pacientului este informată privind proceduri, riscuri și semne de alarmă.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-26",
+      "text": "Alergiile sunt verificate și marcate vizibil în fișă/salon ATI.",
+      "legalReference": "Legea nr. 46/2003, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-27",
+      "text": "Intimitatea și demnitatea pacientului ATI sunt respectate în toate procedurile.",
+      "legalReference": "Legea nr. 46/2003, art. 2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-28",
+      "text": "Probele biologice critice sunt transportate rapid și în containere dedicate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.4.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-29",
+      "text": "Punctele POC (glucometre, teste rapide) sunt verificate cu controale de calitate.",
+      "legalReference": "SR EN ISO 15189:2023, cl. 5.6.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-30",
+      "text": "Reacțiile adverse la medicație sau transfuzii sunt raportate imediat.",
+      "legalReference": "Legea nr. 95/2006, art. 696",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-31",
+      "text": "Poziționarea și mobilizarea pacienților ATI se face corect pentru prevenirea escarelor.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-32",
+      "text": "Ventilația și oxigenoterapia sunt monitorizate permanent și alarmele sunt gestionate.",
+      "legalReference": "Ghid SRATI 2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-33",
+      "text": "Cunoști locația stingătoarelor și căilor de evacuare ATI.",
+      "legalReference": "Legea nr. 307/2006, art. 19",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-34",
+      "text": "Nu aglomerezi căile de acces; echipamentele sunt parcate corect.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-35",
+      "text": "Prizele și cablurile sunt utilizate în siguranță; defectele sunt raportate.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-36",
+      "text": "Apa, aerul și gazele medicale sunt monitorizate conform normelor.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-37",
+      "text": "Participi la instruiri periodice și ești evaluat pe competențe ATI.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-38",
+      "text": "Raportezi proactiv riscurile observate (echipamente, pacienți).",
+      "legalReference": "ISO 31000:2018",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-39",
+      "text": "Colaborezi zilnic cu medicii și infirmierii pentru planul de îngrijire ATI.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Asistenți",
+      "questionId": "ATI-ASIS-40",
+      "text": "Participi la proiecte de îmbunătățire și audituri interne ATI.",
+      "legalReference": "ISO 9001:2015, cl. 10.3",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-01",
+      "text": "Respecți regulile de igienă a mâinilor la intrarea/ieșirea din salon și la contact pacient–dispozitiv.",
+      "legalReference": "Ordin MS nr. 1101/2016, cap. II, art. 2.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-02",
+      "text": "Porți EIP adecvat și îl schimbi corect între pacienți/zona ATI.",
+      "legalReference": "Regulament (UE) 2016/425, Anexa II, pct. 1.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-03",
+      "text": "Deșeurile ATI sunt segregate corect în containere dedicate, fără supra-umplere.",
+      "legalReference": "HG nr. 856/2002, Anexa 2, art. 5.1",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-04",
+      "text": "Recipienții pentru obiecte tăietoare-înțepătoare sunt închiși la timp și înlocuiți conform procedurii.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-05",
+      "text": "Lenjeria curată și murdară este separată și transportată în saci speciali.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-06",
+      "text": "Curățenia zilnică a saloanelor ATI este realizată conform graficului și fișelor de lucru.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-07",
+      "text": "Curățenia terminală după externare/deces/transfer se face conform protocolului.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. V, art. 12",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-08",
+      "text": "Soluțiile de curățenie și dezinfectanții sunt preparați corect și etichetați.",
+      "legalReference": "Regulament (CE) 1907/2006 – REACH, art. 31",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-09",
+      "text": "Cărucioarele de curățenie sunt curate, complet echipate și depozitate separat.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-10",
+      "text": "Materialele alimentare nu se amestecă cu cele de curățenie; spațiile sunt separate.",
+      "legalReference": "HG nr. 857/2011, Anexa 2, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-11",
+      "text": "Scurgerile sau vărsările de fluide biologice sunt raportate și curățate imediat conform procedurii.",
+      "legalReference": "Ordin MS nr. 961/2016, cap. IV, art. 8",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-12",
+      "text": "Manipulezi corect rufele și reziduurile pentru a evita stropiri/aerosoli.",
+      "legalReference": "Ordin MS nr. 961/2016, Anexa 3, art. 5.2",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-13",
+      "text": "Participi la instruiri privind utilizarea echipamentelor de curățenie și noile protocoale.",
+      "legalReference": "Ordin MS nr. 1226/2012, cap. II, art. 3.4",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-14",
+      "text": "Semnalizezi imediat zonele umede/alunecoase pentru a preveni accidente.",
+      "legalReference": "Legea nr. 319/2006, art. 13",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-15",
+      "text": "Respecți circuitul alimentelor și apei potabile, asigurând igiena ustensilelor.",
+      "legalReference": "HG nr. 857/2011, Anexa 2, art. 5",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-16",
+      "text": "Aplici tehnici corecte de ridicare și mobilizare a pacienților critici.",
+      "legalReference": "Legea nr. 319/2006, art. 13, lit. g)",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-17",
+      "text": "Raportezi echipamente defecte, mobilier deteriorat sau probleme de iluminat.",
+      "legalReference": "Legea nr. 319/2006, art. 22",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-18",
+      "text": "Păstrezi ordinea și debarasarea corectă a materialelor în spațiile ATI.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-19",
+      "text": "Respecți confidențialitatea și nu divulgi informații despre pacienți sau situații clinice.",
+      "legalReference": "Legea nr. 46/2003, art. 21",
+      "answerType": "yes_no",
+      "required": true
+    },
+    {
+      "section": "ATI",
+      "role": "Infirmieri",
+      "questionId": "ATI-INF-20",
+      "text": "Completezi și semnezi fișele zilnice de activitate, predând corect informațiile la schimbul de tură.",
+      "legalReference": "Procedură internă",
+      "answerType": "yes_no",
+      "required": true
+    }
+  ]
+}
