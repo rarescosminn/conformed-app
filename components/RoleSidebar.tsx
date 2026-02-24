@@ -136,11 +136,10 @@ export default function RoleSidebar() {
 
     return (
         <aside className="sb">
-            <div className="sb__brand" aria-label="Hospital Compliance">
+            <div className="sb__brand" aria-label="eConformed">
                 <div className="sb__logo">{Icon.dashboard}</div>
                 <div className="sb__brandText">
-                    <strong>Hospital</strong>
-                    <strong>Compliance</strong>
+                    <strong>eConformed</strong>
                 </div>
             </div>
 
