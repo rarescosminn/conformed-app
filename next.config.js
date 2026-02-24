@@ -13,10 +13,4 @@ const nextConfig = {
     },
 };
 module.exports = nextConfig;
-```
 
-Salvează, apoi:
-```
-git add .
-git commit -m "fix: disable suspense bailout error"
-git push
