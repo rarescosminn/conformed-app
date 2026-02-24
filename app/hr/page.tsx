@@ -1,5 +1,5 @@
-﻿export const dynamic = 'force-dynamic';
-// app/hr/page.tsx
+﻿// app/hr/page.tsx
+export const dynamic = 'force-dynamic';
 import HrPageClient from "../../components/hr/HrPageClient";
 import { getHrDashboardData } from "../../lib/hr/data";
 
