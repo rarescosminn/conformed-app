@@ -7,5 +7,16 @@ const nextConfig = {
     eslint: {
         ignoreDuringBuilds: true,
     },
+    output: 'standalone',
+    experimental: {
+        missingSuspenseWithCSRBailout: false,
+    },
 };
 module.exports = nextConfig;
+```
+
+Salvează, apoi:
+```
+git add .
+git commit -m "fix: disable suspense bailout error"
+git push
