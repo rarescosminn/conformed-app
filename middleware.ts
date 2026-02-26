@@ -1,41 +1,41 @@
-﻿// /middleware.ts
-import { NextResponse, type NextRequest } from "next/server";
+﻿import { NextResponse, type NextRequest } from "next/server";
+import { createServerClient } from "@supabase/ssr";
 
-const PUBLIC_PATHS = [
-    "/onboarding",
-    "/_next",
-    "/favicon",
-    "/icons",
-    "/images",
-    "/public",
-    "/api",
-];
+const PUBLIC_PATHS = ["/login", "/onboarding", "/_next", "/favicon", "/icons", "/images", "/public", "/api"];
 
 function isPublic(req: NextRequest) {
-    const { pathname } = req.nextUrl;
-    return PUBLIC_PATHS.some((p) => pathname === p || pathname.startsWith(p + "/"));
+  const { pathname } = req.nextUrl;
+  return PUBLIC_PATHS.some((p) => pathname === p || pathname.startsWith(p + "/"));
 }
 
-export function middleware(req: NextRequest) {
-    const url = req.nextUrl.clone();
+export async function middleware(req: NextRequest) {
+  if (isPublic(req)) return NextResponse.next();
 
-    if (isPublic(req)) return NextResponse.next();
+  const res = NextResponse.next();
 
-    // Flag-uri din cookie (fallback până la backend):
-    //  - features.sectionsPersonalizate: "1" = ON
-    //  - onboardingCompleted: "1" = finalizat
-    const featuresFlag = req.cookies.get("features_sectionsPersonalizate")?.value === "1";
-    const onboardingCompleted = req.cookies.get("onboardingCompleted")?.value === "1";
-
-    if (featuresFlag && !onboardingCompleted) {
-        url.pathname = "/onboarding";
-        url.search = "";
-        return NextResponse.redirect(url);
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        get(name) { return req.cookies.get(name)?.value; },
+        set(name, value, options) { res.cookies.set({ name, value, ...options }); },
+        remove(name, options) { res.cookies.set({ name, value: "", ...options }); },
+      },
     }
+  );
 
-    return NextResponse.next();
+  const { data: { session } } = await supabase.auth.getSession();
+
+  if (!session) {
+    const url = req.nextUrl.clone();
+    url.pathname = "/login";
+    return NextResponse.redirect(url);
+  }
+
+  return res;
 }
 
 export const config = {
-    matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
 };
