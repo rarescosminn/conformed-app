@@ -17,4 +17,4 @@ export default function Login(){
       <div style={{height:12}}/>
       <button className="btn" onClick={submit}>Intră în cont</button>
     </div></div>);
-}
+} 
