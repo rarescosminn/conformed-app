@@ -7,7 +7,7 @@ export default function Login(){
     const { data, error } = await supabase.auth.signInWithPassword({ email, password: pass }); 
     console.log('data:', data, 'error:', error);
     if(error) alert(error.message); 
-    else window.location.href='/dashboard'; 
+    else window.location.replace('/dashboard'); 
   }
   return (<div className="container" style={{display:'grid', placeItems:'center', height:'100vh'}}>
     <div className="card" style={{width:380}}><h1 className="h1">Autentificare</h1>
@@ -17,4 +17,4 @@ export default function Login(){
       <div style={{height:12}}/>
       <button className="btn" onClick={submit}>Intră în cont</button>
     </div></div>);
-} 
+}
