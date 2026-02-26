@@ -3,7 +3,12 @@ import React from 'react';
 import { supabase } from '@/lib/supabaseClient';
 export default function Login(){
   const [email,setEmail]=React.useState(''); const [pass,setPass]=React.useState('');
-  async function submit(){ const { error } = await supabase.auth.signInWithPassword({ email, password: pass }); if(error) alert(error.message); else window.location.href='/dashboard'; }
+  async function submit(){ 
+    const { data, error } = await supabase.auth.signInWithPassword({ email, password: pass }); 
+    console.log('data:', data, 'error:', error);
+    if(error) alert(error.message); 
+    else window.location.href='/dashboard'; 
+  }
   return (<div className="container" style={{display:'grid', placeItems:'center', height:'100vh'}}>
     <div className="card" style={{width:380}}><h1 className="h1">Autentificare</h1>
       <input className="input" placeholder="Email" value={email} onChange={e=>setEmail(e.target.value)}/>
