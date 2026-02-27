@@ -1,48 +1,63 @@
-// components/FooterUser.tsx
 "use client";
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { createBrowserClient } from "@supabase/ssr";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 const IMG_MAX_BYTES = 2 * 1024 * 1024;
 const IMG_ALLOWED = new Set(["image/jpeg", "image/png", "image/webp"]);
 
+function formatName(email: string): string {
+    const local = email.split("@")[0];
+    const parts = local.split(".");
+    if (parts.length >= 2) {
+        const prenume = parts[0].charAt(0).toUpperCase() + parts[0].slice(1).toLowerCase();
+        const nume = parts[1].toUpperCase();
+        return `${prenume} ${nume}`;
+    }
+    return local;
+}
+
 export default function FooterUser() {
     const [avatar, setAvatar] = useState<string | null>(null);
+    const [userEmail, setUserEmail] = useState<string>("");
     const [error, setError] = useState<string>("");
     const lastObjectUrl = useRef<string | null>(null);
     const router = useRouter();
+    const pathname = usePathname();
 
     const supabase = createBrowserClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
         process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
     );
-    const [userEmail, setUserEmail] = useState<string>('');
-
-useEffect(() => {
-    supabase.auth.getUser().then(({ data }) => {
-        if (data?.user?.email) setUserEmail(data.user.email);
-    });
-}, []);
 
     useEffect(() => {
+        supabase.auth.getUser().then(({ data }) => {
+            if (data?.user?.email) {
+                setUserEmail(data.user.email);
+                const saved = localStorage.getItem(`avatar_${data.user.email}`);
+                if (saved) setAvatar(saved);
+            }
+        });
         return () => {
             if (lastObjectUrl.current) URL.revokeObjectURL(lastObjectUrl.current);
         };
     }, []);
 
+    if (pathname === "/login") return null;
+
     const handleUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
         setError("");
         const file = e.target.files?.[0];
         if (!file) return;
-        if (!IMG_ALLOWED.has(file.type)) return setError("Format neacceptat. Folosește JPG/PNG/WebP.");
-        if (file.size > IMG_MAX_BYTES) return setError("Imagine prea mare. Limită: 2 MB.");
+        if (!IMG_ALLOWED.has(file.type)) return setError("Format neacceptat.");
+        if (file.size > IMG_MAX_BYTES) return setError("Imagine prea mare. Max 2MB.");
         if (lastObjectUrl.current) URL.revokeObjectURL(lastObjectUrl.current);
         const url = URL.createObjectURL(file);
         lastObjectUrl.current = url;
         setAvatar(url);
+        if (userEmail) localStorage.setItem(`avatar_${userEmail}`, url);
         (e.target as HTMLInputElement).value = "";
     };
 
@@ -73,8 +88,8 @@ useEffect(() => {
             </label>
 
             <div style={{ flex: 1 }}>
-                <div style={{ color: "#6b7280", fontSize: 16 }}>Logged in as</div>
-                <div style={{ fontWeight: 700, fontSize: 18 }}>{userEmail || 'Management'}</div>
+                <div style={{ color: "#6b7280", fontSize: 12 }}>Logged in as</div>
+                <div style={{ fontWeight: 700, fontSize: 14 }}>{userEmail ? formatName(userEmail) : "—"}</div>
             </div>
 
             <button
