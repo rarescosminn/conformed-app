@@ -19,6 +19,13 @@ export default function FooterUser() {
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
         process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
     );
+    const [userEmail, setUserEmail] = useState<string>('');
+
+useEffect(() => {
+    supabase.auth.getUser().then(({ data }) => {
+        if (data?.user?.email) setUserEmail(data.user.email);
+    });
+}, []);
 
     useEffect(() => {
         return () => {
@@ -67,7 +74,7 @@ export default function FooterUser() {
 
             <div style={{ flex: 1 }}>
                 <div style={{ color: "#6b7280", fontSize: 16 }}>Logged in as</div>
-                <div style={{ fontWeight: 700, fontSize: 18 }}>Management</div>
+                <div style={{ fontWeight: 700, fontSize: 18 }}>{userEmail || 'Management'}</div>
             </div>
 
             <button
