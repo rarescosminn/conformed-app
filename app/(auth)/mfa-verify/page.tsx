@@ -26,8 +26,14 @@ export default function MfaVerify() {
     const { error } = await supabase.auth.mfa.verify({ factorId, challengeId: challengeData.id, code });
     setLoading(false);
     if (error) setMessage('Cod incorect. Încearcă din nou.');
+    else {
+  const { data: { user } } = await supabase.auth.getUser();
+  if (user) {
+    const { data: onb } = await supabase.from('onboarding').select('id').eq('user_id', user.id).single();
+    if (!onb) router.replace('/onboarding');
     else router.replace('/dashboard');
   }
+}
 
   return (
     <div className="container" style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
