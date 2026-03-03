@@ -1,17 +1,36 @@
 'use client';
 import React from 'react';
-import { supabase } from '@/lib/supabaseClient';
+import { createBrowserClient } from '@supabase/ssr';
+import { useRouter } from 'next/navigation';
 
 export default function Login(){
   const [email, setEmail] = React.useState('');
   const [pass, setPass] = React.useState('');
   const [showPass, setShowPass] = React.useState(false);
+  const router = useRouter();
+
+  const supabase = createBrowserClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
 
   async function submit(){ 
     const { data, error } = await supabase.auth.signInWithPassword({ email, password: pass }); 
-    console.log('data:', data, 'error:', error);
-    if(error) alert(error.message); 
-    else window.location.replace('/dashboard'); 
+    if(error) { alert(error.message); return; }
+    
+    const { data: factors } = await supabase.auth.mfa.listFactors();
+    const hasMfa = factors?.totp && factors.totp.length > 0;
+    
+    if (!hasMfa) {
+      router.replace('/mfa-setup');
+    } else {
+      const assuranceLevel = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
+      if (assuranceLevel.data?.nextLevel === 'aal2') {
+        router.replace('/mfa-verify');
+      } else {
+        router.replace('/dashboard');
+      }
+    }
   }
 
   return (
