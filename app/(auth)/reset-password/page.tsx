@@ -8,12 +8,21 @@ export default function ResetPassword() {
   const [confirm, setConfirm] = React.useState('');
   const [loading, setLoading] = React.useState(false);
   const [message, setMessage] = React.useState('');
+  const [ready, setReady] = React.useState(false);
   const router = useRouter();
 
   const supabase = createBrowserClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
   );
+
+  React.useEffect(() => {
+    supabase.auth.onAuthStateChange((event, session) => {
+      if (event === 'PASSWORD_RECOVERY') {
+        setReady(true);
+      }
+    });
+  }, []);
 
   async function submit() {
     if (pass !== confirm) return setMessage('Parolele nu coincid.');
@@ -33,20 +42,26 @@ export default function ResetPassword() {
     <div className="container" style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
       <div className="card" style={{ width: 380 }}>
         <h1 className="h1">Parolă nouă</h1>
-        <p style={{ fontSize: 13, color: '#6B7280', marginBottom: 16 }}>
-          Introduceți noua parolă pentru contul dvs.
-        </p>
-        <input className="input" type="password" placeholder="Parolă nouă" value={pass} onChange={e => setPass(e.target.value)} />
-        <div style={{ height: 8 }} />
-        <input className="input" type="password" placeholder="Confirmă parola" value={confirm} onChange={e => setConfirm(e.target.value)} />
-        <div style={{ height: 12 }} />
-        <button className="btn" onClick={submit} disabled={loading}>
-          {loading ? 'Se salvează...' : 'Salvează parola'}
-        </button>
-        {message && (
-          <p style={{ marginTop: 12, fontSize: 13, color: message.includes('succes') ? 'green' : 'red' }}>
-            {message}
-          </p>
+        {!ready ? (
+          <p style={{ fontSize: 13, color: '#6B7280' }}>Se verifică linkul...</p>
+        ) : (
+          <>
+            <p style={{ fontSize: 13, color: '#6B7280', marginBottom: 16 }}>
+              Introduceți noua parolă pentru contul dvs.
+            </p>
+            <input className="input" type="password" placeholder="Parolă nouă" value={pass} onChange={e => setPass(e.target.value)} />
+            <div style={{ height: 8 }} />
+            <input className="input" type="password" placeholder="Confirmă parola" value={confirm} onChange={e => setConfirm(e.target.value)} />
+            <div style={{ height: 12 }} />
+            <button className="btn" onClick={submit} disabled={loading}>
+              {loading ? 'Se salvează...' : 'Salvează parola'}
+            </button>
+            {message && (
+              <p style={{ marginTop: 12, fontSize: 13, color: message.includes('succes') ? 'green' : 'red' }}>
+                {message}
+              </p>
+            )}
+          </>
         )}
       </div>
     </div>
