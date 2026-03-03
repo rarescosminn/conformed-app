@@ -25,15 +25,20 @@ export default function MfaVerify() {
     if (challengeError) { setMessage(challengeError.message); setLoading(false); return; }
     const { error } = await supabase.auth.mfa.verify({ factorId, challengeId: challengeData.id, code });
     setLoading(false);
-    if (error) setMessage('Cod incorect. Încearcă din nou.');
-    else {
-  const { data: { user } } = await supabase.auth.getUser();
-  if (user) {
-    const { data: onb } = await supabase.from('onboarding').select('id').eq('user_id', user.id).single();
-    if (!onb) router.replace('/onboarding');
-    else router.replace('/dashboard');
+    if (error) {
+      setMessage('Cod incorect. Încearcă din nou.');
+    } else {
+      const { data: userData } = await supabase.auth.getUser();
+      const user = userData?.user;
+      if (user) {
+        const { data: onb } = await supabase.from('onboarding').select('id').eq('user_id', user.id).single();
+        if (!onb) router.replace('/onboarding');
+        else router.replace('/dashboard');
+      } else {
+        router.replace('/dashboard');
+      }
+    }
   }
-}
 
   return (
     <div className="container" style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
