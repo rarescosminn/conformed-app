@@ -16,5 +16,8 @@ export default function Login(){
       <input className="input" type="password" placeholder="Parolă" value={pass} onChange={e=>setPass(e.target.value)}/>
       <div style={{height:12}}/>
       <button className="btn" onClick={submit}>Intră în cont</button>
-    </div></div>);
+    </div>
+<div style={{ marginTop: 16, textAlign: 'center', fontSize: 13 }}>
+  Nu ai cont? <a href="/register" style={{ color: '#4F46E5', fontWeight: 700 }}>Înregistrează-te</a>
+</div></div>);
 }
