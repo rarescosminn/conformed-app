@@ -31,11 +31,11 @@ export default function MfaVerify() {
       const { data: userData } = await supabase.auth.getUser();
       const user = userData?.user;
       if (user) {
-        const { data: onb } = await supabase.from('onboarding').select('id').eq('user_id', user.id).single();
-        if (!onb) router.replace('/onboarding');
-        else router.replace('/dashboard');
+        const { data: onb } = await supabase.from('onboarding').select('id').eq('user_id', user.id).maybeSingle();
+        if (!onb) window.location.href = '/onboarding';
+        else window.location.href = '/dashboard';
       } else {
-        router.replace('/dashboard');
+        window.location.href = '/dashboard';
       }
     }
   }
