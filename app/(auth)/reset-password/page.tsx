@@ -6,6 +6,8 @@ import { useRouter } from 'next/navigation';
 export default function ResetPassword() {
   const [pass, setPass] = React.useState('');
   const [confirm, setConfirm] = React.useState('');
+  const [showPass, setShowPass] = React.useState(false);
+  const [showConfirm, setShowConfirm] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
   const [message, setMessage] = React.useState('');
   const [ready, setReady] = React.useState(false);
@@ -17,10 +19,8 @@ export default function ResetPassword() {
   );
 
   React.useEffect(() => {
-    supabase.auth.onAuthStateChange((event, session) => {
-      if (event === 'PASSWORD_RECOVERY') {
-        setReady(true);
-      }
+    supabase.auth.onAuthStateChange((event) => {
+      if (event === 'PASSWORD_RECOVERY') setReady(true);
     });
   }, []);
 
@@ -38,6 +38,12 @@ export default function ResetPassword() {
     }
   }
 
+  const eyeBtn = (show: boolean, toggle: () => void) => (
+    <button type="button" onClick={toggle} style={{ position:'absolute', right:10, top:'50%', transform:'translateY(-50%)', background:'none', border:'none', cursor:'pointer', color:'#6B7280', fontSize:16 }}>
+      {show ? '🙈' : '👁️'}
+    </button>
+  );
+
   return (
     <div className="container" style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
       <div className="card" style={{ width: 380 }}>
@@ -46,21 +52,21 @@ export default function ResetPassword() {
           <p style={{ fontSize: 13, color: '#6B7280' }}>Se verifică linkul...</p>
         ) : (
           <>
-            <p style={{ fontSize: 13, color: '#6B7280', marginBottom: 16 }}>
-              Introduceți noua parolă pentru contul dvs.
-            </p>
-            <input className="input" type="password" placeholder="Parolă nouă" value={pass} onChange={e => setPass(e.target.value)} />
+            <p style={{ fontSize: 13, color: '#6B7280', marginBottom: 16 }}>Introduceți noua parolă pentru contul dvs.</p>
+            <div style={{ position: 'relative' }}>
+              <input className="input" type={showPass ? 'text' : 'password'} placeholder="Parolă nouă" value={pass} onChange={e => setPass(e.target.value)} style={{ paddingRight: 36, width: '100%' }} />
+              {eyeBtn(showPass, () => setShowPass(!showPass))}
+            </div>
             <div style={{ height: 8 }} />
-            <input className="input" type="password" placeholder="Confirmă parola" value={confirm} onChange={e => setConfirm(e.target.value)} />
+            <div style={{ position: 'relative' }}>
+              <input className="input" type={showConfirm ? 'text' : 'password'} placeholder="Confirmă parola" value={confirm} onChange={e => setConfirm(e.target.value)} style={{ paddingRight: 36, width: '100%' }} />
+              {eyeBtn(showConfirm, () => setShowConfirm(!showConfirm))}
+            </div>
             <div style={{ height: 12 }} />
             <button className="btn" onClick={submit} disabled={loading}>
               {loading ? 'Se salvează...' : 'Salvează parola'}
             </button>
-            {message && (
-              <p style={{ marginTop: 12, fontSize: 13, color: message.includes('succes') ? 'green' : 'red' }}>
-                {message}
-              </p>
-            )}
+            {message && <p style={{ marginTop: 12, fontSize: 13, color: message.includes('succes') ? 'green' : 'red' }}>{message}</p>}
           </>
         )}
       </div>

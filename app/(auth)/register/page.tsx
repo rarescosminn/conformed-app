@@ -7,6 +7,8 @@ export default function Register() {
   const [email, setEmail] = React.useState('');
   const [pass, setPass] = React.useState('');
   const [confirm, setConfirm] = React.useState('');
+  const [showPass, setShowPass] = React.useState(false);
+  const [showConfirm, setShowConfirm] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
   const [message, setMessage] = React.useState('');
   const router = useRouter();
@@ -27,15 +29,27 @@ export default function Register() {
     else setMessage('Cont creat! Verifică emailul pentru confirmare.');
   }
 
+  const eyeBtn = (show: boolean, toggle: () => void) => (
+    <button type="button" onClick={toggle} style={{ position:'absolute', right:10, top:'50%', transform:'translateY(-50%)', background:'none', border:'none', cursor:'pointer', color:'#6B7280', fontSize:16 }}>
+      {show ? '🙈' : '👁️'}
+    </button>
+  );
+
   return (
     <div className="container" style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
       <div className="card" style={{ width: 380 }}>
         <h1 className="h1">Creează cont</h1>
         <input className="input" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
         <div style={{ height: 8 }} />
-        <input className="input" type="password" placeholder="Parolă" value={pass} onChange={e => setPass(e.target.value)} />
+        <div style={{ position: 'relative' }}>
+          <input className="input" type={showPass ? 'text' : 'password'} placeholder="Parolă" value={pass} onChange={e => setPass(e.target.value)} style={{ paddingRight: 36, width: '100%' }} />
+          {eyeBtn(showPass, () => setShowPass(!showPass))}
+        </div>
         <div style={{ height: 8 }} />
-        <input className="input" type="password" placeholder="Confirmă parola" value={confirm} onChange={e => setConfirm(e.target.value)} />
+        <div style={{ position: 'relative' }}>
+          <input className="input" type={showConfirm ? 'text' : 'password'} placeholder="Confirmă parola" value={confirm} onChange={e => setConfirm(e.target.value)} style={{ paddingRight: 36, width: '100%' }} />
+          {eyeBtn(showConfirm, () => setShowConfirm(!showConfirm))}
+        </div>
         <div style={{ height: 12 }} />
         <button className="btn" onClick={submit} disabled={loading}>
           {loading ? 'Se creează...' : 'Creează cont'}
