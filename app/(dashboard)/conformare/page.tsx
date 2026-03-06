@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { addReport, generateId, Report } from "../../lib/reports";
+import { addReport, generateId, Report } from "@/lib/reports";
 
 type Domeniu = {
     id: string;
