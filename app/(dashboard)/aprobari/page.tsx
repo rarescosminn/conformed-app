@@ -4,9 +4,9 @@ import React, { useMemo, useState } from "react";
 import {
     Approvals, ApprovalItem, ApprovalKind, ApprovalStatus, Role,
     sweepToArchive, resubmit, archiveNow, REJECT_RETENTION_DAYS
-} from "../../lib/approvals";
-import { moveApprovalIntoResources, mapCategoryToResurseKey } from "../../lib/resources";
-import { pushNotifications } from "../../lib/notifications";
+} from "@/lib/approvals";
+import { moveApprovalIntoResources, mapCategoryToResurseKey } from "@/lib/resources";
+import { pushNotifications } from "@/lib/notifications";
 
 /* ===== UI ===== */
 const ui = {

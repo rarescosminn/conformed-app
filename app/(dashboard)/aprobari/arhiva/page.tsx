@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import React, { useEffect, useState, useMemo } from "react";
-import { ApprovalItem, ApprovalKind, HistoryEntry } from "../../../lib/approvals";
+import { ApprovalItem, ApprovalKind, HistoryEntry } from "@/lib/approvals";
 
 const ARCHIVE_KEY = "approvals_archive_v1";
 
