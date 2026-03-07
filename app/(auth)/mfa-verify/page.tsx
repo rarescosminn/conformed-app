@@ -31,7 +31,7 @@ export default function MfaVerify() {
       const { data: userData } = await supabase.auth.getUser();
       const user = userData?.user;
       if (user) {
-        const { data: onb } = await supabase.from('onboarding').select('id').eq('user_id', user.id).maybeSingle();
+        const { data: onb } = await supabase.from('organizations').select('id').eq('user_id', user.id).maybeSingle();
         if (!onb) window.location.href = '/onboarding';
         else window.location.href = '/dashboard';
       } else {
