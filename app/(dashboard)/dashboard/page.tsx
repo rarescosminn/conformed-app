@@ -2,6 +2,7 @@
 "use client";
 
 import * as React from "react";
+import { useOrg } from '@/lib/context/OrgContext';
 import { useMemo, useState, useEffect, useRef } from "react";
 
 /** ============================================================
@@ -401,6 +402,7 @@ function detectColumn(columns: string[], candidates: string[]): string | null {
  *  Pagina Dashboard
  *  ============================================================ */
 export default function DashboardPage() {
+    const { orgType, denumire } = useOrg();
     // ==== Filtre UI: An + Trimestru (ultimii 5 ani + anul curent) ====
     const currentYear = new Date().getFullYear();
     const years = useMemo(
@@ -910,6 +912,16 @@ export default function DashboardPage() {
 
     return (
         <div style={styles.page}>
+            {denumire && (
+                <div style={{ background: '#EEF2FF', border: '1px solid #C7D2FE', borderRadius: 12, padding: '12px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <div>
+                        <span style={{ fontSize: 13, color: '#4F46E5', fontWeight: 700 }}>{denumire}</span>
+                        <span style={{ fontSize: 12, color: '#6B7280', marginLeft: 12 }}>
+                            {orgType === 'spital' ? 'Spital' : orgType === 'institutie_publica' ? 'Instituție Publică' : 'Companie'}
+                        </span>
+                    </div>
+                </div>
+            )}
             {/* ===== Header + Filtre ===== */}
             <header style={styles.header}>
                 <div style={styles.headerLeft}>
