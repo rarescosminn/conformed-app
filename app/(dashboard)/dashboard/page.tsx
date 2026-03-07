@@ -915,10 +915,10 @@ export default function DashboardPage() {
             {denumire && (
                 <div style={{ background: '#EEF2FF', border: '1px solid #C7D2FE', borderRadius: 12, padding: '12px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                     <div>
-                        <span style={{ fontSize: 13, color: '#4F46E5', fontWeight: 700 }}>{denumire}</span>
-                        <span style={{ fontSize: 12, color: '#6B7280', marginLeft: 12 }}>
-                            {orgType === 'spital' ? 'Spital' : orgType === 'institutie_publica' ? 'Instituție Publică' : 'Companie'}
-                        </span>
+                        <span style={{ fontSize: 12, color: '#6B7280' }}>
+    {orgType === 'spital' ? 'Spital' : orgType === 'institutie_publica' ? 'Instituție Publică' : 'Companie'}:
+</span>
+<span style={{ fontSize: 13, color: '#4F46E5', fontWeight: 700, marginLeft: 6 }}>{denumire}</span>
                     </div>
                 </div>
             )}
