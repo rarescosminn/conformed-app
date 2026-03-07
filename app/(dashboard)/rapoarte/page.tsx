@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import styles from "./page.module.css";
-import { loadReports, Report, Role } from "@/lib/notifications";
+import { loadReports, Report, Role } from "@/lib/reports";
 
 // Seed demo (poți șterge când ai date reale)
 const SEED: Report[] = [
