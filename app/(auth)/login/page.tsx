@@ -49,7 +49,7 @@ export default function Login() {
           Platformă SaaS pentru conformare ISO, ESG și trasabilitate operațională.
         </div>
         <div style={{ marginTop: 48, display: 'grid', gap: 16, width: '100%', maxWidth: 300 }}>
-          {['ISO 9001 · 14001 · 45001', 'ESG & Sustenabilitate', 'Audit & Conformare', 'Legislație & Documente'].map(item => (
+          {['Conformare ISO & ESG', 'Audit & Documentație', 'Legislație & Trasabilitate', 'Management Integrat'].map(item => (
             <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 14, opacity: 0.9 }}>
               <div style={{ width: 8, height: 8, borderRadius: '50%', background: 'rgba(255,255,255,0.6)' }} />
               {item}
