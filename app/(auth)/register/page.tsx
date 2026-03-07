@@ -20,7 +20,7 @@ export default function Register() {
 
   async function submit() {
     if (pass !== confirm) return setMessage('Parolele nu coincid.');
-    if (pass.length < 8) return setMessage('Parola trebuie să aibă minim 8 caractere.');
+    if (email.toLowerCase().endsWith('@econformed.io')) return setMessage('Acest domeniu este rezervat. Contactați administratorul.');
     setLoading(true);
     setMessage('');
     const { error } = await supabase.auth.signUp({ email, password: pass });
