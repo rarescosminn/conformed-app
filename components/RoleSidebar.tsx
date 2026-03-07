@@ -113,6 +113,7 @@ export default function RoleSidebar() {
             { href: '/rapoarte', label: 'Rapoarte', icon: Icon.reports },
             { href: '/resurse', label: 'Resurse', icon: Icon.resources },
             { href: '/setari', label: 'Setări', icon: Icon.settings },
+            { href: '/admin', label: 'Admin', icon: Icon.users },
         ],
         []
     );
