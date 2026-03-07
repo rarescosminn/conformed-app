@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { createBrowserClient } from "@supabase/ssr";
 import { useRouter, usePathname } from "next/navigation";
@@ -23,7 +23,6 @@ export default function FooterUser() {
     const [avatar, setAvatar] = useState<string | null>(null);
     const [userEmail, setUserEmail] = useState<string>("");
     const [error, setError] = useState<string>("");
-    const lastObjectUrl = useRef<string | null>(null);
     const router = useRouter();
     const pathname = usePathname();
 
@@ -40,9 +39,6 @@ export default function FooterUser() {
                 if (saved) setAvatar(saved);
             }
         });
-        return () => {
-            if (lastObjectUrl.current) URL.revokeObjectURL(lastObjectUrl.current);
-        };
     }, []);
 
     if (pathname === "/login") return null;
@@ -53,11 +49,13 @@ export default function FooterUser() {
         if (!file) return;
         if (!IMG_ALLOWED.has(file.type)) return setError("Format neacceptat.");
         if (file.size > IMG_MAX_BYTES) return setError("Imagine prea mare. Max 2MB.");
-        if (lastObjectUrl.current) URL.revokeObjectURL(lastObjectUrl.current);
-        const url = URL.createObjectURL(file);
-        lastObjectUrl.current = url;
-        setAvatar(url);
-        if (userEmail) localStorage.setItem(`avatar_${userEmail}`, url);
+        const reader = new FileReader();
+        reader.onload = () => {
+            const base64 = reader.result as string;
+            setAvatar(base64);
+            if (userEmail) localStorage.setItem(`avatar_${userEmail}`, base64);
+        };
+        reader.readAsDataURL(file);
         (e.target as HTMLInputElement).value = "";
     };
 
