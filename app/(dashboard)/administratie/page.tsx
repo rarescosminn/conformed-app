@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { countOpenTasks, countTodoLate, countTodoToday } from '@/lib/tasks/store';
+import { useOrg } from '@/lib/context/OrgContext';
 
 type AdminCard = { href: string; title: string; desc: string; icon: React.ReactNode; };
 
@@ -55,13 +56,29 @@ const Icon = {
     ),
 };
 
-const cards: AdminCard[] = [
+const CARDS_SPITAL: AdminCard[] = [
     { href: '/administratie/bucatarie', title: 'Bucătărie / Nutriție', desc: 'HACCP, temperaturi, igienizare, alergeni.', icon: Icon.kitchen },
     { href: '/administratie/mentenanta', title: 'Mentenanță', desc: 'Runde tehnice, generatoare, frigotehnie.', icon: Icon.maintenance },
     { href: '/administratie/retelistica', title: 'Rețelistică', desc: 'LAN / Wi-Fi / VPN / Firewall — continuitate și securitate.', icon: Icon.network },
     { href: '/administratie/necalificati', title: 'Necalificați', desc: 'Curățenie spații comune, aprovizionare.', icon: Icon.cleaning },
     { href: '/administratie/centralist', title: 'Centrală telefonică', desc: 'Flux apeluri interne, registre, alerte.', icon: Icon.headset },
     { href: '/administratie/heliport', title: 'Heliport', desc: 'Verificări pistă, iluminat, proceduri.', icon: Icon.heliport },
+    { href: '/administratie/proiecte-urgente', title: 'Proiecte și Urgențe', desc: 'Renovări, reparații majore, proiecte în curs.', icon: Icon.projects },
+];
+
+const CARDS_COMPANIE: AdminCard[] = [
+    { href: '/administratie/mentenanta', title: 'Mentenanță', desc: 'Întreținere echipamente, clădiri, utilaje.', icon: Icon.maintenance },
+    { href: '/administratie/retelistica', title: 'Rețelistică', desc: 'LAN / Wi-Fi / VPN / Firewall — continuitate și securitate.', icon: Icon.network },
+    { href: '/administratie/curatenie', title: 'Curățenie', desc: 'Curățenie spații, aprovizionare consumabile.', icon: Icon.cleaning },
+    { href: '/administratie/centralist', title: 'Centrală telefonică', desc: 'Flux apeluri interne, registre, alerte.', icon: Icon.headset },
+    { href: '/administratie/proiecte-urgente', title: 'Proiecte și Urgențe', desc: 'Renovări, reparații majore, proiecte în curs.', icon: Icon.projects },
+];
+
+const CARDS_INSTITUTIE: AdminCard[] = [
+    { href: '/administratie/mentenanta', title: 'Mentenanță', desc: 'Întreținere sediu, echipamente, instalații.', icon: Icon.maintenance },
+    { href: '/administratie/retelistica', title: 'Rețelistică', desc: 'LAN / Wi-Fi / VPN / Firewall — continuitate și securitate.', icon: Icon.network },
+    { href: '/administratie/curatenie', title: 'Curățenie', desc: 'Curățenie spații, aprovizionare consumabile.', icon: Icon.cleaning },
+    { href: '/administratie/centralist', title: 'Centrală telefonică', desc: 'Flux apeluri interne, registre, alerte.', icon: Icon.headset },
     { href: '/administratie/proiecte-urgente', title: 'Proiecte și Urgențe', desc: 'Renovări, reparații majore, proiecte în curs.', icon: Icon.projects },
 ];
 
@@ -80,6 +97,8 @@ const btnLink: React.CSSProperties = {
 };
 
 export default function AdministratiePage() {
+    const { orgType } = useOrg();
+    const cards = orgType === 'spital' ? CARDS_SPITAL : orgType === 'institutie_publica' ? CARDS_INSTITUTIE : CARDS_COMPANIE;
     const [today, setToday] = useState(0);
     const [late, setLate] = useState(0);
     const [open, setOpen] = useState(0);
@@ -105,10 +124,11 @@ export default function AdministratiePage() {
     return (
         <div style={{ padding: 20 }}>
             <h1 style={{ margin: 0, fontSize: 22, fontWeight: 700 }}>Administrație</h1>
-            <p style={{ margin: '6px 0 18px', opacity: 0.8 }}>
-                Alege o categorie pentru a deschide task-urile și chestionarele specifice.
-            </p>
-
+<p style={{ margin: '6px 0 18px', opacity: 0.8 }}>
+    {orgType === 'spital'
+        ? 'Alege o categorie pentru a deschide task-urile și chestionarele specifice.'
+        : 'Alege o categorie administrativă pentru a gestiona task-urile și activitățile specifice.'}
+</p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: 16, alignItems: 'start' }}>
                 {/* STÂNGA – cardurile de categorii */}
                 <div>
