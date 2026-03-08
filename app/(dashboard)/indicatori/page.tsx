@@ -18,6 +18,7 @@ import { Line, Bar, Radar } from "react-chartjs-2";
 import KpiUploader from "@/components/KpiUploader";
 import { useIndicatoriStore } from "@/store/indicatori";
 import { useIndicatoriUi, type Period, type ChartKind } from "@/store/indicatoriUi";
+import { useOrg } from '@/lib/context/OrgContext';
 
 ChartJS.register(
     CategoryScale,
@@ -39,6 +40,7 @@ type KPI = {
     unit?: string;
     isPct?: boolean;
     derived?: boolean;
+    onlySpital?: boolean;
 };
 
 type Threshold =
@@ -67,10 +69,10 @@ const ALL_KPIS: KPI[] = [
     { key: "cheltuieli_admin_it", label: "Administrative și IT", category: "Cheltuieli", unit: "Lei" },
     { key: "cheltuieli_directe", label: "Cheltuieli cu valoare adăugată", category: "Cheltuieli", unit: "Lei" },
 
-    // Eficiență existentă
+    // Eficiență
     { key: "cost_pacient", label: "Cost mediu/pacient", category: "Eficiență", unit: "Lei" },
-    { key: "cost_caz_drg", label: "Cost mediu/caz DRG", category: "Eficiență", unit: "Lei" },
-    { key: "cost_zi_spitalizare", label: "Cost/zi spitalizare (derivat)", category: "Eficiență", unit: "Lei", derived: true },
+    { key: "cost_caz_drg", label: "Cost mediu/caz DRG", category: "Eficiență", unit: "Lei", onlySpital: true },
+    { key: "cost_zi_spitalizare", label: "Cost/zi spitalizare (derivat)", category: "Eficiență", unit: "Lei", derived: true, onlySpital: true },
     { key: "venit_pacient", label: "Venit mediu/pacient", category: "Eficiență", unit: "Lei" },
     { key: "rap_admin_medical", label: "Chelt. admin / medicale", category: "Eficiență" },
 
@@ -88,13 +90,13 @@ const ALL_KPIS: KPI[] = [
     { key: "rezultat_net", label: "Rezultat net", category: "Rezultat / Cashflow", unit: "Lei" },
     { key: "cashflow_operational", label: "Cashflow operațional", category: "Rezultat / Cashflow", unit: "Lei" },
 
-    // Clinic-financiar
-    { key: "ocupare_paturi_pct", label: "Rata ocupare paturi %", category: "Clinic-financiar", isPct: true },
-    { key: "icm", label: "Indice complexitate (ICM)", category: "Clinic-financiar" },
-    { key: "cazuri_decontate", label: "Cazuri decontate", category: "Clinic-financiar" },
-    { key: "valoare_medie_caz", label: "Valoare medie/caz", category: "Clinic-financiar", unit: "Lei" },
-    { key: "zile_spitalizare", label: "Zile de spitalizare (output)", category: "Clinic-financiar" },
-    { key: "pat_zile", label: "Pat-zile (output)", category: "Clinic-financiar" },
+    // Clinic-financiar (doar spital)
+    { key: "ocupare_paturi_pct", label: "Rata ocupare paturi %", category: "Clinic-financiar", isPct: true, onlySpital: true },
+    { key: "icm", label: "Indice complexitate (ICM)", category: "Clinic-financiar", onlySpital: true },
+    { key: "cazuri_decontate", label: "Cazuri decontate", category: "Clinic-financiar", onlySpital: true },
+    { key: "valoare_medie_caz", label: "Valoare medie/caz", category: "Clinic-financiar", unit: "Lei", onlySpital: true },
+    { key: "zile_spitalizare", label: "Zile de spitalizare (output)", category: "Clinic-financiar", onlySpital: true },
+    { key: "pat_zile", label: "Pat-zile (output)", category: "Clinic-financiar", onlySpital: true },
 
     /* -------- 3E – ECONOMICITATE -------- */
     { key: "dpo", label: "DPO (Zile medii plată)", category: "3E – Economicitate", derived: true },
@@ -107,7 +109,7 @@ const ALL_KPIS: KPI[] = [
     { key: "utilizare_active", label: "Utilizare active (Venituri/Active)", category: "3E – Eficiență", derived: true },
 
     /* -------- 3E – EFICACITATE -------- */
-    { key: "incasare_vs_contract_cas_pct", label: "Încăsare vs contract CAS (%)", category: "3E – Eficacitate", isPct: true, derived: true },
+    { key: "incasare_vs_contract_cas_pct", label: "Încăsare vs contract CAS (%)", category: "3E – Eficacitate", isPct: true, derived: true, onlySpital: true },
     { key: "rezultat_operational_vs_buget_pct", label: "Rezultat operațional vs buget (%)", category: "3E – Eficacitate", isPct: true, derived: true },
     { key: "pondere_valoare_adaugata_pct", label: "Chelt. cu valoare adăugată / total (%)", category: "3E – Eficacitate", isPct: true, derived: true },
     { key: "economii_improvement", label: "Economii din proiecte de îmbunătățire", category: "3E – Eficacitate", unit: "Lei" },
@@ -180,7 +182,6 @@ const EPS = 1e-6;
 const safeDiv = (a: number, b: number) => (Math.abs(b) < EPS ? 0 : a / b);
 
 /* ==================== CALCULE DERIVATE (3E & co.) ==================== */
-type SeriesMap = Record<string, number[] | undefined>;
 const computeDerived: Record<string, (get: (k: string) => number[] | undefined) => number[] | undefined> = {
     zile_incasare: (get) => {
         const crean = get("creante");
@@ -334,28 +335,33 @@ const badgeStyle = (t: Traffic): React.CSSProperties => {
 
 /* ==================== PAGINA ==================== */
 export default function Indicatori() {
+    const { orgType } = useOrg();
+
+    const KPIS_FILTERED = useMemo(
+        () => ALL_KPIS.filter(k => !k.onlySpital || orgType === 'spital'),
+        [orgType]
+    );
+
     const series = (useIndicatoriStore((s) => s.series) ?? {}) as Record<string, { values: number[] } | undefined>;
+
     const getMonthlyRaw = (key: string): number[] | undefined => {
         const vals = series?.[key]?.values;
         if (Array.isArray(vals) && vals.length === 12) return vals;
         return undefined;
     };
 
-    // --- NEW: detectăm ani disponibili din chei (ex. "venituri_totale__2022", "venituri_totale_2023")
     const allYears = useMemo(() => {
         const years = new Set<number>();
         Object.keys(series ?? {}).forEach((k) => {
-            const m = k.match(/(?:__|_|^)(20\d{2}|19\d{2})$/); // suportă ...__2024 sau ..._2024 sau "2024"
+            const m = k.match(/(?:__|_|^)(20\d{2}|19\d{2})$/);
             if (m) years.add(Number(m[1]));
         });
         return Array.from(years).sort((a, b) => a - b);
     }, [series]);
 
-    // selecție interval ani (neatribuit = null)
     const [yearFrom, setYearFrom] = useState<number | null>(null);
     const [yearTo, setYearTo] = useState<number | null>(null);
 
-    // caută seria lunară pentru un KPI într-un anumit an (dacă există)
     const getMonthlyForYear = (key: string, year: number): number[] | undefined => {
         const patterns = [`${key}__${year}`, `${key}_${year}`, `${year}_${key}`, `${key}${year}`];
         for (const p of patterns) {
@@ -365,7 +371,6 @@ export default function Indicatori() {
         return undefined;
     };
 
-    // UI persistente
     const category = useIndicatoriUi((s) => s.category);
     const selected = useIndicatoriUi((s) => s.selected);
     const period = useIndicatoriUi((s) => s.period);
@@ -381,51 +386,37 @@ export default function Indicatori() {
     const [hRadar, setHRadar] = useState<number>(DEFAULT_H);
     useEffect(() => { setHLine(DEFAULT_H); setHBar(DEFAULT_H); setHRadar(DEFAULT_H); }, []);
 
-    const categories = useMemo(() => Array.from(new Set(ALL_KPIS.map((k) => k.category))), []);
-    const visibleKpis = useMemo(() => ALL_KPIS.filter((k) => k.category === category), [category]);
+    const categories = useMemo(() => Array.from(new Set(KPIS_FILTERED.map((k) => k.category))), [KPIS_FILTERED]);
+    const visibleKpis = useMemo(() => KPIS_FILTERED.filter((k) => k.category === category), [category, KPIS_FILTERED]);
 
-    // labels (dinamic pentru ANUAL dacă alegi ani; pentru restul – neschimbat)
     const labels = useMemo(() => {
         if (period === "lunar") return monthsLabels();
         if (period === "trimestrial") return quartersLabels();
-        // anual
         const selectedYears = allYears.length ? allYears.filter(y => (!yearFrom || y >= yearFrom) && (!yearTo || y <= yearTo)) : [];
         if (selectedYears.length) return selectedYears.map(String);
         return yearsLabels(2023, 3);
     }, [period, allYears, yearFrom, yearTo]);
 
-    // generare dataset pentru un KPI (respectă calc. derivate + suport ani selectați pe "anual")
     const getSeriesForKey = (key: string): number[] => {
-        const def = ALL_KPIS.find((k) => k.key === key);
+        const def = KPIS_FILTERED.find((k) => k.key === key);
         let monthlyBase: number[] | undefined;
 
-        // 1) derived?
         if (def?.derived && computeDerived[key]) {
             monthlyBase = computeDerived[key]((kk) => getMonthlyRaw(kk));
         }
-        // 2) fallback: seria lunară "de bază"
-        if (!monthlyBase) {
-            monthlyBase = getMonthlyRaw(key);
-        }
-        // 3) dacă nu există nimic -> demo
-        if (!monthlyBase) {
-            monthlyBase = genSeries(key, 12);
-        }
+        if (!monthlyBase) monthlyBase = getMonthlyRaw(key);
+        if (!monthlyBase) monthlyBase = genSeries(key, 12);
 
         if (period === "lunar") return monthlyBase;
         if (period === "trimestrial") return toQuarterly(monthlyBase);
 
-        // ANUAL: dacă ai ani în store și utilizatorul a ales interval → agregăm per an din seriile "key__YYYY"
         const selectedYears = allYears.filter(y => (!yearFrom || y >= yearFrom) && (!yearTo || y <= yearTo));
         if (selectedYears.length) {
-            const valsPerYear = selectedYears.map((y) => {
-                const m = getMonthlyForYear(key, y) ?? monthlyBase; // fallback la seria de bază dacă nu există varianta pe an
+            return selectedYears.map((y) => {
+                const m = getMonthlyForYear(key, y) ?? monthlyBase!;
                 return avg(m);
             });
-            return valsPerYear;
         }
-
-        // fallback – comportamentul vechi (o singură valoare/an)
         return toYearly(monthlyBase);
     };
 
@@ -434,7 +425,7 @@ export default function Indicatori() {
             selected.map((key, idx) => {
                 const color = PALETTE[idx % PALETTE.length];
                 const data = getSeriesForKey(key);
-                const kpi = ALL_KPIS.find((k) => k.key === key);
+                const kpi = KPIS_FILTERED.find((k) => k.key === key);
                 return {
                     label: kpi?.label ?? key,
                     data,
@@ -458,7 +449,7 @@ export default function Indicatori() {
                 };
             }),
         // eslint-disable-next-line react-hooks/exhaustive-deps
-        [selected, period, chartKind, series, yearFrom, yearTo, allYears]
+        [selected, period, chartKind, series, yearFrom, yearTo, allYears, KPIS_FILTERED]
     );
 
     const dataCombined = useMemo(() => ({ labels, datasets }), [labels, datasets]);
@@ -496,7 +487,9 @@ export default function Indicatori() {
 
     return (
         <div className="content" style={{ padding: 16 }}>
-            <h1 className="h1" style={{ marginBottom: 12 }}>Indicatori financiari</h1>
+            <h1 className="h1" style={{ marginBottom: 12 }}>
+                {orgType === 'spital' ? 'Indicatori financiari și clinici' : 'Indicatori financiari'}
+            </h1>
 
             {/* Filtre */}
             <div className="card" style={{ padding: 12, marginBottom: 12, display: "grid", gap: 12 }}>
@@ -504,7 +497,7 @@ export default function Indicatori() {
                     <label>
                         <b>Categorie:</b>&nbsp;
                         <select value={category} onChange={(e) => setCategory(e.target.value)}>
-                            {[...new Set(ALL_KPIS.map(k=>k.category))].map((c) => (<option key={c} value={c}>{c}</option>))}
+                            {categories.map((c) => (<option key={c} value={c}>{c}</option>))}
                         </select>
                     </label>
 
@@ -527,15 +520,14 @@ export default function Indicatori() {
                         </select>
                     </label>
 
-                    {/* === NEW: Filtru ani (neatribuit -> toți anii) disponibil pe oricare perioadă; activ pe "anual" === */}
                     <div style={{ display: "inline-flex", gap: 8, alignItems: "center", marginLeft: 8 }}>
                         <b>Ani:</b>
-                        <select value={yearFrom ?? ""} onChange={(e)=>setYearFrom(e.target.value ? Number(e.target.value) : null)}>
+                        <select value={yearFrom ?? ""} onChange={(e) => setYearFrom(e.target.value ? Number(e.target.value) : null)}>
                             <option value="">(neatribuit)</option>
                             {allYears.map(y => <option key={y} value={y}>{y}</option>)}
                         </select>
                         <span style={{ color: "#9CA3AF" }}>—</span>
-                        <select value={yearTo ?? ""} onChange={(e)=>setYearTo(e.target.value ? Number(e.target.value) : null)}>
+                        <select value={yearTo ?? ""} onChange={(e) => setYearTo(e.target.value ? Number(e.target.value) : null)}>
                             <option value="">(toți)</option>
                             {allYears.map(y => <option key={y} value={y}>{y}</option>)}
                         </select>
@@ -559,7 +551,7 @@ export default function Indicatori() {
                                 />
                                 <span>{k.label}</span>
                                 <span style={badgeStyle(traffic)}>
-                                    <span style={{ display: "inline-block", width: 8, height: 8, borderRadius: 999, background: traffic === "green" ? "#16A34A" : traffic === "yellow" ? "#CA8A04" : traffic === "red" ? "#DC2626" : "#6B7280", }} />
+                                    <span style={{ display: "inline-block", width: 8, height: 8, borderRadius: 999, background: traffic === "green" ? "#16A34A" : traffic === "yellow" ? "#CA8A04" : traffic === "red" ? "#DC2626" : "#6B7280" }} />
                                     {val !== undefined ? (k.isPct ? `${val.toFixed(2)}%` : k.unit ? `${val.toLocaleString("ro-RO")} ${k.unit}` : val.toLocaleString("ro-RO")) : "n/a"}
                                 </span>
                             </label>
@@ -574,7 +566,8 @@ export default function Indicatori() {
                     <div style={{ fontWeight: 600, marginBottom: 8 }}>Rezumat valori curente</div>
                     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(260px,1fr))", gap: 8 }}>
                         {selected.map((key) => {
-                            const def = ALL_KPIS.find((k) => k.key === key)!;
+                            const def = KPIS_FILTERED.find((k) => k.key === key);
+                            if (!def) return null;
                             const val = currentValue(key);
                             const t = evalThreshold(key, val);
                             return (
@@ -594,7 +587,7 @@ export default function Indicatori() {
                 </div>
             )}
 
-            {/* Uploader – neschimbat */}
+            {/* Uploader */}
             <KpiUploader
                 kpis={[
                     { key: "venituri_totale", label: "Venituri totale" },
@@ -664,7 +657,7 @@ export default function Indicatori() {
                             <Radar data={dataCombined as any} options={optionsRadar} />
                         ) : (
                             <div className="text-sm" style={{ color: "#6b7280" }}>
-                                Radar-ul arată cel mai bine pe 12 axe (luni). Selectează perioada <b>„lunar”</b>.
+                                Radar-ul arată cel mai bine pe 12 axe (luni). Selectează perioada <b>„lunar"</b>.
                             </div>
                         )}
                     </div>
