@@ -2,53 +2,38 @@
 
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import { stats, onDataChange } from '@/lib/ssmpsi-bridge'; // <— agregatori + event bus
+import { stats, onDataChange } from '@/lib/ssmpsi-bridge';
+import { useOrg } from '@/lib/context/OrgContext';
 
 /* ===== Stiluri ===== */
 const pageWrap: React.CSSProperties = { padding: 24 };
 const title: React.CSSProperties = { margin: 0, fontWeight: 800, fontSize: 22, color: '#0f172a' };
 const subtitle: React.CSSProperties = { margin: '6px 0 24px', color: 'rgba(15,23,42,.75)', fontSize: 14 };
-
 const layout: React.CSSProperties = {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 360px',
     gap: 24,
     alignItems: 'start',
 };
-
 const sectionHeader: React.CSSProperties = {
-    fontWeight: 700,
-    fontSize: 15,
-    color: 'rgba(15,23,42,.9)',
-    margin: '0 0 12px',
+    fontWeight: 700, fontSize: 15, color: 'rgba(15,23,42,.9)', margin: '0 0 12px',
 };
-
 const gridCards2: React.CSSProperties = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
-    gap: 20,
+    display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 20,
 };
-
 const dividerRightCol: React.CSSProperties = { paddingLeft: 16, borderLeft: '1px solid #e5e7eb' };
 const sidebar: React.CSSProperties = { position: 'sticky', top: 16, paddingLeft: 16, borderLeft: '1px solid #e5e7eb' };
 const sidebarStack: React.CSSProperties = { display: 'flex', flexDirection: 'column', gap: 16 };
-
-/* Card alb */
 const card: React.CSSProperties = {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 8,
-    padding: 18,
-    textDecoration: 'none',
-    background: '#ffffff',
-    border: '1px solid #e5e7eb',
-    borderRadius: 16,
-    boxShadow: '0 8px 24px rgba(15,23,42,.06), 0 2px 8px rgba(15,23,42,.04)',
+    display: 'flex', flexDirection: 'column', gap: 8, padding: 18,
+    textDecoration: 'none', background: '#ffffff', border: '1px solid #e5e7eb',
+    borderRadius: 16, boxShadow: '0 8px 24px rgba(15,23,42,.06), 0 2px 8px rgba(15,23,42,.04)',
     color: '#0f172a',
 };
 
 export default function Page() {
-    /* —— agregate pentru carduri (citite din localStorage prin bridge) —— */
+    const { orgType } = useOrg();
+
     const [agg, setAgg] = useState({
         eip: stats.eip(),
         evac: stats.evacuari(),
@@ -61,84 +46,100 @@ export default function Page() {
     });
 
     useEffect(() => {
-        const refresh = () =>
-            setAgg({
-                eip: stats.eip(),
-                evac: stats.evacuari(),
-                avz: stats.avize(),
-                prm: stats.permise(),
-                rsc: stats.riscuri(),
-                aud: stats.audite(),
-                doc: stats.documente(),
-                kpi: stats.kpi(),
-            });
-
-        refresh();                   // calculează la montare
-        return onDataChange(refresh); // recalculează la fiecare notifyUpdate(...)
+        const refresh = () => setAgg({
+            eip: stats.eip(),
+            evac: stats.evacuari(),
+            avz: stats.avize(),
+            prm: stats.permise(),
+            rsc: stats.riscuri(),
+            aud: stats.audite(),
+            doc: stats.documente(),
+            kpi: stats.kpi(),
+        });
+        refresh();
+        return onDataChange(refresh);
     }, []);
+
+    const pageTitle =
+        orgType === 'spital' ? 'SSM / PSI' :
+        orgType === 'institutie_publica' ? 'Securitate și Sănătate în Muncă / PSI' :
+        'Securitate și Sănătate în Muncă / PSI';
+
+    const pageSubtitle =
+        orgType === 'spital'
+            ? 'Instruiri, echipamente, incidente. Module rapide în dreapta.'
+            : 'Instruiri SSM, echipamente PSI, incidente, riscuri. Module rapide în dreapta.';
+
+    const instruiriDesc =
+        orgType === 'spital'
+            ? 'Planificare HR, liste prezență, dovezi, finalizare, % conformare.'
+            : 'Planificare instruiri (introductiv-general, la locul de muncă, periodic), liste prezență, dovezi.';
+
+    const incidenteDesc =
+        orgType === 'spital'
+            ? 'Raport inițial, validare, clasificare, export fișă, arhivă.'
+            : 'Raport inițial accident/incident, validare, clasificare, ITM, export fișă, arhivă.';
+
+    const echipamenteDesc =
+        orgType === 'spital'
+            ? 'Stingătoare, hidranți, truse, sisteme alarmă — scadențe și status.'
+            : 'Stingătoare, hidranți, truse prim ajutor, sisteme detecție incendiu — scadențe și verificări.';
+
+    const eipDesc =
+        orgType === 'spital'
+            ? 'Gestiune și distribuții pe angajat, mărimi, expirări, confirmări primire.'
+            : 'Gestionare EIP pe angajat și post de lucru, mărimi, expirări, confirmări de primire.';
+
+    const avizeDesc =
+        orgType === 'spital'
+            ? 'Evidență scadențe, fișiere atașate, remindere.'
+            : 'Autorizație ISU, aviz ITM, autorizație de mediu — scadențe, fișiere, remindere.';
 
     return (
         <div style={pageWrap}>
-            <h1 style={title}>SSM / PSI</h1>
-            <p style={subtitle}>Instruiri, echipamente, incidente. Module rapide în dreapta.</p>
+            <h1 style={title}>{pageTitle}</h1>
+            <p style={subtitle}>{pageSubtitle}</p>
 
             <div style={layout}>
-                {/* ===== COL 1: SSM ===== */}
+                {/* COL 1: SSM */}
                 <section>
                     <div style={sectionHeader}>SSM</div>
                     <div style={gridCards2}>
                         <Link href="/ssm-psi/ssm/instruiri" style={card}>
                             <strong>Instruiri</strong>
-                            <span style={{ fontSize: 13, opacity: 0.8 }}>
-                                Planificare HR, liste prezență, dovezi, finalizare, % conformare.
-                            </span>
+                            <span style={{ fontSize: 13, opacity: 0.8 }}>{instruiriDesc}</span>
                             <span style={{ marginTop: 'auto', fontSize: 13, opacity: 0.9 }}>Deschide →</span>
                         </Link>
 
                         <Link href="/ssm-psi/ssm/incidente" style={card}>
                             <strong>Incidente / Accidente</strong>
-                            <span style={{ fontSize: 13, opacity: 0.8 }}>
-                                Raport inițial, validare, clasificare, export fișă, arhivă.
-                            </span>
+                            <span style={{ fontSize: 13, opacity: 0.8 }}>{incidenteDesc}</span>
                             <span style={{ marginTop: 'auto', fontSize: 13, opacity: 0.9 }}>Deschide →</span>
                         </Link>
                     </div>
                 </section>
 
-                {/* ===== COL 2: PSI ===== */}
+                {/* COL 2: PSI */}
                 <section style={dividerRightCol}>
                     <div style={sectionHeader}>PSI</div>
-
-                    {/* micșorat: grid pe 2 coloane, cardul ocupă 1 coloană → aceeași lățime ca SSM */}
-                    <div
-                        style={{
-                            display: 'grid',
-                            gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
-                            gap: 20,
-                        }}
-                    >
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 20 }}>
                         <div style={{ gridColumn: 'span 1' }}>
                             <Link href="/ssm-psi/psi/echipamente" style={card}>
                                 <strong>Echipamente</strong>
-                                <span style={{ fontSize: 13, opacity: 0.8 }}>
-                                    Stingătoare, hidranți, truse, sisteme alarmă — scadențe și status.
-                                </span>
+                                <span style={{ fontSize: 13, opacity: 0.8 }}>{echipamenteDesc}</span>
                                 <span style={{ marginTop: 'auto', fontSize: 13, opacity: 0.9 }}>Deschide →</span>
                             </Link>
                         </div>
                     </div>
                 </section>
 
-                {/* ===== COL 3: Sidebar ===== */}
+                {/* COL 3: Sidebar */}
                 <aside style={sidebar}>
                     <div style={sectionHeader}>Module rapide</div>
                     <div style={sidebarStack}>
                         <Link href="/ssm-psi/ssm/eip" style={card}>
                             <strong>EIP – echipament individual de protecție</strong>
-                            <span style={{ fontSize: 13, opacity: 0.8 }}>
-                                Gestiune și distribuții pe angajat, mărimi, expirări, confirmări primire.
-                            </span>
-                            {/* —— agregate afișate direct în card —— */}
+                            <span style={{ fontSize: 13, opacity: 0.8 }}>{eipDesc}</span>
                             <span style={{ fontSize: 12, opacity: 0.8, marginTop: 6 }}>
                                 Total: <b>{agg.eip.total}</b> · Expiră ≤30z: <b>{agg.eip.exp30}</b>
                             </span>
@@ -157,10 +158,8 @@ export default function Page() {
                         </Link>
 
                         <Link href="/ssm-psi/psi/avize" style={card}>
-                            <strong>Avize și autorizații (ISU, ITM, mediu)</strong>
-                            <span style={{ fontSize: 13, opacity: 0.8 }}>
-                                Evidență scadențe, fișiere atașate, remindere.
-                            </span>
+                            <strong>Avize și autorizații {orgType === 'spital' ? '(ISU, ITM, mediu)' : '(ISU, ITM, mediu)'}</strong>
+                            <span style={{ fontSize: 13, opacity: 0.8 }}>{avizeDesc}</span>
                             <span style={{ fontSize: 12, opacity: 0.8, marginTop: 6 }}>
                                 Total: <b>{agg.avz.total}</b> · Expiră ≤60z: <b>{agg.avz.exp60}</b>
                             </span>
@@ -191,22 +190,10 @@ export default function Page() {
                     </div>
                 </aside>
 
-                {/* ===== Module analiză & raportare ===== */}
-                <section
-                    style={{
-                        gridColumn: '1 / span 2',
-                        marginTop: -350, // ridicăm cu 350px (aliniat cu “Legislație”)
-                        alignSelf: 'start',
-                    }}
-                >
+                {/* Module analiză & raportare */}
+                <section style={{ gridColumn: '1 / span 2', marginTop: -350, alignSelf: 'start' }}>
                     <div style={sectionHeader}>Module de analiză și raportare</div>
-                    <div
-                        style={{
-                            display: 'grid',
-                            gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
-                            gap: 20,
-                        }}
-                    >
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 20 }}>
                         <Link href="/ssm-psi/ssm/audite" style={card}>
                             <strong>Audit / controale</strong>
                             <span style={{ fontSize: 13, opacity: 0.8 }}>
