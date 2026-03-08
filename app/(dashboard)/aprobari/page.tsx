@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import {
     Approvals, ApprovalItem, ApprovalKind, ApprovalStatus, Role,
     sweepToArchive, resubmit, archiveNow, REJECT_RETENTION_DAYS
@@ -8,6 +8,8 @@ import {
 import { moveApprovalIntoResources, mapCategoryToResurseKey } from "@/lib/resources";
 import { pushNotifications } from "@/lib/notifications";
 import { useOrg } from '@/lib/context/OrgContext';
+
+const currentUser: { role: Role; name: string } = { role: "Admin", name: "Administrator" };
 
 /* ===== UI ===== */
 const ui = {
@@ -208,12 +210,18 @@ export default function ApprovalsPage() {
     const { orgType } = useOrg();
     const RES_LABEL = orgType === 'spital' ? RES_LABEL_SPITAL : RES_LABEL_GENERIC;
 
-    // curățăm/archivăm automat la load
-    const [items, setItems] = useState<ApprovalItem[]>(sweepToArchive());
+    const [items, setItems] = useState<ApprovalItem[]>([]);
+    const [loaded, setLoaded] = useState(false);
     const [tab, setTab] = useState<ApprovalKind>("document");
     const [q, setQ] = useState("");
     const [status, setStatus] = useState<"Toate" | ApprovalStatus>("Toate");
 
+    useEffect(() => {
+        if (loaded) return;
+        const local = sweepToArchive();
+        setItems(local);
+        setLoaded(true);
+    }, [loaded]);
     const filtered = useMemo(() => {
         return items
             .filter(i => i.kind === tab)
