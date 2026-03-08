@@ -3,39 +3,81 @@
 import { useEffect, useMemo, useState } from "react";
 import styles from "./page.module.css";
 import { loadReports, Report, Role } from "@/lib/reports";
+import { useOrg } from '@/lib/context/OrgContext';
 
 // Seed demo (poți șterge când ai date reale)
-const SEED: Report[] = [
+const SEED_SPITAL: Report[] = [
     {
         id: "seed-1",
         title: "Raport conformare Q1 2025",
         description: "Include: ISO 9001, ISO 14001, HR, Financiar",
         createdAt: "2025-09-20T10:42:00",
-        author: "Maria Ionescu",
-        role: "Manager",
-        sizeMb: 1.8,
-        type: "PDF",
+        author: "Maria Ionescu", role: "Manager",
+        sizeMb: 1.8, type: "PDF",
         tags: ["Conformare", "Implementare", "Interpretare", "KPI HR"],
-        year: 2025,
-        month: 9,
+        year: 2025, month: 9,
     },
     {
         id: "seed-2",
         title: "Raport risc Septembrie 2025",
         description: "NC majore + Burnout ATI",
         createdAt: "2025-09-15T09:10:00",
-        author: "Ion Popescu",
-        role: "Admin",
-        sizeMb: 2.1,
-        type: "PDF",
+        author: "Ion Popescu", role: "Admin",
+        sizeMb: 2.1, type: "PDF",
         tags: ["Risc", "HR", "SSM"],
-        year: 2025,
-        month: 9,
+        year: 2025, month: 9,
+    },
+];
+
+const SEED_COMPANIE: Report[] = [
+    {
+        id: "seed-1",
+        title: "Raport conformare ISO 9001 Q1 2025",
+        description: "Include: ISO 9001, ISO 14001, SSM, Financiar",
+        createdAt: "2025-09-20T10:42:00",
+        author: "Maria Ionescu", role: "Manager",
+        sizeMb: 1.8, type: "PDF",
+        tags: ["Conformare", "ISO 9001", "ISO 14001", "KPI"],
+        year: 2025, month: 9,
+    },
+    {
+        id: "seed-2",
+        title: "Raport ESG Septembrie 2025",
+        description: "Indicatori ESG + obiective sustenabilitate",
+        createdAt: "2025-09-15T09:10:00",
+        author: "Ion Popescu", role: "Admin",
+        sizeMb: 2.1, type: "PDF",
+        tags: ["ESG", "Sustenabilitate", "Mediu"],
+        year: 2025, month: 9,
+    },
+];
+
+const SEED_INSTITUTIE: Report[] = [
+    {
+        id: "seed-1",
+        title: "Raport conformare ISO 9001 Q1 2025",
+        description: "Include: ISO 9001, SSM, Transparență, Financiar",
+        createdAt: "2025-09-20T10:42:00",
+        author: "Maria Ionescu", role: "Manager",
+        sizeMb: 1.8, type: "PDF",
+        tags: ["Conformare", "ISO 9001", "Transparență", "KPI"],
+        year: 2025, month: 9,
+    },
+    {
+        id: "seed-2",
+        title: "Raport audit intern Septembrie 2025",
+        description: "NC majore + măsuri corective",
+        createdAt: "2025-09-15T09:10:00",
+        author: "Ion Popescu", role: "Admin",
+        sizeMb: 2.1, type: "PDF",
+        tags: ["Audit", "NC", "SSM"],
+        year: 2025, month: 9,
     },
 ];
 
 export default function RapoartePage() {
-    // ✅ tip corect pentru rol (rezolvă TS2367)
+    const { orgType } = useOrg();
+    const SEED = orgType === 'spital' ? SEED_SPITAL : orgType === 'institutie_publica' ? SEED_INSTITUTIE : SEED_COMPANIE;
     const currentUser: { role: Role } = { role: "Manager" };
 
     const [reports, setReports] = useState<Report[]>([]);
@@ -107,7 +149,9 @@ export default function RapoartePage() {
 
     return (
         <div className={styles.page}>
-            <h1 className={styles.title}>Rapoarte</h1>
+            <h1 className={styles.title}>
+                {orgType === 'spital' ? 'Rapoarte' : 'Rapoarte & Analiză'}
+            </h1>
 
             {/* Filtre */}
             <div className={styles.filters}>
