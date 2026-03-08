@@ -184,13 +184,13 @@ export default function ResursePage() {
           <span style={ui.searchIcon}>🔎</span>
           <input
             ref={inputRef}
-            placeholder="Caută (ex: „ISO 14001", „evacuare PSI", „PO-14")…"
-            value={q}
-            onChange={(e) => { setQ(e.target.value); setOpen(true); setActiveIdx(-1); }}
-            onKeyDown={onKeyDown}
-            onFocus={() => q && setOpen(true)}
-            style={ui.searchInput}
-          />
+placeholder='Cauta (ex: ISO 14001, evacuare PSI, PO-14)...'
+value={q}
+onChange={(e) => { setQ(e.target.value); setOpen(true); setActiveIdx(-1); }}
+onKeyDown={onKeyDown}
+onFocus={() => q && setOpen(true)}
+style={ui.searchInput}
+/>
           {open && suggestions.length > 0 && (
             <div style={ui.suggBox}>
               {suggestions.map((sug, i) => (
