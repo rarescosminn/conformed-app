@@ -11,43 +11,43 @@ type Suggestion = { id: string; label: string; type: HitType; href: string; open
 
 /* ================= Cards per org_type ================= */
 const CARDS_SPITAL: BigCard[] = [
-  { id: "proceduri",    title: "Proceduri",          description: "Proceduri pentru Mediu, Medical, SSM, PSI, HR, IT, ISO.", icon: "📑", link: "/resurse/proceduri" },
-  { id: "instructiuni", title: "Instrucțiuni",       description: "Instrucțiuni de lucru și ghiduri aplicate pe domenii.",   icon: "📘", link: "/resurse/instructiuni" },
-  { id: "template",     title: "Template documente", description: "Modele: rapoarte, planuri, check-listuri, formulare.",    icon: "📝", link: "/resurse/template" },
-  { id: "ssm",          title: "SSM",                description: "Plan P&P, evaluări risc, fișe individuale, registre.",    icon: "🦺", link: "/resurse/ssm" },
-  { id: "psi",          title: "PSI",                description: "Plan PSI, evacuare, verificări stingătoare/hidranți.",    icon: "🔥", link: "/resurse/psi" },
-  { id: "mediu",        title: "Mediu",              description: "Registre, AFM, plan monitorizare, RetuRO, proceduri.",    icon: "🌱", link: "/resurse/mediu" },
-  { id: "hr",           title: "HR",                 description: "Fișe post, registre personal, politici, training.",       icon: "👥", link: "/resurse/hr" },
-  { id: "medical",      title: "Medical",            description: "Protocoale, ghiduri, planuri de urgență, registre.",      icon: "🏥", link: "/resurse/medical" },
-  { id: "iso",          title: "ISO",                description: "ISO 9001, 14001, 45001, 50001, 13485 – documentație.",    icon: "✅", link: "/resurse/iso" },
-  { id: "it",           title: "IT & securitate",    description: "Politici IT, GDPR, ISO 27001, instrucțiuni echipamente.", icon: "💻", link: "/resurse/it" },
-];
+ { id: "proceduri",    title: "Proceduri",          description: "Proceduri pentru Mediu, Medical, SSM, PSI, HR, IT, ISO.", icon: "[P]",  link: "/resurse/proceduri" },
+  { id: "instructiuni", title: "Instructiuni",        description: "Instructiuni de lucru si ghiduri aplicate pe domenii.",   icon: "[I]",  link: "/resurse/instructiuni" },
+  { id: "template",     title: "Template documente",  description: "Modele: rapoarte, planuri, check-listuri, formulare.",   icon: "[T]",  link: "/resurse/template" },
+  { id: "ssm",          title: "SSM",                 description: "Plan P&P, evaluari risc, fise individuale, registre.",   icon: "[S]",  link: "/resurse/ssm" },
+  { id: "psi",          title: "PSI",                 description: "Plan PSI, evacuare, verificari stingatoare/hidranti.",   icon: "[F]",  link: "/resurse/psi" },
+  { id: "mediu",        title: "Mediu",               description: "Registre, AFM, plan monitorizare, RetuRO, proceduri.",  icon: "[M]",  link: "/resurse/mediu" },
+  { id: "hr",           title: "HR",                  description: "Fise post, registre personal, politici, training.",      icon: "[HR]", link: "/resurse/hr" },
+  { id: "medical",      title: "Medical",             description: "Protocoale, ghiduri, planuri de urgenta, registre.",    icon: "[Md]", link: "/resurse/medical" },
+  { id: "iso",          title: "ISO",                 description: "ISO 9001, 14001, 45001, 50001, 13485 - documentatie.",  icon: "[ISO]",link: "/resurse/iso" },
+  { id: "it",           title: "IT & securitate",     description: "Politici IT, GDPR, ISO 27001, instructiuni.",           icon: "[IT]", link: "/resurse/it" },
+  ];
 
 const CARDS_COMPANIE: BigCard[] = [
-  { id: "proceduri",    title: "Proceduri",          description: "Proceduri pentru Calitate, Mediu, SSM, PSI, HR, IT.",    icon: "📑", link: "/resurse/proceduri" },
-  { id: "instructiuni", title: "Instrucțiuni",       description: "Instrucțiuni de lucru și ghiduri aplicate pe domenii.",  icon: "📘", link: "/resurse/instructiuni" },
-  { id: "template",     title: "Template documente", description: "Modele: rapoarte, planuri, check-listuri, formulare.",   icon: "📝", link: "/resurse/template" },
-  { id: "ssm",          title: "SSM",                description: "Plan P&P, evaluări risc, fișe individuale, registre.",   icon: "🦺", link: "/resurse/ssm" },
-  { id: "psi",          title: "PSI",                description: "Plan PSI, evacuare, verificări stingătoare/hidranți.",   icon: "🔥", link: "/resurse/psi" },
-  { id: "mediu",        title: "Mediu",              description: "Registre, AFM, plan monitorizare, proceduri ISO 14001.", icon: "🌱", link: "/resurse/mediu" },
-  { id: "hr",           title: "HR",                 description: "Fișe post, registre personal, politici, training.",      icon: "👥", link: "/resurse/hr" },
-  { id: "iso",          title: "ISO",                description: "ISO 9001, 14001, 45001, 50001, 27001 – documentație.",   icon: "✅", link: "/resurse/iso" },
-  { id: "esg",          title: "ESG",                description: "Rapoarte ESG, indicatori sustenabilitate, ghiduri.",     icon: "🌍", link: "/resurse/esg" },
-  { id: "it",           title: "IT & securitate",    description: "Politici IT, GDPR, ISO 27001, instrucțiuni echipamente.",icon: "💻", link: "/resurse/it" },
-];
+  { id: "proceduri",    title: "Proceduri",          description: "Proceduri pentru Calitate, Mediu, SSM, PSI, HR, IT.",   icon: "[P]",   link: "/resurse/proceduri" },
+  { id: "instructiuni", title: "Instructiuni",        description: "Instructiuni de lucru si ghiduri aplicate pe domenii.", icon: "[I]",   link: "/resurse/instructiuni" },
+  { id: "template",     title: "Template documente",  description: "Modele: rapoarte, planuri, check-listuri, formulare.",  icon: "[T]",   link: "/resurse/template" },
+  { id: "ssm",          title: "SSM",                 description: "Plan P&P, evaluari risc, fise individuale, registre.",  icon: "[S]",   link: "/resurse/ssm" },
+  { id: "psi",          title: "PSI",                 description: "Plan PSI, evacuare, verificari stingatoare/hidranti.",  icon: "[F]",   link: "/resurse/psi" },
+  { id: "mediu",        title: "Mediu",               description: "Registre, AFM, plan monitorizare, proceduri ISO 14001.",icon: "[M]",   link: "/resurse/mediu" },
+  { id: "hr",           title: "HR",                  description: "Fise post, registre personal, politici, training.",     icon: "[HR]",  link: "/resurse/hr" },
+  { id: "iso",          title: "ISO",                 description: "ISO 9001, 14001, 45001, 50001, 27001 - documentatie.",  icon: "[ISO]", link: "/resurse/iso" },
+  { id: "esg",          title: "ESG",                 description: "Rapoarte ESG, indicatori sustenabilitate, ghiduri.",    icon: "[ESG]", link: "/resurse/esg" },
+  { id: "it",           title: "IT & securitate",     description: "Politici IT, GDPR, ISO 27001, instructiuni.",           icon: "[IT]",  link: "/resurse/it" },
+  ];
 
 const CARDS_INSTITUTIE: BigCard[] = [
-  { id: "proceduri",    title: "Proceduri",          description: "Proceduri pentru servicii publice, SSM, PSI, HR, IT.",   icon: "📑", link: "/resurse/proceduri" },
-  { id: "instructiuni", title: "Instrucțiuni",       description: "Instrucțiuni de lucru și ghiduri aplicate pe domenii.",  icon: "📘", link: "/resurse/instructiuni" },
-  { id: "template",     title: "Template documente", description: "Modele: rapoarte, planuri, check-listuri, formulare.",   icon: "📝", link: "/resurse/template" },
-  { id: "ssm",          title: "SSM",                description: "Plan P&P, evaluări risc, fișe individuale, registre.",   icon: "🦺", link: "/resurse/ssm" },
-  { id: "psi",          title: "PSI",                description: "Plan PSI, evacuare, verificări stingătoare/hidranți.",   icon: "🔥", link: "/resurse/psi" },
-  { id: "mediu",        title: "Mediu",              description: "Registre, AFM, plan monitorizare, proceduri ISO 14001.", icon: "🌱", link: "/resurse/mediu" },
-  { id: "hr",           title: "HR",                 description: "Fișe post, registre personal, politici, training.",      icon: "👥", link: "/resurse/hr" },
-  { id: "iso",          title: "ISO",                description: "ISO 9001, 14001, 45001 – documentație și înregistrări.", icon: "✅", link: "/resurse/iso" },
-  { id: "guvernanta", title: "Guvernanță", description: "SCIM, etică, transparență, avertizori, anticorupție.",   icon: "🏢", link: "/resurse/guvernanta" },
-  { id: "it",           title: "IT & securitate",    description: "Politici IT, GDPR, NIS2, instrucțiuni echipamente.",     icon: "💻", link: "/resurse/it" },
-];
+ { id: "proceduri",    title: "Proceduri",          description: "Proceduri pentru servicii publice, SSM, PSI, HR, IT.",  icon: "[P]",   link: "/resurse/proceduri" },
+  { id: "instructiuni", title: "Instructiuni",        description: "Instructiuni de lucru si ghiduri aplicate pe domenii.", icon: "[I]",   link: "/resurse/instructiuni" },
+  { id: "template",     title: "Template documente",  description: "Modele: rapoarte, planuri, check-listuri, formulare.",  icon: "[T]",   link: "/resurse/template" },
+  { id: "ssm",          title: "SSM",                 description: "Plan P&P, evaluari risc, fise individuale, registre.",  icon: "[S]",   link: "/resurse/ssm" },
+  { id: "psi",          title: "PSI",                 description: "Plan PSI, evacuare, verificari stingatoare/hidranti.",  icon: "[F]",   link: "/resurse/psi" },
+  { id: "mediu",        title: "Mediu",               description: "Registre, AFM, plan monitorizare, proceduri ISO 14001.",icon: "[M]",   link: "/resurse/mediu" },
+  { id: "hr",           title: "HR",                  description: "Fise post, registre personal, politici, training.",     icon: "[HR]",  link: "/resurse/hr" },
+  { id: "iso",          title: "ISO",                 description: "ISO 9001, 14001, 45001 - documentatie si inregistrari.",icon: "[ISO]", link: "/resurse/iso" },
+  { id: "guvernanta",   title: "Guvernanta",           description: "SCIM, etica, transparenta, avertizori, anticoruptie.", icon: "[G]",   link: "/resurse/guvernanta" },
+  { id: "it",           title: "IT & securitate",     description: "Politici IT, GDPR, NIS2, instructiuni echipamente.",   icon: "[IT]",  link: "/resurse/it" },
+  ];
 
 /* ================= Search index per org_type ================= */
 const SEARCH_BASE: Suggestion[] = [
