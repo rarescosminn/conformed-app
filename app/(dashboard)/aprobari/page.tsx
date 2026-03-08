@@ -7,6 +7,7 @@ import {
 } from "@/lib/approvals";
 import { moveApprovalIntoResources, mapCategoryToResurseKey } from "@/lib/resources";
 import { pushNotifications } from "@/lib/notifications";
+import { useOrg } from '@/lib/context/OrgContext';
 
 /* ===== UI ===== */
 const ui = {
@@ -82,7 +83,8 @@ const KIND_LABEL: Record<ApprovalKind, string> = {
     request: "Cereri",
 };
 const fmt = (iso?: string) => (iso ? new Date(iso).toLocaleString("ro-RO") : "-");
-const RES_LABEL: Record<string, string> = { iso: "ISO", ssm: "SSM", psi: "PSI", mediu: "Mediu", hr: "HR", it: "IT", medical: "Medical", proceduri: "Proceduri" };
+const RES_LABEL_SPITAL: Record<string, string> = { iso: "ISO", ssm: "SSM", psi: "PSI", mediu: "Mediu", hr: "HR", it: "IT", medical: "Medical", proceduri: "Proceduri" };
+const RES_LABEL_GENERIC: Record<string, string> = { iso: "ISO", ssm: "SSM", psi: "PSI", mediu: "Mediu", hr: "HR", it: "IT", proceduri: "Proceduri", calitate: "Calitate", esg: "ESG" };
 
 /* ===== Modal ===== */
 type ModalMode = "approved" | "changes" | "rejected";
@@ -203,7 +205,8 @@ function ApprovalCard({
 
 /* ===== Pagina ===== */
 export default function ApprovalsPage() {
-    const currentUser: { role: Role; name: string } = { role: "Admin", name: "Administrator" };
+    const { orgType } = useOrg();
+    const RES_LABEL = orgType === 'spital' ? RES_LABEL_SPITAL : RES_LABEL_GENERIC;
 
     // curățăm/archivăm automat la load
     const [items, setItems] = useState<ApprovalItem[]>(sweepToArchive());
@@ -311,7 +314,9 @@ export default function ApprovalsPage() {
 
     return (
         <div style={ui.page}>
-            <h1 style={ui.title}>Aprobări</h1>
+            <h1 style={ui.title}>
+                {orgType === 'spital' ? 'Aprobări' : 'Aprobări documente'}
+            </h1>
 
             <div style={ui.top}>
                 <div style={ui.tabs}>
