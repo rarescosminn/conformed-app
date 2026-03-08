@@ -45,7 +45,7 @@ const CARDS_INSTITUTIE: BigCard[] = [
   { id: "mediu",        title: "Mediu",              description: "Registre, AFM, plan monitorizare, proceduri ISO 14001.", icon: "🌱", link: "/resurse/mediu" },
   { id: "hr",           title: "HR",                 description: "Fișe post, registre personal, politici, training.",      icon: "👥", link: "/resurse/hr" },
   { id: "iso",          title: "ISO",                description: "ISO 9001, 14001, 45001 – documentație și înregistrări.", icon: "✅", link: "/resurse/iso" },
-  { id: "guvernanta",   title: "Guvernanță",         description: "SCIM, etică, transparență, avertizori, anticorupție.",   icon: "🏛️", link: "/resurse/guvernanta" },
+  { id: "guvernanta", title: "Guvernanță", description: "SCIM, etică, transparență, avertizori, anticorupție.",   icon: "🏢", link: "/resurse/guvernanta" },
   { id: "it",           title: "IT & securitate",    description: "Politici IT, GDPR, NIS2, instrucțiuni echipamente.",     icon: "💻", link: "/resurse/it" },
 ];
 
