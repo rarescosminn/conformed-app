@@ -1,11 +1,11 @@
 ﻿'use client';
-
 import Link from 'next/link';
 import React from 'react';
+import { useOrg } from '@/lib/context/OrgContext';
 
 type Cat = { label: string; slug: string };
 
-const CATEGORIES: Cat[] = [
+const CATEGORIES_SPITAL: Cat[] = [
     { label: 'ATI', slug: 'ati' },
     { label: 'Bloc operator', slug: 'bloc-operator' },
     { label: 'Boli infecțioase', slug: 'boli-infectioase' },
@@ -35,32 +35,69 @@ const CATEGORIES: Cat[] = [
     { label: 'UPU', slug: 'upu' },
 ];
 
+const CATEGORIES_COMPANIE: Cat[] = [
+    { label: 'Calitate (ISO 9001)', slug: 'calitate-iso9001' },
+    { label: 'Mediu (ISO 14001)', slug: 'mediu-iso14001' },
+    { label: 'Securitate și sănătate în muncă (ISO 45001)', slug: 'ssm-iso45001' },
+    { label: 'Securitate informații (ISO 27001)', slug: 'securitate-informatii' },
+    { label: 'Continuitate afaceri (ISO 22301)', slug: 'continuitate-afaceri' },
+    { label: 'Energie (ISO 50001)', slug: 'energie-iso50001' },
+    { label: 'Responsabilitate socială (SA8000)', slug: 'responsabilitate-sociala' },
+    { label: 'ESG', slug: 'esg' },
+    { label: 'Guvernanță corporativă', slug: 'guvernanta-corporativa' },
+];
+
+const CATEGORIES_INSTITUTIE: Cat[] = [
+    { label: 'Calitate servicii publice (ISO 9001)', slug: 'calitate-iso9001' },
+    { label: 'Mediu (ISO 14001)', slug: 'mediu-iso14001' },
+    { label: 'Securitate și sănătate în muncă (ISO 45001)', slug: 'ssm-iso45001' },
+    { label: 'Securitate informații (ISO 27001)', slug: 'securitate-informatii' },
+    { label: 'Continuitate activitate (ISO 22301)', slug: 'continuitate-afaceri' },
+    { label: 'Energie (ISO 50001)', slug: 'energie-iso50001' },
+    { label: 'Transparență și anticorupție', slug: 'transparenta-anticoruptie' },
+    { label: 'ESG', slug: 'esg' },
+];
+
 export default function ChestionareIndex() {
+    const { orgType } = useOrg();
+
+    const categories =
+        orgType === 'spital' ? CATEGORIES_SPITAL :
+        orgType === 'institutie_publica' ? CATEGORIES_INSTITUTIE :
+        CATEGORIES_COMPANIE;
+
+    const title =
+        orgType === 'spital' ? 'Chestionare — secții medicale' :
+        orgType === 'institutie_publica' ? 'Chestionare — domenii instituție' :
+        'Chestionare — domenii companie';
+
+    const subtitle =
+        orgType === 'spital'
+            ? 'Alege secția. Fiecare secție are chestionarul ei, legat de un fișier JSON.'
+            : 'Alege domeniul. Fiecare domeniu are chestionarul său de conformare.';
+
+    const headerLabel =
+        orgType === 'spital' ? 'Secții / subdomenii' : 'Domenii / standarde';
+
     return (
         <div style={{ padding: 20 }}>
-            <h1 style={{ margin: 0, fontSize: 22, fontWeight: 700 }}>Chestionare — secții medicale</h1>
-            <p style={{ margin: '6px 0 12px', opacity: 0.8 }}>
-                Alege secția. Fiecare secție are chestionarul ei, legat de un fișier JSON.
-            </p>
+            <h1 style={{ margin: 0, fontSize: 22, fontWeight: 700 }}>{title}</h1>
+            <p style={{ margin: '6px 0 12px', opacity: 0.8 }}>{subtitle}</p>
 
-            {/* header albastru, ca în HR */}
-            <div
-                style={{
-                    border: '1px solid #bfdbfe',
-                    background: 'linear-gradient(180deg,#eff6ff,#f8fbff)',
-                    borderRadius: 14,
-                    padding: 14,
-                    color: '#1e3a8a',
-                    marginTop: 6,
-                    fontWeight: 700,
-                }}
-            >
-                Secții / subdomenii
+            <div style={{
+                border: '1px solid #bfdbfe',
+                background: 'linear-gradient(180deg,#eff6ff,#f8fbff)',
+                borderRadius: 14,
+                padding: 14,
+                color: '#1e3a8a',
+                marginTop: 6,
+                fontWeight: 700,
+            }}>
+                {headerLabel}
             </div>
 
-            {/* chip-uri */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 12 }}>
-                {CATEGORIES.map((c) => (
+                {categories.map((c) => (
                     <Link
                         key={c.slug}
                         href={`/chestionare/${c.slug}`}
@@ -76,16 +113,13 @@ export default function ChestionareIndex() {
                             fontSize: 14,
                         }}
                     >
-                        <span
-                            aria-hidden
-                            style={{
-                                width: 10,
-                                height: 10,
-                                borderRadius: 999,
-                                border: '1px solid #bfdbfe',
-                                background: '#eff6ff',
-                            }}
-                        />
+                        <span aria-hidden style={{
+                            width: 10,
+                            height: 10,
+                            borderRadius: 999,
+                            border: '1px solid #bfdbfe',
+                            background: '#eff6ff',
+                        }} />
                         {c.label}
                     </Link>
                 ))}
