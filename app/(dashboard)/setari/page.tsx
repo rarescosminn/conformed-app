@@ -9,6 +9,7 @@ import {
     setOnboardingFlag,
 } from "@/lib/sections/storage";
 import { getHospitalId } from "@/lib/context/tenant";
+import { useOrg } from '@/lib/context/OrgContext';
 
 /* ——— stil card identic cu Administrație ——— */
 const cardStyle: React.CSSProperties = {
@@ -26,6 +27,7 @@ const cardStyle: React.CSSProperties = {
 
 export default function SettingsPage() {
     const HOSPITAL_ID = getHospitalId();
+    const { orgType } = useOrg();
     const [loading, setLoading] = useState(true);
     const [onboardingDone, setOnboardingDone] = useState(false);
 
@@ -71,7 +73,11 @@ export default function SettingsPage() {
                     </div>
 
                     <span style={{ fontSize: 13, opacity: 0.85 }}>
-                        Tip spital, paturi, locații, secții și linii de gardă.
+                        {orgType === 'spital'
+    ? 'Tip spital, paturi, locatii, sectii si linii de garda.'
+    : orgType === 'institutie_publica'
+    ? 'Tip institutie, structura organizatorica, departamente si locatii.'
+    : 'Tip companie, structura organizatorica, departamente si locatii.'}
                     </span>
 
                     <div style={{ display: "flex", gap: 8, marginTop: 6, flexWrap: "wrap" }}>
@@ -79,8 +85,10 @@ export default function SettingsPage() {
                         <button
                             onClick={() => {
                                 const ok = confirm(
-                                    "Atenție: modificările aduse pot influența structura secțiilor și liniilor de gardă. Continui?"
-                                );
+    orgType === 'spital'
+        ? 'Atentie: modificarile aduse pot influenta structura sectiilor si liniilor de garda. Continui?'
+        : 'Atentie: modificarile aduse pot influenta structura departamentelor. Continui?'
+);
                                 if (!ok) return;
                                 softRestartOnboarding(HOSPITAL_ID);
                                 window.location.href = "/onboarding?ref=setari";
@@ -120,8 +128,10 @@ export default function SettingsPage() {
                         <button
                             onClick={() => {
                                 const ok = confirm(
-                                    "Ești sigur? Vor fi șterse tipul spitalului, paturile, locațiile, secțiile și liniile de gardă din acest browser."
-                                );
+    orgType === 'spital'
+        ? 'Esti sigur? Vor fi sterse tipul spitalului, paturile, locatiile, sectiile si liniile de garda din acest browser.'
+        : 'Esti sigur? Vor fi sterse toate datele de configurare din acest browser.'
+);
                                 if (!ok) return;
                                 hardResetHospital(HOSPITAL_ID);
                                 window.location.href = "/onboarding?ref=setari";
