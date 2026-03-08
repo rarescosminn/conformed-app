@@ -1,4 +1,8 @@
-// app/legislatie/page.tsx
+// TODO: conectare API legislatie
+// - tabel `legislatie` per org_id cu acte normative proprii
+// - posibilitate upload PDF + metadate (numar, data, categorie)
+// - badge count per categorie din Supabase
+
 'use client';
 import Link from 'next/link';
 import s from './legislatie.module.css';
@@ -7,31 +11,31 @@ import { useOrg } from '@/lib/context/OrgContext';
 type Card = { href: string; label: string; desc: string };
 
 const CARDS_SPITAL: Card[] = [
-    { href: '/legislatie/generale', label: 'Generale', desc: 'Legislație sanitară, pacienți, HR, fiscal, contabil, achiziții.' },
-    { href: '/legislatie/ssm-psi', label: 'SSM-PSI', desc: 'SSM și PSI.' },
-    { href: '/legislatie/mediu-si-sustenabilitate', label: 'Mediu și sustenabilitate', desc: 'Deșeuri, APM/AFM, apă, energie, ESG.' },
+    { href: '/legislatie/generale', label: 'Generale', desc: 'Legislatie sanitara, pacienti, HR, fiscal, contabil, achizitii.' },
+    { href: '/legislatie/ssm-psi', label: 'SSM-PSI', desc: 'SSM si PSI.' },
+    { href: '/legislatie/mediu-si-sustenabilitate', label: 'Mediu si sustenabilitate', desc: 'Deseuri, APM/AFM, apa, energie, ESG.' },
     { href: '/legislatie/medicale', label: 'Medicale', desc: 'Ordine MS, epidemiologie, dispozitive, transfuzii, sterilizare.' },
-    { href: '/legislatie/guvernanta-si-etica', label: 'Guvernanță și etică', desc: 'SCIM, etică, avertizori, ANI.' },
-    { href: '/legislatie/it-si-cibernetic', label: 'IT și cibernetic', desc: 'NIS/NIS2, ISO 27001, DES/telemedicină, arhivare.' },
-    { href: '/legislatie/juridic-si-administrativ', label: 'Juridic și administrativ', desc: 'Civil și comercial, malpraxis, PI, anti-discriminare.' },
+    { href: '/legislatie/guvernanta-si-etica', label: 'Guvernanta si etica', desc: 'SCIM, etica, avertizori, ANI.' },
+    { href: '/legislatie/it-si-cibernetic', label: 'IT si cibernetic', desc: 'NIS/NIS2, ISO 27001, DES/telemedicina, arhivare.' },
+    { href: '/legislatie/juridic-si-administrativ', label: 'Juridic si administrativ', desc: 'Civil si comercial, malpraxis, PI, anti-discriminare.' },
 ];
 
 const CARDS_COMPANIE: Card[] = [
-    { href: '/legislatie/generale', label: 'Generale', desc: 'Legislație HR, fiscal, contabil, achiziții, comercial.' },
-    { href: '/legislatie/ssm-psi', label: 'SSM-PSI', desc: 'SSM și PSI.' },
-    { href: '/legislatie/mediu-si-sustenabilitate', label: 'Mediu și sustenabilitate', desc: 'Deșeuri, APM/AFM, apă, energie, ESG.' },
-    { href: '/legislatie/it-si-cibernetic', label: 'IT și cibernetic', desc: 'NIS/NIS2, ISO 27001, GDPR, arhivare.' },
-    { href: '/legislatie/juridic-si-administrativ', label: 'Juridic și administrativ', desc: 'Drept comercial, contracte, PI, anti-discriminare.' },
-    { href: '/legislatie/guvernanta-si-etica', label: 'Guvernanță și etică', desc: 'Guvernanță corporativă, etică, avertizori, ANI.' },
+    { href: '/legislatie/generale', label: 'Generale', desc: 'Legislatie HR, fiscal, contabil, achizitii, comercial.' },
+    { href: '/legislatie/ssm-psi', label: 'SSM-PSI', desc: 'SSM si PSI.' },
+    { href: '/legislatie/mediu-si-sustenabilitate', label: 'Mediu si sustenabilitate', desc: 'Deseuri, APM/AFM, apa, energie, ESG.' },
+    { href: '/legislatie/it-si-cibernetic', label: 'IT si cibernetic', desc: 'NIS/NIS2, ISO 27001, GDPR, arhivare.' },
+    { href: '/legislatie/juridic-si-administrativ', label: 'Juridic si administrativ', desc: 'Drept comercial, contracte, PI, anti-discriminare.' },
+    { href: '/legislatie/guvernanta-si-etica', label: 'Guvernanta si etica', desc: 'Guvernanta corporativa, etica, avertizori, ANI.' },
 ];
 
 const CARDS_INSTITUTIE: Card[] = [
-    { href: '/legislatie/generale', label: 'Generale', desc: 'Legislație administrație publică, HR, fiscal, contabil, achiziții publice.' },
-    { href: '/legislatie/ssm-psi', label: 'SSM-PSI', desc: 'SSM și PSI.' },
-    { href: '/legislatie/mediu-si-sustenabilitate', label: 'Mediu și sustenabilitate', desc: 'Deșeuri, APM/AFM, apă, energie, ESG.' },
-    { href: '/legislatie/it-si-cibernetic', label: 'IT și cibernetic', desc: 'NIS/NIS2, ISO 27001, GDPR, arhivare electronică.' },
-    { href: '/legislatie/juridic-si-administrativ', label: 'Juridic și administrativ', desc: 'Drept administrativ, contencios, PI, anti-discriminare.' },
-    { href: '/legislatie/guvernanta-si-etica', label: 'Guvernanță și etică', desc: 'SCIM, transparență, etică, avertizori, ANI.' },
+    { href: '/legislatie/generale', label: 'Generale', desc: 'Legislatie administratie publica, HR, fiscal, contabil, achizitii publice.' },
+    { href: '/legislatie/ssm-psi', label: 'SSM-PSI', desc: 'SSM si PSI.' },
+    { href: '/legislatie/mediu-si-sustenabilitate', label: 'Mediu si sustenabilitate', desc: 'Deseuri, APM/AFM, apa, energie, ESG.' },
+    { href: '/legislatie/it-si-cibernetic', label: 'IT si cibernetic', desc: 'NIS/NIS2, ISO 27001, GDPR, arhivare electronica.' },
+    { href: '/legislatie/juridic-si-administrativ', label: 'Juridic si administrativ', desc: 'Drept administrativ, contencios, PI, anti-discriminare.' },
+    { href: '/legislatie/guvernanta-si-etica', label: 'Guvernanta si etica', desc: 'SCIM, transparenta, etica, avertizori, ANI.' },
 ];
 
 export default function LegislatieHub() {
@@ -45,8 +49,8 @@ export default function LegislatieHub() {
     return (
         <div className={s.page}>
             <div className={s.header}>
-                <Link href="/dashboard" className={s.back}>← Înapoi</Link>
-                <h1 className={s.h1}>Legislație</h1>
+                <Link href="/dashboard" className={s.back}>← Inapoi</Link>
+                <h1 className={s.h1}>Legislatie</h1>
             </div>
             <div className={s.grid} style={{ display: 'grid' }}>
                 {cards.map((c) => (
