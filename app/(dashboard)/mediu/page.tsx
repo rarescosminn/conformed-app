@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import React, { useEffect, useMemo, useState } from 'react';
 import { LS, notifyMediu, mediuStats } from '@/lib/mediu-bridge';
+import { useOrg } from '@/lib/context/OrgContext';
 
 const LS_TASKS = 'mediu::tasks';
 
@@ -10,16 +11,13 @@ const LS_TASKS = 'mediu::tasks';
 const wrap: React.CSSProperties = { padding: 20 };
 const grid: React.CSSProperties = {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr 520px', // Deșeuri • Autorizatii/Contracte • Dreapta
+    gridTemplateColumns: '1fr 1fr 520px',
     gap: 24,
     alignItems: 'stretch',
 };
 const col: React.CSSProperties = { display: 'grid', alignContent: 'start' };
 const colRight: React.CSSProperties = { display: 'grid', gap: 16, alignContent: 'start' };
-
-// bară verticală DOAR între a doua și a treia coloană
 const vbar: React.CSSProperties = { borderLeft: '1px solid #e5e7eb', paddingLeft: 24 };
-
 const card: React.CSSProperties = {
     background: '#fff',
     border: '1px solid #e5e7eb',
@@ -29,7 +27,7 @@ const card: React.CSSProperties = {
 };
 const cardEqual: React.CSSProperties = {
     ...card,
-    minHeight: 180,                       // înălțime egală pentru cele 2 carduri mari
+    minHeight: 180,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
@@ -43,7 +41,7 @@ const btn: React.CSSProperties = { padding: '8px 12px', borderRadius: 8, backgro
 type Task = {
     id: string;
     title: string;
-    due?: string;     // YYYY-MM-DD
+    due?: string;
     done: boolean;
     createdAt: string;
 };
@@ -52,12 +50,12 @@ const lsWrite = (k: string, v: any) => localStorage.setItem(k, JSON.stringify(v)
 
 /* ── Componentă ──────────────────────────────────────────────────────────── */
 export default function Page() {
-    // Stats
+    const { orgType } = useOrg();
+
     const deseuri = useMemo(() => mediuStats.deseuri(), []);
     const contracts = useMemo(() => mediuStats.contracte(), []);
     const locked = useMemo(() => mediuStats.locked(), []);
 
-    // Taskuri (dreapta)
     const [tasks, setTasks] = useState<Task[]>([]);
     const [title, setTitle] = useState('');
     const [due, setDue] = useState('');
@@ -78,11 +76,32 @@ export default function Page() {
     const today = todo.filter(t => t.due === todayISO);
     const overdue = todo.filter(t => t.due && t.due < todayISO);
 
+    // Texte adaptate per org_type
+    const pageTitle =
+        orgType === 'spital' ? 'Mediu' :
+        orgType === 'institutie_publica' ? 'Mediu & Sustenabilitate' :
+        'Mediu & Sustenabilitate';
+
+    const pageSubtitle =
+        orgType === 'spital'
+            ? 'Deșeuri • Autorizații / Contracte'
+            : 'Deșeuri • Autorizații / Contracte • ISO 14001';
+
+    const deșeuriDesc =
+        orgType === 'spital'
+            ? 'Formular saci (culoare, mărime, nr. bucăți, grad umplere), estimare kg, rapoarte zilnic/lunar/anual.'
+            : 'Evidență deșeuri generate (categorii, cantități, colectori), rapoarte lunare și anuale conform legislației.';
+
+    const contracteDesc =
+        orgType === 'spital'
+            ? 'Evidență autorizații și contracte: număr, emitent, valabilitate, scan document, remindere.'
+            : 'Autorizații de mediu, contracte colectare deșeuri, avize: număr, emitent, valabilitate, scan, remindere.';
+
     return (
         <div style={wrap}>
             <Link href="/" style={back}>← Înapoi</Link>
-            <h1 style={h1}>Mediu</h1>
-            <div style={{ ...small, marginBottom: 16 }}>Deșeuri • Autorizații / Contracte</div>
+            <h1 style={h1}>{pageTitle}</h1>
+            <div style={{ ...small, marginBottom: 16 }}>{pageSubtitle}</div>
 
             <div style={grid}>
                 {/* COL 1: Deșeuri */}
@@ -90,9 +109,7 @@ export default function Page() {
                     <div style={cardEqual}>
                         <div>
                             <div style={{ fontWeight: 700, fontSize: 18, marginBottom: 6 }}>Deșeuri</div>
-                            <div style={small}>
-                                Formular saci (culoare, mărime, nr. bucăți, grad umplere), estimare kg, rapoarte zilnic/lunar/anual.
-                            </div>
+                            <div style={small}>{deșeuriDesc}</div>
                             <div style={{ ...small, marginTop: 12 }}>
                                 Azi: <b>{deseuri.totalKgAzi}</b> kg • De validat: <b>{deseuri.needValidate}</b>
                             </div>
@@ -108,9 +125,7 @@ export default function Page() {
                     <div style={cardEqual}>
                         <div>
                             <div style={{ fontWeight: 700, fontSize: 18, marginBottom: 6 }}>Autorizații / Contracte</div>
-                            <div style={small}>
-                                Evidență autorizații și contracte: număr, emitent, valabilitate, scan document, remindere.
-                            </div>
+                            <div style={small}>{contracteDesc}</div>
                             <div style={{ ...small, marginTop: 12 }}>
                                 Total: <b>{contracts.total}</b> • Expiră &lt;60z: <b>{contracts.exp60}</b> • Expirate: <b>{contracts.expirate}</b>
                             </div>
@@ -124,9 +139,8 @@ export default function Page() {
                     </div>
                 </div>
 
-                {/* COL 3: TO-DO + Taskuri (cu bară verticală la stânga) */}
+                {/* COL 3: TO-DO + Taskuri */}
                 <div style={{ ...colRight, ...vbar }}>
-                    {/* TO-DO */}
                     <div style={card}>
                         <div style={{ fontWeight: 700, marginBottom: 8 }}>TO-DO</div>
                         <div style={small}>
@@ -146,18 +160,13 @@ export default function Page() {
                         )}
                     </div>
 
-                    {/* Taskuri */}
                     <div style={card}>
                         <div style={{ fontWeight: 700, marginBottom: 10 }}>Taskuri</div>
-
-                        {/* Add */}
                         <div style={{ display: 'grid', gridTemplateColumns: '1fr 140px 110px', gap: 8, marginBottom: 10 }}>
                             <input placeholder="titlu task..." value={title} onChange={e => setTitle(e.target.value)} />
                             <input type="date" value={due} onChange={e => setDue(e.target.value)} />
                             <button onClick={addTask} style={btn}>Adaugă</button>
                         </div>
-
-                        {/* Listă */}
                         {tasks.length === 0 ? (
                             <div style={{ ...small, opacity: 0.7 }}>Nu există taskuri.</div>
                         ) : (
