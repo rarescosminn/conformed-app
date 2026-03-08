@@ -1,9 +1,8 @@
 'use client';
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
-    ensureDefaultProfile,
     softRestartOnboarding,
     hardResetHospital,
     setOnboardingFlag,
