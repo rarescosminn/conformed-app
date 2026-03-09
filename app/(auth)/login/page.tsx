@@ -20,8 +20,22 @@ export default function Login() {
     if (!email || !pass) { setError('Completați email-ul și parola.'); return; }
     setLoading(true);
     setError('');
-    const { error } = await supabase.auth.signInWithPassword({ email, password: pass });
-    if (error) { setError(error.message); setLoading(false); return; }
+
+    // Autentificare prin API route (prinde IP + face tracking)
+    const res = await fetch('/api/auth/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password: pass }),
+    });
+
+    if (!res.ok) {
+      const data = await res.json();
+      setError(data.error ?? 'Eroare la autentificare.');
+      setLoading(false);
+      return;
+    }
+
+    // Sesiunea e setată de Supabase prin cookie — verificăm MFA
     const { data: factors } = await supabase.auth.mfa.listFactors();
     const hasMfa = factors?.totp && factors.totp.length > 0;
     if (!hasMfa) {
