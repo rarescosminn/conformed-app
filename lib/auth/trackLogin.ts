@@ -8,7 +8,8 @@ const supabaseAdmin = createClient(
 async function getLocation(ip: string | null): Promise<{ city: string | null; country: string | null }> {
   if (!ip) return { city: null, country: null }
   try {
-    const res = await fetch(`https://ipinfo.io/${ip}/json`)
+    const token = process.env.IPINFO_TOKEN
+    const res = await fetch(`https://ipinfo.io/${ip}/json?token=${token}`)
     if (!res.ok) return { city: null, country: null }
     const data = await res.json()
     return {
