@@ -462,7 +462,7 @@ export default function OnboardingPage() {
               {error && <ErrorBox message={error} />}
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 12 }}>
                 <button onClick={() => setStep(1)} style={secondaryBtn}>← Înapoi</button>
-                <button onClick={goToStep3} style={primaryBtn}>Continuă <IconArrow /></button>
+                <button onClick={() => { if (!form.denumire.trim()) { setError('Denumirea organizației este obligatorie.'); return; } if (!form.cui.trim()) { setError('CUI / CIF este obligatoriu.'); return; } setError(''); setStep(4); }} style={primaryBtn}>Continuă <IconArrow /></button>
               </div>
             </>
           )}
