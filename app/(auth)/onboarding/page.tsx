@@ -222,14 +222,10 @@ export default function OnboardingPage() {
     setError(''); setStep(2);
   };
 
-  const goToStep3 = () => {
+  const goToStep4 = () => {
     if (!form.denumire.trim()) { setError('Denumirea organizației este obligatorie.'); return; }
     if (!form.cui.trim()) { setError('CUI / CIF este obligatoriu.'); return; }
     setError(''); setStep(3);
-  };
-
-  const goToStep4 = () => {
-    setError(''); setStep(4);
   };
 
   const goToConfirmare = () => {
