@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { createBrowserClient } from '@supabase/ssr';
 import { useRouter } from 'next/navigation';
 import { ORG_CONFIGS, type OrgType } from '@/lib/org-config';
+import { CATEGORII_ACTIVITATE, type CategorieActivitate } from '@/lib/admin-modules-config';
 
 const supabase = createBrowserClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -100,6 +101,7 @@ type FormData = {
   nr_angajati: string;
   multilocatie: boolean;
   descriere: string;
+  categorie_activitate: CategorieActivitate | null;
   departamenteSelectate: string[];
   departamentNou: string;
   locatii: Locatie[];
@@ -129,6 +131,7 @@ export default function OnboardingPage() {
     nr_angajati: '',
     multilocatie: false,
     descriere: '',
+    categorie_activitate: null,
     departamenteSelectate: [],
     departamentNou: '',
     locatii: [],
@@ -141,11 +144,8 @@ export default function OnboardingPage() {
     form.orgType === 'institutie_publica' ? DEPARTAMENTE_INSTITUTIE :
     DEPARTAMENTE_COMPANIE;
 
-  const labelDepartament =
-    form.orgType === 'spital' ? 'secție' : 'departament';
-
-  const labelDepartamente =
-    form.orgType === 'spital' ? 'Secții active' : 'Departamente active';
+  const labelDepartament = form.orgType === 'spital' ? 'secție' : 'departament';
+  const labelDepartamente = form.orgType === 'spital' ? 'Secții active' : 'Departamente active';
 
   // ---- TOGGLE DEPARTAMENT ----
   const toggleDepartament = (nume: string) => {
@@ -159,33 +159,20 @@ export default function OnboardingPage() {
 
   const adaugaDepartamentNou = () => {
     const nou = form.departamentNou.trim();
-    if (!nou) return;
-    if (form.departamenteSelectate.includes(nou)) return;
-    setForm(f => ({
-      ...f,
-      departamenteSelectate: [...f.departamenteSelectate, nou],
-      departamentNou: '',
-    }));
+    if (!nou || form.departamenteSelectate.includes(nou)) return;
+    setForm(f => ({ ...f, departamenteSelectate: [...f.departamenteSelectate, nou], departamentNou: '' }));
   };
 
   // ---- LOCATII ----
   const adaugaLocatie = () => {
     setForm(f => ({
       ...f,
-      locatii: [...f.locatii, {
-        id: crypto.randomUUID(),
-        nume: '',
-        departamente: [],
-        departamentNou: '',
-      }],
+      locatii: [...f.locatii, { id: crypto.randomUUID(), nume: '', departamente: [], departamentNou: '' }],
     }));
   };
 
   const updateLocatie = (id: string, field: keyof Locatie, value: string | string[]) => {
-    setForm(f => ({
-      ...f,
-      locatii: f.locatii.map(l => l.id === id ? { ...l, [field]: value } : l),
-    }));
+    setForm(f => ({ ...f, locatii: f.locatii.map(l => l.id === id ? { ...l, [field]: value } : l) }));
   };
 
   const toggleLocatieDepartament = (locatieId: string, dept: string) => {
@@ -222,19 +209,17 @@ export default function OnboardingPage() {
     setError(''); setStep(2);
   };
 
-  const goToStep4 = () => {
+  const goToStep3 = () => {
     if (!form.denumire.trim()) { setError('Denumirea organizației este obligatorie.'); return; }
     if (!form.cui.trim()) { setError('CUI / CIF este obligatoriu.'); return; }
-    setError(''); setStep(3);
+    setError(''); setStep(4);
   };
 
   const goToConfirmare = () => {
     if (form.departamenteSelectate.length === 0) {
       setError(`Selectează cel puțin un ${labelDepartament}.`); return;
     }
-    if (form.multilocatie) {
-      setShowMultilocatieWarning(true); return;
-    }
+    if (form.multilocatie) { setShowMultilocatieWarning(true); return; }
     setError(''); setStep(3);
   };
 
@@ -246,7 +231,6 @@ export default function OnboardingPage() {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) throw new Error('Sesiune expirată. Te rog autentifică-te din nou.');
 
-      // 1. Upsert în organizations
       const { data: orgData, error: orgErr } = await supabase
         .from('organizations')
         .upsert({
@@ -257,6 +241,7 @@ export default function OnboardingPage() {
           nr_angajati: form.nr_angajati ? parseInt(form.nr_angajati) : null,
           adresa: form.adresa,
           cui: form.cui,
+          categorie_activitate: form.categorie_activitate,
           onboarding_completed: true,
         }, { onConflict: 'user_id' })
         .select('id')
@@ -265,7 +250,6 @@ export default function OnboardingPage() {
 
       const orgId = orgData.id;
 
-      // 2. Upsert în onboarding
       const { error: onbErr } = await supabase
         .from('onboarding')
         .upsert({
@@ -276,10 +260,10 @@ export default function OnboardingPage() {
           nr_angajati: form.nr_angajati ? parseInt(form.nr_angajati) : null,
           multilocatie: form.multilocatie,
           adresa: form.adresa,
+          categorie_activitate: form.categorie_activitate,
         }, { onConflict: 'user_id' });
       if (onbErr) throw onbErr;
 
-      // 3. Insert departamente principale
       if (form.departamenteSelectate.length > 0) {
         const depts = form.departamenteSelectate.map(nume => ({
           org_id: orgId,
@@ -291,16 +275,12 @@ export default function OnboardingPage() {
         if (deptErr) throw deptErr;
       }
 
-      // 4. Insert departamente per locație (multilocatie)
       if (form.multilocatie && form.locatii.length > 0) {
         for (const locatie of form.locatii) {
           if (locatie.departamente.length > 0) {
             const locDepts = locatie.departamente.map(nume => ({
-              org_id: orgId,
-              nume,
-              cod: locatie.nume,
-              tip: form.orgType === 'spital' ? 'sectie' : 'departament',
-              activ: true,
+              org_id: orgId, nume, cod: locatie.nume,
+              tip: form.orgType === 'spital' ? 'sectie' : 'departament', activ: true,
             }));
             const { error: locErr } = await supabase.from('departments').insert(locDepts);
             if (locErr) throw locErr;
@@ -328,9 +308,6 @@ export default function OnboardingPage() {
     fontSize: 13, fontWeight: 600, display: 'block', marginBottom: 6, color: '#374151',
   };
 
-  // ----------------------------------------------------------------
-  // STEP LABELS
-  // ----------------------------------------------------------------
   const totalSteps = 4;
   const stepLabels = ['Tip organizație', 'Date organizație', 'Confirmare', labelDepartamente];
   const stepSubs = ['Selectează profilul tău', 'Informații de bază', 'Verifică și finalizează', 'Configurare module'];
@@ -350,6 +327,11 @@ export default function OnboardingPage() {
           <div style={{ display: 'inline-block', background: '#EEF2FF', color: '#4F46E5', fontWeight: 700, fontSize: 15, padding: '6px 18px', borderRadius: 20, marginBottom: 16 }}>
             {selectedConfig?.label} — {form.denumire}
           </div>
+          {form.categorie_activitate && (
+            <div style={{ fontSize: 13, color: '#6B7280', marginBottom: 8 }}>
+              {CATEGORII_ACTIVITATE[form.categorie_activitate]?.label}
+            </div>
+          )}
           <div style={{ fontSize: 13, color: '#6B7280', marginBottom: 32 }}>
             {form.departamenteSelectate.length} {labelDepartamente.toLowerCase()} configurate
             {form.multilocatie && form.locatii.length > 0 && ` · ${form.locatii.length} locații`}
@@ -377,13 +359,12 @@ export default function OnboardingPage() {
           Configurează platforma în {totalSteps} pași simpli.
         </div>
         {([1, 2, 4, 3] as const).map((s, idx) => {
-          const displayStep = idx + 1;
           const isDone = step === 'welcome' || (typeof step === 'number' && typeof s === 'number' && step > s) || (s === 4 && step === 3);
           const isCurrent = step === s;
           return (
             <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 20, width: '100%', maxWidth: 280, opacity: isCurrent ? 1 : isDone ? 0.6 : 0.35 }}>
               <div style={{ width: 32, height: 32, borderRadius: '50%', background: isDone ? 'rgba(255,255,255,0.9)' : isCurrent ? '#fff' : 'rgba(255,255,255,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: isDone || isCurrent ? '#4F46E5' : '#fff', fontWeight: 700, fontSize: 14, flexShrink: 0 }}>
-                {isDone ? <IconCheck /> : displayStep}
+                {isDone ? <IconCheck /> : idx + 1}
               </div>
               <div>
                 <div style={{ fontWeight: 600, fontSize: 14 }}>{stepLabels[idx]}</div>
@@ -442,6 +423,24 @@ export default function OnboardingPage() {
                   <label style={labelStyle}>Adresă</label>
                   <input style={inputStyle} placeholder="Strada, nr., localitate, județ" value={form.adresa} onChange={e => setForm(f => ({ ...f, adresa: e.target.value }))} />
                 </div>
+
+                {/* ---- CATEGORIE ACTIVITATE ---- */}
+                {form.orgType !== 'spital' && (
+                  <div>
+                    <label style={labelStyle}>Categorie de activitate</label>
+                    <select
+                      style={inputStyle}
+                      value={form.categorie_activitate || ''}
+                      onChange={e => setForm(f => ({ ...f, categorie_activitate: e.target.value as CategorieActivitate || null }))}
+                    >
+                      <option value="">Selectează domeniul principal</option>
+                      {Object.entries(CATEGORII_ACTIVITATE).map(([key, val]) => (
+                        <option key={key} value={key}>{val.label}</option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
                   <div>
                     <label style={labelStyle}>Nr. {selectedConfig?.terminology.angajati.toLowerCase() || 'angajați'}</label>
@@ -462,20 +461,18 @@ export default function OnboardingPage() {
               {error && <ErrorBox message={error} />}
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 12 }}>
                 <button onClick={() => setStep(1)} style={secondaryBtn}>← Înapoi</button>
-                <button onClick={() => { if (!form.denumire.trim()) { setError('Denumirea organizației este obligatorie.'); return; } if (!form.cui.trim()) { setError('CUI / CIF este obligatoriu.'); return; } setError(''); setStep(4); }} style={primaryBtn}>Continuă <IconArrow /></button>
+                <button onClick={goToStep3} style={primaryBtn}>Continuă <IconArrow /></button>
               </div>
             </>
           )}
 
-          {/* ---- PAS 4 — DEPARTAMENTE (afișat înainte de pasul 3) ---- */}
+          {/* ---- PAS 4 — DEPARTAMENTE ---- */}
           {step === 4 && (
             <>
               <h2 style={{ fontSize: 22, fontWeight: 700, margin: '0 0 6px', color: '#111827' }}>{labelDepartamente}</h2>
               <p style={{ color: '#6B7280', fontSize: 14, margin: '0 0 20px' }}>
                 Bifează {form.orgType === 'spital' ? 'secțiile active' : 'departamentele active'} din organizație. Poți adăuga și unele personalizate.
               </p>
-
-              {/* Grid bifă */}
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 16 }}>
                 {listaPrestabilita.map(dept => {
                   const sel = form.departamenteSelectate.includes(dept);
@@ -486,27 +483,16 @@ export default function OnboardingPage() {
                   );
                 })}
               </div>
-
-              {/* Adaugă manual */}
               <div style={{ display: 'flex', gap: 8, marginBottom: 24 }}>
-                <input
-                  style={{ ...inputStyle, flex: 1 }}
-                  placeholder={`Adaugă ${labelDepartament} nou...`}
-                  value={form.departamentNou}
-                  onChange={e => setForm(f => ({ ...f, departamentNou: e.target.value }))}
-                  onKeyDown={e => e.key === 'Enter' && adaugaDepartamentNou()}
-                />
+                <input style={{ ...inputStyle, flex: 1 }} placeholder={`Adaugă ${labelDepartament} nou...`} value={form.departamentNou} onChange={e => setForm(f => ({ ...f, departamentNou: e.target.value }))} onKeyDown={e => e.key === 'Enter' && adaugaDepartamentNou()} />
                 <button onClick={adaugaDepartamentNou} style={{ padding: '0 16px', borderRadius: 10, border: 'none', background: '#4F46E5', color: '#fff', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 4, fontWeight: 600, fontSize: 13 }}>
                   <IconPlus /> Adaugă
                 </button>
               </div>
 
-              {/* Multilocatie — locații extra */}
               {form.multilocatie && (
                 <div style={{ marginBottom: 24 }}>
-                  <div style={{ fontWeight: 600, fontSize: 14, color: '#374151', marginBottom: 12 }}>
-                    Locații suplimentare
-                  </div>
+                  <div style={{ fontWeight: 600, fontSize: 14, color: '#374151', marginBottom: 12 }}>Locații suplimentare</div>
                   {form.locatii.map((locatie, idx) => (
                     <div key={locatie.id} style={{ border: '1.5px solid #e5e7eb', borderRadius: 14, padding: 16, marginBottom: 12, background: '#fff' }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
@@ -538,7 +524,6 @@ export default function OnboardingPage() {
 
               {error && <ErrorBox message={error} />}
 
-              {/* Warning multilocatie */}
               {showMultilocatieWarning && (
                 <div style={{ background: '#FFFBEB', border: '1.5px solid #FCD34D', borderRadius: 14, padding: 16, marginBottom: 16 }}>
                   <div style={{ display: 'flex', gap: 10, alignItems: 'flex-start', marginBottom: 12 }}>
@@ -551,12 +536,8 @@ export default function OnboardingPage() {
                     </div>
                   </div>
                   <div style={{ display: 'flex', gap: 10 }}>
-                    <button onClick={() => setShowMultilocatieWarning(false)} style={{ flex: 1, padding: '10px', borderRadius: 8, border: '1.5px solid #FCD34D', background: '#fff', color: '#92400E', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>
-                      Revin să verific
-                    </button>
-                    <button onClick={() => { setShowMultilocatieWarning(false); setStep(3); }} style={{ flex: 1, padding: '10px', borderRadius: 8, border: 'none', background: '#D97706', color: '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>
-                      Continuă oricum
-                    </button>
+                    <button onClick={() => setShowMultilocatieWarning(false)} style={{ flex: 1, padding: '10px', borderRadius: 8, border: '1.5px solid #FCD34D', background: '#fff', color: '#92400E', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>Revin să verific</button>
+                    <button onClick={() => { setShowMultilocatieWarning(false); setStep(3); }} style={{ flex: 1, padding: '10px', borderRadius: 8, border: 'none', background: '#D97706', color: '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>Continuă oricum</button>
                   </div>
                 </div>
               )}
@@ -589,6 +570,7 @@ export default function OnboardingPage() {
               <div style={{ background: '#fff', border: '1.5px solid #e5e7eb', borderRadius: 14, padding: '16px 20px', marginBottom: 16 }}>
                 {[
                   { label: 'Adresă', value: form.adresa || '—' },
+                  { label: 'Categorie activitate', value: form.categorie_activitate ? CATEGORII_ACTIVITATE[form.categorie_activitate]?.label : '—' },
                   { label: `Nr. ${selectedConfig.terminology.angajati.toLowerCase()}`, value: form.nr_angajati || '—' },
                   { label: 'Multilocație', value: form.multilocatie ? 'Da' : 'Nu' },
                   { label: labelDepartamente, value: `${form.departamenteSelectate.length} selectate` },
