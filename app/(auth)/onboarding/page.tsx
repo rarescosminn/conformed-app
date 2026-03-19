@@ -89,6 +89,7 @@ type Step = 1 | 2 | 3 | 4 | 'welcome';
 type Locatie = {
   id: string;
   nume: string;
+  adresa: string;
   departamente: string[];
   departamentNou: string;
 };
@@ -167,7 +168,13 @@ export default function OnboardingPage() {
   const adaugaLocatie = () => {
     setForm(f => ({
       ...f,
-      locatii: [...f.locatii, { id: crypto.randomUUID(), nume: '', departamente: [], departamentNou: '' }],
+      locatii: [...f.locatii, {
+        id: crypto.randomUUID(),
+        nume: 'Punct de lucru',
+        adresa: '',
+        departamente: [],
+        departamentNou: '',
+      }],
     }));
   };
 
@@ -201,6 +208,23 @@ export default function OnboardingPage() {
 
   const stergeLocatie = (id: string) => {
     setForm(f => ({ ...f, locatii: f.locatii.filter(l => l.id !== id) }));
+  };
+
+  // ---- MULTILOCATIE TOGGLE cu Sediu central auto ----
+  const handleMultilocatieChange = (checked: boolean) => {
+    setForm(f => ({
+      ...f,
+      multilocatie: checked,
+      locatii: checked && f.locatii.length === 0
+        ? [{
+            id: crypto.randomUUID(),
+            nume: 'Sediu central',
+            adresa: f.adresa, // preia adresa din Pasul 2
+            departamente: [],
+            departamentNou: '',
+          }]
+        : f.locatii,
+    }));
   };
 
   // ---- NAVIGARE ----
@@ -279,8 +303,11 @@ export default function OnboardingPage() {
         for (const locatie of form.locatii) {
           if (locatie.departamente.length > 0) {
             const locDepts = locatie.departamente.map(nume => ({
-              org_id: orgId, nume, cod: locatie.nume,
-              tip: form.orgType === 'spital' ? 'sectie' : 'departament', activ: true,
+              org_id: orgId,
+              nume,
+              cod: locatie.nume,
+              tip: form.orgType === 'spital' ? 'sectie' : 'departament',
+              activ: true,
             }));
             const { error: locErr } = await supabase.from('departments').insert(locDepts);
             if (locErr) throw locErr;
@@ -309,8 +336,8 @@ export default function OnboardingPage() {
   };
 
   const totalSteps = 4;
-  const stepLabels = ['Tip organizație', 'Date organizație', 'Confirmare', labelDepartamente];
-  const stepSubs = ['Selectează profilul tău', 'Informații de bază', 'Verifică și finalizează', 'Configurare module'];
+  const stepLabels = ['Tip organizație', 'Date organizație', labelDepartamente, 'Confirmare'];
+  const stepSubs = ['Selectează profilul tău', 'Informații de bază', 'Configurare module', 'Verifică și finalizează'];
 
   // ----------------------------------------------------------------
   // WELCOME
@@ -324,7 +351,7 @@ export default function OnboardingPage() {
           </div>
           <h1 style={{ fontSize: 28, fontWeight: 800, margin: '0 0 12px', color: '#111827' }}>Bun venit în eConformed!</h1>
           <p style={{ color: '#6B7280', fontSize: 15, lineHeight: 1.7, margin: '0 0 8px' }}>Platforma a fost configurată pentru</p>
-          <div style={{ display: 'inline-block', background: '#EEF2FF', color: '#4F46E5', fontWeight: 700, fontSize: 15, padding: '6px 18px', borderRadius: 20, marginBottom: 16 }}>
+          <div style={{ display: 'inline-block', background: '#EEF2FF', color: '#4F46E5', fontWeight: 700, fontSize: 15, padding: '6px 18px', borderRadius: 20, marginBottom: 8 }}>
             {selectedConfig?.label} — {form.denumire}
           </div>
           {form.categorie_activitate && (
@@ -420,11 +447,11 @@ export default function OnboardingPage() {
                   <input style={inputStyle} placeholder="Ex: RO12345678" value={form.cui} onChange={e => setForm(f => ({ ...f, cui: e.target.value }))} />
                 </div>
                 <div>
-                  <label style={labelStyle}>Adresă</label>
+                  <label style={labelStyle}>Adresă sediu principal</label>
                   <input style={inputStyle} placeholder="Strada, nr., localitate, județ" value={form.adresa} onChange={e => setForm(f => ({ ...f, adresa: e.target.value }))} />
                 </div>
 
-                {/* ---- CATEGORIE ACTIVITATE ---- */}
+                {/* Categorie activitate — ascuns pentru spital */}
                 {form.orgType !== 'spital' && (
                   <div>
                     <label style={labelStyle}>Categorie de activitate</label>
@@ -448,7 +475,12 @@ export default function OnboardingPage() {
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', paddingBottom: 2 }}>
                     <label style={{ ...labelStyle, display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer', marginBottom: 0 }}>
-                      <input type="checkbox" checked={form.multilocatie} onChange={e => setForm(f => ({ ...f, multilocatie: e.target.checked }))} style={{ width: 16, height: 16, cursor: 'pointer' }} />
+                      <input
+                        type="checkbox"
+                        checked={form.multilocatie}
+                        onChange={e => handleMultilocatieChange(e.target.checked)}
+                        style={{ width: 16, height: 16, cursor: 'pointer' }}
+                      />
                       Multilocație
                     </label>
                   </div>
@@ -473,6 +505,8 @@ export default function OnboardingPage() {
               <p style={{ color: '#6B7280', fontSize: 14, margin: '0 0 20px' }}>
                 Bifează {form.orgType === 'spital' ? 'secțiile active' : 'departamentele active'} din organizație. Poți adăuga și unele personalizate.
               </p>
+
+              {/* Grid bifă */}
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 16 }}>
                 {listaPrestabilita.map(dept => {
                   const sel = form.departamenteSelectate.includes(dept);
@@ -483,6 +517,8 @@ export default function OnboardingPage() {
                   );
                 })}
               </div>
+
+              {/* Adaugă manual */}
               <div style={{ display: 'flex', gap: 8, marginBottom: 24 }}>
                 <input style={{ ...inputStyle, flex: 1 }} placeholder={`Adaugă ${labelDepartament} nou...`} value={form.departamentNou} onChange={e => setForm(f => ({ ...f, departamentNou: e.target.value }))} onKeyDown={e => e.key === 'Enter' && adaugaDepartamentNou()} />
                 <button onClick={adaugaDepartamentNou} style={{ padding: '0 16px', borderRadius: 10, border: 'none', background: '#4F46E5', color: '#fff', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 4, fontWeight: 600, fontSize: 13 }}>
@@ -490,16 +526,48 @@ export default function OnboardingPage() {
                 </button>
               </div>
 
+              {/* Locații multilocație */}
               {form.multilocatie && (
                 <div style={{ marginBottom: 24 }}>
-                  <div style={{ fontWeight: 600, fontSize: 14, color: '#374151', marginBottom: 12 }}>Locații suplimentare</div>
+                  <div style={{ fontWeight: 600, fontSize: 14, color: '#374151', marginBottom: 12 }}>Locații</div>
                   {form.locatii.map((locatie, idx) => (
                     <div key={locatie.id} style={{ border: '1.5px solid #e5e7eb', borderRadius: 14, padding: 16, marginBottom: 12, background: '#fff' }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
-                        <span style={{ fontWeight: 600, fontSize: 14, color: '#374151' }}>Locație {idx + 1}</span>
-                        <button onClick={() => stergeLocatie(locatie.id)} style={{ background: 'none', border: 'none', color: '#EF4444', cursor: 'pointer', fontSize: 13 }}>Șterge</button>
+                        <span style={{
+                          fontWeight: 600, fontSize: 13, color: '#fff',
+                          background: idx === 0 ? '#4F46E5' : '#6B7280',
+                          padding: '3px 10px', borderRadius: 10,
+                        }}>
+                          {idx === 0 ? 'Sediu central' : `Locație ${idx + 1}`}
+                        </span>
+                        {idx > 0 && (
+                          <button onClick={() => stergeLocatie(locatie.id)} style={{ background: 'none', border: 'none', color: '#EF4444', cursor: 'pointer', fontSize: 13 }}>Șterge</button>
+                        )}
                       </div>
-                      <input style={{ ...inputStyle, marginBottom: 10 }} placeholder="Nume locație (ex: Punct de lucru Cluj)" value={locatie.nume} onChange={e => updateLocatie(locatie.id, 'nume', e.target.value)} />
+
+                      {/* Nume locație */}
+                      <div style={{ marginBottom: 8 }}>
+                        <label style={{ ...labelStyle, fontSize: 12 }}>Denumire locație</label>
+                        <input
+                          style={inputStyle}
+                          placeholder={idx === 0 ? 'Sediu central' : 'Ex: Punct de lucru Cluj'}
+                          value={locatie.nume}
+                          onChange={e => updateLocatie(locatie.id, 'nume', e.target.value)}
+                        />
+                      </div>
+
+                      {/* Adresă locație */}
+                      <div style={{ marginBottom: 10 }}>
+                        <label style={{ ...labelStyle, fontSize: 12 }}>Adresă</label>
+                        <input
+                          style={inputStyle}
+                          placeholder="Strada, nr., localitate, județ"
+                          value={locatie.adresa}
+                          onChange={e => updateLocatie(locatie.id, 'adresa', e.target.value)}
+                        />
+                      </div>
+
+                      {/* Departamente locație */}
                       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 8 }}>
                         {listaPrestabilita.slice(0, 12).map(dept => {
                           const sel = locatie.departamente.includes(dept);
@@ -517,13 +585,14 @@ export default function OnboardingPage() {
                     </div>
                   ))}
                   <button onClick={adaugaLocatie} style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '10px 16px', borderRadius: 10, border: '1.5px dashed #C7D2FE', background: '#F5F3FF', color: '#4F46E5', cursor: 'pointer', fontSize: 13, fontWeight: 600 }}>
-                    <IconPlus /> Adaugă locație nouă
+                    <IconPlus /> Adaugă punct de lucru
                   </button>
                 </div>
               )}
 
               {error && <ErrorBox message={error} />}
 
+              {/* Warning multilocatie */}
               {showMultilocatieWarning && (
                 <div style={{ background: '#FFFBEB', border: '1.5px solid #FCD34D', borderRadius: 14, padding: 16, marginBottom: 16 }}>
                   <div style={{ display: 'flex', gap: 10, alignItems: 'flex-start', marginBottom: 12 }}>
@@ -569,10 +638,10 @@ export default function OnboardingPage() {
 
               <div style={{ background: '#fff', border: '1.5px solid #e5e7eb', borderRadius: 14, padding: '16px 20px', marginBottom: 16 }}>
                 {[
-                  { label: 'Adresă', value: form.adresa || '—' },
+                  { label: 'Adresă sediu', value: form.adresa || '—' },
                   { label: 'Categorie activitate', value: form.categorie_activitate ? CATEGORII_ACTIVITATE[form.categorie_activitate]?.label : '—' },
                   { label: `Nr. ${selectedConfig.terminology.angajati.toLowerCase()}`, value: form.nr_angajati || '—' },
-                  { label: 'Multilocație', value: form.multilocatie ? 'Da' : 'Nu' },
+                  { label: 'Multilocație', value: form.multilocatie ? `Da (${form.locatii.length} locații)` : 'Nu' },
                   { label: labelDepartamente, value: `${form.departamenteSelectate.length} selectate` },
                 ].map(row => (
                   <div key={row.label} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #f3f4f6', fontSize: 14 }}>
