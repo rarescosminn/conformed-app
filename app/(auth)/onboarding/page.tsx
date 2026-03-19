@@ -94,6 +94,9 @@ type Locatie = {
   departamentNou: string;
 };
 
+// Funcții protejate — au superputeri în platformă
+export const FUNCTII_PROTEJATE = ['CEO / Director General', 'Manager General'];
+
 type FormData = {
   orgType: OrgType | null;
   denumire: string;
@@ -103,6 +106,8 @@ type FormData = {
   multilocatie: boolean;
   descriere: string;
   categorie_activitate: CategorieActivitate | null;
+  functie: string;
+  functie_custom: string;
   departamenteSelectate: string[];
   departamentNou: string;
   locatii: Locatie[];
@@ -133,6 +138,8 @@ export default function OnboardingPage() {
     multilocatie: false,
     descriere: '',
     categorie_activitate: null,
+    functie: '',
+    functie_custom: '',
     departamenteSelectate: [],
     departamentNou: '',
     locatii: [],
@@ -236,6 +243,8 @@ export default function OnboardingPage() {
   const goToStep3 = () => {
     if (!form.denumire.trim()) { setError('Denumirea organizației este obligatorie.'); return; }
     if (!form.cui.trim()) { setError('CUI / CIF este obligatoriu.'); return; }
+    if (!form.functie) { setError('Selectează funcția ta în organizație.'); return; }
+    if (form.functie === 'alta' && !form.functie_custom.trim()) { setError('Specifică funcția ta.'); return; }
     setError(''); setStep(4);
   };
 
@@ -314,6 +323,19 @@ export default function OnboardingPage() {
           }
         }
       }
+
+      // 5. Insert în user_profiles
+      const functieFinala = form.functie === 'alta' ? form.functie_custom : form.functie;
+      const esteProtejat = FUNCTII_PROTEJATE.includes(functieFinala);
+      const { error: profileErr } = await supabase.from('user_profiles').upsert({
+        user_id: user.id,
+        org_id: orgId,
+        functie: functieFinala,
+        rol: esteProtejat ? 'admin' : 'admin', // primul user e întotdeauna admin
+        este_protejat: esteProtejat,
+        admin_since: new Date().toISOString(),
+      }, { onConflict: 'user_id' });
+      if (profileErr) throw profileErr;
 
       setStep('welcome');
     } catch (e: unknown) {
@@ -489,6 +511,38 @@ export default function OnboardingPage() {
                   <label style={labelStyle}>Scurtă descriere (opțional)</label>
                   <textarea style={{ ...inputStyle, resize: 'none', height: 80 } as React.CSSProperties} placeholder="Activitate principală, domeniu..." value={form.descriere} onChange={e => setForm(f => ({ ...f, descriere: e.target.value }))} />
                 </div>
+
+                {/* FUNCȚIE */}
+                <div>
+                  <label style={labelStyle}>Funcția ta în organizație *</label>
+                  <select
+                    style={inputStyle}
+                    value={form.functie}
+                    onChange={e => setForm(f => ({ ...f, functie: e.target.value, functie_custom: '' }))}
+                  >
+                    <option value="">Selectează funcția</option>
+                    <option value="Administrator">Administrator</option>
+                    <option value="CEO / Director General">CEO / Director General</option>
+                    <option value="Manager General">Manager General</option>
+                    <option value="alta">Altă funcție...</option>
+                  </select>
+                </div>
+                {form.functie === 'alta' && (
+                  <div>
+                    <label style={labelStyle}>Specifică funcția</label>
+                    <input
+                      style={inputStyle}
+                      placeholder="Ex: Director Financiar, Responsabil Calitate..."
+                      value={form.functie_custom}
+                      onChange={e => setForm(f => ({ ...f, functie_custom: e.target.value }))}
+                    />
+                  </div>
+                )}
+                {(form.functie === 'CEO / Director General' || form.functie === 'Manager General') && (
+                  <div style={{ background: '#EEF2FF', border: '1.5px solid #C7D2FE', borderRadius: 10, padding: '10px 14px', fontSize: 13, color: '#3730A3' }}>
+                    ℹ️ Funcția selectată are acces complet la platformă, inclusiv gestionarea locațiilor și a conturilor.
+                  </div>
+                )}
               </div>
               {error && <ErrorBox message={error} />}
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 12 }}>
