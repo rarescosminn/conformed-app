@@ -4,6 +4,7 @@
 import * as React from "react";
 import { useOrg } from '@/lib/context/OrgContext';
 import { useMemo, useState, useEffect, useRef } from "react";
+import { usePageTitle } from '@/lib/hooks/usePageTitle';
 
 /** ============================================================
  *  Glosar / Metodologie (pentru tooltip)
@@ -403,6 +404,7 @@ function detectColumn(columns: string[], candidates: string[]): string | null {
  *  ============================================================ */
 export default function DashboardPage() {
     const { orgType, denumire } = useOrg();
+    usePageTitle('Dashboard');
     // ==== Filtre UI: An + Trimestru (ultimii 5 ani + anul curent) ====
     const currentYear = new Date().getFullYear();
     const years = useMemo(
