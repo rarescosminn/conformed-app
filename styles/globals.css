@@ -70,15 +70,78 @@ label, input, select, textarea { /* intenționat gol – nu stricăm cardurile/c
     }
 }
 
-@media (max-width:720px) {
+/* ============== MOBILE SIDEBAR FIX ============== */
+/* Adaugă după blocul @media (max-width:720px) existent în globals.css */
+
+@media (max-width: 720px) {
     .layout {
         grid-template-columns: 1fr;
+        padding: 0;
+        gap: 0;
     }
 
     .sb {
-        position: static;
-        height: auto;
-        width: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100dvh;
+        z-index: 100;
+        border-radius: 0;
+        transition: left 0.25s ease;
+    }
+
+    .sb.is-open {
+        left: 0;
+    }
+
+    .sb-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+        backdrop-filter: blur(2px);
+    }
+
+    .sb-overlay.is-open {
+        display: block;
+    }
+
+    .sb-toggle {
+        display: flex;
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        z-index: 98;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #123b66, #0e2b4a);
+        border: none;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .main {
+        padding: 60px 12px 12px;
+    }
+
+    .sb__brandText, .sb__text {
+        display: block;
+    }
+}
+
+@media (min-width: 721px) {
+    .sb-toggle {
+        display: none;
+    }
+
+    .sb-overlay {
+        display: none !important;
     }
 }
 
