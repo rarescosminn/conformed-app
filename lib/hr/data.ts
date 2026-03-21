@@ -20,11 +20,21 @@ export async function getHrDashboardData() {
     }
 
     // Citește angajații din Supabase
+    // Fetch departamente selectate la onboarding
+    const { data: depts } = await supabase
+        .from('departments')
+        .select('nume')
+        .eq('org_id', org.id)
+        .eq('activ', true);
+
+    const depturiActive = (depts ?? []).map((d: any) => d.nume);
+
     const { data: angajati } = await supabase
         .from('hr_angajati')
         .select('*')
         .eq('org_id', org.id)
-        .eq('activ', true);
+        .eq('activ', true)
+        .in('sectie', depturiActive.length > 0 ? depturiActive : ['__none__']);
 
     const rows = angajati ?? [];
 
