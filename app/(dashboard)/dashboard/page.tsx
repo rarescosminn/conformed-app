@@ -406,6 +406,15 @@ function detectColumn(columns: string[], candidates: string[]): string | null {
 export default function DashboardPage() {
     const { orgType, denumire } = useOrg();
     usePageTitle('Dashboard');
+
+if (orgType === null) {
+        return <div style={{ display: 'grid', placeItems: 'center', minHeight: '60vh', color: '#6B7280', fontSize: 14 }}>Se încarcă...</div>;
+    }
+
+    if (orgType === 'companie' || orgType === 'institutie_publica') {
+        return <DashboardGenericPage />;
+    }
+
     // ==== Filtre UI: An + Trimestru (ultimii 5 ani + anul curent) ====
     const currentYear = new Date().getFullYear();
     const years = useMemo(
@@ -912,10 +921,6 @@ export default function DashboardPage() {
                 return kpiData.active > kpiData.furnizori ? "ok" : "danger";
             })()
             : null;
-
-      if (orgType === 'companie' || orgType === 'institutie_publica') {
-        return <DashboardGenericPage />;
-    }
             
     return (
         <div style={styles.page}>
