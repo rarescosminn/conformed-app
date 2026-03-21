@@ -1,6 +1,7 @@
 // app/dashboard/page.tsx
 "use client";
 
+import DashboardGenericPage from '@/components/DashboardGeneric';
 import * as React from "react";
 import { useOrg } from '@/lib/context/OrgContext';
 import { useMemo, useState, useEffect, useRef } from "react";
@@ -912,6 +913,10 @@ export default function DashboardPage() {
             })()
             : null;
 
+      if (orgType === 'companie' || orgType === 'institutie_publica') {
+        return <DashboardGenericPage />;
+    }
+            
     return (
         <div style={styles.page}>
             {denumire && (
