@@ -716,6 +716,10 @@ export default function OnboardingPage() {
                 </div>
               )}
 
+<div style={{ background: '#FFFBEB', border: '1px solid #FCD34D', borderRadius: 12, padding: '12px 16px', fontSize: 13, color: '#92400E', lineHeight: 1.6, marginBottom: 16 }}>
+                <strong>⚠️ Notă demo:</strong> Te încurajăm să folosești date fictive sau de test în această perioadă. eConformed nu își asumă responsabilitatea pentru datele introduse în versiunea demo.
+              </div>
+
               {error && <ErrorBox message={error} />}
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 12 }}>
