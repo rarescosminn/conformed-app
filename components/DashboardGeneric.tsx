@@ -237,7 +237,7 @@ export default function DashboardGenericPage() {
       });
 
       if (depts.data) {
-        setDepartments(['Toate', ...depts.data.map(d => d.nume)]);
+        setDepartments(['Toate', ...Array.from(new Set(depts.data.map(d => d.nume)))]);
       }
     }
     loadStats();

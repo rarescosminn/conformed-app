@@ -140,15 +140,15 @@ export default function RegisterPage() {
         position: 'sticky', top: 0, height: '100vh',
       }}>
         <div style={{ marginBottom: 8 }}>
-          <Image
-            src="/eConformed_LOGO.png"
-            alt="eConformed"
-            width={140}
-            height={140}
-            style={{ filter: 'brightness(0) invert(1)', opacity: 0.95 }}
-            priority
-          />
-        </div>
+  {/* eslint-disable-next-line @next/next/no-img-element */}
+  <img
+    src="/eConformed_LOGO.png"
+    alt="eConformed"
+    width={140}
+    height={140}
+    style={{ filter: 'brightness(0) invert(1)', opacity: 0.95 }}
+  />
+</div>
 
         <div style={{ fontSize: 13, opacity: 0.75, textAlign: 'center', maxWidth: 280, lineHeight: 1.6, marginBottom: 40, letterSpacing: 0.3 }}>
           a Digital assistant for compliance and growth

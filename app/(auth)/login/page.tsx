@@ -72,15 +72,15 @@ export default function Login() {
       }}>
         {/* Logo */}
         <div style={{ marginBottom: 8 }}>
-          <Image
-            src="/eConformed_LOGO.png"
-            alt="eConformed"
-            width={140}
-            height={140}
-            style={{ filter: 'brightness(0) invert(1)', opacity: 0.95 }}
-            priority
-          />
-        </div>
+  {/* eslint-disable-next-line @next/next/no-img-element */}
+  <img
+    src="/eConformed_LOGO.png"
+    alt="eConformed"
+    width={140}
+    height={140}
+    style={{ filter: 'brightness(0) invert(1)', opacity: 0.95 }}
+  />
+</div>
 
         {/* Tagline */}
         <div style={{
