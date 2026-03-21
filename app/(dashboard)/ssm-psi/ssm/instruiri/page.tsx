@@ -187,14 +187,14 @@ export default function SSMInstruiriPage() {
     const togglePresent = (tid: string, aid: string) => {
         save(
             list.map((t) =>
-                t.id !== tid
-                    ? t
-                    : {
-                        ...t,
-                        attendees: t.attendees.map((a) =>
-                            a.id === aid ? { ...a, present: !a.present } : a
-                        ),
-                    }
+                t.id !== tid ? t : {
+                    ...t,
+                    attendees: t.attendees.map((a) =>
+                        a.id === aid
+                            ? { ...a, present: !a.present, absentMotivated: !a.present ? false : a.absentMotivated }
+                            : a
+                    ),
+                }
             )
         );
     };
@@ -202,14 +202,14 @@ export default function SSMInstruiriPage() {
     const toggleMotiv = (tid: string, aid: string) => {
         save(
             list.map((t) =>
-                t.id !== tid
-                    ? t
-                    : {
-                        ...t,
-                        attendees: t.attendees.map((a) =>
-                            a.id === aid ? { ...a, absentMotivated: !a.absentMotivated } : a
-                        ),
-                    }
+                t.id !== tid ? t : {
+                    ...t,
+                    attendees: t.attendees.map((a) =>
+                        a.id === aid
+                            ? { ...a, absentMotivated: !a.absentMotivated, present: !a.absentMotivated ? false : a.present }
+                            : a
+                    ),
+                }
             )
         );
     };
