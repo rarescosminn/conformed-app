@@ -4,7 +4,6 @@
 import React, { useState } from 'react';
 import { createBrowserClient } from '@supabase/ssr';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const JUDETE = [
   'Alba','Arad','Argeș','Bacău','Bihor','Bistrița-Năsăud','Botoșani','Brăila',
@@ -139,16 +138,11 @@ export default function RegisterPage() {
         padding: 48, color: '#fff',
         position: 'sticky', top: 0, height: '100vh',
       }}>
-        <div style={{ marginBottom: 8 }}>
-  {/* eslint-disable-next-line @next/next/no-img-element */}
-  <img
-    src="/eConformed_LOGO.png"
-    alt="eConformed"
-    width={140}
-    height={140}
-    style={{ filter: 'brightness(0) invert(1)', opacity: 0.95 }}
-  />
-</div>
+        <div style={{ marginBottom: 16, textAlign: 'center' }}>
+          <div style={{ fontSize: 42, fontWeight: 900, letterSpacing: -2, color: '#fff' }}>
+            e<span style={{ opacity: 0.6 }}>Conformed</span>
+          </div>
+        </div>
 
         <div style={{ fontSize: 13, opacity: 0.75, textAlign: 'center', maxWidth: 280, lineHeight: 1.6, marginBottom: 40, letterSpacing: 0.3 }}>
           a Digital assistant for compliance and growth

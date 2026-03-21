@@ -2,7 +2,6 @@
 import React from 'react';
 import { createBrowserClient } from '@supabase/ssr';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const BENEFITS = [
@@ -71,16 +70,11 @@ export default function Login() {
         position: 'sticky', top: 0, height: '100vh',
       }}>
         {/* Logo */}
-        <div style={{ marginBottom: 8 }}>
-  {/* eslint-disable-next-line @next/next/no-img-element */}
-  <img
-    src="/eConformed_LOGO.png"
-    alt="eConformed"
-    width={140}
-    height={140}
-    style={{ filter: 'brightness(0) invert(1)', opacity: 0.95 }}
-  />
-</div>
+       <div style={{ marginBottom: 16, textAlign: 'center' }}>
+          <div style={{ fontSize: 42, fontWeight: 900, letterSpacing: -2, color: '#fff' }}>
+            e<span style={{ opacity: 0.6 }}>Conformed</span>
+          </div>
+        </div>
 
         {/* Tagline */}
         <div style={{
