@@ -155,20 +155,13 @@ export default function SettingsPage({ onboardingDoneDB }: Props) {
                         Utilizatori, roluri și drepturi de acces.
                     </span>
                     <div style={{ display: "flex", gap: 8, marginTop: 6 }}>
-                        <button
-                            disabled
-                            title="În curând"
-                            style={{
-                                fontSize: 13,
-                                padding: "4px 10px",
-                                borderRadius: 10,
-                                border: "1px solid #ddd",
-                                background: "#fff",
-                                opacity: 0.6,
-                            }}
-                        >
-                            + Adaugă utilizator (curând)
-                        </button>
+                        <Link href="/admin" style={{
+                            fontSize: 13, padding: "4px 10px", borderRadius: 10,
+                            border: "1px solid #C7D2FE", background: "#EEF2FF",
+                            color: "#4F46E5", fontWeight: 600, textDecoration: 'none',
+                        }}>
+                            Gestionează conturi →
+                        </Link>
                     </div>
                     <Link href="/setari/conturi" style={{ marginTop: "auto", fontSize: 13, opacity: 0.9 }}>
                         Deschide →
