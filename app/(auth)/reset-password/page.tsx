@@ -31,10 +31,16 @@ export default function ResetPassword() {
     setMessage('');
     const { error } = await supabase.auth.updateUser({ password: pass });
     setLoading(false);
-    if (error) setMessage(error.message);
+    if (error) { setMessage(error.message); }
     else {
       setMessage('Parola a fost schimbată cu succes!');
-      setTimeout(() => router.push('/login'), 2000);
+      // Verifică dacă are MFA configurat
+      const { data: factors } = await supabase.auth.mfa.listFactors();
+      const hasMfa = factors?.totp && factors.totp.length > 0;
+      setTimeout(() => {
+        if (!hasMfa) router.push('/mfa-setup');
+        else router.push('/mfa-verify');
+      }, 1500);
     }
   }
 
