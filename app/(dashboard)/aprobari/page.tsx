@@ -208,6 +208,37 @@ function ApprovalCard({
 /* ===== Pagina ===== */
 export default function ApprovalsPage() {
     const { orgType } = useOrg();
+    const [showAdd, setShowAdd] = useState(false);
+    const [departments, setDepartments] = useState<string[]>([]);
+    const [addForm, setAddForm] = useState({
+        title: '', dept: '', category: 'proceduri', kind: 'document' as ApprovalKind, file: null as File | null,
+    });
+
+    useEffect(() => {
+        // Încarcă departamentele din localStorage (setate la onboarding)
+        try {
+            const raw = localStorage.getItem('onboarding_departments');
+            if (raw) setDepartments(JSON.parse(raw));
+            else setDepartments(['General', 'HR', 'SSM', 'PSI', 'IT']);
+        } catch { setDepartments(['General', 'HR', 'SSM', 'PSI', 'IT']); }
+    }, []);
+
+    function submitDoc() {
+        if (!addForm.title.trim()) { alert('Titlul este obligatoriu.'); return; }
+        const newItem = Approvals.add({
+            title: addForm.title,
+            category: addForm.category,
+            kind: addForm.kind,
+            submittedBy: currentUser.name,
+            assignee: 'Administrator',
+            department: addForm.dept,
+            downloadUrl: addForm.file ? URL.createObjectURL(addForm.file) : undefined,
+        });
+        setItems(sweepToArchive());
+        setShowAdd(false);
+        setAddForm({ title: '', dept: '', category: 'proceduri', kind: 'document', file: null });
+        setTab(addForm.kind);
+    }
     const RES_LABEL = orgType === 'spital' ? RES_LABEL_SPITAL : RES_LABEL_GENERIC;
 
     const [items, setItems] = useState<ApprovalItem[]>([]);
@@ -322,9 +353,75 @@ export default function ApprovalsPage() {
 
     return (
         <div style={ui.page}>
-            <h1 style={ui.title}>
-                {orgType === 'spital' ? 'Aprobări' : 'Aprobări documente'}
-            </h1>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <h1 style={ui.title}>
+                    {orgType === 'spital' ? 'Aprobări' : 'Aprobări documente'}
+                </h1>
+                <button
+                    onClick={() => setShowAdd(s => !s)}
+                    style={{ padding: '10px 18px', borderRadius: 10, border: 'none', background: 'linear-gradient(135deg, #4F46E5, #7C3AED)', color: '#fff', fontWeight: 700, fontSize: 14, cursor: 'pointer' }}
+                >
+                    + Document nou
+                </button>
+            </div>
+
+            {showAdd && (
+                <div style={{ background: '#fff', border: '1px solid #e5e7eb', borderRadius: 14, padding: 20, boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
+                    <h3 style={{ margin: '0 0 16px', fontSize: 15, fontWeight: 700 }}>Trimite document spre aprobare</h3>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+                            <div>
+                                <label style={{ fontSize: 13, fontWeight: 600, display: 'block', marginBottom: 5 }}>Titlu document *</label>
+                                <input style={{ width: '100%', padding: '10px 14px', borderRadius: 10, border: '1.5px solid #e5e7eb', fontSize: 14, outline: 'none', boxSizing: 'border-box' }} placeholder="ex: Procedura SSM-01" value={addForm.title} onChange={e => setAddForm(f => ({ ...f, title: e.target.value }))} />
+                            </div>
+                            <div>
+                                <label style={{ fontSize: 13, fontWeight: 600, display: 'block', marginBottom: 5 }}>Departament *</label>
+                                <select style={{ width: '100%', padding: '10px 14px', borderRadius: 10, border: '1.5px solid #e5e7eb', fontSize: 14, outline: 'none', boxSizing: 'border-box', background: '#fff' }} value={addForm.dept} onChange={e => setAddForm(f => ({ ...f, dept: e.target.value }))}>
+                                    <option value="">Selectează departamentul</option>
+                                    {departments.map(d => <option key={d} value={d}>{d}</option>)}
+                                </select>
+                            </div>
+                        </div>
+                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+                            <div>
+                                <label style={{ fontSize: 13, fontWeight: 600, display: 'block', marginBottom: 5 }}>Categorie</label>
+                                <select style={{ width: '100%', padding: '10px 14px', borderRadius: 10, border: '1.5px solid #e5e7eb', fontSize: 14, outline: 'none', boxSizing: 'border-box', background: '#fff' }} value={addForm.category} onChange={e => setAddForm(f => ({ ...f, category: e.target.value }))}>
+                                    <option value="proceduri">Proceduri</option>
+                                    <option value="ssm">SSM</option>
+                                    <option value="psi">PSI</option>
+                                    <option value="mediu">Mediu</option>
+                                    <option value="hr">HR</option>
+                                    <option value="iso">ISO</option>
+                                    <option value="it">IT</option>
+                                    <option value="medical">Medical</option>
+                                    <option value="altele">Altele</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label style={{ fontSize: 13, fontWeight: 600, display: 'block', marginBottom: 5 }}>Tip</label>
+                                <select style={{ width: '100%', padding: '10px 14px', borderRadius: 10, border: '1.5px solid #e5e7eb', fontSize: 14, outline: 'none', boxSizing: 'border-box', background: '#fff' }} value={addForm.kind} onChange={e => setAddForm(f => ({ ...f, kind: e.target.value as ApprovalKind }))}>
+                                    <option value="document">Document</option>
+                                    <option value="report">Raport</option>
+                                    <option value="revision">Revizie</option>
+                                    <option value="request">Cerere</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label style={{ fontSize: 13, fontWeight: 600, display: 'block', marginBottom: 5 }}>Fișier (opțional)</label>
+                            <input type="file" accept=".pdf,.doc,.docx,.xls,.xlsx" onChange={e => setAddForm(f => ({ ...f, file: e.target.files?.[0] ?? null }))} style={{ fontSize: 13 }} />
+                        </div>
+                        <div style={{ display: 'flex', gap: 10 }}>
+                            <button onClick={submitDoc} style={{ padding: '10px 20px', borderRadius: 10, border: 'none', background: 'linear-gradient(135deg, #4F46E5, #7C3AED)', color: '#fff', fontWeight: 700, fontSize: 14, cursor: 'pointer' }}>
+                                Trimite spre aprobare
+                            </button>
+                            <button onClick={() => setShowAdd(false)} style={{ padding: '10px 16px', borderRadius: 10, border: '1px solid #e5e7eb', background: '#fff', fontWeight: 600, fontSize: 14, cursor: 'pointer' }}>
+                                Anulează
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             <div style={ui.top}>
                 <div style={ui.tabs}>
