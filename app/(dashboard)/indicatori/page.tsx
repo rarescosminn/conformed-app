@@ -52,7 +52,7 @@ type Threshold =
 const ALL_KPIS: KPI[] = [
     // Venituri
     { key: "venituri_totale", label: "Venituri totale", category: "Venituri", unit: "Lei" },
-    { key: "venituri_cnas_pct", label: "% venituri CNAS", category: "Venituri", isPct: true },
+    { key: "venituri_cnas_pct", label: "% venituri CNAS", category: "Venituri", isPct: true, onlySpital: true },
     { key: "venituri_private", label: "Venituri servicii private", category: "Venituri", unit: "Lei" },
     { key: "subventii", label: "Subvenții/transferuri", category: "Venituri", unit: "Lei" },
     { key: "venituri_granturi", label: "Venituri granturi", category: "Venituri", unit: "Lei" },
@@ -61,8 +61,8 @@ const ALL_KPIS: KPI[] = [
     { key: "cheltuieli_totale", label: "Cheltuieli totale", category: "Cheltuieli", unit: "Lei" },
     { key: "cheltuieli_personal_pct", label: "% cheltuieli personal", category: "Cheltuieli", isPct: true },
     { key: "cheltuieli_personal_abs", label: "Cheltuieli personal (abs.)", category: "Cheltuieli", unit: "Lei" },
-    { key: "cheltuieli_medicamente", label: "Medicamente", category: "Cheltuieli", unit: "Lei" },
-    { key: "cheltuieli_materiale", label: "Materiale sanitare", category: "Cheltuieli", unit: "Lei" },
+    { key: "cheltuieli_medicamente", label: "Medicamente", category: "Cheltuieli", unit: "Lei", onlySpital: true },
+    { key: "cheltuieli_materiale", label: "Materiale sanitare", category: "Cheltuieli", unit: "Lei", onlySpital: true },
     { key: "cheltuieli_utilitati", label: "Utilități", category: "Cheltuieli", unit: "Lei" },
     { key: "cheltuieli_energie", label: "Energie (abs.)", category: "Cheltuieli", unit: "Lei" },
     { key: "cheltuieli_echip_ment", label: "Echipamente + mentenanță", category: "Cheltuieli", unit: "Lei" },
@@ -70,11 +70,11 @@ const ALL_KPIS: KPI[] = [
     { key: "cheltuieli_directe", label: "Cheltuieli cu valoare adăugată", category: "Cheltuieli", unit: "Lei" },
 
     // Eficiență
-    { key: "cost_pacient", label: "Cost mediu/pacient", category: "Eficiență", unit: "Lei" },
+    { key: "cost_pacient", label: "Cost mediu/client", category: "Eficiență", unit: "Lei" },
     { key: "cost_caz_drg", label: "Cost mediu/caz DRG", category: "Eficiență", unit: "Lei", onlySpital: true },
-    { key: "cost_zi_spitalizare", label: "Cost/zi spitalizare (derivat)", category: "Eficiență", unit: "Lei", derived: true, onlySpital: true },
-    { key: "venit_pacient", label: "Venit mediu/pacient", category: "Eficiență", unit: "Lei" },
-    { key: "rap_admin_medical", label: "Chelt. admin / medicale", category: "Eficiență" },
+    { key: "cost_zi_spitalizare", label: "Cost/zi spitalizare", category: "Eficiență", unit: "Lei", derived: true, onlySpital: true },
+    { key: "venit_pacient", label: "Venit mediu/client", category: "Eficiență", unit: "Lei" },
+    { key: "rap_admin_medical", label: "Chelt. admin / operaționale", category: "Eficiență" },
 
     // Lichiditate / Îndatorare
     { key: "lichiditate_curenta", label: "Lichiditate curentă", category: "Lichiditate / Îndatorare" },
@@ -95,21 +95,21 @@ const ALL_KPIS: KPI[] = [
     { key: "icm", label: "Indice complexitate (ICM)", category: "Clinic-financiar", onlySpital: true },
     { key: "cazuri_decontate", label: "Cazuri decontate", category: "Clinic-financiar", onlySpital: true },
     { key: "valoare_medie_caz", label: "Valoare medie/caz", category: "Clinic-financiar", unit: "Lei", onlySpital: true },
-    { key: "zile_spitalizare", label: "Zile de spitalizare (output)", category: "Clinic-financiar", onlySpital: true },
-    { key: "pat_zile", label: "Pat-zile (output)", category: "Clinic-financiar", onlySpital: true },
+    { key: "zile_spitalizare", label: "Zile de spitalizare", category: "Clinic-financiar", onlySpital: true },
+    { key: "pat_zile", label: "Pat-zile", category: "Clinic-financiar", onlySpital: true },
 
     /* -------- 3E – ECONOMICITATE -------- */
-    { key: "dpo", label: "DPO (Zile medii plată)", category: "3E – Economicitate", derived: true },
+    { key: "dpo", label: "DPO (Zile medii plată)", category: "3E – Economicitate", derived: true, onlySpital: true },
     { key: "discount_capturat_pct", label: "Discount capturat (%)", category: "3E – Economicitate", isPct: true, derived: true },
     { key: "abatere_exec_buget_pct", label: "Abatere execuție vs buget (%)", category: "3E – Economicitate", isPct: true, derived: true },
 
     /* -------- 3E – EFICIENȚĂ -------- */
     { key: "zile_stoc", label: "Rotația stocurilor (zile)", category: "3E – Eficiență", derived: true },
-    { key: "cost_energie_pat_zi", label: "Cost energie / pat-zi", category: "3E – Eficiență", unit: "Lei", derived: true },
+    { key: "cost_energie_pat_zi", label: "Cost energie / pat-zi", category: "3E – Eficiență", unit: "Lei", derived: true, onlySpital: true },
     { key: "utilizare_active", label: "Utilizare active (Venituri/Active)", category: "3E – Eficiență", derived: true },
 
     /* -------- 3E – EFICACITATE -------- */
-    { key: "incasare_vs_contract_cas_pct", label: "Încăsare vs contract CAS (%)", category: "3E – Eficacitate", isPct: true, derived: true, onlySpital: true },
+    { key: "incasare_vs_contract_cas_pct", label: "Încasare vs contract CAS (%)", category: "3E – Eficacitate", isPct: true, derived: true, onlySpital: true },
     { key: "rezultat_operational_vs_buget_pct", label: "Rezultat operațional vs buget (%)", category: "3E – Eficacitate", isPct: true, derived: true },
     { key: "pondere_valoare_adaugata_pct", label: "Chelt. cu valoare adăugată / total (%)", category: "3E – Eficacitate", isPct: true, derived: true },
     { key: "economii_improvement", label: "Economii din proiecte de îmbunătățire", category: "3E – Eficacitate", unit: "Lei" },
@@ -337,6 +337,83 @@ const badgeStyle = (t: Traffic): React.CSSProperties => {
 export default function Indicatori() {
     const { orgType } = useOrg();
 
+const mergeUploaded = useIndicatoriStore((s) => s.mergeUploaded);
+
+function downloadTemplate() {
+    const isSpital = orgType === 'spital';
+    const isInstitutie = orgType === 'institutie_publica';
+    const rows = [
+        ['Indicator', 'Ian', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec'],
+        ['venituri_totale', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['cheltuieli_totale', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['cheltuieli_personal_abs', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['cheltuieli_utilitati', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['cheltuieli_energie', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['rezultat_operational', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['rezultat_net', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['cashflow_operational', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['lichiditate_curenta', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['grad_indatorare', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['creante', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['datorii_comerciale', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['achizitii', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['stoc_mediu', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['consum_lunar', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['active_nete', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['buget_cheltuieli_totale', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['buget_rezultat_operational', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ...(isSpital ? [
+            ['incasat_cas', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['contract_cas', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['cheltuieli_medicamente', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['cheltuieli_materiale', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['cazuri_decontate', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['zile_spitalizare', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['pat_zile', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['ocupare_paturi_pct', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['icm', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ] : []),
+        ...(isInstitutie ? [
+            ['subventii', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['venituri_granturi', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ] : [
+            ['venituri_private', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ]),
+        ['cost_neconformitati', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['penalitati', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['cheltuieli_directe', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['investitie_capex', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['beneficii_nete_anuale', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['discounturi_obtinute', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ['discounturi_posibile', '', '', '', '', '', '', '', '', '', '', '', ''],
+    ];
+    const tip = isSpital ? 'spital' : isInstitutie ? 'institutie' : 'companie';
+    const csv = rows.map(r => r.join(';')).join('\n');
+    const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `template_indicatori_${tip}_${new Date().getFullYear()}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+}
+
+function handleParsed(workbooks: any[]) {
+    const newSeries: Record<string, { label: string; labels: string[]; values: number[] }> = {};
+    const months = ['Ian','Feb','Mar','Apr','Mai','Iun','Iul','Aug','Sep','Oct','Noi','Dec'];
+    for (const wb of workbooks) {
+        for (const sheet of wb.sheets) {
+            for (const row of sheet.rows) {
+                const key = row.label.trim().toLowerCase().replace(/\s+/g, '_');
+                if (!newSeries[key]) {
+                    newSeries[key] = { label: row.label, labels: months, values: Array(12).fill(row.value) };
+                }
+            }
+        }
+    }
+    mergeUploaded(newSeries);
+}
+
     const KPIS_FILTERED = useMemo(
         () => ALL_KPIS.filter(k => !k.onlySpital || orgType === 'spital'),
         [orgType]
@@ -405,7 +482,7 @@ export default function Indicatori() {
             monthlyBase = computeDerived[key]((kk) => getMonthlyRaw(kk));
         }
         if (!monthlyBase) monthlyBase = getMonthlyRaw(key);
-        if (!monthlyBase) monthlyBase = genSeries(key, 12);
+        if (!monthlyBase) monthlyBase = Array(12).fill(NaN);
 
         if (period === "lunar") return monthlyBase;
         if (period === "trimestrial") return toQuarterly(monthlyBase);
@@ -588,36 +665,16 @@ export default function Indicatori() {
             )}
 
             {/* Uploader */}
-            <KpiUploader
-                kpis={[
-                    { key: "venituri_totale", label: "Venituri totale" },
-                    { key: "cheltuieli_totale", label: "Cheltuieli totale" },
-                    { key: "lichiditate_curenta", label: "Lichiditate curentă" },
-                    { key: "grad_indatorare", label: "Grad de îndatorare" },
-                    { key: "rezultat_operational", label: "Rezultat operațional" },
-                    { key: "zile_spitalizare", label: "Zile spitalizare" },
-                    { key: "pat_zile", label: "Pat-zile" },
-                    { key: "cazuri_decontate", label: "Cazuri decontate" },
-                    { key: "creante", label: "Creanțe" },
-                    { key: "datorii_comerciale", label: "Datorii comerciale" },
-                    { key: "achizitii", label: "Achiziții (consum/cumpărări)" },
-                    { key: "stoc_mediu", label: "Stoc mediu" },
-                    { key: "consum_lunar", label: "Consum lunar" },
-                    { key: "cheltuieli_energie", label: "Cheltuieli energie" },
-                    { key: "active_nete", label: "Active nete" },
-                    { key: "incasat_cas", label: "Încasat CAS" },
-                    { key: "contract_cas", label: "Contract CAS" },
-                    { key: "cheltuieli_directe", label: "Cheltuieli cu valoare adăugată" },
-                    { key: "cost_neconformitati", label: "Costuri neconformități" },
-                    { key: "penalitati", label: "Penalități" },
-                    { key: "beneficii_nete_anuale", label: "Beneficii nete anuale (proiecte)" },
-                    { key: "investitie_capex", label: "Investiție CapEx (proiecte)" },
-                    { key: "discounturi_obtinute", label: "Discounturi obținute" },
-                    { key: "discounturi_posibile", label: "Discounturi posibile" },
-                    { key: "buget_cheltuieli_totale", label: "Buget cheltuieli totale" },
-                    { key: "buget_rezultat_operational", label: "Buget rezultat operațional" },
-                ]}
-            />
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
+    <button
+        onClick={downloadTemplate}
+        style={{ padding: '10px 18px', borderRadius: 10, border: '1px solid #C7D2FE', background: '#EEF2FF', color: '#4F46E5', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}
+    >
+        ⬇ Descarcă template CSV
+    </button>
+    <span style={{ fontSize: 12, color: '#6B7280' }}>Completează templateul și uploadează-l mai jos</span>
+</div>
+<KpiUploader kpis={[]} onParsed={handleParsed} />
 
             {/* ===== GRAFICE ===== */}
             <div
