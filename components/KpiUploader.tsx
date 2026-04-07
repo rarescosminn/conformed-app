@@ -127,6 +127,7 @@ async function parsePdfFile(file: File): Promise<ParsedWorkbook> {
         }
     }
 
+    console.log('PDF rows extrase:', allRows.length, allRows.slice(0, 5));
     return { fileName: file.name, sheets: [{ name: "PDF", rows: allRows }] };
 }
 
