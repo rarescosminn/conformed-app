@@ -63,7 +63,6 @@ async function parsePdfFile(file: File): Promise<ParsedWorkbook> {
 
     const arrayBuffer = await file.arrayBuffer();
     const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
-
     const allRows: ParsedRow[] = [];
 
     for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
@@ -71,36 +70,60 @@ async function parsePdfFile(file: File): Promise<ParsedWorkbook> {
         const content = await page.getTextContent();
         const items = content.items as any[];
 
-        // Grupează pe linii după coordonata Y
-        const lineMap = new Map<number, string[]>();
+        // Grupează pe linii după Y, păstrând și X pentru sortare
+        const lineMap = new Map<number, { x: number; text: string }[]>();
         for (const item of items) {
             const y = Math.round(item.transform[5]);
+            const x = Math.round(item.transform[4]);
             if (!lineMap.has(y)) lineMap.set(y, []);
-            lineMap.get(y)!.push(item.str);
+            lineMap.get(y)!.push({ x, text: item.str });
         }
 
         const sortedYs = Array.from(lineMap.keys()).sort((a, b) => b - a);
 
         for (const y of sortedYs) {
-            const parts = lineMap.get(y)!.filter(s => s.trim());
-            if (parts.length === 0) continue;
-            const fullLine = parts.join(' ').trim();
+            const lineItems = lineMap.get(y)!.sort((a, b) => a.x - b.x);
+            const fullLine = lineItems.map(i => i.text).join(' ').trim();
+            if (!fullLine) continue;
 
-            // Extrage numere românești (ex: 1.234,56 sau 1234.56)
-            const numbers = fullLine
-                .match(/\d[\d\s.]*,\d+|\d+\.\d+/g)
-                ?.map(n => parseFloat(n.replace(/\s/g, '').replace(/\.(?=\d{3})/g, '').replace(',', '.')))
-                .filter(n => !isNaN(n)) ?? [];
+            // Detectează număr de cont SAGA (3-5 cifre la început)
+            const contMatch = fullLine.match(/^(\d{3,5})\s/);
+            if (!contMatch) continue;
 
-            const label = fullLine.replace(/\d[\d\s.]*,\d+|\d+\.\d+/g, '').replace(/\s+/g, ' ').trim();
+            const cont = contMatch[1];
 
-            if (label && numbers.length > 0) {
-                allRows.push({
-                    label,
-                    value: numbers[numbers.length - 1],
-                    rawValues: [label, ...numbers],
-                });
-            }
+            // Extrage numerele format SAGA: 1 290.55 sau 0.00
+            const numRegex = /\d[\d\s]*\.\d{2}/g;
+            const numbers = (fullLine.match(numRegex) ?? [])
+                .map(n => parseFloat(n.replace(/\s/g, '')))
+                .filter(n => !isNaN(n));
+
+            if (numbers.length < 2) continue;
+
+            // Mapare la indici Excel SAGA:
+            // [0]=cont, [1]=denumire, [2]=soldInitD, [3]=soldInitC,
+            // [4]=rulajD, [5]=rulajC, [6]=totalRulajD, [7]=totalRulajC,
+            // [8]=sumeTotaleD, [9]=sumeTotaleC, [10]=soldFinalD, [11]=soldFinalC
+            const rawValues = [
+                cont,
+                '',
+                numbers[0] ?? 0,
+                numbers[1] ?? 0,
+                numbers[2] ?? 0,
+                numbers[3] ?? 0,
+                numbers[4] ?? 0,
+                numbers[5] ?? 0,
+                numbers[6] ?? 0,
+                numbers[7] ?? 0,
+                numbers[8] ?? 0,
+                numbers[9] ?? 0,
+            ];
+
+            allRows.push({
+                label: cont,
+                value: numbers[8] ?? 0,
+                rawValues,
+            });
         }
     }
 
