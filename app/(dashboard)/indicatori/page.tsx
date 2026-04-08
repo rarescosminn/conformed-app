@@ -333,6 +333,94 @@ const badgeStyle = (t: Traffic): React.CSSProperties => {
     return { display: "inline-flex", alignItems: "center", gap: 6, padding: "2px 8px", borderRadius: 999, border: `1px solid ${c.bd}`, background: c.bg, color: c.fg, fontSize: 12, fontWeight: 600, lineHeight: 1, whiteSpace: "nowrap" };
 };
 
+/* ==================== SAGA / FOREXEBUG PARSERS ==================== */
+const SAGA_MAP: Record<string, { kpi: string; col: 'rulajC' | 'rulajD' | 'soldFinalD' | 'soldFinalC' }> = {
+    '701': { kpi: 'venituri_totale', col: 'rulajC' },
+    '702': { kpi: 'venituri_totale', col: 'rulajC' },
+    '703': { kpi: 'venituri_totale', col: 'rulajC' },
+    '704': { kpi: 'venituri_totale', col: 'rulajC' },
+    '705': { kpi: 'venituri_totale', col: 'rulajC' },
+    '706': { kpi: 'venituri_totale', col: 'rulajC' },
+    '707': { kpi: 'venituri_totale', col: 'rulajC' },
+    '708': { kpi: 'venituri_totale', col: 'rulajC' },
+    '641': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
+    '642': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
+    '644': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
+    '645': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
+    '605': { kpi: 'cheltuieli_energie', col: 'rulajD' },
+    '610': { kpi: 'cheltuieli_utilitati', col: 'rulajD' },
+    '611': { kpi: 'cheltuieli_utilitati', col: 'rulajD' },
+    '5121': { kpi: 'cashflow_operational', col: 'soldFinalD' },
+    '5124': { kpi: 'cashflow_operational', col: 'soldFinalD' },
+    '5311': { kpi: 'cashflow_operational', col: 'soldFinalD' },
+    '4111': { kpi: 'creante', col: 'soldFinalD' },
+    '4118': { kpi: 'creante', col: 'soldFinalD' },
+    '401':  { kpi: 'datorii_comerciale', col: 'soldFinalC' },
+    '404':  { kpi: 'datorii_comerciale', col: 'soldFinalC' },
+    '301':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
+    '302':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
+    '303':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
+    '345':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
+    '371':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
+    '121':  { kpi: 'rezultat_net', col: 'soldFinalC' },
+    '211':  { kpi: 'active_nete', col: 'soldFinalD' },
+    '212':  { kpi: 'active_nete', col: 'soldFinalD' },
+    '213':  { kpi: 'active_nete', col: 'soldFinalD' },
+    '214':  { kpi: 'active_nete', col: 'soldFinalD' },
+};
+
+function toNum(v: any): number {
+    if (!v && v !== 0) return 0;
+    return parseFloat(String(v).replace(/\s/g, '').replace(',', '.')) || 0;
+}
+
+function parseSAGA(rows: any[], acc: Record<string, number>) {
+    let totalCheltuieli = 0;
+    let totalVenituri = 0;
+    for (const row of rows) {
+        const cont = String(row.label || '').trim().split(' ')[0];
+        const vals: any[] = row.rawValues ?? [];
+        const rulajD     = toNum(vals[6]);
+        const rulajC     = toNum(vals[7]);
+        const soldFinalD = toNum(vals[10]);
+        const soldFinalC = toNum(vals[11]);
+        if (/^6/.test(cont)) totalCheltuieli += rulajD;
+        if (/^7/.test(cont)) totalVenituri   += rulajC;
+        const mapping = SAGA_MAP[cont];
+        if (mapping) {
+            const val = mapping.col === 'rulajC' ? rulajC
+                : mapping.col === 'rulajD' ? rulajD
+                : mapping.col === 'soldFinalD' ? soldFinalD
+                : soldFinalC;
+            acc[mapping.kpi] = (acc[mapping.kpi] || 0) + val;
+        }
+    }
+    acc['cheltuieli_totale']    = totalCheltuieli;
+    acc['venituri_totale']      = acc['venituri_totale'] || totalVenituri;
+    acc['rezultat_operational'] = totalVenituri - totalCheltuieli;
+}
+
+function parseFOREXEBUG(rows: any[], acc: Record<string, number>) {
+    const RD_MAP: Record<string, string> = {
+        '11': 'venituri_totale', '5': 'subventii', '3': 'venituri_private',
+        '13': 'cheltuieli_personal_abs', '14': 'cheltuieli_utilitati',
+        '24': 'cheltuieli_totale', '25': 'rezultat_net', '9': 'stoc_mediu',
+        '10': 'creante', '12': 'cashflow_operational', '15': 'lichiditate_curenta',
+        '16': 'active_nete', '29': 'datorii_comerciale',
+    };
+    for (const row of rows) {
+        const label = String(row.label || '').trim();
+        const rdMatch = label.match(/^rd\.?(\d+)$/i) || label.match(/^(\d+)$/);
+        if (rdMatch) {
+            const kpi = RD_MAP[rdMatch[1]];
+            if (kpi) acc[kpi] = (acc[kpi] || 0) + (row.value || 0);
+        }
+    }
+    if (acc['venituri_totale'] && acc['cheltuieli_totale']) {
+        acc['rezultat_operational'] = acc['venituri_totale'] - acc['cheltuieli_totale'];
+    }
+}
+
 /* ==================== PAGINA ==================== */
 export default function Indicatori() {
     const { orgType } = useOrg();
@@ -398,20 +486,161 @@ function downloadTemplate() {
     URL.revokeObjectURL(url);
 }
 
-function handleParsed(workbooks: any[]) {
-    const newSeries: Record<string, { label: string; labels: string[]; values: number[] }> = {};
-    const months = ['Ian','Feb','Mar','Apr','Mai','Iun','Iul','Aug','Sep','Oct','Noi','Dec'];
+const SAGA_MAP: Record<string, { kpi: string; col: 'rulajC' | 'rulajD' | 'soldFinalD' | 'soldFinalC' }> = {
+    '701': { kpi: 'venituri_totale', col: 'rulajC' },
+    '702': { kpi: 'venituri_totale', col: 'rulajC' },
+    '703': { kpi: 'venituri_totale', col: 'rulajC' },
+    '704': { kpi: 'venituri_totale', col: 'rulajC' },
+    '705': { kpi: 'venituri_totale', col: 'rulajC' },
+    '706': { kpi: 'venituri_totale', col: 'rulajC' },
+    '707': { kpi: 'venituri_totale', col: 'rulajC' },
+    '708': { kpi: 'venituri_totale', col: 'rulajC' },
+    '641': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
+    '642': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
+    '644': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
+    '645': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
+    '605': { kpi: 'cheltuieli_energie', col: 'rulajD' },
+    '610': { kpi: 'cheltuieli_utilitati', col: 'rulajD' },
+    '611': { kpi: 'cheltuieli_utilitati', col: 'rulajD' },
+    '5121': { kpi: 'cashflow_operational', col: 'soldFinalD' },
+    '5124': { kpi: 'cashflow_operational', col: 'soldFinalD' },
+    '5311': { kpi: 'cashflow_operational', col: 'soldFinalD' },
+    '4111': { kpi: 'creante', col: 'soldFinalD' },
+    '4118': { kpi: 'creante', col: 'soldFinalD' },
+    '401':  { kpi: 'datorii_comerciale', col: 'soldFinalC' },
+    '404':  { kpi: 'datorii_comerciale', col: 'soldFinalC' },
+    '301':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
+    '302':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
+    '303':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
+    '345':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
+    '371':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
+    '121':  { kpi: 'rezultat_net', col: 'soldFinalC' },
+    '211':  { kpi: 'active_nete', col: 'soldFinalD' },
+    '212':  { kpi: 'active_nete', col: 'soldFinalD' },
+    '213':  { kpi: 'active_nete', col: 'soldFinalD' },
+    '214':  { kpi: 'active_nete', col: 'soldFinalD' },
+};
+
+function toNum(v: any): number {
+    if (!v && v !== 0) return 0;
+    return parseFloat(String(v).replace(/\s/g, '').replace(',', '.')) || 0;
+}
+
+function parseSAGA(rows: any[], acc: Record<string, number>) {
+    let totalCheltuieli = 0;
+    let totalVenituri = 0;
+    for (const row of rows) {
+        const cont = String(row.label || '').trim().split(' ')[0];
+        const vals: any[] = row.rawValues ?? [];
+        const rulajD     = toNum(vals[6]); // total rulaje D (cumulat)
+        const rulajC     = toNum(vals[7]); // total rulaje C (cumulat)
+        const soldFinalD = toNum(vals[10]);
+        const soldFinalC = toNum(vals[11]);
+        if (/^6/.test(cont)) totalCheltuieli += rulajD;
+        if (/^7/.test(cont)) totalVenituri   += rulajC;
+        const mapping = SAGA_MAP[cont];
+        if (mapping) {
+            const val = mapping.col === 'rulajC' ? rulajC
+                : mapping.col === 'rulajD' ? rulajD
+                : mapping.col === 'soldFinalD' ? soldFinalD
+                : soldFinalC;
+            acc[mapping.kpi] = (acc[mapping.kpi] || 0) + val;
+        }
+    }
+    acc['cheltuieli_totale']    = totalCheltuieli;
+    acc['venituri_totale']      = acc['venituri_totale'] || totalVenituri;
+    acc['rezultat_operational'] = totalVenituri - totalCheltuieli;
+}
+
+function parseFOREXEBUG(rows: any[], acc: Record<string, number>) {
+    const RD_MAP: Record<string, string> = {
+        '11': 'venituri_totale', '5': 'subventii', '3': 'venituri_private',
+        '13': 'cheltuieli_personal_abs', '14': 'cheltuieli_utilitati',
+        '24': 'cheltuieli_totale', '25': 'rezultat_net', '9': 'stoc_mediu',
+        '10': 'creante', '12': 'cashflow_operational', '15': 'lichiditate_curenta',
+        '16': 'active_nete', '29': 'datorii_comerciale',
+    };
+    for (const row of rows) {
+        const label = String(row.label || '').trim();
+        const rdMatch = label.match(/^rd\.?(\d+)$/i) || label.match(/^(\d+)$/);
+        if (rdMatch) {
+            const kpi = RD_MAP[rdMatch[1]];
+            if (kpi) acc[kpi] = (acc[kpi] || 0) + (row.value || 0);
+        }
+    }
+    if (acc['venituri_totale'] && acc['cheltuieli_totale']) {
+        acc['rezultat_operational'] = acc['venituri_totale'] - acc['cheltuieli_totale'];
+    }
+}
+
+// Detecție lună din rândurile brute (caută pattern "DD.MM.YYYY" în labels/rawValues)
+function detectMonthIndex(workbooks: any[]): number {
     for (const wb of workbooks) {
-        for (const sheet of wb.sheets) {
-            for (const row of sheet.rows) {
-                const key = row.label.trim().toLowerCase().replace(/\s+/g, '_');
-                if (!newSeries[key]) {
-                    newSeries[key] = { label: row.label, labels: months, values: Array(12).fill(row.value) };
+        // 1. Caută în meta dacă KpiUploader trimite periodEnd
+        if (wb.meta?.periodEnd) {
+            const d = new Date(wb.meta.periodEnd);
+            if (!isNaN(d.getTime())) return d.getMonth(); // 0=Ian
+        }
+        // 2. Caută pattern DD.MM.YYYY în orice label sau valoare raw
+        for (const sheet of wb.sheets ?? []) {
+            for (const row of sheet.rows ?? []) {
+                const text = String(row.label || '') + ' ' + String(row.rawValues?.join(' ') || '');
+                const matches = text.matchAll(/\b(\d{2})\.(\d{2})\.(20\d{2})\b/g);
+                for (const m of matches) {
+                    const month = parseInt(m[2], 10) - 1; // 0-indexed
+                    if (month >= 0 && month <= 11) return month;
                 }
             }
         }
+        // 3. Caută în sheet name (ex: "Feb", "februarie")
+        for (const sheet of wb.sheets ?? []) {
+            const name = (sheet.name || '').toLowerCase();
+            const monthNames = ['ian','feb','mar','apr','mai','iun','iul','aug','sep','oct','noi','dec'];
+            const idx = monthNames.findIndex(m => name.includes(m));
+            if (idx >= 0) return idx;
+        }
     }
-    mergeUploaded(newSeries);
+    // Fallback: luna curentă
+    return new Date().getMonth();
+}
+
+function handleParsed(workbooks: any[]) {
+    const acc: Record<string, number> = {};
+
+    // Detectează luna
+    const monthIdx = detectMonthIndex(workbooks);
+
+    for (const wb of workbooks) {
+        for (const sheet of wb.sheets) {
+            const rows = sheet.rows;
+            const isSAGA = rows.some((r: any) =>
+                /^\d{3,5}$/.test(String(r.label || '').trim().split(' ')[0])
+            );
+            const isFOREXEBUG = rows.some((r: any) =>
+                /^rd\.?\d+$/i.test(String(r.label || '').trim())
+            );
+            if (orgType === 'companie' || (orgType === 'spital' && isSAGA)) {
+                parseSAGA(rows, acc);
+            } else if (orgType === 'institutie_publica' || isFOREXEBUG) {
+                parseFOREXEBUG(rows, acc);
+            } else {
+                // CSV generic — parseSAGA ca fallback
+                parseSAGA(rows, acc);
+            }
+        }
+    }
+
+    // Construiește serii de 12 luni și pune valoarea în luna detectată
+    const seriesUpdate: Record<string, { values: number[] }> = {};
+for (const [kpi, value] of Object.entries(acc)) {
+    const existing = (series?.[kpi]?.values as number[] | undefined) ?? Array(12).fill(0);
+    const updated = [...existing];
+    if (updated.length !== 12) updated.length = 12;
+    updated[monthIdx] = value;
+    seriesUpdate[kpi] = { values: updated };  // ← { values: ... } nu doar array
+}
+
+mergeUploaded(seriesUpdate as any);
 }
 
     const KPIS_FILTERED = useMemo(
