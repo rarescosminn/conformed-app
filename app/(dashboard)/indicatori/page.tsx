@@ -48,16 +48,14 @@ type Threshold =
     | { type: "lower"; green: number; yellow: number }
     | { type: "band"; greenMin: number; greenMax: number; yellowMin: number; yellowMax: number };
 
-/* ==================== KPI DEFINITIONS (inclusiv 3E) ==================== */
+/* ==================== KPI DEFINITIONS ==================== */
 const ALL_KPIS: KPI[] = [
-    // Venituri
     { key: "venituri_totale", label: "Venituri totale", category: "Venituri", unit: "Lei" },
     { key: "venituri_cnas_pct", label: "% venituri CNAS", category: "Venituri", isPct: true, onlySpital: true },
     { key: "venituri_private", label: "Venituri servicii private", category: "Venituri", unit: "Lei" },
     { key: "subventii", label: "Subvenții/transferuri", category: "Venituri", unit: "Lei" },
     { key: "venituri_granturi", label: "Venituri granturi", category: "Venituri", unit: "Lei" },
 
-    // Cheltuieli
     { key: "cheltuieli_totale", label: "Cheltuieli totale", category: "Cheltuieli", unit: "Lei" },
     { key: "cheltuieli_personal_pct", label: "% cheltuieli personal", category: "Cheltuieli", isPct: true },
     { key: "cheltuieli_personal_abs", label: "Cheltuieli personal (abs.)", category: "Cheltuieli", unit: "Lei" },
@@ -69,14 +67,12 @@ const ALL_KPIS: KPI[] = [
     { key: "cheltuieli_admin_it", label: "Administrative și IT", category: "Cheltuieli", unit: "Lei" },
     { key: "cheltuieli_directe", label: "Cheltuieli cu valoare adăugată", category: "Cheltuieli", unit: "Lei" },
 
-    // Eficiență
     { key: "cost_pacient", label: "Cost mediu/client", category: "Eficiență", unit: "Lei" },
     { key: "cost_caz_drg", label: "Cost mediu/caz DRG", category: "Eficiență", unit: "Lei", onlySpital: true },
     { key: "cost_zi_spitalizare", label: "Cost/zi spitalizare", category: "Eficiență", unit: "Lei", derived: true, onlySpital: true },
     { key: "venit_pacient", label: "Venit mediu/client", category: "Eficiență", unit: "Lei" },
     { key: "rap_admin_medical", label: "Chelt. admin / operaționale", category: "Eficiență" },
 
-    // Lichiditate / Îndatorare
     { key: "lichiditate_curenta", label: "Lichiditate curentă", category: "Lichiditate / Îndatorare" },
     { key: "grad_indatorare", label: "Grad de îndatorare", category: "Lichiditate / Îndatorare" },
     { key: "zile_incasare", label: "Zile medii încasare (DSO)", category: "Lichiditate / Îndatorare", derived: true },
@@ -84,13 +80,11 @@ const ALL_KPIS: KPI[] = [
     { key: "ccc", label: "Cash Conversion Cycle (CCC)", category: "Lichiditate / Îndatorare", derived: true },
     { key: "autonomie_fin", label: "Autonomie financiară", category: "Lichiditate / Îndatorare" },
 
-    // Rezultat / Cashflow
     { key: "rezultat_operational", label: "Rezultat operațional", category: "Rezultat / Cashflow", unit: "Lei" },
     { key: "marja_operationala", label: "Marjă operațională", category: "Rezultat / Cashflow" },
     { key: "rezultat_net", label: "Rezultat net", category: "Rezultat / Cashflow", unit: "Lei" },
     { key: "cashflow_operational", label: "Cashflow operațional", category: "Rezultat / Cashflow", unit: "Lei" },
 
-    // Clinic-financiar (doar spital)
     { key: "ocupare_paturi_pct", label: "Rata ocupare paturi %", category: "Clinic-financiar", isPct: true, onlySpital: true },
     { key: "icm", label: "Indice complexitate (ICM)", category: "Clinic-financiar", onlySpital: true },
     { key: "cazuri_decontate", label: "Cazuri decontate", category: "Clinic-financiar", onlySpital: true },
@@ -98,17 +92,14 @@ const ALL_KPIS: KPI[] = [
     { key: "zile_spitalizare", label: "Zile de spitalizare", category: "Clinic-financiar", onlySpital: true },
     { key: "pat_zile", label: "Pat-zile", category: "Clinic-financiar", onlySpital: true },
 
-    /* -------- 3E – ECONOMICITATE -------- */
     { key: "dpo", label: "DPO (Zile medii plată)", category: "3E – Economicitate", derived: true, onlySpital: true },
     { key: "discount_capturat_pct", label: "Discount capturat (%)", category: "3E – Economicitate", isPct: true, derived: true },
     { key: "abatere_exec_buget_pct", label: "Abatere execuție vs buget (%)", category: "3E – Economicitate", isPct: true, derived: true },
 
-    /* -------- 3E – EFICIENȚĂ -------- */
     { key: "zile_stoc", label: "Rotația stocurilor (zile)", category: "3E – Eficiență", derived: true },
     { key: "cost_energie_pat_zi", label: "Cost energie / pat-zi", category: "3E – Eficiență", unit: "Lei", derived: true, onlySpital: true },
     { key: "utilizare_active", label: "Utilizare active (Venituri/Active)", category: "3E – Eficiență", derived: true },
 
-    /* -------- 3E – EFICACITATE -------- */
     { key: "incasare_vs_contract_cas_pct", label: "Încasare vs contract CAS (%)", category: "3E – Eficacitate", isPct: true, derived: true, onlySpital: true },
     { key: "rezultat_operational_vs_buget_pct", label: "Rezultat operațional vs buget (%)", category: "3E – Eficacitate", isPct: true, derived: true },
     { key: "pondere_valoare_adaugata_pct", label: "Chelt. cu valoare adăugată / total (%)", category: "3E – Eficacitate", isPct: true, derived: true },
@@ -118,7 +109,7 @@ const ALL_KPIS: KPI[] = [
     { key: "roi_proiecte_pct", label: "ROI proiecte (%)", category: "3E – Eficacitate", isPct: true, derived: true },
 ];
 
-/* ==================== PRAGURI (Semafor) ==================== */
+/* ==================== PRAGURI ==================== */
 const THRESHOLDS: Record<string, Threshold> = {
     zile_incasare: { type: "lower", green: 30, yellow: 45 },
     zile_plata: { type: "band", greenMin: 30, greenMax: 45, yellowMin: 20, yellowMax: 60 },
@@ -181,7 +172,7 @@ const toYearly = (arr: number[]) => [avg(arr.slice(0, 12))];
 const EPS = 1e-6;
 const safeDiv = (a: number, b: number) => (Math.abs(b) < EPS ? 0 : a / b);
 
-/* ==================== CALCULE DERIVATE (3E & co.) ==================== */
+/* ==================== CALCULE DERIVATE ==================== */
 const computeDerived: Record<string, (get: (k: string) => number[] | undefined) => number[] | undefined> = {
     zile_incasare: (get) => {
         const crean = get("creante");
@@ -333,8 +324,9 @@ const badgeStyle = (t: Traffic): React.CSSProperties => {
     return { display: "inline-flex", alignItems: "center", gap: 6, padding: "2px 8px", borderRadius: 999, border: `1px solid ${c.bd}`, background: c.bg, color: c.fg, fontSize: 12, fontWeight: 600, lineHeight: 1, whiteSpace: "nowrap" };
 };
 
-/* ==================== SAGA / FOREXEBUG PARSERS ==================== */
+/* ==================== SAGA MAP (o singură dată, în afara componentei) ==================== */
 const SAGA_MAP: Record<string, { kpi: string; col: 'rulajC' | 'rulajD' | 'soldFinalD' | 'soldFinalC' }> = {
+    // Venituri din servicii
     '701': { kpi: 'venituri_totale', col: 'rulajC' },
     '702': { kpi: 'venituri_totale', col: 'rulajC' },
     '703': { kpi: 'venituri_totale', col: 'rulajC' },
@@ -343,30 +335,59 @@ const SAGA_MAP: Record<string, { kpi: string; col: 'rulajC' | 'rulajD' | 'soldFi
     '706': { kpi: 'venituri_totale', col: 'rulajC' },
     '707': { kpi: 'venituri_totale', col: 'rulajC' },
     '708': { kpi: 'venituri_totale', col: 'rulajC' },
+    '709': { kpi: 'venituri_totale', col: 'rulajD' }, // reduceri comerciale acordate (scad)
+    // Cheltuieli personal
     '641': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
     '642': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
+    '643': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
     '644': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
     '645': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
+    '646': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
+    // Energie / utilitati
     '605': { kpi: 'cheltuieli_energie', col: 'rulajD' },
+    '606': { kpi: 'cheltuieli_energie', col: 'rulajD' },
     '610': { kpi: 'cheltuieli_utilitati', col: 'rulajD' },
     '611': { kpi: 'cheltuieli_utilitati', col: 'rulajD' },
+    // Cashflow (sold conturi banca + casa)
     '5121': { kpi: 'cashflow_operational', col: 'soldFinalD' },
     '5124': { kpi: 'cashflow_operational', col: 'soldFinalD' },
+    '5125': { kpi: 'cashflow_operational', col: 'soldFinalD' },
     '5311': { kpi: 'cashflow_operational', col: 'soldFinalD' },
+    '5314': { kpi: 'cashflow_operational', col: 'soldFinalD' },
+    // Creante clienti
     '4111': { kpi: 'creante', col: 'soldFinalD' },
     '4118': { kpi: 'creante', col: 'soldFinalD' },
+    '413':  { kpi: 'creante', col: 'soldFinalD' },
+    '418':  { kpi: 'creante', col: 'soldFinalD' },
+    // Datorii comerciale
     '401':  { kpi: 'datorii_comerciale', col: 'soldFinalC' },
+    '403':  { kpi: 'datorii_comerciale', col: 'soldFinalC' },
     '404':  { kpi: 'datorii_comerciale', col: 'soldFinalC' },
+    '405':  { kpi: 'datorii_comerciale', col: 'soldFinalC' },
+    // Stocuri
+    '300':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
     '301':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
     '302':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
     '303':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
+    '304':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
     '345':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
     '371':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
-    '121':  { kpi: 'rezultat_net', col: 'soldFinalC' },
+    // Rezultat net — cont 121 sold debitor = pierdere, creditor = profit
+    '121':  { kpi: 'rezultat_net', col: 'soldFinalD' },
+    // Active nete (imobilizari corporale nete)
     '211':  { kpi: 'active_nete', col: 'soldFinalD' },
     '212':  { kpi: 'active_nete', col: 'soldFinalD' },
     '213':  { kpi: 'active_nete', col: 'soldFinalD' },
     '214':  { kpi: 'active_nete', col: 'soldFinalD' },
+    '215':  { kpi: 'active_nete', col: 'soldFinalD' },
+    '231':  { kpi: 'active_nete', col: 'soldFinalD' },
+    // Cheltuieli reclama/publicitate → admin_it
+    '623':  { kpi: 'cheltuieli_admin_it', col: 'rulajD' },
+    '6231': { kpi: 'cheltuieli_admin_it', col: 'rulajD' },
+    '6232': { kpi: 'cheltuieli_admin_it', col: 'rulajD' },
+    '626':  { kpi: 'cheltuieli_admin_it', col: 'rulajD' },
+    '627':  { kpi: 'cheltuieli_admin_it', col: 'rulajD' },
+    '628':  { kpi: 'cheltuieli_admin_it', col: 'rulajD' },
 };
 
 function toNum(v: any): number {
@@ -380,18 +401,23 @@ function parseSAGA(rows: any[], acc: Record<string, number>) {
     for (const row of rows) {
         const cont = String(row.label || '').trim().split(' ')[0];
         const vals: any[] = row.rawValues ?? [];
+        // Structura rawValues SAGA PDF:
+        // [0]=cont [1]=denumire [2]=soldIniD [3]=soldIniC [4]=rulajPerD [5]=rulajPerC
+        // [6]=totalRulajD [7]=totalRulajC [8]=sumeTotaleD [9]=sumeTotaleC [10]=soldFinalD [11]=soldFinalC
         const rulajD     = toNum(vals[6]);
         const rulajC     = toNum(vals[7]);
         const soldFinalD = toNum(vals[10]);
         const soldFinalC = toNum(vals[11]);
+
         if (/^6/.test(cont)) totalCheltuieli += rulajD;
         if (/^7/.test(cont)) totalVenituri   += rulajC;
+
         const mapping = SAGA_MAP[cont];
         if (mapping) {
-            const val = mapping.col === 'rulajC' ? rulajC
-                : mapping.col === 'rulajD' ? rulajD
-                : mapping.col === 'soldFinalD' ? soldFinalD
-                : soldFinalC;
+            const val = mapping.col === 'rulajC'     ? rulajC
+                      : mapping.col === 'rulajD'     ? rulajD
+                      : mapping.col === 'soldFinalD' ? soldFinalD
+                      : soldFinalC;
             acc[mapping.kpi] = (acc[mapping.kpi] || 0) + val;
         }
     }
@@ -419,236 +445,141 @@ function parseFOREXEBUG(rows: any[], acc: Record<string, number>) {
     if (acc['venituri_totale'] && acc['cheltuieli_totale']) {
         acc['rezultat_operational'] = acc['venituri_totale'] - acc['cheltuieli_totale'];
     }
+}
+
+function detectMonthIndex(workbooks: any[]): number {
+    for (const wb of workbooks) {
+        if (wb.meta?.periodEnd) {
+            const d = new Date(wb.meta.periodEnd);
+            if (!isNaN(d.getTime())) return d.getMonth();
+        }
+        for (const sheet of wb.sheets ?? []) {
+            for (const row of sheet.rows ?? []) {
+                const text = String(row.label || '') + ' ' + String(row.rawValues?.join(' ') || '');
+                const matches = [...text.matchAll(/\b(\d{2})\.(\d{2})\.(20\d{2})\b/g)];
+                for (const m of matches) {
+                    const month = parseInt(m[2], 10) - 1;
+                    if (month >= 0 && month <= 11) return month;
+                }
+            }
+        }
+        for (const sheet of wb.sheets ?? []) {
+            const name = (sheet.name || '').toLowerCase();
+            const monthNames = ['ian', 'feb', 'mar', 'apr', 'mai', 'iun', 'iul', 'aug', 'sep', 'oct', 'noi', 'dec'];
+            const idx = monthNames.findIndex(m => name.includes(m));
+            if (idx >= 0) return idx;
+        }
+    }
+    return new Date().getMonth();
 }
 
 /* ==================== PAGINA ==================== */
 export default function Indicatori() {
     const { orgType } = useOrg();
+    const mergeUploaded = useIndicatoriStore((s) => s.mergeUploaded);
+    const series = (useIndicatoriStore((s) => s.series) ?? {}) as Record<string, { values: number[] } | undefined>;
 
-const mergeUploaded = useIndicatoriStore((s) => s.mergeUploaded);
-
-function downloadTemplate() {
-    const isSpital = orgType === 'spital';
-    const isInstitutie = orgType === 'institutie_publica';
-    const rows = [
-        ['Indicator', 'Ian', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec'],
-        ['venituri_totale', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['cheltuieli_totale', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['cheltuieli_personal_abs', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['cheltuieli_utilitati', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['cheltuieli_energie', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['rezultat_operational', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['rezultat_net', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['cashflow_operational', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['lichiditate_curenta', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['grad_indatorare', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['creante', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['datorii_comerciale', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['achizitii', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['stoc_mediu', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['consum_lunar', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['active_nete', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['buget_cheltuieli_totale', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['buget_rezultat_operational', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ...(isSpital ? [
-            ['incasat_cas', '', '', '', '', '', '', '', '', '', '', '', ''],
-            ['contract_cas', '', '', '', '', '', '', '', '', '', '', '', ''],
-            ['cheltuieli_medicamente', '', '', '', '', '', '', '', '', '', '', '', ''],
-            ['cheltuieli_materiale', '', '', '', '', '', '', '', '', '', '', '', ''],
-            ['cazuri_decontate', '', '', '', '', '', '', '', '', '', '', '', ''],
-            ['zile_spitalizare', '', '', '', '', '', '', '', '', '', '', '', ''],
-            ['pat_zile', '', '', '', '', '', '', '', '', '', '', '', ''],
-            ['ocupare_paturi_pct', '', '', '', '', '', '', '', '', '', '', '', ''],
-            ['icm', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ] : []),
-        ...(isInstitutie ? [
-            ['subventii', '', '', '', '', '', '', '', '', '', '', '', ''],
-            ['venituri_granturi', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ] : [
-            ['venituri_private', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ]),
-        ['cost_neconformitati', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['penalitati', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['cheltuieli_directe', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['investitie_capex', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['beneficii_nete_anuale', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['discounturi_obtinute', '', '', '', '', '', '', '', '', '', '', '', ''],
-        ['discounturi_posibile', '', '', '', '', '', '', '', '', '', '', '', ''],
-    ];
-    const tip = isSpital ? 'spital' : isInstitutie ? 'institutie' : 'companie';
-    const csv = rows.map(r => r.join(';')).join('\n');
-    const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `template_indicatori_${tip}_${new Date().getFullYear()}.csv`;
-    a.click();
-    URL.revokeObjectURL(url);
-}
-
-const SAGA_MAP: Record<string, { kpi: string; col: 'rulajC' | 'rulajD' | 'soldFinalD' | 'soldFinalC' }> = {
-    '701': { kpi: 'venituri_totale', col: 'rulajC' },
-    '702': { kpi: 'venituri_totale', col: 'rulajC' },
-    '703': { kpi: 'venituri_totale', col: 'rulajC' },
-    '704': { kpi: 'venituri_totale', col: 'rulajC' },
-    '705': { kpi: 'venituri_totale', col: 'rulajC' },
-    '706': { kpi: 'venituri_totale', col: 'rulajC' },
-    '707': { kpi: 'venituri_totale', col: 'rulajC' },
-    '708': { kpi: 'venituri_totale', col: 'rulajC' },
-    '641': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
-    '642': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
-    '644': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
-    '645': { kpi: 'cheltuieli_personal_abs', col: 'rulajD' },
-    '605': { kpi: 'cheltuieli_energie', col: 'rulajD' },
-    '610': { kpi: 'cheltuieli_utilitati', col: 'rulajD' },
-    '611': { kpi: 'cheltuieli_utilitati', col: 'rulajD' },
-    '5121': { kpi: 'cashflow_operational', col: 'soldFinalD' },
-    '5124': { kpi: 'cashflow_operational', col: 'soldFinalD' },
-    '5311': { kpi: 'cashflow_operational', col: 'soldFinalD' },
-    '4111': { kpi: 'creante', col: 'soldFinalD' },
-    '4118': { kpi: 'creante', col: 'soldFinalD' },
-    '401':  { kpi: 'datorii_comerciale', col: 'soldFinalC' },
-    '404':  { kpi: 'datorii_comerciale', col: 'soldFinalC' },
-    '301':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
-    '302':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
-    '303':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
-    '345':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
-    '371':  { kpi: 'stoc_mediu', col: 'soldFinalD' },
-    '121':  { kpi: 'rezultat_net', col: 'soldFinalC' },
-    '211':  { kpi: 'active_nete', col: 'soldFinalD' },
-    '212':  { kpi: 'active_nete', col: 'soldFinalD' },
-    '213':  { kpi: 'active_nete', col: 'soldFinalD' },
-    '214':  { kpi: 'active_nete', col: 'soldFinalD' },
-};
-
-function toNum(v: any): number {
-    if (!v && v !== 0) return 0;
-    return parseFloat(String(v).replace(/\s/g, '').replace(',', '.')) || 0;
-}
-
-function parseSAGA(rows: any[], acc: Record<string, number>) {
-    let totalCheltuieli = 0;
-    let totalVenituri = 0;
-    for (const row of rows) {
-        const cont = String(row.label || '').trim().split(' ')[0];
-        const vals: any[] = row.rawValues ?? [];
-        const rulajD     = toNum(vals[6]); // total rulaje D (cumulat)
-        const rulajC     = toNum(vals[7]); // total rulaje C (cumulat)
-        const soldFinalD = toNum(vals[10]);
-        const soldFinalC = toNum(vals[11]);
-        if (/^6/.test(cont)) totalCheltuieli += rulajD;
-        if (/^7/.test(cont)) totalVenituri   += rulajC;
-        const mapping = SAGA_MAP[cont];
-        if (mapping) {
-            const val = mapping.col === 'rulajC' ? rulajC
-                : mapping.col === 'rulajD' ? rulajD
-                : mapping.col === 'soldFinalD' ? soldFinalD
-                : soldFinalC;
-            acc[mapping.kpi] = (acc[mapping.kpi] || 0) + val;
-        }
+    /* ---------- download template ---------- */
+    function downloadTemplate() {
+        const isSpital = orgType === 'spital';
+        const isInstitutie = orgType === 'institutie_publica';
+        const rows = [
+            ['Indicator', 'Ian', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec'],
+            ['venituri_totale', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['cheltuieli_totale', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['cheltuieli_personal_abs', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['cheltuieli_utilitati', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['cheltuieli_energie', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['rezultat_operational', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['rezultat_net', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['cashflow_operational', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['lichiditate_curenta', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['grad_indatorare', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['creante', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['datorii_comerciale', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['achizitii', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['stoc_mediu', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['consum_lunar', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['active_nete', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['buget_cheltuieli_totale', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['buget_rezultat_operational', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ...(isSpital ? [
+                ['incasat_cas', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['contract_cas', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['cheltuieli_medicamente', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['cheltuieli_materiale', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['cazuri_decontate', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['zile_spitalizare', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['pat_zile', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['ocupare_paturi_pct', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['icm', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ] : []),
+            ...(isInstitutie ? [
+                ['subventii', '', '', '', '', '', '', '', '', '', '', '', ''],
+                ['venituri_granturi', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ] : [
+                ['venituri_private', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ]),
+            ['cost_neconformitati', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['penalitati', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['cheltuieli_directe', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['investitie_capex', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['beneficii_nete_anuale', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['discounturi_obtinute', '', '', '', '', '', '', '', '', '', '', '', ''],
+            ['discounturi_posibile', '', '', '', '', '', '', '', '', '', '', '', ''],
+        ];
+        const tip = isSpital ? 'spital' : isInstitutie ? 'institutie' : 'companie';
+        const csv = rows.map(r => r.join(';')).join('\n');
+        const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `template_indicatori_${tip}_${new Date().getFullYear()}.csv`;
+        a.click();
+        URL.revokeObjectURL(url);
     }
-    acc['cheltuieli_totale']    = totalCheltuieli;
-    acc['venituri_totale']      = acc['venituri_totale'] || totalVenituri;
-    acc['rezultat_operational'] = totalVenituri - totalCheltuieli;
-}
 
-function parseFOREXEBUG(rows: any[], acc: Record<string, number>) {
-    const RD_MAP: Record<string, string> = {
-        '11': 'venituri_totale', '5': 'subventii', '3': 'venituri_private',
-        '13': 'cheltuieli_personal_abs', '14': 'cheltuieli_utilitati',
-        '24': 'cheltuieli_totale', '25': 'rezultat_net', '9': 'stoc_mediu',
-        '10': 'creante', '12': 'cashflow_operational', '15': 'lichiditate_curenta',
-        '16': 'active_nete', '29': 'datorii_comerciale',
-    };
-    for (const row of rows) {
-        const label = String(row.label || '').trim();
-        const rdMatch = label.match(/^rd\.?(\d+)$/i) || label.match(/^(\d+)$/);
-        if (rdMatch) {
-            const kpi = RD_MAP[rdMatch[1]];
-            if (kpi) acc[kpi] = (acc[kpi] || 0) + (row.value || 0);
-        }
-    }
-    if (acc['venituri_totale'] && acc['cheltuieli_totale']) {
-        acc['rezultat_operational'] = acc['venituri_totale'] - acc['cheltuieli_totale'];
-    }
-}
+    /* ---------- handleParsed ---------- */
+    function handleParsed(workbooks: any[]) {
+        const acc: Record<string, number> = {};
+        const monthIdx = detectMonthIndex(workbooks);
 
-// Detecție lună din rândurile brute (caută pattern "DD.MM.YYYY" în labels/rawValues)
-function detectMonthIndex(workbooks: any[]): number {
-    for (const wb of workbooks) {
-        // 1. Caută în meta dacă KpiUploader trimite periodEnd
-        if (wb.meta?.periodEnd) {
-            const d = new Date(wb.meta.periodEnd);
-            if (!isNaN(d.getTime())) return d.getMonth(); // 0=Ian
-        }
-        // 2. Caută pattern DD.MM.YYYY în orice label sau valoare raw
-        for (const sheet of wb.sheets ?? []) {
-            for (const row of sheet.rows ?? []) {
-                const text = String(row.label || '') + ' ' + String(row.rawValues?.join(' ') || '');
-                const matches = text.matchAll(/\b(\d{2})\.(\d{2})\.(20\d{2})\b/g);
-                for (const m of matches) {
-                    const month = parseInt(m[2], 10) - 1; // 0-indexed
-                    if (month >= 0 && month <= 11) return month;
+        for (const wb of workbooks) {
+            for (const sheet of wb.sheets) {
+                const rows = sheet.rows;
+                const isSAGA = rows.some((r: any) =>
+                    /^\d{3,5}$/.test(String(r.label || '').trim().split(' ')[0])
+                );
+                const isFOREXEBUG = rows.some((r: any) =>
+                    /^rd\.?\d+$/i.test(String(r.label || '').trim())
+                );
+                if (orgType === 'companie' || (orgType === 'spital' && isSAGA)) {
+                    parseSAGA(rows, acc);
+                } else if (orgType === 'institutie_publica' || isFOREXEBUG) {
+                    parseFOREXEBUG(rows, acc);
+                } else {
+                    parseSAGA(rows, acc);
                 }
             }
         }
-        // 3. Caută în sheet name (ex: "Feb", "februarie")
-        for (const sheet of wb.sheets ?? []) {
-            const name = (sheet.name || '').toLowerCase();
-            const monthNames = ['ian','feb','mar','apr','mai','iun','iul','aug','sep','oct','noi','dec'];
-            const idx = monthNames.findIndex(m => name.includes(m));
-            if (idx >= 0) return idx;
+
+        const seriesUpdate: Record<string, { values: number[] }> = {};
+        for (const [kpi, value] of Object.entries(acc)) {
+            const existing = (series?.[kpi]?.values as number[] | undefined) ?? Array(12).fill(0);
+            const updated = [...existing];
+            if (updated.length !== 12) updated.length = 12;
+            updated[monthIdx] = value;
+            seriesUpdate[kpi] = { values: updated };
         }
-    }
-    // Fallback: luna curentă
-    return new Date().getMonth();
-}
 
-function handleParsed(workbooks: any[]) {
-    const acc: Record<string, number> = {};
-
-    // Detectează luna
-    const monthIdx = detectMonthIndex(workbooks);
-
-    for (const wb of workbooks) {
-        for (const sheet of wb.sheets) {
-            const rows = sheet.rows;
-            const isSAGA = rows.some((r: any) =>
-                /^\d{3,5}$/.test(String(r.label || '').trim().split(' ')[0])
-            );
-            const isFOREXEBUG = rows.some((r: any) =>
-                /^rd\.?\d+$/i.test(String(r.label || '').trim())
-            );
-            if (orgType === 'companie' || (orgType === 'spital' && isSAGA)) {
-                parseSAGA(rows, acc);
-            } else if (orgType === 'institutie_publica' || isFOREXEBUG) {
-                parseFOREXEBUG(rows, acc);
-            } else {
-                // CSV generic — parseSAGA ca fallback
-                parseSAGA(rows, acc);
-            }
-        }
+        mergeUploaded(seriesUpdate as any);
     }
 
-    // Construiește serii de 12 luni și pune valoarea în luna detectată
-    const seriesUpdate: Record<string, { values: number[] }> = {};
-for (const [kpi, value] of Object.entries(acc)) {
-    const existing = (series?.[kpi]?.values as number[] | undefined) ?? Array(12).fill(0);
-    const updated = [...existing];
-    if (updated.length !== 12) updated.length = 12;
-    updated[monthIdx] = value;
-    seriesUpdate[kpi] = { values: updated };  // ← { values: ... } nu doar array
-}
-
-mergeUploaded(seriesUpdate as any);
-}
-
+    /* ---------- hooks ---------- */
     const KPIS_FILTERED = useMemo(
         () => ALL_KPIS.filter(k => !k.onlySpital || orgType === 'spital'),
         [orgType]
     );
-
-    const series = (useIndicatoriStore((s) => s.series) ?? {}) as Record<string, { values: number[] } | undefined>;
 
     const getMonthlyRaw = (key: string): number[] | undefined => {
         const vals = series?.[key]?.values;
@@ -677,22 +608,22 @@ mergeUploaded(seriesUpdate as any);
         return undefined;
     };
 
-    const category = useIndicatoriUi((s) => s.category);
-    const selected = useIndicatoriUi((s) => s.selected);
-    const period = useIndicatoriUi((s) => s.period);
-    const chartKind = useIndicatoriUi((s) => s.chartKind);
-    const setCategory = useIndicatoriUi((s) => s.setCategory);
-    const setSelected = useIndicatoriUi((s) => s.setSelected);
-    const setPeriod = useIndicatoriUi((s) => s.setPeriod);
+    const category   = useIndicatoriUi((s) => s.category);
+    const selected   = useIndicatoriUi((s) => s.selected);
+    const period     = useIndicatoriUi((s) => s.period);
+    const chartKind  = useIndicatoriUi((s) => s.chartKind);
+    const setCategory  = useIndicatoriUi((s) => s.setCategory);
+    const setSelected  = useIndicatoriUi((s) => s.setSelected);
+    const setPeriod    = useIndicatoriUi((s) => s.setPeriod);
     const setChartKind = useIndicatoriUi((s) => s.setChartKind);
 
     const DEFAULT_H = 260;
-    const [hLine, setHLine] = useState<number>(DEFAULT_H);
-    const [hBar, setHBar] = useState<number>(DEFAULT_H);
+    const [hLine,  setHLine]  = useState<number>(DEFAULT_H);
+    const [hBar,   setHBar]   = useState<number>(DEFAULT_H);
     const [hRadar, setHRadar] = useState<number>(DEFAULT_H);
     useEffect(() => { setHLine(DEFAULT_H); setHBar(DEFAULT_H); setHRadar(DEFAULT_H); }, []);
 
-    const categories = useMemo(() => Array.from(new Set(KPIS_FILTERED.map((k) => k.category))), [KPIS_FILTERED]);
+    const categories  = useMemo(() => Array.from(new Set(KPIS_FILTERED.map((k) => k.category))), [KPIS_FILTERED]);
     const visibleKpis = useMemo(() => KPIS_FILTERED.filter((k) => k.category === category), [category, KPIS_FILTERED]);
 
     const labels = useMemo(() => {
@@ -706,16 +637,13 @@ mergeUploaded(seriesUpdate as any);
     const getSeriesForKey = (key: string): number[] => {
         const def = KPIS_FILTERED.find((k) => k.key === key);
         let monthlyBase: number[] | undefined;
-
         if (def?.derived && computeDerived[key]) {
             monthlyBase = computeDerived[key]((kk) => getMonthlyRaw(kk));
         }
         if (!monthlyBase) monthlyBase = getMonthlyRaw(key);
         if (!monthlyBase) monthlyBase = Array(12).fill(NaN);
-
         if (period === "lunar") return monthlyBase;
         if (period === "trimestrial") return toQuarterly(monthlyBase);
-
         const selectedYears = allYears.filter(y => (!yearFrom || y >= yearFrom) && (!yearTo || y <= yearTo));
         if (selectedYears.length) {
             return selectedYears.map((y) => {
@@ -788,9 +716,14 @@ mergeUploaded(seriesUpdate as any);
 
     const currentValue = (key: string): number | undefined => {
         const arr = getSeriesForKey(key);
-        return arr?.[arr.length - 1];
+        if (!arr) return undefined;
+        for (let i = arr.length - 1; i >= 0; i--) {
+            if (!Number.isNaN(arr[i]) && arr[i] !== 0) return arr[i];
+        }
+        return undefined;
     };
 
+    /* ---------- render ---------- */
     return (
         <div className="content" style={{ padding: 16 }}>
             <h1 className="h1" style={{ marginBottom: 12 }}>
@@ -806,7 +739,6 @@ mergeUploaded(seriesUpdate as any);
                             {categories.map((c) => (<option key={c} value={c}>{c}</option>))}
                         </select>
                     </label>
-
                     <label>
                         <b>Perioadă:</b>&nbsp;
                         <select value={period} onChange={(e) => setPeriod(e.target.value as Period)}>
@@ -815,7 +747,6 @@ mergeUploaded(seriesUpdate as any);
                             <option value="anual">Anual</option>
                         </select>
                     </label>
-
                     <label>
                         <b>Tip grafic:</b>&nbsp;
                         <select value={chartKind} onChange={(e) => setChartKind(e.target.value as ChartKind)}>
@@ -825,7 +756,6 @@ mergeUploaded(seriesUpdate as any);
                             <option value="stacked">Stacked Bars</option>
                         </select>
                     </label>
-
                     <div style={{ display: "inline-flex", gap: 8, alignItems: "center", marginLeft: 8 }}>
                         <b>Ani:</b>
                         <select value={yearFrom ?? ""} onChange={(e) => setYearFrom(e.target.value ? Number(e.target.value) : null)}>
@@ -841,7 +771,7 @@ mergeUploaded(seriesUpdate as any);
                     </div>
                 </div>
 
-                {/* Selectoare KPI cu mini-badge semafor */}
+                {/* KPI checkboxes */}
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(260px,1fr))", gap: 8 }}>
                     {visibleKpis.map((k) => {
                         const val = currentValue(k.key);
@@ -852,13 +782,17 @@ mergeUploaded(seriesUpdate as any);
                                     type="checkbox"
                                     checked={selected.includes(k.key)}
                                     onChange={() =>
-                                        setSelected(selected.includes(k.key) ? selected.filter((kk) => kk !== k.key) : [...selected, k.key])
+                                        setSelected(selected.includes(k.key)
+                                            ? selected.filter((kk) => kk !== k.key)
+                                            : [...selected, k.key])
                                     }
                                 />
                                 <span>{k.label}</span>
                                 <span style={badgeStyle(traffic)}>
                                     <span style={{ display: "inline-block", width: 8, height: 8, borderRadius: 999, background: traffic === "green" ? "#16A34A" : traffic === "yellow" ? "#CA8A04" : traffic === "red" ? "#DC2626" : "#6B7280" }} />
-                                    {val !== undefined ? (k.isPct ? `${val.toFixed(2)}%` : k.unit ? `${val.toLocaleString("ro-RO")} ${k.unit}` : val.toLocaleString("ro-RO")) : "n/a"}
+                                    {val !== undefined
+                                        ? (k.isPct ? `${val.toFixed(2)}%` : k.unit ? `${val.toLocaleString("ro-RO")} ${k.unit}` : val.toLocaleString("ro-RO"))
+                                        : "n/a"}
                                 </span>
                             </label>
                         );
@@ -882,7 +816,9 @@ mergeUploaded(seriesUpdate as any);
                                     <div style={{ flex: 1 }}>
                                         <div style={{ fontSize: 12, color: "#111827" }}>{def.label}</div>
                                         <div style={{ fontWeight: 700 }}>
-                                            {val !== undefined ? (def.isPct ? `${val.toFixed(2)}%` : def.unit ? `${val.toLocaleString("ro-RO")} ${def.unit}` : val.toLocaleString("ro-RO")) : "n/a"}
+                                            {val !== undefined
+                                                ? (def.isPct ? `${val.toFixed(2)}%` : def.unit ? `${val.toLocaleString("ro-RO")} ${def.unit}` : val.toLocaleString("ro-RO"))
+                                                : "n/a"}
                                         </div>
                                     </div>
                                     <span style={badgeStyle(t)}>{t.toUpperCase()}</span>
@@ -895,17 +831,17 @@ mergeUploaded(seriesUpdate as any);
 
             {/* Uploader */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
-    <button
-        onClick={downloadTemplate}
-        style={{ padding: '10px 18px', borderRadius: 10, border: '1px solid #C7D2FE', background: '#EEF2FF', color: '#4F46E5', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}
-    >
-        ⬇ Descarcă template CSV
-    </button>
-    <span style={{ fontSize: 12, color: '#6B7280' }}>Completează templateul și uploadează-l mai jos</span>
-</div>
-<KpiUploader kpis={[]} onParsed={handleParsed} />
+                <button
+                    onClick={downloadTemplate}
+                    style={{ padding: '10px 18px', borderRadius: 10, border: '1px solid #C7D2FE', background: '#EEF2FF', color: '#4F46E5', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}
+                >
+                    ⬇ Descarcă template CSV
+                </button>
+                <span style={{ fontSize: 12, color: '#6B7280' }}>Completează templateul și uploadează-l mai jos</span>
+            </div>
+            <KpiUploader kpis={[]} onParsed={handleParsed} />
 
-            {/* ===== GRAFICE ===== */}
+            {/* Grafice */}
             <div
                 className="card"
                 onDoubleClick={() => setHLine(260)}
